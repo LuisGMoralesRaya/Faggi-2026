@@ -3,7 +3,7 @@
     <div class="product-single__control-label mb-10">{{ section.settings.title_payments }}</div>
     {% if section.settings.payments != blank %}
       <div class="payments overflow-hidden">
-        <img class="lazyload" src="{{ section.settings.payments | image_url: width: 1 }}" data-src="{{ section.settings.payments | image_url: width: 700 }}" width="{{ section.settings.payments_width }}" height="{{ section.settings.payments_width | divided_by: section.settings.payments.aspect_ratio | round }}" alt="Payments" />
+        <img class="lazyload" src="{{ section.settings.payments | image_url: width: 1 }}" data-src="{{ section.settings.payments | image_url: width: 700 }}" width="{{ section.settings.payments_width }}" height="{{ section.settings.payments_width | divided_by: section.settings.payments.aspect_ratio | round }}" alt="{{ section.settings.title_payments | default: shop.name | escape }}" />
       </div>
     {% else %}
       <div class="payments overflow-hidden d-flex justify-content-center flex-wrap">

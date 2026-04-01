@@ -10,12 +10,13 @@
     <div class="product-top thumbnail-container{% if settings.show_second_image_product and product.images.size > 1 %} has-multiimage{% endif %}">
       <a href="{{ product.url | within: collection }}">
         {% assign img_url = product.featured_image %}
+        {% assign product_image_alt = img_url.alt | default: product.title %}
         <div class="respone_image" style="padding-top:{{ 1 | divided_by: img_url.aspect_ratio | times: 100}}%;">
-          <img class="product__thumbnail lazyload" src="{{ img_url | image_url: width: 1 }}" data-src="{{ img_url | image_url: width: 260 }}" data-srcset="{{ img_url | image_url: width: 260 }} 260w,{{ img_url | image_url: width: 360 }} 360w,{{ img_url | image_url: width: 540 }} 540w,{{ img_url | image_url: width: 720 }} 720w,{{ img_url | image_url: width: 900 }} 900w,{{ img_url | image_url: width: 1080 }} 1080w" data-sizes="auto" alt="{{ img_url.alt }}" width="{{ img_url.width }}" height="{{ img_url.height }}" loading="lazy" style="height: auto;">
+          <img class="product__thumbnail lazyload" src="{{ img_url | image_url: width: 1 }}" data-src="{{ img_url | image_url: width: 260 }}" data-srcset="{{ img_url | image_url: width: 260 }} 260w,{{ img_url | image_url: width: 360 }} 360w,{{ img_url | image_url: width: 540 }} 540w,{{ img_url | image_url: width: 720 }} 720w,{{ img_url | image_url: width: 900 }} 900w,{{ img_url | image_url: width: 1080 }} 1080w" data-sizes="auto" alt="{{ product_image_alt | escape }}" width="{{ img_url.width }}" height="{{ img_url.height }}" loading="lazy" style="height: auto;">
           {% for image in product.images %}
             {% assign img_url = image.src %}
             {% if forloop.first != true and settings.show_second_image_product %}
-              <img class="product__thumbnail-second lazyload" src="{{ img_url | image_url: width: 1 }}" data-src="{{ img_second | image_url: width: 260 }}" data-srcset="{{ img_url | image_url:width: 260 }} 260w,{{ img_url | image_url: width: 360 }} 360w,{{ img_url | image_url: width: 540 }} 540w,{{ img_url | image_url: width: 720 }} 720w,{{ img_url | image_url: width: 900 }} 900w,{{ img_url | image_url: width: 1080 }} 1080w" data-sizes="auto" alt="{{ img_url.alt }}" width="{{ img_url.width }}" height="{{ img_url.height }}" loading="lazy" style="height: auto;">
+              <img class="product__thumbnail-second lazyload" src="{{ img_url | image_url: width: 1 }}" data-src="{{ img_url | image_url: width: 260 }}" data-srcset="{{ img_url | image_url:width: 260 }} 260w,{{ img_url | image_url: width: 360 }} 360w,{{ img_url | image_url: width: 540 }} 540w,{{ img_url | image_url: width: 720 }} 720w,{{ img_url | image_url: width: 900 }} 900w,{{ img_url | image_url: width: 1080 }} 1080w" data-sizes="auto" alt="{{ img_url.alt | default: product.title | escape }}" width="{{ img_url.width }}" height="{{ img_url.height }}" loading="lazy" style="height: auto;">
               {% break %}
             {% endif %}
           {% endfor %}
