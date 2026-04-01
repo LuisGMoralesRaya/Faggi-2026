@@ -6,10 +6,10 @@
         "15fb5f34-b88d-452a-a459-a155fbf3c50c": {
           "type": "faq",
           "settings": {
-            "item_title": "?Cu?nto tarda una joya personalizada?",
+            "item_title": "¿Cuánto tarda una joya personalizada?",
             "color_title": "#232630",
             "fz_title": "16px",
-            "item_content": "Las piezas personalizadas suelen requerir un poco m?s de preparaci?n antes del env?o porque cada nombre, inicial o fecha se trabaja especialmente para tu pedido.",
+            "item_content": "Las piezas personalizadas suelen requerir un poco más de preparación antes del envío porque cada nombre, inicial o fecha se trabaja especialmente para tu pedido.",
             "color_content": "#232630",
             "fz_content": "14px",
             "class": ""
@@ -18,10 +18,10 @@
         "f36d99f0-20e0-4ec9-b2ea-3eea65ac3e82": {
           "type": "faq",
           "settings": {
-            "item_title": "?C?mo debo escribir mi personalizaci?n?",
+            "item_title": "¿Cómo debo escribir mi personalización?",
             "color_title": "#232630",
             "fz_title": "16px",
-            "item_content": "Escribe nombres, iniciales, fechas y mensajes cortos exactamente como quieres verlos, incluyendo may?sculas, min?sculas, signos y espacios.",
+            "item_content": "Escribe nombres, iniciales, fechas y mensajes cortos exactamente como quieres verlos, incluyendo mayúsculas, minúsculas, signos y espacios.",
             "color_content": "#232630",
             "fz_content": "14px",
             "class": ""
@@ -30,10 +30,10 @@
         "06e092c0-ae35-475a-9b51-1d58129c82a3": {
           "type": "faq",
           "settings": {
-            "item_title": "?Puedo enviar una pieza como regalo?",
+            "item_title": "¿Puedo enviar una pieza como regalo?",
             "color_title": "#232630",
             "fz_title": "16px",
-            "item_content": "S?. Nuestras joyas est?n pensadas para regalar en cumplea?os, aniversarios, madrinas, nacimientos y momentos cotidianos con significado.",
+            "item_content": "Sí. Nuestras joyas están pensadas para regalar en cumpleaños, aniversarios, madrinas, nacimientos y momentos cotidianos con significado.",
             "color_content": "#232630",
             "fz_content": "14px",
             "class": ""
@@ -42,10 +42,10 @@
         "74d8dd51-2e35-49c0-88df-e1c45645f17c": {
           "type": "faq",
           "settings": {
-            "item_title": "?Qu? materiales y acabados puedo esperar?",
+            "item_title": "¿Qué materiales y acabados puedo esperar?",
             "color_title": "#232630",
             "fz_title": "16px",
-            "item_content": "Los detalles var?an seg?n la pieza, pero cada dise?o busca equilibrar una est?tica delicada, comodidad al usarla y un acabado pulido ideal para regalar.",
+            "item_content": "Los detalles varían según la pieza, pero cada diseño busca equilibrar una estática delicada, comodidad al usarla y un acabado pulido ideal para regalar.",
             "color_content": "#232630",
             "fz_content": "14px",
             "class": ""
@@ -54,10 +54,10 @@
         "4ee00231-8e56-4c78-abb2-d73e40f1a7ec": {
           "type": "faq",
           "settings": {
-            "item_title": "?C?mo debo cuidar mi joya?",
+            "item_title": "¿Cómo debo cuidar mi joya?",
             "color_title": "#232630",
             "fz_title": "16px",
-            "item_content": "Para ayudar a conservar el acabado de tu pieza, gu?rdala en un lugar seco y evita el contacto directo con agua, perfumes, cremas y productos qu?micos.",
+            "item_content": "Para ayudar a conservar el acabado de tu pieza, guárdala en un lugar seco y evita el contacto directo con agua, perfumes, cremas y productos químicos.",
             "color_content": "#232630",
             "fz_content": "14px",
             "class": ""
@@ -66,10 +66,10 @@
         "38baf562-ad54-4fa9-a8f4-e79f4ae6078b": {
           "type": "faq",
           "settings": {
-            "item_title": "?Pueden ayudarme a elegir el regalo ideal?",
+            "item_title": "¿Pueden ayudarme a elegir el regalo ideal?",
             "color_title": "#232630",
             "fz_title": "16px",
-            "item_content": "Claro. Si necesitas ayuda para elegir una pieza personalizada para una ocasi?n especial, podemos orientarte hacia una opci?n con significado.",
+            "item_content": "Claro. Si necesitas ayuda para elegir una pieza personalizada para una ocasión especial, podemos orientarte hacia una opción con significado.",
             "color_content": "#232630",
             "fz_content": "14px",
             "class": ""
@@ -92,21 +92,21 @@
         "xs": 2,
         "text1": "Ayuda con tu pedido",
         "link1": "#",
-        "text2": "Env?os y devoluciones",
+        "text2": "Envíos y devoluciones",
         "link2": "#",
         "text3": "Cuidado de joyas",
         "link3": "#",
-        "text4": "Gu?a de personalizaci?n",
+        "text4": "Guía de personalización",
         "link4": "#",
         "text5": "Pagos",
         "link5": "#",
         "color_link": "#222222",
         "bg_item": "#f0f0f0",
         "bg_item_h": "#e2e2e2",
-        "title": "Encuentra respuestas r?pidas sobre joyer?a personalizada, regalos, tiempos de preparaci?n y el cuidado de tus piezas favoritas.",
-        "text_content": "Creamos esta gu?a para ayudarte a comprar con confianza, entender c?mo funciona la personalizaci?n y aprovechar cada detalle con significado en tu pieza.",
+        "title": "Encuentra respuestas rápidas sobre joyería personalizada, regalos, tiempos de preparación y el cuidado de tus piezas favoritas.",
+        "text_content": "Creamos esta guía para ayudarte a comprar con confianza, entender cómo funciona la personalización y aprovechar cada detalle con significado en tu pieza.",
         "eb_contact": true,
-        "title_answer": "?Necesitas ayuda con una solicitud especial?",
+        "title_answer": "¿Necesitas ayuda con una solicitud especial?",
         "sub_answer": "Nos encantar? ayudarte con tu pedido",
         "text_button": "Contactar al equipo"
       }

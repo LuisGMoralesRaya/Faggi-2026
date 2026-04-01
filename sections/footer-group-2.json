@@ -18,7 +18,7 @@
           "type": "text",
           "name": "Text",
           "settings": {
-            "text": "<p>Delicate personalized jewelry for names, initials, dates, and meaningful gifting moments.</p>",
+            "text": "<p>Joyería delicada personalizada para nombres, iniciales, fechas y momentos especiales para regalar.</p>",
             "color": "#1f2937",
             "color_link": "#000000",
             "color_link_hover": "#000000",
@@ -262,7 +262,7 @@
                     "mb_md": 20,
                     "mb_sm": 20,
                     "external_image_url": "",
-                    "external_image_alt": "Faggi joyer?a personalizada"
+                    "external_image_alt": "Faggi joyería personalizada"
                   },
                   "blocks": {}
                 },
@@ -270,7 +270,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Joyer?a delicada personalizada con nombres, iniciales, fechas y mensajes que convierten momentos en recuerdos.</p>",
+                    "text": "<p>Joyería delicada personalizada con nombres, iniciales, fechas y mensajes que convierten momentos en recuerdos.</p>",
                     "color": "#1f2937",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
@@ -427,7 +427,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Escr?benos</p>",
+                    "text": "<p>Escríbenos</p>",
                     "color": "#1f2937",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
@@ -525,7 +525,7 @@
                     "text_tx4Yfa": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>Atenci?n en l?nea</p>",
+                        "text": "<p>Atención en línea</p>",
                         "color": "#1f2937",
                         "color_link": "#000000",
                         "color_link_hover": "#000000",
@@ -733,7 +733,7 @@
                     "text_dddNnC": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>Gu?a de regalos y personalizaci?n</p>",
+                        "text": "<p>Guía de regalos y personalización</p>",
                         "color": "#1f2937",
                         "color_link": "#000000",
                         "color_link_hover": "#000000",
@@ -977,7 +977,7 @@
                   "type": "menu",
                   "name": "Menu",
                   "settings": {
-                    "block_title": "Informaci?n",
+                    "block_title": "Información",
                     "mobile_acc": true,
                     "menu_handle": "information",
                     "text_alignment": "left",
@@ -1082,7 +1082,7 @@
                   "type": "menu",
                   "name": "Menu",
                   "settings": {
-                    "block_title": "Pol?ticas",
+                    "block_title": "Políticas",
                     "mobile_acc": true,
                     "menu_handle": "our-policies",
                     "text_alignment": "left",

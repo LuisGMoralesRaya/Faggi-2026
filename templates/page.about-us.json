@@ -241,7 +241,7 @@
           "type": "text",
           "name": "Text",
           "settings": {
-            "text": "<p>Faggi naci? para los momentos que merecen recordarse con algo delicado, personal y f?cil de atesorar. Creemos que la joyer?a puede guardar m?s que estilo: puede llevar nombres, fechas, iniciales, mensajes cortos y la emoci?n detr?s de un regalo elegido con intenci?n.</p><p>Nuestro enfoque combina un dise?o femenino y minimalista con significado emocional para que cada pieza se sienta lo suficientemente pulida para regalar y lo bastante ligera para acompa?arte todos los d?as. Ya sea que celebres un cumplea?os, un aniversario, la llegada de un beb?, una amistad o una promesa contigo misma, queremos que cada detalle se sienta pensado.</p><p>Desde el primer campo de personalizaci?n hasta el acabado final, nos enfocamos en la claridad, el cuidado y una experiencia premium que convierte historias importantes en recuerdos que puedes llevar contigo.</p>",
+            "text": "<p>Faggi nació para los momentos que merecen recordarse con algo delicado, personal y fácil de atesorar. Creemos que la joyería puede guardar más que estilo: puede llevar nombres, fechas, iniciales, mensajes cortos y la emoción detrás de un regalo elegido con intención.</p><p>Nuestro enfoque combina un diseño femenino y minimalista con significado emocional para que cada pieza se sienta lo suficientemente pulida para regalar y lo bastante ligera para acompañarte todos los días. Ya sea que celebres un cumpleaños, un aniversario, la llegada de un bebé, una amistad o una promesa contigo misma, queremos que cada detalle se sienta pensado.</p><p>Desde el primer campo de personalización hasta el acabado final, nos enfocamos en la claridad, el cuidado y una experiencia premium que convierte historias importantes en recuerdos que puedes llevar contigo.</p>",
             "color": "#535353",
             "color_link": "#000000",
             "color_link_hover": "#000000",
@@ -519,7 +519,7 @@
       ],
       "name": "Vinova Slider",
       "settings": {
-        "heading": "<h1>Historias detr?s de cada pieza</h1>",
+        "heading": "<h1>Historias detrás de cada pieza</h1>",
         "heading_color": "#181818",
         "subheading": "<p>Momentos con significado de nuestra comunidad</p>",
         "subheading_color": "#535353",
@@ -604,7 +604,7 @@
             "policy_icon": "shopify://shop_images/about-us-icon-1.svg",
             "title_policy": "Elige tu pieza",
             "stitle_policy": "",
-            "desc_policy": "Comienza con la pieza que mejor acompa?e tu momento, ya sea un regalo, una fecha especial o un recordatorio que quieras llevar cerca.",
+            "desc_policy": "Comienza con la pieza que mejor acompañe tu momento, ya sea un regalo, una fecha especial o un recordatorio que quieras llevar cerca.",
             "mw": 400,
             "link_label": "",
             "link": "",
@@ -618,7 +618,7 @@
           "type": "item_policy",
           "settings": {
             "policy_icon": "shopify://shop_images/about-us-icon-2.svg",
-            "title_policy": "Agrega tu personalizaci?n",
+            "title_policy": "Agrega tu personalización",
             "stitle_policy": "",
             "desc_policy": "Escribe el nombre, la fecha, las iniciales o el mensaje corto exactamente como quieres verlo para que la pieza se sienta completamente tuya.",
             "mw": 400,
@@ -636,7 +636,7 @@
             "policy_icon": "shopify://shop_images/about-us-icon-3.svg",
             "title_policy": "Recibe un recuerdo con significado",
             "stitle_policy": "",
-            "desc_policy": "Recibe un recuerdo delicado pensado para emocionar desde que llega y lo bastante bonito para usarlo todos los d?as.",
+            "desc_policy": "Recibe un recuerdo delicado pensado para emocionar desde que llega y lo bastante bonito para usarlo todos los días.",
             "mw": 400,
             "link_label": "",
             "link": "",
@@ -658,9 +658,9 @@
       ],
       "name": "Vinova Policy",
       "settings": {
-        "heading": "<h1>C?mo Faggi se vuelve parte de tu historia</h1>",
+        "heading": "<h1>Cómo Faggi se vuelve parte de tu historia</h1>",
         "heading_color": "#181818",
-        "subheading": "<p>C?mo personalizamos</p>",
+        "subheading": "<p>Cómo personalizamos</p>",
         "subheading_color": "#535353",
         "subheading_position": "top",
         "descheading": "",
@@ -880,7 +880,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>?Por qu? elegir Faggi?</p>",
+                    "text": "<p>¿Por qu? elegir Faggi?</p>",
                     "color": "#181818",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
@@ -916,7 +916,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Nos enfocamos en los detalles que m?s importan: siluetas delicadas, personalizaci?n con intenci?n, comunicaci?n clara y un acabado pulido que hace que cada pieza se sienta premium sin perder calidez ni emoci?n.</p>",
+                    "text": "<p>Nos enfocamos en los detalles que más importan: siluetas delicadas, personalización con intención, comunicación clara y un acabado pulido que hace que cada pieza se sienta premium sin perder calidez ni emoción.</p>",
                     "color": "#535353",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
@@ -1138,7 +1138,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Compra en l?nea confiable</p>",
+                    "text": "<p>Compra en línea confiable</p>",
                     "color": "#181818",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
@@ -2062,9 +2062,9 @@
       ],
       "name": "Vinova Slider",
       "settings": {
-        "heading": "<h1>El cuidado detr?s de cada detalle personalizado</h1>",
+        "heading": "<h1>El cuidado detrás de cada detalle personalizado</h1>",
         "heading_color": "#181818",
-        "subheading": "<p>Dise?o y acabado</p>",
+        "subheading": "<p>Diseño y acabado</p>",
         "subheading_color": "#535353",
         "subheading_position": "top",
         "descheading": "",
@@ -2195,7 +2195,7 @@
               "type": "text",
               "name": "Text",
               "settings": {
-                "text": "<p>Online boutique</p>",
+                "text": "<p>Boutique en línea</p>",
                 "color": "#181818",
                 "color_link": "#000000",
                 "color_link_hover": "#000000",
@@ -2231,7 +2231,7 @@
               "type": "text",
               "name": "Text",
               "settings": {
-                "text": "<p>Compra desde donde est?s y descubre joyer?a con significado hecha para regalar y celebrar.</p>",
+                "text": "<p>Compra desde donde estás y descubre joyería con significado hecha para regalar y celebrar.</p>",
                 "color": "#535353",
                 "color_link": "#000000",
                 "color_link_hover": "#000000",
@@ -2360,7 +2360,7 @@
               "type": "text",
               "name": "Text",
               "settings": {
-                "text": "<p>Escr?benos si necesitas ayuda para elegir una pieza personalizada o confirmar los detalles de tu pedido.</p>",
+                "text": "<p>Escríbenos si necesitas ayuda para elegir una pieza personalizada o confirmar los detalles de tu pedido.</p>",
                 "color": "#535353",
                 "color_link": "#000000",
                 "color_link_hover": "#000000",
@@ -2489,7 +2489,7 @@
               "type": "text",
               "name": "Text",
               "settings": {
-                "text": "<p>Estamos aqu? para ayudarte con nombres, iniciales, fechas y momentos especiales para regalar.</p>",
+                "text": "<p>Estamos aquí para ayudarte con nombres, iniciales, fechas y momentos especiales para regalar.</p>",
                 "color": "#535353",
                 "color_link": "#000000",
                 "color_link_hover": "#000000",
@@ -2541,7 +2541,7 @@
       "settings": {
         "heading": "<h1>Formas de comprar</h1>",
         "heading_color": "#181818",
-        "subheading": "<p>D?nde encontrarnos</p>",
+        "subheading": "<p>Dónde encontrarnos</p>",
         "subheading_color": "#535353",
         "subheading_position": "top",
         "descheading": "",

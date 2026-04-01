@@ -84,11 +84,11 @@
         "show_desc": true,
         "bg_b": "#f2f2f2",
         "show_collection_intro": true,
-        "collection_intro_eyebrow": "Colecci?n de joyas con significado",
-        "collection_intro_text": "Descubre joyas personalizadas pensadas para regalar, celebrar momentos importantes y llevar cerca a las personas que m?s quieres.",
+        "collection_intro_eyebrow": "Colección de joyas con significado",
+        "collection_intro_text": "Descubre joyas personalizadas pensadas para regalar, celebrar momentos importantes y llevar cerca a las personas que más quieres.",
         "collection_chip_1": "Ideas listas para regalar",
         "collection_chip_2": "Nombres, iniciales y fechas",
-        "collection_chip_3": "Dise?ado con intenci?n"
+        "collection_chip_3": "Diseñado con intención"
       }
     },
     "nov_policy_PVFmgJ": {
@@ -98,9 +98,9 @@
           "type": "item_policy",
           "settings": {
             "policy_icon": "shopify://shop_images/p-2.png",
-            "title_policy": "Elaboraci?n cuidada",
+            "title_policy": "Elaboración cuidada",
             "stitle_policy": "",
-            "desc_policy": "Joyer?a con significado preparada con atenci?n a cada detalle.",
+            "desc_policy": "Joyería con significado preparada con atención a cada detalle.",
             "mw": 285,
             "link_label": "",
             "link": "",
@@ -130,7 +130,7 @@
           "type": "item_policy",
           "settings": {
             "policy_icon": "shopify://shop_images/p-1.png",
-            "title_policy": "Acompa?amiento para regalar",
+            "title_policy": "Acompañamiento para regalar",
             "stitle_policy": "",
             "desc_policy": "Te ayudamos a encontrar piezas personalizadas para momentos especiales.",
             "mw": 285,

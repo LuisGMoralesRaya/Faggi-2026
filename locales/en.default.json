@@ -46,7 +46,7 @@
       "share_on_twitter": "Tweeter",
       "share_on_pinterest": "Pinterest",
       "share_on_pinterest_pt": "Pin it",
-      "social_follow": "S?guenos:",
+      "social_follow": "Síguenos:",
       "social_platform": "{{ name }} on {{ platform }}",
       "alt_text": {
         "share_on_facebook": "Share on Facebook",
@@ -61,9 +61,9 @@
         "one": "{{ count }} result for \"{{ terms }}\"",
         "other": "{{ count }} results for \"{{ terms }}\""
       },
-      "title": "Buscar joyer?a personalizada",
+      "title": "Buscar joyería personalizada",
       "placeholder": "Search",
-      "description": "Busca por nombre del producto, iniciales, collar, pulsera, dije o ideas de regalo para encontrar la pieza ideal m?s r?pido.",
+      "description": "Busca por nombre del producto, iniciales, collar, pulsera, dije o ideas de regalo para encontrar la pieza ideal más rápido.",
       "submit": "Search",
       "close": "Close search",
       "search_trend": "Popular searches:",
@@ -76,8 +76,8 @@
     },
     "newsletter_form": {
       "newsletter_label": "Newsletter",
-      "email_placeholder": "Enter your email address",
-      "email_newsletter": "Enter your email",
+      "email_placeholder": "Ingresa tu correo electrónico",
+      "email_newsletter": "Ingresa tu correo electrónico",
       "confirmation": "Thanks for subscribing",
       "submit": "Submit",
       "submit_now": "Submit now",
@@ -92,7 +92,7 @@
       "preferences_value_2": "Women",
       "i_want_it_all": "I Want It All",
       "subscribe": "Subscribe",
-      "your_email_address": "Your Email Address",
+      "your_email_address": "Tu correo electrónico",
       "send_now": "Send Now"
     },
     "filters": {
@@ -230,7 +230,7 @@
     "image_with_text": {
       "play_video": "Play video",
       "watch_video": "Watch video",
-      "follow_us": "S?guenos:"
+      "follow_us": "Síguenos:"
     },
     "collection_loadmore": {
       "view_all_products": "View all products",
@@ -290,17 +290,17 @@
       "back_to_blog": "Back to {{ title }}",
       "print": "Print",
       "share": "Share",
-      "size_guide": "Gu?a de tallas",
+      "size_guide": "Guía de tallas",
       "readmore": "Read More"
     },
     "related": "Related",
     "comments": {
       "title": "Submit comment",
-      "name": "Your Name",
-      "email": "Your Email",
+      "name": "Tu nombre",
+      "email": "Tu correo electrónico",
       "phone": "Your Phone",
-      "message": "Your Message",
-      "post": "Send message",
+      "message": "Tu mensaje",
+      "post": "Enviar mensaje",
       "moderated": "Please note, comments must be approved before they are published",
       "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
       "success": "Your comment was posted successfully! Thank you!",
@@ -318,9 +318,9 @@
       "remove": "Remove",
       "total": "Total",
       "savings": "You're saving",
-      "shipping_label": "Env?o:",
+      "shipping_label": "Envío:",
       "cart_note_label": "Add a note to your order :",
-      "shipping_at_checkout": "Env?o e impuestos calculados al finalizar la compra",
+      "shipping_at_checkout": "Envío e impuestos calculados al finalizar la compra",
       "update": "Update",
       "checkout": "Check out",
       "view_cart": "View Cart",
@@ -332,7 +332,7 @@
       "edit": "Edit",
       "cancel": "Cancel",
       "continue_shopping": "Continue shopping",
-      "content_threshold": "?Felicidades! ?Ya tienes env?o gratis!",
+      "content_threshold": "¡Felicidades! ¡Ya tienes envío gratis!",
       "reduce_quantity": "Reduce item quantity by one",
       "increase_quantity": "Increase item quantity by one",
       "your_order": "Your order",
@@ -345,7 +345,7 @@
       "freeshipping_notice_html": "Free shipping for any orders above <span>{{ freeshipping_value }}<\/span>",
       "freeshipping_notice_page": "Continue shopping to add more products to your cart and receive free shipping for any orders above <span>{{ freeshipping_values }}<\/span>",
       "spend": "Spend",
-      "spend__html": "para env?o gratis",
+      "spend__html": "para envío gratis",
       "spend_html": "Spend {{ spend }} for <span>Free Shipping<\/span>",
       "cart_check_agree_html": "I agree with the <span>Terms & conditions<\/span>"
     },
@@ -358,18 +358,18 @@
     },
     "mini_canvas": {
       "not_heading": "Add note for seller",
-      "shipping_heading": "Calcular tarifas de env?o",
+      "shipping_heading": "Calcular tarifas de envío",
       "discount_heading": "Add a discount code",
       "discount_desc_html": "Discount will be calculated and applied at checkout <span>*<\/span>",
       "button_save": "Save",
       "note_tooltip": "Add note order",
-      "estimate_shipping_tooltip": "Calcular env?o",
+      "estimate_shipping_tooltip": "Calcular envío",
       "discount_tooltip": "Add a discount code",
       "write_notes": "Write here your notes for the order",
       "country_region": "Country\/Region",
       "close": "Close",
       "cancel": "Cancel",
-      "calculate_shipping": "Calcular env?o",
+      "calculate_shipping": "Calcular envío",
       "calculating": "Calculating...",
       "zip_postal_code": "Zip\/Postal Code"
     }
@@ -433,11 +433,11 @@
   },
   "contact": {
     "form": {
-      "name": "Your Name",
-      "email": "Your Email",
-      "phone": "Phone Number",
-      "message": "Message",
-      "submit": "Send message",
+      "name": "Tu nombre",
+      "email": "Tu correo electrónico",
+      "phone": "Teléfono",
+      "message": "Mensaje",
+      "submit": "Enviar mensaje",
       "post_success": "Thanks for contacting us. We'll get back to you as soon as possible."
     }
   },
@@ -452,7 +452,7 @@
     },
     "activate_account": {
       "title": "Activate Account",
-      "subtext": "Crea tu contrase?a para activar tu cuenta.",
+      "subtext": "Crea tu contraseña para activar tu cuenta.",
       "password": "Password",
       "password_confirm": "Confirm Password",
       "submit": "Activate Account",
@@ -495,7 +495,7 @@
       "log_in": "Login",
       "guest_title": "Continue as a guest",
       "guest_continue": "Continue",
-      "email_login": "Enter your email",
+      "email_login": "Ingresa tu correo electrónico",
       "email_login_label": "Email address",
       "password_login": "Password",
       "bank_register": "Register Here",
@@ -518,7 +518,7 @@
       "cancelled_reason": "Reason: {{ reason }}",
       "billing_address": "Billing Address",
       "payment_status": "Payment Status",
-      "shipping_address": "Direcci?n de env?o",
+      "shipping_address": "Dirección de envío",
       "fulfillment_status": "Fulfillment Status",
       "discount": "Discount",
       "shipping": "Shipping",
@@ -560,7 +560,7 @@
       "log_in": "Login Here",
       "checkbox_newsletter": "Sign up for our newsletter",
       "bank_login": "If you have an account, please ",
-      "policy": "Tus datos personales se utilizar?n para mejorar tu experiencia en este sitio web, gestionar el acceso a tu cuenta y para otros fines descritos en nuestra pol?tica de privacidad."
+      "policy": "Tus datos personales se utilizarán para mejorar tu experiencia en este sitio web, gestionar el acceso a tu cuenta y para otros fines descritos en nuestra política de privacidad."
     }
   },
   "homepage": {
@@ -592,7 +592,7 @@
       "hello": "Hello, "
     },
     "footer": {
-      "follow_us": "S?guenos: ",
+      "follow_us": "Síguenos: ",
       "call_us_now": "Call Us Now",
       "payments": "Payments Methods",
       "our_social": "Nuestras redes",
@@ -664,7 +664,7 @@
       "notes_placeholder": "Write here your notes for the order",
       "label_share": "Share",
       "label_ask_a_question": "Ask a Question",
-      "label_sizeguide": "Gu?a de tallas",
+      "label_sizeguide": "Guía de tallas",
       "label_faq": "FAQ",
       "product": "Product",
       "product_url": "Product url"
@@ -751,9 +751,9 @@
     },
     "contact": {
       "form": {
-        "name": "Your Name",
-        "email": "Your Email",
-        "phone": "Phone Number",
+        "name": "Tu nombre",
+        "email": "Tu correo electrónico",
+        "phone": "Teléfono",
         "message": "Your message",
         "submit": "Submit now",
         "post_success": "Thanks for contacting us. We'll get back to you as soon as possible."
@@ -766,10 +766,10 @@
     "faqs": {
       "form": {
         "title_popup_form_html": "<strong>Contact us Now<\/strong>",
-        "subtitle_popup_form": "Ingresa los detalles de tu solicitud. Un miembro de nuestro equipo te responder? lo antes posible.",
-        "name": "Your Name",
-        "email": "Your Email",
-        "phone": "Phone Number",
+        "subtitle_popup_form": "Ingresa los detalles de tu solicitud. Un miembro de nuestro equipo te responderá lo antes posible.",
+        "name": "Tu nombre",
+        "email": "Tu correo electrónico",
+        "phone": "Teléfono",
         "message": "Your message",
         "submit": "Submit now",
         "post_success": "Thanks for contacting us. We'll get back to you as soon as possible."

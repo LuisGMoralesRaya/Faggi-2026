@@ -72,8 +72,8 @@
     "newsletter_promoimg": "shopify://shop_images/Backpack-popup.png",
     "preferences_newsletter": false,
     "title_newsletter": "Disfruta 10% de descuento en tu primera compra",
-    "sub_title_newsletter": "?nete a la lista de Faggi",
-    "desc_newsletter": "Ent?rate primero de nuevas joyas personalizadas, ideas de regalo y piezas con significado.",
+    "sub_title_newsletter": "Úñete a la lista de Faggi",
+    "desc_newsletter": "Entérate primero de nuevas joyas personalizadas, ideas de regalo y piezas con significado.",
     "img_newsletter": "shopify://shop_images/newsletter-img.png",
     "bg_newsletter": "#eff5ff",
     "enable_rtl": true,
@@ -210,7 +210,7 @@
     "qv_swatch_enable": true,
     "color_social": "scheme-7dbefc98-3883-4d4e-937c-abd51fb30fa2",
     "email": "<p><strong>Correo:</strong> info@example.com</p>",
-    "hotline": "<p><strong>Atenci?n:</strong> +(123)-456-7890</p>",
+    "hotline": "<p><strong>Atención:</strong> +(123)-456-7890</p>",
     "favicon": "shopify://shop_images/favicon-nov.png",
     "link_page_wishlist": "page-wishlist",
     "show_popup_wishlist": true,
@@ -359,7 +359,7 @@
     "show_verification_popup": false,
     "logo_verification": "shopify://shop_images/logo-casan-3.png",
     "search_limit": 5,
-    "desc_verification": "<p>Bienvenida a Faggi. Descubre joyer?a personalizada, regalos con significado y piezas delicadas creadas para celebrar tu historia.</p>",
+    "desc_verification": "<p>Bienvenida a Faggi. Descubre joyería personalizada, regalos con significado y piezas delicadas creadas para celebrar tu historia.</p>",
     "second_heading_text": "#222222",
     "sub_heading_text": "#acacac",
     "color_borders_second": "#d0d3d7",
@@ -434,10 +434,10 @@
           "show_payments": true,
           "title_payments": "Compra segura garantizada:",
           "payments": "shopify://shop_images/payment.png",
-          "time": "Los pedidos se preparan con cuidado antes del env?o.",
+          "time": "Los pedidos se preparan con cuidado antes del envío.",
           "size_time": "12px",
           "color_time": "#494949",
-          "truck": "Hecho con dedicaci?n para regalar, celebrar y llevar tus recuerdos cerca.",
+          "truck": "Hecho con dedicación para regalar, celebrar y llevar tus recuerdos cerca.",
           "size_truck": "12px",
           "color_truck": "#494949",
           "background_color": ""
@@ -456,8 +456,8 @@
           "3526ffb7-415c-4d22-ae57-ade26348009e": {
             "type": "faq",
             "settings": {
-              "item_title": "?Cu?nto tarda la joyer?a personalizada?",
-              "item_content": "Las piezas personalizadas requieren un poco m?s de cuidado antes del env?o, porque cada nombre, inicial o fecha se prepara especialmente para tu pedido."
+              "item_title": "¿Cuánto tarda la joyería personalizada?",
+              "item_content": "Las piezas personalizadas requieren un poco más de cuidado antes del envío, porque cada nombre, inicial o fecha se prepara especialmente para tu pedido."
             }
           },
           "350dd52a-5a67-4cdd-8b96-2c19bd158761": {
@@ -470,29 +470,29 @@
           "ad824580-169d-4232-aac5-72de44b65a2f": {
             "type": "faq",
             "settings": {
-              "item_title": "?Puedo enviar una pieza como regalo?",
-              "item_content": "S?. Nuestra joyer?a est? dise?ada para ser un regalo especial en cumplea?os, aniversarios, damas de honor, nacimientos y momentos cotidianos con significado."
+              "item_title": "¿Puedo enviar una pieza como regalo?",
+              "item_content": "Sí. Nuestra joyería está diseñada para ser un regalo especial en cumpleaños, aniversarios, damas de honor, nacimientos y momentos cotidianos con significado."
             }
           },
           "ecb276ad-04cc-4c9c-832e-892642fced38": {
             "type": "faq",
             "settings": {
               "item_title": "What materials and finishes should I expect?",
-              "item_content": "Los detalles var?an seg?n la pieza, pero cada dise?o busca un equilibrio entre delicadeza, comodidad y un acabado pulido ideal para regalar."
+              "item_content": "Los detalles varían según la pieza, pero cada diseño busca un equilibrio entre delicadeza, comodidad y un acabado pulido ideal para regalar."
             }
           },
           "5710c37c-6a79-481c-9fc4-1cbb239a99c5": {
             "type": "faq",
             "settings": {
-              "item_title": "?C?mo cuido mi joya?",
-              "item_content": "Para conservar mejor el acabado de tu pieza, gu?rdala en un lugar seco y evita el contacto directo con agua, perfumes, cremas y productos qu?micos del hogar."
+              "item_title": "¿Cómo cuido mi joya?",
+              "item_content": "Para conservar mejor el acabado de tu pieza, guárdala en un lugar seco y evita el contacto directo con agua, perfumes, cremas y productos químicos del hogar."
             }
           },
           "c5f181a0-f9ad-4de1-82f0-825dc7286149": {
             "type": "faq",
             "settings": {
               "item_title": "Can you help me choose the right gift?",
-              "item_content": "Claro. Si necesitas ayuda para elegir una pieza personalizada para una ocasi?n especial, nuestro equipo puede orientarte hacia una opci?n significativa."
+              "item_content": "Claro. Si necesitas ayuda para elegir una pieza personalizada para una ocasión especial, nuestro equipo puede orientarte hacia una opción significativa."
             }
           },
           "122f9f41-3f4a-4b9f-9aef-3a61fb4866be": {
@@ -505,8 +505,8 @@
           "5b3a4407-bae8-412d-a1fc-397ddedd7faa": {
             "type": "faq",
             "settings": {
-              "item_title": "?Qu? pasa si tengo una personalizaci?n especial?",
-              "item_content": "Si necesitas ayuda con una solicitud especial, cont?ctanos y comp?rtenos los detalles para orientarte hacia la mejor opci?n disponible."
+              "item_title": "¿Qué pasa si tengo una personalización especial?",
+              "item_content": "Si necesitas ayuda con una solicitud especial, contáctanos y compártenos los detalles para orientarte hacia la mejor opción disponible."
             }
           }
         },
@@ -521,7 +521,7 @@
           "5b3a4407-bae8-412d-a1fc-397ddedd7faa"
         ],
         "settings": {
-          "title": "Encuentra respuestas r?pidas sobre joyer?a personalizada, regalos, tiempos de producci?n y cuidado de tus piezas favoritas."
+          "title": "Encuentra respuestas rápidas sobre joyería personalizada, regalos, tiempos de producción y cuidado de tus piezas favoritas."
         }
       },
       "nov-promotion-bar": {
@@ -689,7 +689,7 @@
       }
     },
     "brand_logo_external": "",
-    "brand_logo_alt": "Faggi joyer?a personalizada"
+    "brand_logo_alt": "Faggi joyería personalizada"
   },
   "platform_customizations": {
     "custom_css": []

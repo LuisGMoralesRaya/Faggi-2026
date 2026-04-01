@@ -86,7 +86,7 @@
             "mb2_md": 15,
             "mb2_xs": 10,
             "cap_animate_2": "fadeInRight",
-            "caption_3": "Piezas delicadas personalizadas con nombres, iniciales, fechas y mensajes para llevar cerca del coraz?n.",
+            "caption_3": "Piezas delicadas personalizadas con nombres, iniciales, fechas y mensajes para llevar cerca del corazón.",
             "color_cap3": "#1c1c1c",
             "fz_cap3_xxl": 16,
             "fz_cap3_xl": 14,
@@ -187,7 +187,7 @@
             "pattern_horizontal3": 5,
             "pattern_vertical3": 0,
             "pattern_width3": 20,
-            "caption_1": "Personalizaci?n con significado",
+            "caption_1": "Personalización con significado",
             "color_cap1": "#1c1c1c",
             "fz_cap1_xxl": 14,
             "fz_cap1_xl": 14,
@@ -229,7 +229,7 @@
             "mb2_md": 15,
             "mb2_xs": 10,
             "cap_animate_2": "fadeInRight",
-            "caption_3": "Joyer?a pensada para cumplea?os, aniversarios, madrinas, nuevos comienzos y momentos que merecen quedarse contigo.",
+            "caption_3": "Joyería pensada para cumpleaños, aniversarios, madrinas, nuevos comienzos y momentos que merecen quedarse contigo.",
             "color_cap3": "#1c1c1c",
             "fz_cap3_xxl": 16,
             "fz_cap3_xl": 14,
@@ -352,7 +352,7 @@
             "mb1_md": 10,
             "mb1_xs": 5,
             "cap_animate_1": "fadeInLeft",
-            "caption_2": "Piezas para celebrar cada v?nculo",
+            "caption_2": "Piezas para celebrar cada vínculo",
             "color_cap2": "#1f2937",
             "fz_cap2_xxl": 36,
             "fz_cap2_xl": 32,
@@ -372,7 +372,7 @@
             "mb2_md": 15,
             "mb2_xs": 10,
             "cap_animate_2": "fadeInRight",
-            "caption_3": "Dise?os limpios y femeninos que convierten un detalle sencillo en un recuerdo para regalar y usar todos los d?as.",
+            "caption_3": "Diseños limpios y femeninos que convierten un detalle sencillo en un recuerdo para regalar y usar todos los días.",
             "color_cap3": "#1c1c1c",
             "fz_cap3_xxl": 16,
             "fz_cap3_xl": 14,
@@ -1188,7 +1188,7 @@
       "settings": {
         "heading": "<h1>Joyas para cada historia</h1>",
         "heading_color": "#1f2937",
-        "subheading": "<p>Categor?as con significado</p>",
+        "subheading": "<p>Categorías con significado</p>",
         "subheading_color": "#1f2937",
         "subheading_position": "top",
         "descheading": "",
@@ -1553,7 +1553,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Personalizaci?n pensada</p>",
+                    "text": "<p>Personalización pensada</p>",
                     "color": "#000000",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
@@ -1782,7 +1782,7 @@
                           "type": "text",
                           "static": true,
                           "settings": {
-                            "text": "<p>Crea una pieza que celebre amor, amistad, familia o un momento especial con un detalle que se sienta ?ntimo y memorable.</p>",
+                            "text": "<p>Crea una pieza que celebre amor, amistad, familia o un momento especial con un detalle que se sienta íntimo y memorable.</p>",
                             "color": "#000000",
                             "color_link": "#000000",
                             "color_link_hover": "#000000",
@@ -1872,7 +1872,7 @@
                           "type": "text",
                           "static": true,
                           "settings": {
-                            "text": "<p>Personalizaci?n clara</p>",
+                            "text": "<p>Personalización clara</p>",
                             "color": "#1f2937",
                             "color_link": "#000000",
                             "color_link_hover": "#000000",
@@ -2220,7 +2220,7 @@
                           "type": "text",
                           "static": true,
                           "settings": {
-                            "text": "<p>Desde la elecci?n de la pieza hasta el checkout, cuidamos la experiencia para que regalar o personalizar sea simple y agradable.</p>",
+                            "text": "<p>Desde la elección de la pieza hasta el checkout, cuidamos la experiencia para que regalar o personalizar sea simple y agradable.</p>",
                             "color": "#000000",
                             "color_link": "#000000",
                             "color_link_hover": "#000000",
@@ -2444,7 +2444,7 @@
           "type": "text",
           "name": "Text",
           "settings": {
-            "text": "<p>Made with intention</p>",
+            "text": "<p>Hecho con intención</p>",
             "color": "#1f2937",
             "color_link": "#000000",
             "color_link_hover": "#000000",
@@ -2856,7 +2856,7 @@
                       "type": "text",
                       "static": true,
                       "settings": {
-                        "text": "<p>Presentaci?n lista para regalar</p>",
+                        "text": "<p>Presentación lista para regalar</p>",
                         "color": "#1f2937",
                         "color_link": "#000000",
                         "color_link_hover": "#000000",
@@ -2912,7 +2912,7 @@
                       "type": "text",
                       "static": true,
                       "settings": {
-                        "text": "<p>Nuestras piezas delicadas est?n dise?adas para sentirse especiales desde que llegan y son perfectas para regalar.</p>",
+                        "text": "<p>Nuestras piezas delicadas están diseñadas para sentirse especiales desde que llegan y son perfectas para regalar.</p>",
                         "color": "#6b7280",
                         "color_link": "#000000",
                         "color_link_hover": "#000000",
@@ -3013,7 +3013,7 @@
                       "type": "text",
                       "static": true,
                       "settings": {
-                        "text": "<p>Easy personalization</p>",
+                        "text": "<p>Personalización fácil</p>",
                         "color": "#1f2937",
                         "color_link": "#000000",
                         "color_link_hover": "#000000",
@@ -3378,7 +3378,7 @@
                       "type": "text",
                       "static": true,
                       "settings": {
-                        "text": "<p>Estilo delicado para todos los d?as</p>",
+                        "text": "<p>Estilo delicado para todos los días</p>",
                         "color": "#1f2937",
                         "color_link": "#000000",
                         "color_link_hover": "#000000",
@@ -3434,7 +3434,7 @@
                       "type": "text",
                       "static": true,
                       "settings": {
-                        "text": "<p>Siluetas femeninas y limpias hacen que cada pieza sea f?cil de usar todos los d?as, sin perder un aire especial y significativo.</p>",
+                        "text": "<p>Siluetas femeninas y limpias hacen que cada pieza sea fácil de usar todos los días, sin perder un aire especial y significativo.</p>",
                         "color": "#6b7280",
                         "color_link": "#000000",
                         "color_link_hover": "#000000",
@@ -3535,7 +3535,7 @@
                       "type": "text",
                       "static": true,
                       "settings": {
-                        "text": "<p>Acompa?amiento con cari?o</p>",
+                        "text": "<p>Acompañamiento con cariño</p>",
                         "color": "#1f2937",
                         "color_link": "#000000",
                         "color_link_hover": "#000000",
@@ -3591,7 +3591,7 @@
                       "type": "text",
                       "static": true,
                       "settings": {
-                        "text": "<p>?Necesitas ayuda para elegir un regalo o confirmar tu personalizaci?n? Nuestro equipo est? aqu? para acompa?arte con atenci?n.</p>",
+                        "text": "<p>¿Necesitas ayuda para elegir un regalo o confirmar tu personalización? Nuestro equipo está aquí para acompañarte con atención.</p>",
                         "color": "#6b7280",
                         "color_link": "#000000",
                         "color_link_hover": "#000000",
@@ -3692,7 +3692,7 @@
                       "type": "text",
                       "static": true,
                       "settings": {
-                        "text": "<p>Secure checkout</p>",
+                        "text": "<p>Compra segura</p>",
                         "color": "#1f2937",
                         "color_link": "#000000",
                         "color_link_hover": "#000000",
@@ -3823,7 +3823,7 @@
         "text_JEBnbD",
         "group_LYcEBn"
       ],
-      "name": "Secci?n personalizada - Nuestros servicios",
+      "name": "Sección personalizada - Nuestros servicios",
       "settings": {
         "pattern_respon": "d-block",
         "pattern_animate1": "pattern-animate-1",
@@ -3913,7 +3913,7 @@
         "product_type_color": "#222222",
         "product_price_color": "#222222",
         "product_price_reduced_color": "#222222",
-        "viewall_label": "View All",
+        "viewall_label": "Ver todo",
         "pattern_respon": "d-block",
         "pattern_animate1": "pattern-animate-1",
         "pattern_position1": "left-top",
@@ -4295,7 +4295,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Crea un recuerdo con nombres, iniciales, fechas o mensajes cortos y disfruta un dise?o femenino y pulido perfecto para regalar.</p>",
+                    "text": "<p>Crea un recuerdo con nombres, iniciales, fechas o mensajes cortos y disfruta un diseño femenino y pulido perfecto para regalar.</p>",
                     "color": "#1f2937",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
@@ -4351,7 +4351,7 @@
                   "type": "button",
                   "name": "Button",
                   "settings": {
-                    "button_label": "Explorar la colecci?n",
+                    "button_label": "Explorar la colección",
                     "link": "#",
                     "show_arrow": false,
                     "btn_type": "btn",
@@ -4463,7 +4463,7 @@
             "title": "",
             "name": "Rebecca J. Penrose -",
             "info": "From Canada",
-            "quote": "<p>La personalizaci?n qued? exactamente como la ped? y la pieza se sinti? emotiva sin perder ese look limpio y premium. Fue el recuerdo perfecto.</p>"
+            "quote": "<p>La personalización quedó exactamente como la pedí y la pieza se sintió emotiva sin perder ese look limpio y premium. Fue el recuerdo perfecto.</p>"
           }
         },
         "quote_rAcXnz": {
@@ -4474,7 +4474,7 @@
             "title": "",
             "name": "James L. Carter -",
             "info": "From Louisiana",
-            "quote": "<p>Me encant? lo f?cil que fue elegir un detalle con significado y convertirlo en algo que puedo usar todos los d?as. Se siente personal, pulido y precioso.</p>"
+            "quote": "<p>Me encantó lo fácil que fue elegir un detalle con significado y convertirlo en algo que puedo usar todos los días. Se siente personal, pulido y precioso.</p>"
           }
         },
         "quote_TraPKL": {
@@ -4485,7 +4485,7 @@
             "title": "",
             "name": "Charles K. Garner",
             "info": "From Ohio",
-            "quote": "<p>Compr? una pieza personalizada para una fecha especial y super? mis expectativas. Es elegante, c?moda de llevar y una forma muy especial de celebrar un recuerdo.</p>"
+            "quote": "<p>Compré una pieza personalizada para una fecha especial y superó mis expectativas. Es elegante, cómoda de llevar y una forma muy especial de celebrar un recuerdo.</p>"
           }
         }
       },
@@ -4497,12 +4497,12 @@
       ],
       "name": "Vinova Testimonials",
       "settings": {
-        "heading": "<p>What our customers say</p>",
+        "heading": "<p>Lo que dicen nuestras clientas</p>",
         "heading_color": "#1f2937",
         "subheading": "<p>Piezas pensadas para regalar con significado</p>",
         "subheading_color": "#1f2937",
         "subheading_position": "top",
-        "descheading": "<p>Opiniones reales de clientas que eligieron joyer?a personalizada para celebrar amor, amistad, momentos importantes y recuerdos inolvidables.</p>",
+        "descheading": "<p>Opiniones reales de clientas que eligieron joyería personalizada para celebrar amor, amistad, momentos importantes y recuerdos inolvidables.</p>",
         "descheading_color": "#6b7280",
         "img_heading_animate": false,
         "heading_alignment": "text-left",
@@ -4653,7 +4653,7 @@
           "type": "text",
           "name": "Text",
           "settings": {
-            "text": "<p>Start your personalized order</p>",
+            "text": "<p>Comienza tu pedido personalizado</p>",
             "color": "#1f2937",
             "color_link": "#000000",
             "color_link_hover": "#000000",
@@ -4711,8 +4711,8 @@
           "name": "Contact Form",
           "settings": {
             "enable_custom_form1": true,
-            "enable_custom_form_title1": "How can we help?",
-            "custom_form_value11": "Gu?a de regalos",
+            "enable_custom_form_title1": "¿Cómo podemos ayudarte?",
+            "custom_form_value11": "Guía de regalos",
             "custom_form_value12": "Order status",
             "custom_form_value13": "Personalization help",
             "custom_form_value14": "Custom request",
@@ -5487,7 +5487,7 @@
       "settings": {
         "heading": "<p>Historias, estilo e ideas para regalar</p>",
         "heading_color": "#1f2937",
-        "subheading": "<p>Journal</p>",
+        "subheading": "<p>Inspiración</p>",
         "subheading_color": "#1f2937",
         "subheading_position": "top",
         "descheading": "",
@@ -5704,7 +5704,7 @@
                     "text_9Xp8mc": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>How to shop Faggi</p>",
+                        "text": "<p>Cómo comprar en Faggi</p>",
                         "color": "#1f2937",
                         "color_link": "#000000",
                         "color_link_hover": "#000000",
@@ -5813,7 +5813,7 @@
                     "text_D7ADgi": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>Online boutique</p>",
+                        "text": "<p>Boutique en línea</p>",
                         "color": "#000000",
                         "color_link": "#000000",
                         "color_link_hover": "#000000",
@@ -6031,7 +6031,7 @@
                     "text_Ffcw64": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>Custom order guidance</p>",
+                        "text": "<p>Guía para pedidos personalizados</p>",
                         "color": "#000000",
                         "color_link": "#000000",
                         "color_link_hover": "#000000",
@@ -6093,7 +6093,7 @@
                   "type": "button",
                   "name": "Button",
                   "settings": {
-                    "button_label": "Cont?ctanos",
+                    "button_label": "Contáctanos",
                     "link": "#",
                     "show_arrow": false,
                     "btn_type": "btn",
@@ -6448,7 +6448,7 @@
                           "type": "text",
                           "static": true,
                           "settings": {
-                            "text": "<p>?Qu? puedo personalizar en una pieza?</p>",
+                            "text": "<p>¿Qué puedo personalizar en una pieza?</p>",
                             "color": "#1f2937",
                             "color_link": "#000000",
                             "color_link_hover": "#000000",
@@ -6504,7 +6504,7 @@
                           "type": "text",
                           "static": true,
                           "settings": {
-                            "text": "<p>Puedes personalizar ciertas piezas con nombres, iniciales, fechas o mensajes cortos, seg?n el dise?o mostrado en la p?gina del producto.</p>",
+                            "text": "<p>Puedes personalizar ciertas piezas con nombres, iniciales, fechas o mensajes cortos, según el diseño mostrado en la página del producto.</p>",
                             "color": "#6b7280",
                             "color_link": "#000000",
                             "color_link_hover": "#000000",
@@ -6594,7 +6594,7 @@
                           "type": "text",
                           "static": true,
                           "settings": {
-                            "text": "<p>How do I submit my custom details?</p>",
+                            "text": "<p>¿Cómo envío mis datos de personalización?</p>",
                             "color": "#1f2937",
                             "color_link": "#000000",
                             "color_link_hover": "#000000",
@@ -6650,7 +6650,7 @@
                           "type": "text",
                           "static": true,
                           "settings": {
-                            "text": "<p>Escribe tu personalizaci?n exactamente como quieres que aparezca, incluyendo may?sculas, min?sculas, signos y espacios, antes de agregar la pieza a tu bolsa.</p>",
+                            "text": "<p>Escribe tu personalización exactamente como quieres que aparezca, incluyendo mayúsculas, minúsculas, signos y espacios, antes de agregar la pieza a tu bolsa.</p>",
                             "color": "#6b7280",
                             "color_link": "#000000",
                             "color_link_hover": "#000000",
@@ -6740,7 +6740,7 @@
                           "type": "text",
                           "static": true,
                           "settings": {
-                            "text": "<p>?Cu?nto tarda el env?o?</p>",
+                            "text": "<p>¿Cuánto tarda el envío?</p>",
                             "color": "#1f2937",
                             "color_link": "#000000",
                             "color_link_hover": "#000000",
@@ -6796,7 +6796,7 @@
                           "type": "text",
                           "static": true,
                           "settings": {
-                            "text": "<p>Los tiempos de env?o var?an seg?n la pieza, y los dise?os personalizados pueden necesitar un tiempo extra de preparaci?n antes del despacho para cuidar cada detalle.</p>",
+                            "text": "<p>Los tiempos de envío varían según la pieza, y los diseños personalizados pueden necesitar un tiempo extra de preparación antes del despacho para cuidar cada detalle.</p>",
                             "color": "#6b7280",
                             "color_link": "#000000",
                             "color_link_hover": "#000000",
@@ -6886,7 +6886,7 @@
                           "type": "text",
                           "static": true,
                           "settings": {
-                            "text": "<p>?Puedo devolver una pieza personalizada?</p>",
+                            "text": "<p>¿Puedo devolver una pieza personalizada?</p>",
                             "color": "#1f2937",
                             "color_link": "#000000",
                             "color_link_hover": "#000000",
@@ -6942,7 +6942,7 @@
                           "type": "text",
                           "static": true,
                           "settings": {
-                            "text": "<p>Revisa los detalles de devoluci?n en cada producto o p?gina de pol?ticas, ya que la joyer?a personalizada se prepara especialmente para ti y puede tener condiciones distintas a las piezas listas para env?o.</p>",
+                            "text": "<p>Revisa los detalles de devolución en cada producto o página de políticas, ya que la joyería personalizada se prepara especialmente para ti y puede tener condiciones distintas a las piezas listas para envío.</p>",
                             "color": "#6b7280",
                             "color_link": "#000000",
                             "color_link_hover": "#000000",
@@ -7032,7 +7032,7 @@
                           "type": "text",
                           "static": true,
                           "settings": {
-                            "text": "<p>Can you help me choose a gift?</p>",
+                            "text": "<p>¿Pueden ayudarme a elegir un regalo?</p>",
                             "color": "#1f2937",
                             "color_link": "#000000",
                             "color_link_hover": "#000000",
@@ -7088,7 +7088,7 @@
                           "type": "text",
                           "static": true,
                           "settings": {
-                            "text": "<p>S?. Si est?s comprando para un cumplea?os, aniversario, propuesta para damas, nacimiento o cualquier momento especial, nuestro equipo puede ayudarte a elegir una pieza ideal.</p>",
+                            "text": "<p>Sí. Si estás comprando para un cumpleaños, aniversario, propuesta para damas, nacimiento o cualquier momento especial, nuestro equipo puede ayudarte a elegir una pieza ideal.</p>",
                             "color": "#6b7280",
                             "color_link": "#000000",
                             "color_link_hover": "#000000",
@@ -7280,7 +7280,7 @@
           "type": "text",
           "name": "Text",
           "settings": {
-            "text": "<p>Reasons to choose Faggi</p>",
+            "text": "<p>Razones para elegir Faggi</p>",
             "color": "#1f2937",
             "color_link": "#000000",
             "color_link_hover": "#000000",
@@ -7483,7 +7483,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Dise?o personalizado</p>",
+                    "text": "<p>Diseño personalizado</p>",
                     "color": "#1f2937",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
@@ -7539,7 +7539,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Made for you</p>",
+                    "text": "<p>Hecho para ti</p>",
                     "color": "#1f2937",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
@@ -7865,7 +7865,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Beautifully wrapped</p>",
+                    "text": "<p>Presentación especial</p>",
                     "color": "#1f2937",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
@@ -7921,7 +7921,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Estilo delicado, presentaci?n cuidada y personalizaci?n con significado se unen en piezas hechas para emocionar.</p>",
+                    "text": "<p>Estilo delicado, presentación cuidada y personalización con significado se unen en piezas hechas para emocionar.</p>",
                     "color": "#6b7280",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
@@ -8191,7 +8191,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Designed to last</p>",
+                    "text": "<p>Diseñado para acompañarte</p>",
                     "color": "#1f2937",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
@@ -8247,7 +8247,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Una pieza delicada pensada para sentirse personal, especial y f?cil de regalar en los momentos que m?s importan.</p>",
+                    "text": "<p>Una pieza delicada pensada para sentirse personal, especial y fácil de regalar en los momentos que más importan.</p>",
                     "color": "#6b7280",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
@@ -8505,7 +8505,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Inspiraci?n para regalar</p>",
+                    "text": "<p>Inspiración para regalar</p>",
                     "color": "#1f2937",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
@@ -8561,7 +8561,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Sigue nuestro universo de joyer?a</p>",
+                    "text": "<p>Sigue nuestro universo de joyería</p>",
                     "color": "#1f2937",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",

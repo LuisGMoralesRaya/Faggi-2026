@@ -16,14 +16,14 @@
           "type": "block_text",
           "settings": {
             "custom_title": "Hecho con cuidado",
-            "custom_content": "<p>Cada pedido personalizado se prepara cuidando la escritura, la composici?n y el acabado para que tu pieza se sienta tan especial como la historia que representa.</p>"
+            "custom_content": "<p>Cada pedido personalizado se prepara cuidando la escritura, la composición y el acabado para que tu pieza se sienta tan especial como la historia que representa.</p>"
           }
         },
         "a3d01db6-4304-4e3d-b6f3-f75fc7a51212": {
           "type": "block_text",
           "settings": {
-            "custom_title": "Env?o y regalos",
-            "custom_content": "<p>Nuestras piezas est?n pensadas para llegar listas para emocionar, ya sea que elijas un recuerdo para ti o un regalo especial para alguien que amas.</p><p>El tiempo de entrega puede variar seg?n la personalizaci?n elegida para tu pedido.</p>"
+            "custom_title": "Envío y regalos",
+            "custom_content": "<p>Nuestras piezas están pensadas para llegar listas para emocionar, ya sea que elijas un recuerdo para ti o un regalo especial para alguien que amas.</p><p>El tiempo de entrega puede variar según la personalización elegida para tu pedido.</p>"
           }
         },
         "03b6d121-b452-4ee2-beed-a6128ccc6fd5": {
@@ -31,13 +31,13 @@
           "settings": {
             "custom_title": "Detalles para regalar",
             "t1": "Personalization",
-            "c1": "<p>Agrega el nombre, las iniciales, la fecha o el mensaje corto exactamente como te gustar?a verlo en tu pieza.</p>",
+            "c1": "<p>Agrega el nombre, las iniciales, la fecha o el mensaje corto exactamente como te gustaría verlo en tu pieza.</p>",
             "t2": "Momentos para regalar",
-            "c2": "<p>Perfecto para cumplea?os, aniversarios, damas de honor, reci?n nacidos y recordatorios diarios de amor.</p>",
-            "t3": "Gu?a de cuidado",
+            "c2": "<p>Perfecto para cumpleaños, aniversarios, damas de honor, recién nacidos y recordatorios diarios de amor.</p>",
+            "t3": "Guía de cuidado",
             "c3": "<p>Store your jewelry in a dry place and avoid direct contact with water, perfumes, and lotions to preserve its finish.</p>",
-            "t4": "?Necesitas ayuda?",
-            "c4": "<p>Escr?benos si necesitas ayuda para elegir un regalo, confirmar tu personalizaci?n o planear un pedido especial.</p>",
+            "t4": "¿Necesitas ayuda?",
+            "c4": "<p>Escríbenos si necesitas ayuda para elegir un regalo, confirmar tu personalización o planear un pedido especial.</p>",
             "t5": "Morbi dictum orci neque.",
             "c5": "<p>Curabitur vehicula tellus sit amet neque placerat, vel sagittis.</p>",
             "t6": "",
@@ -86,17 +86,17 @@
         "title_payments": "Por qu? aman regalar Faggi",
         "payments": "shopify://shop_images/policy-detailpage.jpg",
         "payments_width": 520,
-        "time": "Cada pieza personalizada se prepara con cuidado antes del env?o.",
+        "time": "Cada pieza personalizada se prepara con cuidado antes del envío.",
         "size_time": "14px",
         "color_time": "#535353",
-        "truck": "Joyer?a pensada para regalar, celebrar y llevar tus recuerdos cerca.",
+        "truck": "Joyería pensada para regalar, celebrar y llevar tus recuerdos cerca.",
         "size_truck": "14px",
         "color_truck": "#535353",
         "background_color": "",
-        "product_eyebrow": "Joyer?a personalizada",
+        "product_eyebrow": "Joyería personalizada",
         "personalization_note": "Escribe el nombre, las iniciales, la fecha o el mensaje corto exactamente como quieres verlo en tu pieza. La prepararemos tal como lo indiques.",
         "benefit_1": "Personalizada con nombres, iniciales, fechas o mensajes breves",
-        "benefit_2": "Piezas ideales para regalar y acompa?arte con significado todos los d?as",
+        "benefit_2": "Piezas ideales para regalar y acompañarte con significado todos los días",
         "benefit_3": "Preparada con cuidado para sentirse femenina, delicada y especial",
         "add_to_cart_note": "Hecha cuidadosamente sobre pedido para convertirse en un regalo con significado."
       }
@@ -129,9 +129,9 @@
           "type": "item_policy",
           "settings": {
             "policy_icon": "shopify://shop_images/p-2.png",
-            "title_policy": "Elaboraci?n cuidada",
+            "title_policy": "Elaboración cuidada",
             "stitle_policy": "",
-            "desc_policy": "Piezas personalizadas preparadas con atenci?n a cada detalle.",
+            "desc_policy": "Piezas personalizadas preparadas con atención a cada detalle.",
             "mw": 285,
             "link_label": "",
             "link": "",
@@ -147,7 +147,7 @@
             "policy_icon": "shopify://shop_images/p-3.png",
             "title_policy": "Compra segura",
             "stitle_policy": "",
-            "desc_policy": "Compra con confianza gracias a m?todos de pago seguros y un checkout confiable.",
+            "desc_policy": "Compra con confianza gracias a métodos de pago seguros y un checkout confiable.",
             "mw": 285,
             "link_label": "",
             "link": "",
@@ -161,9 +161,9 @@
           "type": "item_policy",
           "settings": {
             "policy_icon": "shopify://shop_images/p-1.png",
-            "title_policy": "Acompa?amiento para regalar",
+            "title_policy": "Acompañamiento para regalar",
             "stitle_policy": "",
-            "desc_policy": "Nuestro equipo est? aqu? para ayudarte a personalizar el regalo perfecto.",
+            "desc_policy": "Nuestro equipo está aquí para ayudarte a personalizar el regalo perfecto.",
             "mw": 285,
             "link_label": "",
             "link": "",
@@ -323,7 +323,7 @@
     "2046dd06-c8ff-4d5c-9e09-e8c21ef98855": {
       "type": "nov-product-template-related",
       "settings": {
-        "heading": "<p>Tambi?n puede encantarte</p>",
+        "heading": "<p>También puede encantarte</p>",
         "heading_color": "#181818",
         "subheading": "",
         "subheading_color": "#666666",
@@ -344,7 +344,7 @@
       "type": "nov-product-recommendations",
       "disabled": true,
       "settings": {
-        "heading": "<h2>M?s piezas para regalar y atesorar</h2>",
+        "heading": "<h2>Más piezas para regalar y atesorar</h2>",
         "heading_color": "#222222",
         "subheading": "",
         "subheading_color": "#666666",
