@@ -18,13 +18,13 @@
           if product.description != blank
             assign meta_description = product.description | strip_html | strip_newlines | truncate: 160
           else
-            assign meta_description = 'Personalized jewelry designed to celebrate names, initials, dates, and meaningful moments.'
+            assign meta_description = 'Joyería personalizada diseñada para celebrar nombres, iniciales, fechas y momentos con significado.'
           endif
         elsif request.page_type == 'collection'
           if collection.description != blank
             assign meta_description = collection.description | strip_html | strip_newlines | truncate: 160
           else
-            assign meta_description = collection.title | append: ' with meaningful personalized jewelry and gift-ready pieces.' | truncate: 160
+            assign meta_description = collection.title | append: ' con joyería personalizada llena de significado y piezas perfectas para regalar.' | truncate: 160
           endif
         elsif request.page_type == 'page' and page.content != blank
           assign meta_description = page.content | strip_html | strip_newlines | truncate: 160

@@ -46,7 +46,7 @@
       "share_on_twitter": "Tweeter",
       "share_on_pinterest": "Pinterest",
       "share_on_pinterest_pt": "Pin it",
-      "social_follow": "Follow:",
+      "social_follow": "S?guenos:",
       "social_platform": "{{ name }} on {{ platform }}",
       "alt_text": {
         "share_on_facebook": "Share on Facebook",
@@ -61,15 +61,15 @@
         "one": "{{ count }} result for \"{{ terms }}\"",
         "other": "{{ count }} results for \"{{ terms }}\""
       },
-      "title": "Search personalized jewelry",
+      "title": "Buscar joyer?a personalizada",
       "placeholder": "Search",
-      "description": "Search by product name, initials, necklace, bracelet, charm, or gift ideas to find the right piece faster.",
+      "description": "Busca por nombre del producto, iniciales, collar, pulsera, dije o ideas de regalo para encontrar la pieza ideal m?s r?pido.",
       "submit": "Search",
       "close": "Close search",
       "search_trend": "Popular searches:",
       "results_all": "See all results",
       "search_popup_title": "Search",
-      "i_am_looking_for": "I'm looking for a meaningful piece..."
+      "i_am_looking_for": "Estoy buscando una pieza con significado..."
     },
     "account": {
       "submit": "Account"
@@ -230,7 +230,7 @@
     "image_with_text": {
       "play_video": "Play video",
       "watch_video": "Watch video",
-      "follow_us": "Follow Us:"
+      "follow_us": "S?guenos:"
     },
     "collection_loadmore": {
       "view_all_products": "View all products",
@@ -290,7 +290,7 @@
       "back_to_blog": "Back to {{ title }}",
       "print": "Print",
       "share": "Share",
-      "size_guide": "Size Guide",
+      "size_guide": "Gu?a de tallas",
       "readmore": "Read More"
     },
     "related": "Related",
@@ -318,9 +318,9 @@
       "remove": "Remove",
       "total": "Total",
       "savings": "You're saving",
-      "shipping_label": "Shipping :",
+      "shipping_label": "Env?o:",
       "cart_note_label": "Add a note to your order :",
-      "shipping_at_checkout": "Shipping & taxes calculated at checkout",
+      "shipping_at_checkout": "Env?o e impuestos calculados al finalizar la compra",
       "update": "Update",
       "checkout": "Check out",
       "view_cart": "View Cart",
@@ -332,7 +332,7 @@
       "edit": "Edit",
       "cancel": "Cancel",
       "continue_shopping": "Continue shopping",
-      "content_threshold": "Congratulations! You've got free shipping!",
+      "content_threshold": "?Felicidades! ?Ya tienes env?o gratis!",
       "reduce_quantity": "Reduce item quantity by one",
       "increase_quantity": "Increase item quantity by one",
       "your_order": "Your order",
@@ -345,7 +345,7 @@
       "freeshipping_notice_html": "Free shipping for any orders above <span>{{ freeshipping_value }}<\/span>",
       "freeshipping_notice_page": "Continue shopping to add more products to your cart and receive free shipping for any orders above <span>{{ freeshipping_values }}<\/span>",
       "spend": "Spend",
-      "spend__html": "for free shipping",
+      "spend__html": "para env?o gratis",
       "spend_html": "Spend {{ spend }} for <span>Free Shipping<\/span>",
       "cart_check_agree_html": "I agree with the <span>Terms & conditions<\/span>"
     },
@@ -358,18 +358,18 @@
     },
     "mini_canvas": {
       "not_heading": "Add note for seller",
-      "shipping_heading": "Estimate shipping rates",
+      "shipping_heading": "Calcular tarifas de env?o",
       "discount_heading": "Add a discount code",
       "discount_desc_html": "Discount will be calculated and applied at checkout <span>*<\/span>",
       "button_save": "Save",
       "note_tooltip": "Add note order",
-      "estimate_shipping_tooltip": "Estimate shipping",
+      "estimate_shipping_tooltip": "Calcular env?o",
       "discount_tooltip": "Add a discount code",
       "write_notes": "Write here your notes for the order",
       "country_region": "Country\/Region",
       "close": "Close",
       "cancel": "Cancel",
-      "calculate_shipping": "Calculate shipping",
+      "calculate_shipping": "Calcular env?o",
       "calculating": "Calculating...",
       "zip_postal_code": "Zip\/Postal Code"
     }
@@ -452,7 +452,7 @@
     },
     "activate_account": {
       "title": "Activate Account",
-      "subtext": "Create your password to activate your account.",
+      "subtext": "Crea tu contrase?a para activar tu cuenta.",
       "password": "Password",
       "password_confirm": "Confirm Password",
       "submit": "Activate Account",
@@ -503,7 +503,7 @@
       "new_customer": "New customer?"
     },
     "orders": {
-      "title": "Order History",
+      "title": "Historial de pedidos",
       "order_number": "Order",
       "date": "Date",
       "payment_status": "Payment Status",
@@ -518,7 +518,7 @@
       "cancelled_reason": "Reason: {{ reason }}",
       "billing_address": "Billing Address",
       "payment_status": "Payment Status",
-      "shipping_address": "Shipping Address",
+      "shipping_address": "Direcci?n de env?o",
       "fulfillment_status": "Fulfillment Status",
       "discount": "Discount",
       "shipping": "Shipping",
@@ -550,7 +550,7 @@
     "register": {
       "title": "Register",
       "sub_title": "Please enter your details to register.",
-      "title_form": "Create your account:",
+      "title_form": "Crea tu cuenta:",
       "first_name": "First Name",
       "last_name": "Last Name",
       "email": "Email",
@@ -560,7 +560,7 @@
       "log_in": "Login Here",
       "checkbox_newsletter": "Sign up for our newsletter",
       "bank_login": "If you have an account, please ",
-      "policy": "Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy."
+      "policy": "Tus datos personales se utilizar?n para mejorar tu experiencia en este sitio web, gestionar el acceso a tu cuenta y para otros fines descritos en nuestra pol?tica de privacidad."
     }
   },
   "homepage": {
@@ -592,10 +592,10 @@
       "hello": "Hello, "
     },
     "footer": {
-      "follow_us": "Follow Us: ",
+      "follow_us": "S?guenos: ",
       "call_us_now": "Call Us Now",
       "payments": "Payments Methods",
-      "our_social": "Our Social",
+      "our_social": "Nuestras redes",
       "we_accept_payment": "We Accept Payments"
     },
     "header_canvas": {
@@ -638,7 +638,7 @@
       "new": "New",
       "quantity": "Quantity",
       "add_to_cart": "Add to cart",
-      "add_to_bag": "Add to jewelry bag",
+      "add_to_bag": "Agregar a la bolsa",
       "buy_now": "Buy now",
       "select_options": "Select Options",
       "back_to_collection": "Back to {{ title }}",
@@ -664,7 +664,7 @@
       "notes_placeholder": "Write here your notes for the order",
       "label_share": "Share",
       "label_ask_a_question": "Ask a Question",
-      "label_sizeguide": "Size Guide",
+      "label_sizeguide": "Gu?a de tallas",
       "label_faq": "FAQ",
       "product": "Product",
       "product_url": "Product url"
@@ -766,7 +766,7 @@
     "faqs": {
       "form": {
         "title_popup_form_html": "<strong>Contact us Now<\/strong>",
-        "subtitle_popup_form": "Please enter the details of your request. A member of our support staff will respond as soon as possible.",
+        "subtitle_popup_form": "Ingresa los detalles de tu solicitud. Un miembro de nuestro equipo te responder? lo antes posible.",
         "name": "Your Name",
         "email": "Your Email",
         "phone": "Phone Number",

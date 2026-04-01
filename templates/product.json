@@ -8,409 +8,407 @@
  * ------------------------------------------------------------
  */
 {
-    "sections":  {
-                     "main":  {
-                                  "type":  "nov-product-template",
-                                  "blocks":  {
-                                                 "03cca96b-c43d-43d4-8322-c16e4b7e8266":  {
-                                                                                              "type":  "block_text",
-                                                                                              "settings":  {
-                                                                                                               "custom_title":  "Crafted with care",
-                                                                                                               "custom_content":  "\u003cp\u003eEvery personalized order is prepared with close attention to spelling, layout, and finish so your piece feels as special as the story behind it.\u003c/p\u003e"
-                                                                                                           }
-                                                                                          },
-                                                 "a3d01db6-4304-4e3d-b6f3-f75fc7a51212":  {
-                                                                                              "type":  "block_text",
-                                                                                              "settings":  {
-                                                                                                               "custom_title":  "Shipping and gifting",
-                                                                                                               "custom_content":  "\u003cp\u003eOur pieces are designed to arrive ready to delight, whether you are choosing a keepsake for yourself or a thoughtful gift for someone you love.\u003c/p\u003e\u003cp\u003eDelivery timing may vary depending on the personalization selected for your order.\u003c/p\u003e"
-                                                                                                           }
-                                                                                          },
-                                                 "03b6d121-b452-4ee2-beed-a6128ccc6fd5":  {
-                                                                                              "type":  "block_customtab",
-                                                                                              "settings":  {
-                                                                                                               "custom_title":  "Gift details",
-                                                                                                               "t1":  "Personalization",
-                                                                                                               "c1":  "\u003cp\u003eAdd the exact name, initials, date, or short message you would like on your piece.\u003c/p\u003e",
-                                                                                                               "t2":  "Gift-worthy moments",
-                                                                                                               "c2":  "\u003cp\u003ePerfect for birthdays, anniversaries, bridesmaids, new babies, and everyday reminders of love.\u003c/p\u003e",
-                                                                                                               "t3":  "Care guide",
-                                                                                                               "c3":  "\u003cp\u003eStore your jewelry in a dry place and avoid direct contact with water, perfumes, and lotions to preserve its finish.\u003c/p\u003e",
-                                                                                                               "t4":  "Need help?",
-                                                                                                               "c4":  "\u003cp\u003eReach out to our team if you need help choosing a gift, confirming your personalization, or planning a special order.\u003c/p\u003e",
-                                                                                                               "t5":  "Morbi dictum orci neque.",
-                                                                                                               "c5":  "\u003cp\u003eCurabitur vehicula tellus sit amet neque placerat, vel sagittis.\u003c/p\u003e",
-                                                                                                               "t6":  "",
-                                                                                                               "c6":  "",
-                                                                                                               "t7":  "",
-                                                                                                               "c7":  "",
-                                                                                                               "t8":  "",
-                                                                                                               "c8":  "",
-                                                                                                               "t9":  "",
-                                                                                                               "c9":  "",
-                                                                                                               "t10":  "",
-                                                                                                               "c10":  ""
-                                                                                                           }
-                                                                                          }
-                                             },
-                                  "block_order":  [
-                                                      "03cca96b-c43d-43d4-8322-c16e4b7e8266",
-                                                      "a3d01db6-4304-4e3d-b6f3-f75fc7a51212",
-                                                      "03b6d121-b452-4ee2-beed-a6128ccc6fd5"
-                                                  ],
-                                  "settings":  {
-                                                   "show_border_thumb":  true,
-                                                   "c_border":  "#ececec",
-                                                   "corner_radius":  5,
-                                                   "show_stick_product":  false,
-                                                   "show_quantity_selector":  true,
-                                                   "product_swatch_enable":  true,
-                                                   "img_swatch":  false,
-                                                   "show_share":  true,
-                                                   "show_ask":  true,
-                                                   "show_faq":  true,
-                                                   "faq":  "shopify://pages/frequently-asked-questions",
-                                                   "show_vendor":  false,
-                                                   "show_sku":  true,
-                                                   "show_categories":  true,
-                                                   "show_tags":  true,
-                                                   "show_available":  true,
-                                                   "show_des":  true,
-                                                   "enable_zoom":  true,
-                                                   "show_progress_deals":  false,
-                                                   "show_countdown":  false,
-                                                   "show_related":  true,
-                                                   "related_limit":  10,
-                                                   "show_description":  true,
-                                                   "show_payments":  true,
-                                                   "title_payments":  "Why customers love gifting Faggi",
-                                                   "payments":  "shopify://shop_images/policy-detailpage.jpg",
-                                                   "payments_width":  520,
-                                                   "time":  "Each personalized piece is prepared with care before shipping.",
-                                                   "size_time":  "14px",
-                                                   "color_time":  "#535353",
-                                                   "truck":  "Thoughtful jewelry for gifting, celebrating, and keeping memories close.",
-                                                   "size_truck":  "14px",
-                                                   "color_truck":  "#535353",
-                                                   "background_color":  "",
-                                                   "product_eyebrow":  "Personalized jewelry",
-                                                   "personalization_note":  "Add the exact name, initials, date, or short message you want on your piece. We will craft it just as written.",
-                                                   "benefit_1":  "Personalized with names, initials, dates, or short messages",
-                                                   "benefit_2":  "Gift-worthy pieces designed for meaningful everyday wear",
-                                                   "benefit_3":  "Carefully prepared to feel thoughtful, feminine, and special",
-                                                   "add_to_cart_note":  "Thoughtfully made to order and designed to become a meaningful gift."
-                                               }
-                              },
-                     "13c52cf8-9f43-42cd-98aa-3998e98b4ab4":  {
-                                                                  "type":  "nov-line",
-                                                                  "settings":  {
-                                                                                   "height":  1,
-                                                                                   "color":  "#e7e8eb",
-                                                                                   "style":  "solid",
-                                                                                   "opacity":  100,
-                                                                                   "animate":  false,
-                                                                                   "container":  "container-full",
-                                                                                   "background_color":  "#ffffff",
-                                                                                   "class":  "",
-                                                                                   "distance_top_xl":  30,
-                                                                                   "distance_top_lg":  30,
-                                                                                   "distance_top_md":  30,
-                                                                                   "distance_top_sm":  30,
-                                                                                   "distance_bottom_xl":  120,
-                                                                                   "distance_bottom_lg":  100,
-                                                                                   "distance_bottom_md":  80,
-                                                                                   "distance_bottom_sm":  60
-                                                                               }
-                                                              },
-                     "nov_policy_wYQhcc":  {
-                                               "type":  "nov-policy",
-                                               "blocks":  {
-                                                              "item_policy_mfeR4W":  {
-                                                                                         "type":  "item_policy",
-                                                                                         "settings":  {
-                                                                                                          "policy_icon":  "shopify://shop_images/p-2.png",
-                                                                                                          "title_policy":  "Careful crafting",
-                                                                                                          "stitle_policy":  "",
-                                                                                                          "desc_policy":  "Personalized pieces prepared with close attention to every detail.",
-                                                                                                          "mw":  285,
-                                                                                                          "link_label":  "",
-                                                                                                          "link":  "",
-                                                                                                          "bg_icon":  "#e3e8f1",
-                                                                                                          "item_border_top_color":  "",
-                                                                                                          "border_icon":  "",
-                                                                                                          "class":  "mb-md-30"
-                                                                                                      }
-                                                                                     },
-                                                              "item_policy_nPyhch":  {
-                                                                                         "type":  "item_policy",
-                                                                                         "settings":  {
-                                                                                                          "policy_icon":  "shopify://shop_images/p-3.png",
-                                                                                                          "title_policy":  "Secure checkout",
-                                                                                                          "stitle_policy":  "",
-                                                                                                          "desc_policy":  "Shop confidently with secure payment methods and trusted checkout.",
-                                                                                                          "mw":  285,
-                                                                                                          "link_label":  "",
-                                                                                                          "link":  "",
-                                                                                                          "bg_icon":  "#e7eee7",
-                                                                                                          "item_border_top_color":  "",
-                                                                                                          "border_icon":  "",
-                                                                                                          "class":  "mb-md-30"
-                                                                                                      }
-                                                                                     },
-                                                              "item_policy_kHdtgd":  {
-                                                                                         "type":  "item_policy",
-                                                                                         "settings":  {
-                                                                                                          "policy_icon":  "shopify://shop_images/p-1.png",
-                                                                                                          "title_policy":  "Gift-ready support",
-                                                                                                          "stitle_policy":  "",
-                                                                                                          "desc_policy":  "Our team is here to help you personalize the perfect meaningful gift.",
-                                                                                                          "mw":  285,
-                                                                                                          "link_label":  "",
-                                                                                                          "link":  "",
-                                                                                                          "bg_icon":  "#f6f6df",
-                                                                                                          "item_border_top_color":  "",
-                                                                                                          "border_icon":  "",
-                                                                                                          "class":  ""
-                                                                                                      }
-                                                                                     }
-                                                          },
-                                               "block_order":  [
-                                                                   "item_policy_mfeR4W",
-                                                                   "item_policy_nPyhch",
-                                                                   "item_policy_kHdtgd"
-                                                               ],
-                                               "name":  "Vinova Policy",
-                                               "settings":  {
-                                                                "heading":  "",
-                                                                "heading_color":  "#222222",
-                                                                "subheading":  "",
-                                                                "subheading_color":  "#666666",
-                                                                "subheading_position":  "bottom",
-                                                                "descheading":  "",
-                                                                "descheading_color":  "#666666",
-                                                                "heading_alignment":  "text-center",
-                                                                "style":  "style2",
-                                                                "show_bgitem":  false,
-                                                                "bg_itemcolor":  "",
-                                                                "bd_radius":  0,
-                                                                "box_shadow":  false,
-                                                                "show_border_item":  false,
-                                                                "show_border_right_item":  false,
-                                                                "c_border_item":  "",
-                                                                "show_border_top_item":  false,
-                                                                "pt":  0,
-                                                                "pb":  0,
-                                                                "ph":  0,
-                                                                "width_icon":  30,
-                                                                "height_icon":  30,
-                                                                "show_bg_icon":  true,
-                                                                "bg_icon_w":  60,
-                                                                "bd_radius_icon":  100,
-                                                                "show_border_icon":  false,
-                                                                "bg_icon_shadow":  false,
-                                                                "shadow_color":  "",
-                                                                "shadow_opacity":  40,
-                                                                "icon_animate":  false,
-                                                                "text_fz":  18,
-                                                                "text_ff":  "f_df",
-                                                                "t_fw":  "font-700",
-                                                                "t_letter_spacing":  "0",
-                                                                "stext_fz":  16,
-                                                                "stext_ff":  "f_pr",
-                                                                "st_fw":  "font-700",
-                                                                "desc_fz":  14,
-                                                                "desc_ff":  "f_df",
-                                                                "desc_fw":  "font-400",
-                                                                "xxl":  3,
-                                                                "xl":  3,
-                                                                "lg":  3,
-                                                                "md":  1,
-                                                                "sm":  1,
-                                                                "xs":  1,
-                                                                "spacing":  30,
-                                                                "animate":  true,
-                                                                "container":  "container",
-                                                                "color_section":  "",
-                                                                "class_section":  "",
-                                                                "ss_bg_enable":  false,
-                                                                "background_color":  "#ffffff",
-                                                                "background_img_size":  "cover",
-                                                                "enable_background_img_size_custom":  false,
-                                                                "background_img_size_custom":  "",
-                                                                "background_img_position":  "center center",
-                                                                "background_corner":  0,
-                                                                "background_position":  "bg-center",
-                                                                "background_size":  "contain",
-                                                                "background_padding_horizontal":  5,
-                                                                "background_box_shadow":  true,
-                                                                "background_box_shadow_color":  "#2e90fa12",
-                                                                "height_background_xxl":  100,
-                                                                "height_background_xl":  100,
-                                                                "height_background_lg":  100,
-                                                                "height_background_md":  100,
-                                                                "height_background_sm":  100,
-                                                                "height_background_xs":  100,
-                                                                "distance_top_xl":  0,
-                                                                "distance_top_lg":  0,
-                                                                "distance_top_md":  0,
-                                                                "distance_top_sm":  0,
-                                                                "distance_bottom_xl":  120,
-                                                                "distance_bottom_lg":  100,
-                                                                "distance_bottom_md":  80,
-                                                                "distance_bottom_sm":  60
-                                                            }
-                                           },
-                     "nov_line_4LEVYU":  {
-                                             "type":  "nov-line",
-                                             "settings":  {
-                                                              "height":  1,
-                                                              "color":  "#e7e8eb",
-                                                              "style":  "solid",
-                                                              "opacity":  100,
-                                                              "animate":  false,
-                                                              "container":  "container-full",
-                                                              "background_color":  "#ffffff",
-                                                              "class":  "",
-                                                              "distance_top_xl":  0,
-                                                              "distance_top_lg":  0,
-                                                              "distance_top_md":  0,
-                                                              "distance_top_sm":  0,
-                                                              "distance_bottom_xl":  80,
-                                                              "distance_bottom_lg":  80,
-                                                              "distance_bottom_md":  70,
-                                                              "distance_bottom_sm":  60
-                                                          }
-                                         },
-                     "1729670159413b233c":  {
-                                                "type":  "apps",
-                                                "blocks":  {
-                                                               "air_product_reviews_app_block_review_list_RaLVVd":  {
-                                                                                                                        "type":  "shopify://apps/air-product-reviews/blocks/app-block-review-list/c4e1e9ca-4d46-4e76-bc39-7e42417cb327",
-                                                                                                                        "settings":  {
-                                                                                                                                         "air_blockreviews_summaryHeading":  "Reviews",
-                                                                                                                                         "air_blockreviews_layout":  "list",
-                                                                                                                                         "air_blockreviews_singleStarColor":  "#16a086",
-                                                                                                                                         "air_blockreviews_primaryColor":  "#121212"
-                                                                                                                                     }
-                                                                                                                    }
-                                                           },
-                                                "block_order":  [
-                                                                    "air_product_reviews_app_block_review_list_RaLVVd"
-                                                                ],
-                                                "settings":  {
-
-                                                             }
-                                            },
-                     "nov_line_pMB7RB":  {
-                                             "type":  "nov-line",
-                                             "settings":  {
-                                                              "height":  1,
-                                                              "color":  "#e7e8eb",
-                                                              "style":  "solid",
-                                                              "opacity":  100,
-                                                              "animate":  false,
-                                                              "container":  "container-full",
-                                                              "background_color":  "#ffffff",
-                                                              "class":  "",
-                                                              "distance_top_xl":  100,
-                                                              "distance_top_lg":  90,
-                                                              "distance_top_md":  80,
-                                                              "distance_top_sm":  60,
-                                                              "distance_bottom_xl":  100,
-                                                              "distance_bottom_lg":  90,
-                                                              "distance_bottom_md":  80,
-                                                              "distance_bottom_sm":  60
-                                                          }
-                                         },
-                     "2046dd06-c8ff-4d5c-9e09-e8c21ef98855":  {
-                                                                  "type":  "nov-product-template-related",
-                                                                  "settings":  {
-                                                                                   "heading":  "\u003cp\u003eYou may also love\u003c/p\u003e",
-                                                                                   "heading_color":  "#181818",
-                                                                                   "subheading":  "",
-                                                                                   "subheading_color":  "#666666",
-                                                                                   "heading_alignment":  "text-center",
-                                                                                   "container":  "container",
-                                                                                   "color_section":  "",
-                                                                                   "background_color":  "",
-                                                                                   "class":  "",
-                                                                                   "distance_top_xl":  0,
-                                                                                   "distance_top_md":  0,
-                                                                                   "distance_top_xs":  0,
-                                                                                   "distance_bottom_xl":  120,
-                                                                                   "distance_bottom_md":  100,
-                                                                                   "distance_bottom_xs":  60
-                                                                               }
-                                                              },
-                     "166243121355988ca2":  {
-                                                "type":  "nov-product-recommendations",
-                                                "disabled":  true,
-                                                "settings":  {
-                                                                 "heading":  "\u003ch2\u003eMore pieces to gift and keep\u003c/h2\u003e",
-                                                                 "heading_color":  "#222222",
-                                                                 "subheading":  "",
-                                                                 "subheading_color":  "#666666",
-                                                                 "descheading":  "",
-                                                                 "descheading_color":  "#666666",
-                                                                 "subheading_position":  "bottom",
-                                                                 "heading_alignment":  "text-center",
-                                                                 "grid_number_xxl":  4,
-                                                                 "grid_number":  4,
-                                                                 "grid_number_lg":  4,
-                                                                 "grid_number_md":  3,
-                                                                 "grid_number_sm":  2,
-                                                                 "grid_number_xs":  2,
-                                                                 "limit":  8,
-                                                                 "viewmore":  true,
-                                                                 "animate":  true,
-                                                                 "container":  "container",
-                                                                 "background_color":  "",
-                                                                 "bg_opacity":  100,
-                                                                 "class":  "",
-                                                                 "distance_top":  40,
-                                                                 "distance_bottom":  90
-                                                             }
-                                            },
-                     "recent-products":  {
-                                             "type":  "nov-recently-viewed",
-                                             "settings":  {
-                                                              "heading":  "\u003cp\u003eRecently viewed pieces\u003c/p\u003e",
-                                                              "heading_color":  "#181818",
-                                                              "subheading":  "",
-                                                              "subheading_color":  "#666666",
-                                                              "heading_alignment":  "text-center",
-                                                              "grid_number_xxl":  4,
-                                                              "grid_number":  4,
-                                                              "grid_number_lg":  4,
-                                                              "grid_number_md":  3,
-                                                              "grid_number_sm":  2,
-                                                              "grid_number_xs":  2,
-                                                              "limit":  10,
-                                                              "show_nav":  false,
-                                                              "animate":  true,
-                                                              "show_border":  false,
-                                                              "border_color":  "#ededed",
-                                                              "container":  "container",
-                                                              "background_color":  "",
-                                                              "class":  "",
-                                                              "distance_top_xl":  0,
-                                                              "distance_top_md":  0,
-                                                              "distance_top_xs":  0,
-                                                              "distance_bottom_xl":  30,
-                                                              "distance_bottom_md":  30,
-                                                              "distance_bottom_xs":  30
-                                                          }
-                                         }
-                 },
-    "order":  [
-                  "main",
-                  "13c52cf8-9f43-42cd-98aa-3998e98b4ab4",
-                  "nov_policy_wYQhcc",
-                  "nov_line_4LEVYU",
-                  "1729670159413b233c",
-                  "nov_line_pMB7RB",
-                  "2046dd06-c8ff-4d5c-9e09-e8c21ef98855",
-                  "166243121355988ca2",
-                  "recent-products"
-              ]
+  "sections": {
+    "main": {
+      "type": "nov-product-template",
+      "blocks": {
+        "03cca96b-c43d-43d4-8322-c16e4b7e8266": {
+          "type": "block_text",
+          "settings": {
+            "custom_title": "Hecho con cuidado",
+            "custom_content": "<p>Cada pedido personalizado se prepara cuidando la escritura, la composici?n y el acabado para que tu pieza se sienta tan especial como la historia que representa.</p>"
+          }
+        },
+        "a3d01db6-4304-4e3d-b6f3-f75fc7a51212": {
+          "type": "block_text",
+          "settings": {
+            "custom_title": "Env?o y regalos",
+            "custom_content": "<p>Nuestras piezas est?n pensadas para llegar listas para emocionar, ya sea que elijas un recuerdo para ti o un regalo especial para alguien que amas.</p><p>El tiempo de entrega puede variar seg?n la personalizaci?n elegida para tu pedido.</p>"
+          }
+        },
+        "03b6d121-b452-4ee2-beed-a6128ccc6fd5": {
+          "type": "block_customtab",
+          "settings": {
+            "custom_title": "Detalles para regalar",
+            "t1": "Personalization",
+            "c1": "<p>Agrega el nombre, las iniciales, la fecha o el mensaje corto exactamente como te gustar?a verlo en tu pieza.</p>",
+            "t2": "Momentos para regalar",
+            "c2": "<p>Perfecto para cumplea?os, aniversarios, damas de honor, reci?n nacidos y recordatorios diarios de amor.</p>",
+            "t3": "Gu?a de cuidado",
+            "c3": "<p>Store your jewelry in a dry place and avoid direct contact with water, perfumes, and lotions to preserve its finish.</p>",
+            "t4": "?Necesitas ayuda?",
+            "c4": "<p>Escr?benos si necesitas ayuda para elegir un regalo, confirmar tu personalizaci?n o planear un pedido especial.</p>",
+            "t5": "Morbi dictum orci neque.",
+            "c5": "<p>Curabitur vehicula tellus sit amet neque placerat, vel sagittis.</p>",
+            "t6": "",
+            "c6": "",
+            "t7": "",
+            "c7": "",
+            "t8": "",
+            "c8": "",
+            "t9": "",
+            "c9": "",
+            "t10": "",
+            "c10": ""
+          }
+        }
+      },
+      "block_order": [
+        "03cca96b-c43d-43d4-8322-c16e4b7e8266",
+        "a3d01db6-4304-4e3d-b6f3-f75fc7a51212",
+        "03b6d121-b452-4ee2-beed-a6128ccc6fd5"
+      ],
+      "settings": {
+        "show_border_thumb": true,
+        "c_border": "#ececec",
+        "corner_radius": 5,
+        "show_stick_product": false,
+        "show_quantity_selector": true,
+        "product_swatch_enable": true,
+        "img_swatch": false,
+        "show_share": true,
+        "show_ask": true,
+        "show_faq": true,
+        "faq": "shopify://pages/frequently-asked-questions",
+        "show_vendor": false,
+        "show_sku": true,
+        "show_categories": true,
+        "show_tags": true,
+        "show_available": true,
+        "show_des": true,
+        "enable_zoom": true,
+        "show_progress_deals": false,
+        "show_countdown": false,
+        "show_related": true,
+        "related_limit": 10,
+        "show_description": true,
+        "show_payments": true,
+        "title_payments": "Por qu? aman regalar Faggi",
+        "payments": "shopify://shop_images/policy-detailpage.jpg",
+        "payments_width": 520,
+        "time": "Cada pieza personalizada se prepara con cuidado antes del env?o.",
+        "size_time": "14px",
+        "color_time": "#535353",
+        "truck": "Joyer?a pensada para regalar, celebrar y llevar tus recuerdos cerca.",
+        "size_truck": "14px",
+        "color_truck": "#535353",
+        "background_color": "",
+        "product_eyebrow": "Joyer?a personalizada",
+        "personalization_note": "Escribe el nombre, las iniciales, la fecha o el mensaje corto exactamente como quieres verlo en tu pieza. La prepararemos tal como lo indiques.",
+        "benefit_1": "Personalizada con nombres, iniciales, fechas o mensajes breves",
+        "benefit_2": "Piezas ideales para regalar y acompa?arte con significado todos los d?as",
+        "benefit_3": "Preparada con cuidado para sentirse femenina, delicada y especial",
+        "add_to_cart_note": "Hecha cuidadosamente sobre pedido para convertirse en un regalo con significado."
+      }
+    },
+    "13c52cf8-9f43-42cd-98aa-3998e98b4ab4": {
+      "type": "nov-line",
+      "settings": {
+        "height": 1,
+        "color": "#e7e8eb",
+        "style": "solid",
+        "opacity": 100,
+        "animate": false,
+        "container": "container-full",
+        "background_color": "#ffffff",
+        "class": "",
+        "distance_top_xl": 30,
+        "distance_top_lg": 30,
+        "distance_top_md": 30,
+        "distance_top_sm": 30,
+        "distance_bottom_xl": 120,
+        "distance_bottom_lg": 100,
+        "distance_bottom_md": 80,
+        "distance_bottom_sm": 60
+      }
+    },
+    "nov_policy_wYQhcc": {
+      "type": "nov-policy",
+      "blocks": {
+        "item_policy_mfeR4W": {
+          "type": "item_policy",
+          "settings": {
+            "policy_icon": "shopify://shop_images/p-2.png",
+            "title_policy": "Elaboraci?n cuidada",
+            "stitle_policy": "",
+            "desc_policy": "Piezas personalizadas preparadas con atenci?n a cada detalle.",
+            "mw": 285,
+            "link_label": "",
+            "link": "",
+            "bg_icon": "#e3e8f1",
+            "item_border_top_color": "",
+            "border_icon": "",
+            "class": "mb-md-30"
+          }
+        },
+        "item_policy_nPyhch": {
+          "type": "item_policy",
+          "settings": {
+            "policy_icon": "shopify://shop_images/p-3.png",
+            "title_policy": "Compra segura",
+            "stitle_policy": "",
+            "desc_policy": "Compra con confianza gracias a m?todos de pago seguros y un checkout confiable.",
+            "mw": 285,
+            "link_label": "",
+            "link": "",
+            "bg_icon": "#e7eee7",
+            "item_border_top_color": "",
+            "border_icon": "",
+            "class": "mb-md-30"
+          }
+        },
+        "item_policy_kHdtgd": {
+          "type": "item_policy",
+          "settings": {
+            "policy_icon": "shopify://shop_images/p-1.png",
+            "title_policy": "Acompa?amiento para regalar",
+            "stitle_policy": "",
+            "desc_policy": "Nuestro equipo est? aqu? para ayudarte a personalizar el regalo perfecto.",
+            "mw": 285,
+            "link_label": "",
+            "link": "",
+            "bg_icon": "#f6f6df",
+            "item_border_top_color": "",
+            "border_icon": "",
+            "class": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_policy_mfeR4W",
+        "item_policy_nPyhch",
+        "item_policy_kHdtgd"
+      ],
+      "name": "Vinova Policy",
+      "settings": {
+        "heading": "",
+        "heading_color": "#222222",
+        "subheading": "",
+        "subheading_color": "#666666",
+        "subheading_position": "bottom",
+        "descheading": "",
+        "descheading_color": "#666666",
+        "heading_alignment": "text-center",
+        "style": "style2",
+        "show_bgitem": false,
+        "bg_itemcolor": "",
+        "bd_radius": 0,
+        "box_shadow": false,
+        "show_border_item": false,
+        "show_border_right_item": false,
+        "c_border_item": "",
+        "show_border_top_item": false,
+        "pt": 0,
+        "pb": 0,
+        "ph": 0,
+        "width_icon": 30,
+        "height_icon": 30,
+        "show_bg_icon": true,
+        "bg_icon_w": 60,
+        "bd_radius_icon": 100,
+        "show_border_icon": false,
+        "bg_icon_shadow": false,
+        "shadow_color": "",
+        "shadow_opacity": 40,
+        "icon_animate": false,
+        "text_fz": 18,
+        "text_ff": "f_df",
+        "t_fw": "font-700",
+        "t_letter_spacing": "0",
+        "stext_fz": 16,
+        "stext_ff": "f_pr",
+        "st_fw": "font-700",
+        "desc_fz": 14,
+        "desc_ff": "f_df",
+        "desc_fw": "font-400",
+        "xxl": 3,
+        "xl": 3,
+        "lg": 3,
+        "md": 1,
+        "sm": 1,
+        "xs": 1,
+        "spacing": 30,
+        "animate": true,
+        "container": "container",
+        "color_section": "",
+        "class_section": "",
+        "ss_bg_enable": false,
+        "background_color": "#ffffff",
+        "background_img_size": "cover",
+        "enable_background_img_size_custom": false,
+        "background_img_size_custom": "",
+        "background_img_position": "center center",
+        "background_corner": 0,
+        "background_position": "bg-center",
+        "background_size": "contain",
+        "background_padding_horizontal": 5,
+        "background_box_shadow": true,
+        "background_box_shadow_color": "#2e90fa12",
+        "height_background_xxl": 100,
+        "height_background_xl": 100,
+        "height_background_lg": 100,
+        "height_background_md": 100,
+        "height_background_sm": 100,
+        "height_background_xs": 100,
+        "distance_top_xl": 0,
+        "distance_top_lg": 0,
+        "distance_top_md": 0,
+        "distance_top_sm": 0,
+        "distance_bottom_xl": 120,
+        "distance_bottom_lg": 100,
+        "distance_bottom_md": 80,
+        "distance_bottom_sm": 60
+      }
+    },
+    "nov_line_4LEVYU": {
+      "type": "nov-line",
+      "settings": {
+        "height": 1,
+        "color": "#e7e8eb",
+        "style": "solid",
+        "opacity": 100,
+        "animate": false,
+        "container": "container-full",
+        "background_color": "#ffffff",
+        "class": "",
+        "distance_top_xl": 0,
+        "distance_top_lg": 0,
+        "distance_top_md": 0,
+        "distance_top_sm": 0,
+        "distance_bottom_xl": 80,
+        "distance_bottom_lg": 80,
+        "distance_bottom_md": 70,
+        "distance_bottom_sm": 60
+      }
+    },
+    "1729670159413b233c": {
+      "type": "apps",
+      "blocks": {
+        "air_product_reviews_app_block_review_list_RaLVVd": {
+          "type": "shopify://apps/air-product-reviews/blocks/app-block-review-list/c4e1e9ca-4d46-4e76-bc39-7e42417cb327",
+          "settings": {
+            "air_blockreviews_summaryHeading": "Reviews",
+            "air_blockreviews_layout": "list",
+            "air_blockreviews_singleStarColor": "#16a086",
+            "air_blockreviews_primaryColor": "#121212"
+          }
+        }
+      },
+      "block_order": [
+        "air_product_reviews_app_block_review_list_RaLVVd"
+      ],
+      "settings": {}
+    },
+    "nov_line_pMB7RB": {
+      "type": "nov-line",
+      "settings": {
+        "height": 1,
+        "color": "#e7e8eb",
+        "style": "solid",
+        "opacity": 100,
+        "animate": false,
+        "container": "container-full",
+        "background_color": "#ffffff",
+        "class": "",
+        "distance_top_xl": 100,
+        "distance_top_lg": 90,
+        "distance_top_md": 80,
+        "distance_top_sm": 60,
+        "distance_bottom_xl": 100,
+        "distance_bottom_lg": 90,
+        "distance_bottom_md": 80,
+        "distance_bottom_sm": 60
+      }
+    },
+    "2046dd06-c8ff-4d5c-9e09-e8c21ef98855": {
+      "type": "nov-product-template-related",
+      "settings": {
+        "heading": "<p>Tambi?n puede encantarte</p>",
+        "heading_color": "#181818",
+        "subheading": "",
+        "subheading_color": "#666666",
+        "heading_alignment": "text-center",
+        "container": "container",
+        "color_section": "",
+        "background_color": "",
+        "class": "",
+        "distance_top_xl": 0,
+        "distance_top_md": 0,
+        "distance_top_xs": 0,
+        "distance_bottom_xl": 120,
+        "distance_bottom_md": 100,
+        "distance_bottom_xs": 60
+      }
+    },
+    "166243121355988ca2": {
+      "type": "nov-product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "<h2>M?s piezas para regalar y atesorar</h2>",
+        "heading_color": "#222222",
+        "subheading": "",
+        "subheading_color": "#666666",
+        "descheading": "",
+        "descheading_color": "#666666",
+        "subheading_position": "bottom",
+        "heading_alignment": "text-center",
+        "grid_number_xxl": 4,
+        "grid_number": 4,
+        "grid_number_lg": 4,
+        "grid_number_md": 3,
+        "grid_number_sm": 2,
+        "grid_number_xs": 2,
+        "limit": 8,
+        "viewmore": true,
+        "animate": true,
+        "container": "container",
+        "background_color": "",
+        "bg_opacity": 100,
+        "class": "",
+        "distance_top": 40,
+        "distance_bottom": 90
+      }
+    },
+    "recent-products": {
+      "type": "nov-recently-viewed",
+      "settings": {
+        "heading": "<p>Piezas vistas recientemente</p>",
+        "heading_color": "#181818",
+        "subheading": "",
+        "subheading_color": "#666666",
+        "heading_alignment": "text-center",
+        "grid_number_xxl": 4,
+        "grid_number": 4,
+        "grid_number_lg": 4,
+        "grid_number_md": 3,
+        "grid_number_sm": 2,
+        "grid_number_xs": 2,
+        "limit": 10,
+        "show_nav": false,
+        "animate": true,
+        "show_border": false,
+        "border_color": "#ededed",
+        "container": "container",
+        "background_color": "",
+        "class": "",
+        "distance_top_xl": 0,
+        "distance_top_md": 0,
+        "distance_top_xs": 0,
+        "distance_bottom_xl": 30,
+        "distance_bottom_md": 30,
+        "distance_bottom_xs": 30
+      }
+    }
+  },
+  "order": [
+    "main",
+    "13c52cf8-9f43-42cd-98aa-3998e98b4ab4",
+    "nov_policy_wYQhcc",
+    "nov_line_4LEVYU",
+    "1729670159413b233c",
+    "nov_line_pMB7RB",
+    "2046dd06-c8ff-4d5c-9e09-e8c21ef98855",
+    "166243121355988ca2",
+    "recent-products"
+  ]
 }

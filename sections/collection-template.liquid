@@ -97,7 +97,7 @@
     assign collection_intro_copy = sst.collection_intro_text | strip
   endif
   if collection_intro_copy == blank
-    assign collection_intro_copy = 'Discover meaningful jewelry and personalized pieces designed to celebrate names, initials, dates, and unforgettable moments.'
+    assign collection_intro_copy = 'Descubre joyería con significado y piezas personalizadas creadas para celebrar nombres, iniciales, fechas y momentos inolvidables.'
   endif
 -%}
 {% if sst.show_collection_intro %}
@@ -444,7 +444,7 @@
       {
         "type": "link_list",
         "id": "category",
-        "label": "Choose menu"
+        "label": "Elegir menú"
       },
       {
         "type": "range",
@@ -474,19 +474,19 @@
         "type": "textarea",
         "id": "collection_intro_text",
         "label": "Fallback intro text",
-        "default": "Explore elegant jewelry and personalized pieces created for gifting, celebrating, and keeping your favorite memories close."
+        "default": "Explora joyería elegante y piezas personalizadas creadas para regalar, celebrar y llevar tus recuerdos favoritos cerca."
       },
       {
         "type": "text",
         "id": "collection_chip_1",
         "label": "Chip 1",
-        "default": "Gift-ready pieces"
+        "default": "Piezas listas para regalar"
       },
       {
         "type": "text",
         "id": "collection_chip_2",
         "label": "Chip 2",
-        "default": "Personalized details"
+        "default": "Detalles personalizados"
       },
       {
         "type": "text",

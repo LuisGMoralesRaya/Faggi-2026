@@ -3075,13 +3075,13 @@
         "type": "text",
         "id": "brand_logo_external",
         "label": "External brand logo URL",
-        "default": "https://www.faggi.shop/cdn/shop/files/Un_dia_a_la_vez_3_651bf1a9-cfcc-4be9-b37c-cf8a31ae7ead.png?v=1762464361&width=500"
+        "default": ""
       },
       {
         "type": "text",
         "id": "brand_logo_alt",
         "label": "Brand logo alt text",
-        "default": "Faggi personalized jewelry"
+        "default": "Faggi joyer?a personalizada"
       }
     ]
   }
