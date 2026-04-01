@@ -61,15 +61,15 @@
         "one": "{{ count }} result for \"{{ terms }}\"",
         "other": "{{ count }} results for \"{{ terms }}\""
       },
-      "title": "Enter your Keywords",
+      "title": "Search personalized jewelry",
       "placeholder": "Search",
-      "description": "Find your product with fast search. Enter some keyword such as dress, shirts, shoes etc. Or can search by product sku.",
+      "description": "Search by product name, initials, necklace, bracelet, charm, or gift ideas to find the right piece faster.",
       "submit": "Search",
       "close": "Close search",
-      "search_trend": "Most searched keywords :",
+      "search_trend": "Popular searches:",
       "results_all": "See all results",
       "search_popup_title": "Search",
-      "i_am_looking_for": "I'm looking for..."
+      "i_am_looking_for": "I'm looking for a meaningful piece..."
     },
     "account": {
       "submit": "Account"
@@ -636,9 +636,9 @@
       "on_sale": "Sale",
       "off": "Off",
       "new": "New",
-      "quantity": "Quantity:",
+      "quantity": "Quantity",
       "add_to_cart": "Add to cart",
-      "add_to_bag": "Add to bag",
+      "add_to_bag": "Add to jewelry bag",
       "buy_now": "Buy now",
       "select_options": "Select Options",
       "back_to_collection": "Back to {{ title }}",
@@ -654,7 +654,7 @@
       "related": "Related product",
       "share": "Share with",
       "reviews": "Rating :",
-      "review_all_btn": "VIEW ALL REVIEWS",
+      "review_all_btn": "Read all reviews",
       "quickview": "Quick View",
       "wishlist": "Add To Wishlist",
       "removewishlist": "Remove Wishlist",

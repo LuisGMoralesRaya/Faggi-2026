@@ -1,0 +1,34 @@
+{%- liquid
+  assign has_benefits = false
+
+  for i in (1..3)
+    assign benefit_key = 'benefit_' | append: i
+    if section.settings[benefit_key] != blank
+      assign has_benefits = true
+      break
+    endif
+  endfor
+-%}
+
+{% if placement == 'top' %}
+  {% if section.settings.product_eyebrow != blank %}
+    <p class="product-single__eyebrow">{{ section.settings.product_eyebrow }}</p>
+  {% endif %}
+{% else %}
+  {% if section.settings.personalization_note != blank %}
+    <div class="product-single__personalization-note">
+      {{ section.settings.personalization_note }}
+    </div>
+  {% endif %}
+
+  {% if has_benefits %}
+    <ul class="product-single__benefits list-unstyled">
+      {% for i in (1..3) %}
+        {%- assign benefit_key = 'benefit_' | append: i -%}
+        {% if section.settings[benefit_key] != blank %}
+          <li>{{ section.settings[benefit_key] }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endif %}
