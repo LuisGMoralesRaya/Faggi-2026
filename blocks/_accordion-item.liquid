@@ -1,0 +1,24 @@
+<div class="nov-accordion__item position-relative">
+  <div class="nov-accordion__title h3 fs-16 fs-xs-14 d-flex color-title d-flex align-items-center position-relative mb-0">
+    {% content_for 'block', type: "icon", id: "icon" %}
+    {% content_for 'block', type: "text", id: "title" %}
+  </div>
+  <div class="nov-accordion__content">
+    <div class="block color-text position-relative">
+      {% content_for 'block', type: "text", id: "content" %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Accordion Item",
+    "tag": null,
+    "presets": [
+      {
+        "name": "Accordion Item"
+      }
+    ]
+  }
+  {% endschema %}
+  

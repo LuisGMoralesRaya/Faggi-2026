@@ -1,0 +1,269 @@
+{%- assign bst = block.settings -%}
+<div class="theme-blocks-item number-block text-{{ bst.text_alignment }}{% if bst.width == 'max_content' %} m-{{ bst.alignment }}-auto{% endif %}" style="--mt-xl: {{ bst.mt_xl }}px; --mt-lg: {{ bst.mt_lg }}px; --mt-md: {{ bst.mt_md }}px; --mt-sm: {{ bst.mt_sm }}px; --mb-xl: {{ bst.mb_xl }}px; --mb-lg: {{ bst.mb_lg }}px; --mb-md: {{ bst.mb_md }}px; --mb-sm: {{ bst.mb_sm }}px; background: {{ bst.bg }}; border-radius: {{ bst.corner }}px; padding: {{ bst.padding_block }}px {{ bst.padding_inline }}px;--color-hover: {{ bst.number_color }};--color-title: {{ bst.title_color }};{% if bst.width == 'max_content' %}width: max-content;max-width: 100%{% endif %}">
+  <div class="number-block__number d-inline-flex align-items-center fs-{{ bst.number_fs_xl }} fs-lg-{{ bst.number_fs_lg }} fs-sm-{{ bst.number_fs_sm }} {{ bst.number_fw }} h2 color-act">
+    <span class="number-block__number-value{% if bst.number_animation %} number-animate{% endif %}" data-number="{{ bst.number }}">{{ bst.number }}</span>
+    <span class="number-block__number-unit">{{ bst.unit }}</span>
+  </div>
+  <div class="number-block__title fs-{{ bst.title_fs_xl }} fs-lg-{{ bst.title_fs_lg }} fs-sm-{{ bst.title_fs_sm }} {{ bst.title_fw }} color-title">{{ bst.title }}</div>
+</div>
+{% schema %}
+  {
+    "name": "Number",
+    "tag": null,
+    "settings": [
+      {
+        "type": "number",
+        "id": "number",
+        "label": "Number",
+        "default": 0
+      },
+      {
+        "type": "text",
+        "id": "unit",
+        "label": "Unit",
+        "default": "+"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Lorem ipsum"
+      },
+      {
+        "type": "header",
+        "content": "Style"
+      },
+      {
+        "type": "text_alignment",
+        "id": "text_alignment",
+        "label": "Text alignment",
+        "default": "left"
+      },
+      {
+        "type": "select",
+        "id": "width",
+        "label": "Width",
+        "options": [
+          {
+            "value": "full",
+            "label": "Full"
+          },
+          {
+            "value": "max_content",
+            "label": "Max content"
+          }
+        ],
+        "default": "full"
+      },
+      {
+        "type": "text_alignment",
+        "id": "alignment",
+        "label": "Alignment",
+        "default": "center",
+        "visible_if": "{{ block.settings.width == 'max_content' }}"
+      },
+      {
+        "type": "number",
+        "id": "padding_block",
+        "label": "Padding block",
+        "default": 0,
+        "info": "Unit: px"
+      },
+      {
+        "type": "number",
+        "id": "padding_inline",
+        "label": "Padding inline",
+        "default": 0,
+        "info": "Unit: px"
+      },
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "Color scheme",
+        "default": "background-1"
+      },
+      {
+        "type": "color",
+        "id": "bg",
+        "label": "Background color",
+        "default": "#d2d2d2"
+      },
+      {
+        "type": "range",
+        "id": "corner",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Corner radius",
+        "default": 10
+      },
+      {
+        "type": "header",
+        "content": "Number"
+      },
+      {
+        "type": "checkbox",
+        "id": "number_animation",
+        "label": "Number animation"
+      },
+      {
+        "type": "color",
+        "id": "number_color",
+        "label": "Color",
+        "default": "#000"
+      },
+      {
+        "type": "number",
+        "id": "number_fs_xl",
+        "label": "Font size large laptop",
+        "default": 16,
+        "info": "Breakpoint 1200px ↑"
+      },
+      {
+        "type": "number",
+        "id": "number_fs_lg",
+        "label": "Font size laptop",
+        "default": 16,
+        "info": "Breakpoint 768px ↑"
+      },
+      {
+        "type": "number",
+        "id": "number_fs_sm",
+        "label": "Font size mobile",
+        "default": 16,
+        "info": "Breakpoint 767px ↓"
+      },
+      {
+        "type": "select",
+        "id": "number_fw",
+        "label": "Font weight",
+        "options": [
+          {"value": "font-100","label": "Thin - 100"},
+          {"value": "font-300","label": "Light - 300"},
+          {"value": "font-400","label": "Regular - 400"},
+          {"value": "font-500","label": "Medium - 500"},
+          {"value": "font-600","label": "SemiBold - 600"},
+          {"value": "font-700","label": "Bold - 700"},
+          {"value": "font-800","label": "ExtraBold - 800"},
+          {"value": "font-900","label": "Black - 900"}
+        ],
+        "default": "font-400"
+      },
+      {
+        "type": "header",
+        "content": "Title"
+      },
+      {
+        "type": "color",
+        "id": "title_color",
+        "label": "Color",
+        "default": "#000"
+      },
+      {
+        "type": "number",
+        "id": "title_fs_xl",
+        "label": "Font size large laptop",
+        "default": 16,
+        "info": "Breakpoint 1200px ↑"
+      },
+      {
+        "type": "number",
+        "id": "title_fs_lg",
+        "label": "Font size laptop",
+        "default": 16,
+        "info": "Breakpoint 768px ↑"
+      },
+      {
+        "type": "number",
+        "id": "title_fs_sm",
+        "label": "Font size mobile",
+        "default": 16,
+        "info": "Breakpoint 767px ↓"
+      },
+      {
+        "type": "select",
+        "id": "title_fw",
+        "label": "Font weight",
+        "options": [
+          {"value": "font-100","label": "Thin - 100"},
+          {"value": "font-300","label": "Light - 300"},
+          {"value": "font-400","label": "Regular - 400"},
+          {"value": "font-500","label": "Medium - 500"},
+          {"value": "font-600","label": "SemiBold - 600"},
+          {"value": "font-700","label": "Bold - 700"},
+          {"value": "font-800","label": "ExtraBold - 800"},
+          {"value": "font-900","label": "Black - 900"}
+        ],
+        "default": "font-400"
+      },
+      {
+        "type": "header",
+        "content": "Spacing Top (px)"
+      },
+      {
+        "type": "number",
+        "id": "mt_xl",
+        "label": "Large laptop",
+        "default": 0,
+        "info": "Breakpoint 1200px"
+      },
+      {
+        "type": "number",
+        "id": "mt_lg",
+        "label": "Laptop",
+        "default": 0,
+        "info": "Breakpoint 992px"
+      },
+      {
+        "type": "number",
+        "id": "mt_md",
+        "label": "Tablet",
+        "default": 0,
+        "info": "Breakpoint 768px"
+      },
+      {
+        "type": "number",
+        "id": "mt_sm",
+        "label": "Mobile",
+        "default": 0
+      },
+      {
+        "type": "header",
+        "content": "Spacing Bottom (px)"
+      },
+      {
+        "type": "number",
+        "id": "mb_xl",
+        "label": "Large laptop",
+        "default": 0,
+        "info": "Breakpoint 1200px"
+      },
+      {
+        "type": "number",
+        "id": "mb_lg",
+        "label": "Laptop",
+        "default": 0,
+        "info": "Breakpoint 992px"
+      },
+      {
+        "type": "number",
+        "id": "mb_md",
+        "label": "Tablet",
+        "default": 0,
+        "info": "Breakpoint 768px"
+      },
+      {
+        "type": "number",
+        "id": "mb_sm",
+        "label": "Mobile",
+        "default": 0
+      }
+    ],
+    "presets": [
+      {
+        "name": "Number"
+      }
+    ]
+  }
+{% endschema %}

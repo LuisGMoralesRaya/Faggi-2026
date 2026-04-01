@@ -1,0 +1,18 @@
+{% render 'nov-breadcrumb', class_br: 'breadcrumb_inner' %}
+
+{% for block in section.blocks %}
+  {% if block.type == '@app' %}
+    {% render block %}
+  {% endif %}
+{% endfor %}
+
+{% schema %}
+  {
+    "name": "Vinova Breadcrumb",
+    "blocks": [
+      {
+        "type": "@app"
+      }
+    ]
+  }
+{% endschema %}

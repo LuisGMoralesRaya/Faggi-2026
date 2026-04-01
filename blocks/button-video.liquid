@@ -1,0 +1,135 @@
+{%- assign bst = block.settings -%}
+<div class="theme-blocks-item button-video-block" style="--mt-xl: {{ bst.mt_xl }}px; --mt-lg: {{ bst.mt_lg }}px; --mt-md: {{ bst.mt_md }}px; --mt-sm: {{ bst.mt_sm }}px; --mb-xl: {{ bst.mb_xl }}px; --mb-lg: {{ bst.mb_lg }}px; --mb-md: {{ bst.mb_md }}px; --mb-sm: {{ bst.mb_sm }}px;{% if bst.btn_type == 'link' %}--color-link: {{ bst.link_color }};--color-hover: {{ bst.link_color_hover }}{% endif %}">
+  {% if bst.video_url != blank %}
+    <div
+      class="icon_play pointer d-inline-flex"
+      style="--color-label: {{ bst.video_url_color }};--color-bg: {{ bst.video_url_bg }};--color-bg-hover: {{ bst.video_url_bg_hover }};"
+      data-toggle="modal" 
+      data-target="#ModalVideo"
+      data-src="{% if bst.video_url.type == "youtube" %}https://www.youtube.com/embed/{{ bst.video_url.id }}?rel=0&showinfo=0{% endif %}{% if bst.video_url.type == "vimeo" %}//player.vimeo.com/video/{{ bst.video_url.id }}?byline=0&portrait=0&badge=0{% endif %}"
+    >
+      <div class="icon_play-content d-flex align-items-center">
+        {% if bst.btn_video_label != blank %}
+          <span class="icon_play-label">{{ bst.btn_video_label }}</span>
+        {% endif %}
+        <span class="icon_play-icon d-inline-flex align-items-center justify-content-center position-relative r-100 color-{{ bst.btn_play_color }}">
+          <i class="rbb-icon-direction-74 position-relative"></i>
+        </span>
+      </div>
+    </div>
+  {% endif %}
+</div>
+  
+{% schema %}
+  {
+    "name": "Button Video",
+    "tag": null,
+    "settings": [
+      {
+        "type": "video_url",
+        "id": "video_url",
+        "label": "Video link",
+        "accept": ["youtube", "vimeo"],
+        "info": "Only for Youtube and Vimeo"
+      },
+      {
+        "type": "text",
+        "id": "btn_video_label",
+        "label": "Button label"
+      },
+      {
+        "type": "color",
+        "id": "video_url_color",
+        "label": "Color",
+        "default": "#000"
+      },
+      {
+        "type": "color",
+        "id": "video_url_bg",
+        "alpha": true,
+        "label": "Background",
+        "default": "#444"
+      },
+      {
+        "type": "color",
+        "id": "video_url_bg_hover",
+        "alpha": true,
+        "label": "Background",
+        "default": "#000"
+      },
+      {
+        "type": "color_scheme",
+        "id": "btn_play_color",
+        "label": "Button play color",
+        "default": "background-1"
+      },
+      {
+        "type": "header",
+        "content": "Spacing Top (px)"
+      },
+      {
+        "type": "number",
+        "id": "mt_xl",
+        "label": "Large laptop",
+        "default": 0,
+        "info": "Breakpoint 1200px"
+      },
+      {
+        "type": "number",
+        "id": "mt_lg",
+        "label": "Laptop",
+        "default": 0,
+        "info": "Breakpoint 992px"
+      },
+      {
+        "type": "number",
+        "id": "mt_md",
+        "label": "Tablet",
+        "default": 0,
+        "info": "Breakpoint 768px"
+      },
+      {
+        "type": "number",
+        "id": "mt_sm",
+        "label": "Mobile",
+        "default": 0
+      },
+      {
+        "type": "header",
+        "content": "Spacing Bottom (px)"
+      },
+      {
+        "type": "number",
+        "id": "mb_xl",
+        "label": "Large laptop",
+        "default": 0,
+        "info": "Breakpoint 1200px"
+      },
+      {
+        "type": "number",
+        "id": "mb_lg",
+        "label": "Laptop",
+        "default": 0,
+        "info": "Breakpoint 992px"
+      },
+      {
+        "type": "number",
+        "id": "mb_md",
+        "label": "Tablet",
+        "default": 0,
+        "info": "Breakpoint 768px"
+      },
+      {
+        "type": "number",
+        "id": "mb_sm",
+        "label": "Mobile",
+        "default": 0
+      }
+    ],
+    "presets": [
+      {
+        "name": "Button Video"
+      }
+    ]
+  }
+{% endschema %}

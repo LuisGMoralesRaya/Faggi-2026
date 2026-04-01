@@ -1,0 +1,312 @@
+{%- assign bst = block.settings -%}
+{%- liquid
+  assign class_border = ''
+  if bst.bd_top != 'none'
+    assign class_border = class_border | append: ' ' | append: bst.bd_top
+  endif
+  if bst.bd_bottom != 'none'
+    assign class_border = class_border | append: ' ' | append: bst.bd_bottom
+  endif
+  if bst.bd_left != 'none'
+    assign class_border = class_border | append: ' ' | append: bst.bd_left
+  endif
+  if bst.bd_right != 'none'
+    assign class_border = class_border | append: ' ' | append: bst.bd_right
+  endif
+-%}
+{% style %}
+  @media (min-width: 1200px) {
+    #group-{{ block.id }} {
+      padding-top: {{ bst.pt_xl }}px;
+      padding-bottom: {{ bst.pb_xl }}px;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #group-{{ block.id }} {
+      padding-top: {{ bst.pt_lg }}px;
+      padding-bottom: {{ bst.pb_lg }}px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    #group-{{ block.id }} {
+      padding-top: {{ bst.pt_md }}px;
+      padding-bottom: {{ bst.pb_md }}px;
+    }
+  }
+  @media(max-width: 767px) {
+    #group-{{ block.id }} {
+      padding-top: {{ bst.pt_sm }}px;
+      padding-bottom: {{ bst.pb_sm }}px;
+    }
+  }
+  #group-{{ block.id }} {
+    --spacing: {{ bst.row_spacing }}px;
+    --spacing-md: {{ bst.row_spacing_md }}px;
+    --group-corner-radius: {{ bst.corner_radius }}px;
+    background-color: {{ bst.bg_color }};
+  }
+{% endstyle %}
+<div id="group-{{ block.id }}" class="group-block{{ class_border }}">
+  <div class="row-block row align-items-{{ bst.align }} justify-content-{{ bst.justify }}{% if bst.direction_reverse %} {{ bst.direction_row }}{% endif %}">
+    {% content_for 'blocks' %}
+  </div>
+</div>
+
+  {% schema %}
+  {
+    "name": "Group",
+    "blocks": [
+      { 
+        "type": "_col" 
+      }
+    ],
+    "tag": null,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Spacing"
+      },
+      {
+        "type": "range",
+        "id": "row_spacing",
+        "label": "Spacing",
+        "default": 30,
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "row_spacing_md",
+        "label": "Spacing tablet 991px ↓",
+        "default": 30,
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px"
+      },
+      {
+        "type": "select",
+        "id": "align",
+        "label": "Align",
+        "options": [
+          {
+            "value": "start",
+            "label": "Start"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "end",
+            "label": "End"
+          },
+          {
+            "value": "stretch",
+            "label": "Stretch"
+          }
+        ],
+        "default": "start"
+      },
+      {
+        "type": "select",
+        "id": "justify",
+        "label": "Justify",
+        "options": [
+          {
+            "value": "start",
+            "label": "Start"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "end",
+            "label": "End"
+          },
+          {
+            "value": "between",
+            "label": "Between"
+          }
+        ],
+        "default": "start"
+      },
+      {
+        "type": "header",
+        "content": "Reverse"
+      },
+      {
+        "type": "checkbox",
+        "id": "direction_reverse",
+        "label": "Enable reeverse",
+        "info": "Start reverse from"
+      },
+      {
+        "type": "select",
+        "id": "direction_row",
+        "label": "Direction",
+        "options": [
+          { "value": "flex-row-reverse", "label": "All screen" },
+          { "value": "flex-xl-row-reverse", "label": "Large laptop" },
+          { "value": "flex-lg-row-reverse", "label": "Laptop" },
+          { "value": "flex-md-row-reverse", "label": "Tablet" },
+          { "value": "flex-sm-row-reverse", "label": "Mobile" }
+        ],
+        "default": "flex-row-reverse",
+        "visible_if": "{{ block.settings.direction_reverse }}"
+      },
+      {
+        "type": "header",
+        "content": "Style Group"
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background color",
+        "default": "#fff"
+      },
+      {
+        "type": "range",
+        "id": "corner_radius",
+        "min": 0,
+        "max": 50,
+        "step": 1,
+        "unit": "px",
+        "label": "Corner radius",
+        "default": 0
+      },
+      {
+        "type": "header",
+        "content": "Border",
+        "info": "Start border display from"
+      },
+      {
+        "type": "select",
+        "id": "bd_top",
+        "label": "Border top",
+        "options": [
+          { "value": "none", "label": "None" },
+          { "value": "bd-t", "label": "All screens" },
+          { "value": "bd-xl-t", "label": "Large laptop" },
+          { "value": "bd-lg-t", "label": "Laptop" },
+          { "value": "bd-md-t", "label": "Tablet" },
+          { "value": "bd-sm-t", "label": "Large Mobile" },
+        ],
+        "default": "none"
+      },
+      {
+        "type": "select",
+        "id": "bd_bottom",
+        "label": "Border bottom",
+        "options": [
+          { "value": "none", "label": "None" },
+          { "value": "bd-b", "label": "All screens" },
+          { "value": "bd-xl-b", "label": "Large laptop" },
+          { "value": "bd-lg-b", "label": "Laptop" },
+          { "value": "bd-md-b", "label": "Tablet" },
+          { "value": "bd-sm-b", "label": "Large Mobile" },
+        ],
+        "default": "none"
+      },
+      {
+        "type": "select",
+        "id": "bd_left",
+        "label": "Border left",
+        "options": [
+          { "value": "none", "label": "None" },
+          { "value": "bd-l", "label": "All screens" },
+          { "value": "bd-xl-l", "label": "Large laptop" },
+          { "value": "bd-lg-l", "label": "Laptop" },
+          { "value": "bd-md-l", "label": "Tablet" },
+          { "value": "bd-sm-l", "label": "Large Mobile" },
+        ],
+        "default": "none"
+      },
+      {
+        "type": "select",
+        "id": "bd_right",
+        "label": "Border right",
+        "options": [
+          { "value": "none", "label": "None" },
+          { "value": "bd-r", "label": "All screens" },
+          { "value": "bd-xl-r", "label": "Large laptop" },
+          { "value": "bd-lg-r", "label": "Laptop" },
+          { "value": "bd-md-r", "label": "Tablet" },
+          { "value": "bd-sm-r", "label": "Large Mobile" },
+        ],
+        "default": "none"
+      },
+      {
+        "type": "header",
+        "content": "Spacing Top (px)"
+      },
+      {
+        "type": "number",
+        "id": "pt_xl",
+        "label": "Large laptop",
+        "default": 30,
+        "info": "Breakpoint 1200px"
+      },
+      {
+        "type": "number",
+        "id": "pt_lg",
+        "label": "Laptop",
+        "default": 30,
+        "info": "Breakpoint 992px"
+      },
+      {
+        "type": "number",
+        "id": "pt_md",
+        "label": "Tablet",
+        "default": 30,
+        "info": "Breakpoint 768px"
+      },
+      {
+        "type": "number",
+        "id": "pt_sm",
+        "label": "Mobile",
+        "default": 30
+      },
+      {
+        "type": "header",
+        "content": "Spacing Bottom (px)"
+      },
+      {
+        "type": "number",
+        "id": "pb_xl",
+        "label": "Large laptop",
+        "default": 30,
+        "info": "Breakpoint 1200px"
+      },
+      {
+        "type": "number",
+        "id": "pb_lg",
+        "label": "Laptop",
+        "default": 30,
+        "info": "Breakpoint 992px"
+      },
+      {
+        "type": "number",
+        "id": "pb_md",
+        "label": "Tablet",
+        "default": 30,
+        "info": "Breakpoint 768px"
+      },
+      {
+        "type": "number",
+        "id": "pb_sm",
+        "label": "Mobile",
+        "default": 30
+      }
+    ],
+    "presets": [
+      {
+        "name": "Group"
+      }
+    ]
+  }
+  {% endschema %}
+  

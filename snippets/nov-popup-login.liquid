@@ -1,0 +1,99 @@
+<div id="popup__login" class="modal fade">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header close-icon" data-dismiss="modal"></div>
+      <div class="modal-body">
+        <div id="p_login" class="block-form-login">
+          <h1 class="color-title f_pr fs-30 fs-lg-26 mb-10">{{ 'customer.login.title' | t }}</h1>
+          <p class="color-text mb-25">{{ 'customer.login.sub_title' | t }}</p>
+          <div class="title_form font-700 pb-30 text-capitalize">{{ 'customer.login.title_form' | t }}</div>
+          {% form 'customer_login' %}
+            <label class="popup__login-label">{{ 'customer.login.email_login_label' | t }}&nbsp;<span>*</span></label>
+            <div class="form-group novform-email">
+              <input type="email" name="customer[email]" class="{% if form.errors contains 'email' %}input--error{% endif %}" placeholder="{{ 'customer.login.email_login' | t }}" required autofocus>
+            </div>
+            {% if form.password_needed %}
+              <div class="form-group novform-password">
+                <label class="popup__login-label">{{ 'customer.login.password_login' | t }}&nbsp;<span>*</span></label>
+                <input type="password" value="" name="customer[password]" class="{% if form.errors contains 'password' %}input--error{% endif %}" placeholder="{{ 'customer.login.password_login' | t }}" required>
+                <div class="hide_show_password" style="display: block;">
+                  <span class="show"><i class="zmdi zmdi-eye-off"></i></span>
+                </div>
+              </div>
+            {% endif %}
+
+            {% if form.password_needed %}
+              <div class="forgot_password justify-content-center">
+                <i class="zmdi zmdi-email"></i>
+                <a href="#recover" id="RecoversPassword">
+                  {{ 'customer.login.forgot_password' | t }}<strong>{{ 'customer.login.password' | t }}</strong>
+                </a>
+              </div>
+            {% endif %}
+            <div class="form_submit">
+              <input type="submit" class="btn" value="{{ 'customer.login.log_in' | t }}">
+            </div>
+          {% endform %}
+          <p class="fs-12 text-center mt-10">{{ 'customer.login.new_customer' | t }}</p>
+          <div class="btn btn-switch btn-register">{{ 'customer.register.submit_register' | t }}</div>
+          <div id="RecoverPasswordFormIndex" class="hide mt-30">
+            <div class="title color-title text-capitalize mb-10">{{ 'customer.recover_password.title' | t }}</div>
+            {% form 'recover_customer_password' %}
+            {{ form.errors | default_errors }}
+            {% if form.posted_successfully? %}
+              <span class="hide reset-password-success"></span>
+            {% endif %}
+            <div class="form-group novform-email">
+              <input type="email" value="" name="email" id="RecoverEmail" class="input-full" placeholder="{{ 'customer.recover_password.email' | t }}" required>
+            </div>
+            <div class="d-flex btn-password mt-30">
+              <input type="submit" class="btn" value="{{ 'customer.recover_password.submit' | t }}">
+              <button type="button" id="HideRecoverPasswordIndex" class="btn">{{ 'customer.recover_password.cancel' | t }}</button>
+            </div>
+            {% endform %}
+          </div>
+        </div>
+        <div id="p_register" class="block-form-login">
+          <h1 class="color-title fs-30 fs-lg-26 mb-10">{{ 'customer.register.title' | t }}</h1>
+          <p class="color-text mb-25">{{ 'customer.register.sub_title' | t }}</p>
+          <div class="title_form font-700 pb-30 text-capitalize">{{ 'customer.register.title_form' | t }}</div>
+          {% form 'create_customer' %}
+            {{ form.errors | default_errors }}
+            <div class="block-form-login">
+              <div class="row spacing-10">
+                <div class="form-group novform-firstname col-6">
+                  <label class="popup__login-label">{{ 'customer.register.first_name' | t }}&nbsp;<span>*</span></label>
+                  <input type="text" name="customer[first_name]" id="FirstName" {% if form.first_name %} value="{{ form.first_name }}"{% endif %} placeholder="{{ 'customer.register.first_name' | t }}" required>
+                </div>
+                <div class="form-group novform-lastname col-6">
+                  <label class="popup__login-label">{{ 'customer.register.last_name' | t }}&nbsp;<span>*</span></label>
+                  <input type="text" name="customer[last_name]" id="LastName" {% if form.last_name %} value="{{ form.last_name }}"{% endif %} placeholder="{{ 'customer.register.last_name' | t }}" required >
+                </div>
+              </div>
+              <div class="form-group novform-email">
+                <label class="popup__login-label">{{ 'customer.login.email_login_label' | t }}&nbsp;<span>*</span></label>
+                <input type="email" name="customer[email]" id="email_rigester" class="{% if form.errors contains 'email' %} input--error{% endif %}" {% if form.email %} value="{{ form.email }}"{% endif %} placeholder="Email" required >
+              </div>
+              <div class="form-group novform-password">
+                <label class="popup__login-label">{{ 'customer.register.password' | t }}&nbsp;<span>*</span></label>
+                <input type="password" name="customer[password]" id="CreatePassword" class="{% if form.errors contains 'password' %} input--error{% endif %}" placeholder="{{ 'customer.register.password' | t }}" required>
+              </div>
+              <div class="text font-500 fs-12">{{ 'customer.register.policy' | t }}</div>
+              <div class="form-checkbox novform-newsletter mt-20 pb-15">
+                <input type="checkbox" name="newsletter" value="1" id="register__newsletter" class="hide">
+                <label for="register__newsletter" class="d-inline-flex">
+                  <span class="custom-checkbox d-inline-block"><i class="zmdi zmdi-check"></i></span>
+                  <span class="text fs-12">{{ 'customer.register.checkbox_newsletter' | t }}</span>
+                </label>
+              </div>
+              <div class="form_submit">
+                <input type="submit" value="{{ 'customer.register.submit_register' | t }}" class="btn mb-10">
+              </div>
+              <div class="btn btn-switch btn-login">{{ 'customer.login.log_in' | t }}</div>
+            </div>
+          {% endform %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
