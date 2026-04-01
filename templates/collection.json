@@ -8,255 +8,261 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {
-    "main": {
-      "type": "collection-template",
-      "blocks": {
-        "list_collection_T9gidL": {
-          "type": "list_collection",
-          "settings": {
-            "image": "shopify://shop_images/Food.jpg",
-            "collection": "cat-food"
-          }
-        },
-        "list_collection_UXEHUr": {
-          "type": "list_collection",
-          "settings": {
-            "image": "shopify://shop_images/Grooming.jpg",
-            "collection": "grooming"
-          }
-        },
-        "list_collection_3Q9Ldz": {
-          "type": "list_collection",
-          "settings": {
-            "image": "shopify://shop_images/Outfits.jpg",
-            "collection": "outfit"
-          }
-        },
-        "list_collection_N4DEiC": {
-          "type": "list_collection",
-          "settings": {
-            "image": "shopify://shop_images/Pet_Furniture.jpg",
-            "collection": "pet-bedding"
-          }
-        },
-        "list_collection_drWmdB": {
-          "type": "list_collection",
-          "settings": {
-            "image": "shopify://shop_images/Pet_Toys.jpg",
-            "collection": "toy"
-          }
-        },
-        "list_collection_MyCMJJ": {
-          "type": "list_collection",
-          "settings": {
-            "image": "shopify://shop_images/Training.jpg",
-            "collection": "training"
-          }
-        }
-      },
-      "block_order": [
-        "list_collection_T9gidL",
-        "list_collection_UXEHUr",
-        "list_collection_3Q9Ldz",
-        "list_collection_N4DEiC",
-        "list_collection_drWmdB",
-        "list_collection_MyCMJJ"
-      ],
-      "settings": {
-        "show_list_collection": true,
-        "show_nav": true,
-        "xxl": 5,
-        "xl": 4,
-        "lg": 4,
-        "md": 3,
-        "sm": 2,
-        "xs": 1,
-        "spacing": 20,
-        "category": "",
-        "show_more": 5,
-        "products_per_page": 12,
-        "sort_enable": true,
-        "loadmore": true,
-        "type_loadmore": "btn",
-        "cb": true,
-        "show_tags": true,
-        "show_desc": true,
-        "bg_b": "#f2f2f2"
-      }
-    },
-    "nov_policy_PVFmgJ": {
-      "type": "nov-policy",
-      "blocks": {
-        "item_policy_cnKz73": {
-          "type": "item_policy",
-          "settings": {
-            "policy_icon": "shopify://shop_images/p-2.png",
-            "title_policy": "Free Shipping",
-            "stitle_policy": "",
-            "desc_policy": "Get free shipping on all orders for a hassle free shopping experience!",
-            "mw": 285,
-            "link_label": "",
-            "link": "",
-            "bg_icon": "#e3e8f1",
-            "item_border_top_color": "",
-            "border_icon": "",
-            "class": "mb-md-30"
-          }
-        },
-        "item_policy_KnKipc": {
-          "type": "item_policy",
-          "settings": {
-            "policy_icon": "shopify://shop_images/p-3.png",
-            "title_policy": "Secured Payments",
-            "stitle_policy": "",
-            "desc_policy": "Experience secure payments with advanced encryption for your peace of mind.",
-            "mw": 285,
-            "link_label": "",
-            "link": "",
-            "bg_icon": "#e7eee7",
-            "item_border_top_color": "",
-            "border_icon": "",
-            "class": "mb-md-30"
-          }
-        },
-        "item_policy_daW7aM": {
-          "type": "item_policy",
-          "settings": {
-            "policy_icon": "shopify://shop_images/p-1.png",
-            "title_policy": "Return Policy",
-            "stitle_policy": "",
-            "desc_policy": "Easy returns! Return items within 30 days for a refund or exchange.",
-            "mw": 285,
-            "link_label": "",
-            "link": "",
-            "bg_icon": "#f6f6df",
-            "item_border_top_color": "",
-            "border_icon": "",
-            "class": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_policy_cnKz73",
-        "item_policy_KnKipc",
-        "item_policy_daW7aM"
-      ],
-      "name": "Vinova Policy",
-      "settings": {
-        "heading": "",
-        "heading_color": "#222222",
-        "subheading": "",
-        "subheading_color": "#666666",
-        "subheading_position": "bottom",
-        "descheading": "",
-        "descheading_color": "#666666",
-        "heading_alignment": "text-center",
-        "style": "style2",
-        "show_bgitem": false,
-        "bg_itemcolor": "",
-        "bd_radius": 0,
-        "box_shadow": false,
-        "show_border_item": false,
-        "show_border_right_item": false,
-        "c_border_item": "",
-        "show_border_top_item": false,
-        "pt": 0,
-        "pb": 0,
-        "ph": 0,
-        "width_icon": 30,
-        "height_icon": 30,
-        "show_bg_icon": true,
-        "bg_icon_w": 60,
-        "bd_radius_icon": 100,
-        "show_border_icon": false,
-        "bg_icon_shadow": false,
-        "shadow_color": "",
-        "shadow_opacity": 40,
-        "icon_animate": false,
-        "text_fz": 18,
-        "text_ff": "f_df",
-        "t_fw": "font-700",
-        "t_letter_spacing": "0",
-        "stext_fz": 16,
-        "stext_ff": "f_pr",
-        "st_fw": "font-700",
-        "desc_fz": 14,
-        "desc_ff": "f_df",
-        "desc_fw": "font-400",
-        "xxl": 3,
-        "xl": 3,
-        "lg": 3,
-        "md": 1,
-        "sm": 1,
-        "xs": 1,
-        "spacing": 30,
-        "animate": true,
-        "container": "container",
-        "color_section": "",
-        "class_section": "",
-        "ss_bg_enable": false,
-        "background_color": "#ffffff",
-        "background_img_size": "cover",
-        "enable_background_img_size_custom": false,
-        "background_img_size_custom": "",
-        "background_img_position": "center center",
-        "background_corner": 0,
-        "background_position": "bg-center",
-        "background_size": "contain",
-        "background_padding_horizontal": 5,
-        "background_box_shadow": true,
-        "background_box_shadow_color": "#2e90fa12",
-        "height_background_xxl": 100,
-        "height_background_xl": 100,
-        "height_background_lg": 100,
-        "height_background_md": 100,
-        "height_background_sm": 100,
-        "height_background_xs": 100,
-        "distance_top_xl": 80,
-        "distance_top_lg": 80,
-        "distance_top_md": 80,
-        "distance_top_sm": 60,
-        "distance_bottom_xl": 80,
-        "distance_bottom_lg": 80,
-        "distance_bottom_md": 80,
-        "distance_bottom_sm": 60
-      }
-    },
-    "recent-products": {
-      "type": "nov-recently-viewed",
-      "settings": {
-        "heading": "<p>Recently Viewed Products</p>",
-        "heading_color": "#181818",
-        "subheading": "",
-        "subheading_color": "#666666",
-        "heading_alignment": "text-center",
-        "grid_number_xxl": 5,
-        "grid_number": 4,
-        "grid_number_lg": 3,
-        "grid_number_md": 3,
-        "grid_number_sm": 2,
-        "grid_number_xs": 2,
-        "limit": 13,
-        "show_nav": false,
-        "animate": true,
-        "show_border": true,
-        "border_color": "#ededed",
-        "container": "container",
-        "background_color": "",
-        "class": "",
-        "distance_top_xl": 70,
-        "distance_top_md": 30,
-        "distance_top_xs": 30,
-        "distance_bottom_xl": 30,
-        "distance_bottom_md": 30,
-        "distance_bottom_xs": 30
-      }
-    }
-  },
-  "order": [
-    "main",
-    "nov_policy_PVFmgJ",
-    "recent-products"
-  ]
+    "sections":  {
+                     "main":  {
+                                  "type":  "collection-template",
+                                  "blocks":  {
+                                                 "list_collection_T9gidL":  {
+                                                                                "type":  "list_collection",
+                                                                                "settings":  {
+                                                                                                 "image":  "shopify://shop_images/Food.jpg",
+                                                                                                 "collection":  "cat-food"
+                                                                                             }
+                                                                            },
+                                                 "list_collection_UXEHUr":  {
+                                                                                "type":  "list_collection",
+                                                                                "settings":  {
+                                                                                                 "image":  "shopify://shop_images/Grooming.jpg",
+                                                                                                 "collection":  "grooming"
+                                                                                             }
+                                                                            },
+                                                 "list_collection_3Q9Ldz":  {
+                                                                                "type":  "list_collection",
+                                                                                "settings":  {
+                                                                                                 "image":  "shopify://shop_images/Outfits.jpg",
+                                                                                                 "collection":  "outfit"
+                                                                                             }
+                                                                            },
+                                                 "list_collection_N4DEiC":  {
+                                                                                "type":  "list_collection",
+                                                                                "settings":  {
+                                                                                                 "image":  "shopify://shop_images/Pet_Furniture.jpg",
+                                                                                                 "collection":  "pet-bedding"
+                                                                                             }
+                                                                            },
+                                                 "list_collection_drWmdB":  {
+                                                                                "type":  "list_collection",
+                                                                                "settings":  {
+                                                                                                 "image":  "shopify://shop_images/Pet_Toys.jpg",
+                                                                                                 "collection":  "toy"
+                                                                                             }
+                                                                            },
+                                                 "list_collection_MyCMJJ":  {
+                                                                                "type":  "list_collection",
+                                                                                "settings":  {
+                                                                                                 "image":  "shopify://shop_images/Training.jpg",
+                                                                                                 "collection":  "training"
+                                                                                             }
+                                                                            }
+                                             },
+                                  "block_order":  [
+                                                      "list_collection_T9gidL",
+                                                      "list_collection_UXEHUr",
+                                                      "list_collection_3Q9Ldz",
+                                                      "list_collection_N4DEiC",
+                                                      "list_collection_drWmdB",
+                                                      "list_collection_MyCMJJ"
+                                                  ],
+                                  "settings":  {
+                                                   "show_list_collection":  true,
+                                                   "show_nav":  true,
+                                                   "xxl":  5,
+                                                   "xl":  4,
+                                                   "lg":  4,
+                                                   "md":  3,
+                                                   "sm":  2,
+                                                   "xs":  1,
+                                                   "spacing":  20,
+                                                   "category":  "",
+                                                   "show_more":  5,
+                                                   "products_per_page":  12,
+                                                   "sort_enable":  true,
+                                                   "loadmore":  true,
+                                                   "type_loadmore":  "btn",
+                                                   "cb":  true,
+                                                   "show_tags":  true,
+                                                   "show_desc":  true,
+                                                   "bg_b":  "#f2f2f2",
+                                                   "show_collection_intro":  true,
+                                                   "collection_intro_eyebrow":  "Meaningful jewelry collection",
+                                                   "collection_intro_text":  "Discover personalized jewelry created for gifting, celebrating milestones, and keeping the people you love close in a delicate everyday piece.",
+                                                   "collection_chip_1":  "Gift-ready ideas",
+                                                   "collection_chip_2":  "Names, initials and dates",
+                                                   "collection_chip_3":  "Designed with meaning"
+                                               }
+                              },
+                     "nov_policy_PVFmgJ":  {
+                                               "type":  "nov-policy",
+                                               "blocks":  {
+                                                              "item_policy_cnKz73":  {
+                                                                                         "type":  "item_policy",
+                                                                                         "settings":  {
+                                                                                                          "policy_icon":  "shopify://shop_images/p-2.png",
+                                                                                                          "title_policy":  "Careful crafting",
+                                                                                                          "stitle_policy":  "",
+                                                                                                          "desc_policy":  "Meaningful jewelry prepared with close attention to every detail.",
+                                                                                                          "mw":  285,
+                                                                                                          "link_label":  "",
+                                                                                                          "link":  "",
+                                                                                                          "bg_icon":  "#e3e8f1",
+                                                                                                          "item_border_top_color":  "",
+                                                                                                          "border_icon":  "",
+                                                                                                          "class":  "mb-md-30"
+                                                                                                      }
+                                                                                     },
+                                                              "item_policy_KnKipc":  {
+                                                                                         "type":  "item_policy",
+                                                                                         "settings":  {
+                                                                                                          "policy_icon":  "shopify://shop_images/p-3.png",
+                                                                                                          "title_policy":  "Secure checkout",
+                                                                                                          "stitle_policy":  "",
+                                                                                                          "desc_policy":  "Shop confidently with secure payments and a smooth checkout experience.",
+                                                                                                          "mw":  285,
+                                                                                                          "link_label":  "",
+                                                                                                          "link":  "",
+                                                                                                          "bg_icon":  "#e7eee7",
+                                                                                                          "item_border_top_color":  "",
+                                                                                                          "border_icon":  "",
+                                                                                                          "class":  "mb-md-30"
+                                                                                                      }
+                                                                                     },
+                                                              "item_policy_daW7aM":  {
+                                                                                         "type":  "item_policy",
+                                                                                         "settings":  {
+                                                                                                          "policy_icon":  "shopify://shop_images/p-1.png",
+                                                                                                          "title_policy":  "Gift-ready support",
+                                                                                                          "stitle_policy":  "",
+                                                                                                          "desc_policy":  "We help you find personalized pieces for meaningful gifting moments.",
+                                                                                                          "mw":  285,
+                                                                                                          "link_label":  "",
+                                                                                                          "link":  "",
+                                                                                                          "bg_icon":  "#f6f6df",
+                                                                                                          "item_border_top_color":  "",
+                                                                                                          "border_icon":  "",
+                                                                                                          "class":  ""
+                                                                                                      }
+                                                                                     }
+                                                          },
+                                               "block_order":  [
+                                                                   "item_policy_cnKz73",
+                                                                   "item_policy_KnKipc",
+                                                                   "item_policy_daW7aM"
+                                                               ],
+                                               "name":  "Vinova Policy",
+                                               "settings":  {
+                                                                "heading":  "",
+                                                                "heading_color":  "#222222",
+                                                                "subheading":  "",
+                                                                "subheading_color":  "#666666",
+                                                                "subheading_position":  "bottom",
+                                                                "descheading":  "",
+                                                                "descheading_color":  "#666666",
+                                                                "heading_alignment":  "text-center",
+                                                                "style":  "style2",
+                                                                "show_bgitem":  false,
+                                                                "bg_itemcolor":  "",
+                                                                "bd_radius":  0,
+                                                                "box_shadow":  false,
+                                                                "show_border_item":  false,
+                                                                "show_border_right_item":  false,
+                                                                "c_border_item":  "",
+                                                                "show_border_top_item":  false,
+                                                                "pt":  0,
+                                                                "pb":  0,
+                                                                "ph":  0,
+                                                                "width_icon":  30,
+                                                                "height_icon":  30,
+                                                                "show_bg_icon":  true,
+                                                                "bg_icon_w":  60,
+                                                                "bd_radius_icon":  100,
+                                                                "show_border_icon":  false,
+                                                                "bg_icon_shadow":  false,
+                                                                "shadow_color":  "",
+                                                                "shadow_opacity":  40,
+                                                                "icon_animate":  false,
+                                                                "text_fz":  18,
+                                                                "text_ff":  "f_df",
+                                                                "t_fw":  "font-700",
+                                                                "t_letter_spacing":  "0",
+                                                                "stext_fz":  16,
+                                                                "stext_ff":  "f_pr",
+                                                                "st_fw":  "font-700",
+                                                                "desc_fz":  14,
+                                                                "desc_ff":  "f_df",
+                                                                "desc_fw":  "font-400",
+                                                                "xxl":  3,
+                                                                "xl":  3,
+                                                                "lg":  3,
+                                                                "md":  1,
+                                                                "sm":  1,
+                                                                "xs":  1,
+                                                                "spacing":  30,
+                                                                "animate":  true,
+                                                                "container":  "container",
+                                                                "color_section":  "",
+                                                                "class_section":  "",
+                                                                "ss_bg_enable":  false,
+                                                                "background_color":  "#ffffff",
+                                                                "background_img_size":  "cover",
+                                                                "enable_background_img_size_custom":  false,
+                                                                "background_img_size_custom":  "",
+                                                                "background_img_position":  "center center",
+                                                                "background_corner":  0,
+                                                                "background_position":  "bg-center",
+                                                                "background_size":  "contain",
+                                                                "background_padding_horizontal":  5,
+                                                                "background_box_shadow":  true,
+                                                                "background_box_shadow_color":  "#2e90fa12",
+                                                                "height_background_xxl":  100,
+                                                                "height_background_xl":  100,
+                                                                "height_background_lg":  100,
+                                                                "height_background_md":  100,
+                                                                "height_background_sm":  100,
+                                                                "height_background_xs":  100,
+                                                                "distance_top_xl":  80,
+                                                                "distance_top_lg":  80,
+                                                                "distance_top_md":  80,
+                                                                "distance_top_sm":  60,
+                                                                "distance_bottom_xl":  80,
+                                                                "distance_bottom_lg":  80,
+                                                                "distance_bottom_md":  80,
+                                                                "distance_bottom_sm":  60
+                                                            }
+                                           },
+                     "recent-products":  {
+                                             "type":  "nov-recently-viewed",
+                                             "settings":  {
+                                                              "heading":  "\u003cp\u003eRecently viewed pieces\u003c/p\u003e",
+                                                              "heading_color":  "#181818",
+                                                              "subheading":  "",
+                                                              "subheading_color":  "#666666",
+                                                              "heading_alignment":  "text-center",
+                                                              "grid_number_xxl":  5,
+                                                              "grid_number":  4,
+                                                              "grid_number_lg":  3,
+                                                              "grid_number_md":  3,
+                                                              "grid_number_sm":  2,
+                                                              "grid_number_xs":  2,
+                                                              "limit":  13,
+                                                              "show_nav":  false,
+                                                              "animate":  true,
+                                                              "show_border":  true,
+                                                              "border_color":  "#ededed",
+                                                              "container":  "container",
+                                                              "background_color":  "",
+                                                              "class":  "",
+                                                              "distance_top_xl":  70,
+                                                              "distance_top_md":  30,
+                                                              "distance_top_xs":  30,
+                                                              "distance_bottom_xl":  30,
+                                                              "distance_bottom_md":  30,
+                                                              "distance_bottom_xs":  30
+                                                          }
+                                         }
+                 },
+    "order":  [
+                  "main",
+                  "nov_policy_PVFmgJ",
+                  "recent-products"
+              ]
 }

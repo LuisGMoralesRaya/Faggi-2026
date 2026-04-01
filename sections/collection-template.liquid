@@ -91,6 +91,34 @@
   </div>
 {% endif %}
 
+{%- liquid
+  assign collection_intro_copy = collection.description | strip_html | strip
+  if collection_intro_copy == blank
+    assign collection_intro_copy = sst.collection_intro_text | strip
+  endif
+  if collection_intro_copy == blank
+    assign collection_intro_copy = 'Discover meaningful jewelry and personalized pieces designed to celebrate names, initials, dates, and unforgettable moments.'
+  endif
+-%}
+{% if sst.show_collection_intro %}
+  <div class="container">
+    <div class="collection-intro">
+      {% if sst.collection_intro_eyebrow != blank %}
+        <p class="collection-intro__eyebrow mb-10">{{ sst.collection_intro_eyebrow }}</p>
+      {% endif %}
+      <h2 class="collection-intro__title">{{ collection.title }}</h2>
+      <div class="collection-intro__copy rte">{{ collection_intro_copy }}</div>
+      {% if sst.collection_chip_1 != blank or sst.collection_chip_2 != blank or sst.collection_chip_3 != blank %}
+        <div class="collection-intro__chips">
+          {% if sst.collection_chip_1 != blank %}<span>{{ sst.collection_chip_1 }}</span>{% endif %}
+          {% if sst.collection_chip_2 != blank %}<span>{{ sst.collection_chip_2 }}</span>{% endif %}
+          {% if sst.collection_chip_3 != blank %}<span>{{ sst.collection_chip_3 }}</span>{% endif %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}
+
 <div id="main-collection-filters" class="collection-{{ viewtype }}" data-id="{{ section.id }}">
   {% if viewtype != 'full_width' %}
     <div class="container">
@@ -429,6 +457,42 @@
       {
         "type": "header",
         "content": "Config Collection"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_collection_intro",
+        "label": "Show editorial intro",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "collection_intro_eyebrow",
+        "label": "Intro eyebrow",
+        "default": "Jewelry with meaning"
+      },
+      {
+        "type": "textarea",
+        "id": "collection_intro_text",
+        "label": "Fallback intro text",
+        "default": "Explore elegant jewelry and personalized pieces created for gifting, celebrating, and keeping your favorite memories close."
+      },
+      {
+        "type": "text",
+        "id": "collection_chip_1",
+        "label": "Chip 1",
+        "default": "Gift-ready pieces"
+      },
+      {
+        "type": "text",
+        "id": "collection_chip_2",
+        "label": "Chip 2",
+        "default": "Personalized details"
+      },
+      {
+        "type": "text",
+        "id": "collection_chip_3",
+        "label": "Chip 3",
+        "default": "Everyday elegance"
       },
       {
         "type": "range",
