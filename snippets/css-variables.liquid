@@ -194,6 +194,11 @@
 
         --font-icon: "Material-Design-Iconic-Font";
         --font-icons: "rbb-font";
+        --brand-accent: {{ settings.color_button | default: '#f668a0' }};
+        --brand-accent-hover: {{ settings.color_button_hover | default: '#de4f87' }};
+        --brand-text: {{ settings.heading_text | default: '#121212' }};
+        --brand-muted: {{ settings.color_body_text | default: '#5f5a63' }};
+        --brand-border: {{ settings.color_borders | default: '#f1d5e2' }};
        
         --product-corner-radius: {{ settings.corner_product }}px;
         --product-corner-radius-image: {{ settings.corner_product_image }}px;

@@ -2,6 +2,8 @@
 {%- liquid
   assign bst = block.settings
   assign aspect = bst.aspect
+  assign external_image_url = bst.external_image_url | strip
+  assign image_alt = bst.external_image_alt | default: bst.image.alt | default: shop.name
   if aspect == 'custom'
     assign aspect = bst.aspect_custom
   endif
@@ -35,7 +37,18 @@
   {% if bst.link != blank %}
     <a href="{{ bst.link }}" class="d-block w-100">
   {% endif %}
-  {% if bst.image != blank %}
+  {% if external_image_url != blank %}
+    <div class="image-wrapper">
+      <img
+        src="{{ external_image_url }}"
+        alt="{{ image_alt | escape }}"
+        loading="lazy"
+        width="{{ bst.image_width | default: 320 }}"
+        height="{{ bst.image_width | default: 320 }}"
+        style="height: auto;"
+      >
+    </div>
+  {% elsif bst.image != blank %}
     <div class="image-wrapper">
       {% render 'nov-aspect-image', image: bst.image, aspect: aspect, class: class %}
     </div>
@@ -90,6 +103,16 @@
         "type": "image_picker",
         "id": "image",
         "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "external_image_url",
+        "label": "External image URL"
+      },
+      {
+        "type": "text",
+        "id": "external_image_alt",
+        "label": "External image alt text"
       },
       {
         "type": "url",
