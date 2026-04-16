@@ -5000,7 +5000,7 @@
                     "height_custom": true,
                     "image_height_unit": "%",
                     "image_height": 30,
-                    "image_height_xl": 100,
+                    "image_height_xl": 50,
                     "image_height_lg": 50,
                     "image_height_md": 100,
                     "image_height_sm": 100,
