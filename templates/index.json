@@ -879,7 +879,7 @@
                   "type": "image",
                   "name": "Image",
                   "settings": {
-                    "image": "shopify://shop_images/24.png",
+                    "image": "shopify://shop_images/Un_dia_a_la_vez_6_7f2f2fe9-67f1-4500-a11a-32485198e004.png",
                     "link": "#",
                     "width_custom": false,
                     "image_width_unit": "%",
@@ -1408,6 +1408,7 @@
             "col_hUpYmx": {
               "type": "_col",
               "name": "Column",
+              "disabled": true,
               "settings": {
                 "width_unit": "column",
                 "w_xxl": 50,
@@ -1606,6 +1607,7 @@
             "col_KGLAPY": {
               "type": "_col",
               "name": "Column",
+              "disabled": true,
               "settings": {
                 "width_unit": "column",
                 "w_xxl": 50,
@@ -1804,6 +1806,7 @@
             "col_DmUV93": {
               "type": "_col",
               "name": "Column",
+              "disabled": true,
               "settings": {
                 "width_unit": "column",
                 "w_xxl": 50,
