@@ -503,6 +503,11 @@
       this.charmsCatalog = this.config.charms && this.config.charms.length ? this.config.charms : FALLBACK_CHARMS;
       this.activeEditor = null;
       this.nativeShapeControl = this.findNativeShapeControl();
+      this.modal = this.root.querySelector('[data-pp-modal]');
+      this.triggerSubtitle = this.root.querySelector('[data-pp-trigger-subtitle]');
+      this.triggerCheck = this.root.querySelector('[data-pp-trigger-check]');
+      this.confirmButton = this.root.querySelector('[data-action="confirm-personalizer"]');
+      this._escHandler = this.handleEscape.bind(this);
       this.state = this.buildInitialState();
 
       this.renderFields();
@@ -592,7 +597,13 @@
 
       const action = target.getAttribute('data-action');
 
-      if (action === 'shape-select') {
+      if (action === 'open-personalizer') {
+        this.openModal();
+      } else if (action === 'close-personalizer') {
+        this.closeModal();
+      } else if (action === 'confirm-personalizer') {
+        this.confirmModal();
+      } else if (action === 'shape-select') {
         this.handleShapeSelect(target);
       } else if (action === 'font-select') {
         this.handleFontSelect(target);
@@ -1492,6 +1503,7 @@
       this.updateSummary();
       this.syncProperties();
       this.toggleAddToCart();
+      this.updateInlineSummary();
     }
 
     updateVisibility() {
@@ -1910,14 +1922,76 @@
       }).join('');
     }
 
+    openModal() {
+      if (!this.modal) return;
+      this.modal.hidden = false;
+      document.body.style.overflow = 'hidden';
+      document.addEventListener('keydown', this._escHandler);
+      requestAnimationFrame(function () {
+        this.modal.classList.add('is-open');
+      }.bind(this));
+    }
+
+    closeModal() {
+      if (!this.modal) return;
+      this.modal.classList.remove('is-open');
+      document.body.style.overflow = '';
+      document.removeEventListener('keydown', this._escHandler);
+      var modal = this.modal;
+      setTimeout(function () {
+        modal.hidden = true;
+      }, 300);
+      this.updateInlineSummary();
+    }
+
+    confirmModal() {
+      var validation = this.validateState();
+      if (validation.errors.length) {
+        this.updateAll();
+        var firstError = this.root.querySelector('.pp-alert--error');
+        if (firstError) firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+      this.closeModal();
+    }
+
+    handleEscape(event) {
+      if (event.key === 'Escape') this.closeModal();
+    }
+
+    updateInlineSummary() {
+      if (!this.triggerSubtitle) return;
+      var parts = [];
+      var selectedCharms = this.getSelectedCharms();
+      var selectedPhotos = this.state.photos ? this.state.photos.filter(function (item) { return !!item.file; }) : [];
+
+      if (this.state.productShape) parts.push(this.state.productShape);
+      if (this.state.engravingShape) parts.push('Forma: ' + this.state.engravingShape);
+      if (this.state.mainFrontActive && this.state.mainFrontText) parts.push('Texto frente');
+      if (this.state.mainBackActive && this.state.mainBackText) parts.push('Texto atras');
+      if (this.state.singleText) parts.push('Mensaje');
+      if (this.state.shapeText) parts.push('Grabado forma');
+      if (this.state.textSlots && this.state.textSlots.length) parts.push(this.state.textSlots.length + ' texto(s)');
+      if (selectedPhotos.length) parts.push(selectedPhotos.length + ' foto(s)');
+      if (selectedCharms.length) parts.push(this.getTotalCharms() + ' charm(s)');
+
+      var hasSelections = parts.length > 0;
+      this.triggerSubtitle.textContent = hasSelections ? parts.join(' \u00B7 ') : 'Toca para configurar tu diseno';
+
+      var trigger = this.root.querySelector('.pp-trigger');
+      if (trigger) trigger.classList.toggle('has-selections', hasSelections);
+      if (this.triggerCheck) this.triggerCheck.hidden = !hasSelections;
+    }
+
     toggleAddToCart() {
       if (!this.addButton) return;
 
-      const validation = this.validateState();
-      const shouldDisable = validation.errors.length > 0;
+      var validation = this.validateState();
+      var shouldDisable = validation.errors.length > 0;
       this.addButton.disabled = shouldDisable;
       this.addButton.classList.toggle('is-personalizer-disabled', shouldDisable);
       this.root.classList.toggle('is-invalid', shouldDisable);
+      if (this.confirmButton) this.confirmButton.disabled = shouldDisable;
     }
   }
 

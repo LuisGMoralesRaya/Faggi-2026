@@ -26,69 +26,99 @@
     data-form-id="product-form-{{ section.id }}"
     data-active-tag="{{ active_personalization_tag }}"
   >
-    <div class="pp-shell">
-      <div class="pp-shell__header">
-        <p class="pp-shell__eyebrow">{{ section.settings.product_eyebrow | escape }}</p>
-        <div class="pp-shell__title-row">
-          <h2 class="pp-shell__title">{{ section.settings.personalizer_heading | escape }}</h2>
-          <span class="pp-shell__rule-badge" data-preview-rule-label>{{ active_personalization_tag | replace: 'Personalizacion_', 'Personalizado ' }}</span>
-        </div>
-        <p class="pp-shell__subtitle">{{ section.settings.personalizer_subheading | escape }}</p>
-        {%- if section.settings.personalization_note != blank -%}
-          <div class="pp-shell__note rte">{{ section.settings.personalization_note }}</div>
-        {%- endif -%}
-      </div>
+    {%- comment -%} ── Inline trigger button (always visible in PDP) ── {%- endcomment -%}
+    <button type="button" class="pp-trigger" data-action="open-personalizer">
+      <span class="pp-trigger__icon" aria-hidden="true">&#10022;</span>
+      <span class="pp-trigger__copy">
+        <span class="pp-trigger__title">{{ section.settings.personalizer_heading | default: 'Personaliza tu pieza' | escape }}</span>
+        <span class="pp-trigger__subtitle" data-pp-trigger-subtitle>Toca para configurar tu diseño</span>
+      </span>
+      <span class="pp-trigger__check" data-pp-trigger-check hidden aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="9" fill="currentColor"/><path d="M5.5 9.5L7.5 11.5L12.5 6.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="pp-trigger__arrow" aria-hidden="true">&rarr;</span>
+    </button>
 
-      <div class="pp-shell__layout">
-        <div class="pp-shell__preview-column">
-          <div class="pp-card pp-card--preview">
-            <div class="pp-card__header">
-              <div>
-                <p class="pp-card__eyebrow">Preview</p>
-                <h3 class="pp-card__title">Vista previa dinámica</h3>
-              </div>
-              <span class="pp-card__shape-pill" data-preview-shape-badge hidden></span>
-            </div>
+    {%- comment -%} ── Hidden properties (inside form, submitted with cart) ── {%- endcomment -%}
+    <div data-personalizer-properties style="display:none"></div>
 
-            <div class="pp-preview" data-preview-stage>
-              <div class="pp-preview__empty" data-preview-empty>
-                <span class="pp-preview__empty-icon">+</span>
-                <p>{{ section.settings.personalizer_preview_empty | escape }}</p>
-              </div>
-              <div class="pp-preview__main" data-preview-main></div>
-              <div class="pp-preview__gallery" data-preview-gallery hidden></div>
-              <div class="pp-preview__charms" data-preview-charms hidden></div>
-            </div>
+    {%- comment -%} ── Modal overlay ── {%- endcomment -%}
+    <div class="pp-modal" data-pp-modal hidden>
+      <div class="pp-modal__backdrop" data-action="close-personalizer"></div>
+      <div class="pp-modal__dialog" role="dialog" aria-modal="true" aria-label="Personalizador de producto">
+
+        {%- comment -%} Modal header {%- endcomment -%}
+        <div class="pp-modal__header">
+          <div class="pp-modal__header-copy">
+            <p class="pp-modal__eyebrow">{{ section.settings.product_eyebrow | escape }}</p>
+            <h2 class="pp-modal__heading">{{ section.settings.personalizer_heading | escape }}</h2>
+            <span class="pp-modal__badge" data-preview-rule-label>{{ active_personalization_tag | replace: 'Personalizacion_', 'Personalizado ' }}</span>
           </div>
-
-          <div class="pp-card pp-card--summary">
-            <div class="pp-card__header">
-              <div>
-                <p class="pp-card__eyebrow">Resumen</p>
-                <h3 class="pp-card__title">{{ section.settings.personalizer_summary_title | escape }}</h3>
-              </div>
-            </div>
-            <div class="pp-summary" data-summary-list></div>
-          </div>
+          <button type="button" class="pp-modal__close" data-action="close-personalizer" aria-label="Cerrar personalizador">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
         </div>
 
-        <div class="pp-shell__controls-column">
-          <div class="pp-card pp-card--controls">
-            <div class="pp-card__header">
-              <div>
-                <p class="pp-card__eyebrow">Configuración</p>
-                <h3 class="pp-card__title">Personaliza tu pieza</h3>
+        {%- comment -%} Modal body — two-column layout {%- endcomment -%}
+        <div class="pp-modal__body">
+          <div class="pp-modal__subtitle">{{ section.settings.personalizer_subheading | escape }}</div>
+          {%- if section.settings.personalization_note != blank -%}
+            <div class="pp-modal__note rte">{{ section.settings.personalization_note }}</div>
+          {%- endif -%}
+
+          <div class="pp-modal__layout">
+            {%- comment -%} Preview column {%- endcomment -%}
+            <div class="pp-modal__preview-col">
+              <div class="pp-card pp-card--preview">
+                <div class="pp-card__header">
+                  <div>
+                    <p class="pp-card__eyebrow">Preview</p>
+                    <h3 class="pp-card__title">Vista previa</h3>
+                  </div>
+                  <span class="pp-card__shape-pill" data-preview-shape-badge hidden></span>
+                </div>
+                <div class="pp-preview" data-preview-stage>
+                  <div class="pp-preview__empty" data-preview-empty>
+                    <span class="pp-preview__empty-icon">+</span>
+                    <p>{{ section.settings.personalizer_preview_empty | escape }}</p>
+                  </div>
+                  <div class="pp-preview__main" data-preview-main></div>
+                  <div class="pp-preview__gallery" data-preview-gallery hidden></div>
+                  <div class="pp-preview__charms" data-preview-charms hidden></div>
+                </div>
+              </div>
+
+              <div class="pp-card pp-card--summary">
+                <div class="pp-card__header">
+                  <div>
+                    <p class="pp-card__eyebrow">Resumen</p>
+                    <h3 class="pp-card__title">{{ section.settings.personalizer_summary_title | escape }}</h3>
+                  </div>
+                </div>
+                <div class="pp-summary" data-summary-list></div>
               </div>
             </div>
-            <div class="pp-status" data-personalizer-status></div>
-            <div class="pp-errors" data-personalizer-errors></div>
-            <div class="pp-fields" data-personalizer-fields></div>
-            <div class="pp-properties" data-personalizer-properties></div>
+
+            {%- comment -%} Controls column {%- endcomment -%}
+            <div class="pp-modal__controls-col">
+              <div class="pp-status" data-personalizer-status></div>
+              <div class="pp-errors" data-personalizer-errors></div>
+              <div class="pp-fields" data-personalizer-fields></div>
+            </div>
           </div>
         </div>
+
+        {%- comment -%} Modal footer {%- endcomment -%}
+        <div class="pp-modal__footer">
+          <button type="button" class="pp-modal__confirm" data-action="confirm-personalizer">
+            Confirmar personalización
+          </button>
+        </div>
+
       </div>
     </div>
 
+    {%- comment -%} ── Config JSON ── {%- endcomment -%}
     <script type="application/json" data-personalizer-config>
       {
         "sectionId": {{ section.id | json }},
