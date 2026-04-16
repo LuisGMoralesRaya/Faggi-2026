@@ -151,6 +151,8 @@
   "boxed": false,
   "current": {
     "license": "16a58113-71ac-436e-8b83-b8b604c114e2",
+    "show_newsletter_popup": false,
+    "newsletter_sm": false,
     "content_for_index": []
   }
 }
