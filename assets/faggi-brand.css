@@ -563,6 +563,113 @@ footer .image-block {
   border-radius: 999px;
 }
 
+/* === FAGGI SEO EDITORIAL SECTION === */
+.faggi-seo-editorial {
+  text-align: center;
+}
+
+.faggi-seo-editorial__eyebrow {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  color: var(--faggi-accent);
+}
+
+.faggi-seo-editorial__heading {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 0.75rem;
+  color: var(--faggi-text);
+}
+
+.faggi-seo-editorial__subheading {
+  font-size: 1.05rem;
+  max-width: 42rem;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}
+
+.faggi-seo-editorial__content {
+  max-width: 52rem;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.faggi-seo-editorial__features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 56rem;
+  margin: 2rem auto 0;
+}
+
+.faggi-seo-editorial__feature {
+  padding: 1.5rem 1.25rem;
+  background: var(--faggi-surface);
+  border: 1px solid rgba(246, 104, 160, 0.12);
+  border-radius: 18px;
+  text-align: center;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.faggi-seo-editorial__feature:hover {
+  box-shadow: 0 12px 30px rgba(246, 104, 160, 0.12);
+  transform: translateY(-2px);
+}
+
+.faggi-seo-editorial__feature-icon {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.faggi-seo-editorial__feature-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--faggi-text);
+}
+
+.faggi-seo-editorial__feature-desc {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--faggi-muted);
+}
+
+.faggi-seo-editorial__cta {
+  margin-top: 2rem;
+}
+
+/* === TYPOGRAPHY HIERARCHY IMPROVEMENTS === */
+.title_section .title {
+  font-weight: 700;
+}
+
+.title_section .sub_title {
+  font-weight: 600;
+}
+
+/* Improved heading hierarchy for SEO */
+.collection-template h1,
+.product-single__title {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+/* Collection description SEO text */
+.collection-template .collection-description {
+  max-width: 48rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--faggi-muted);
+  margin-bottom: 1.5rem;
+}
+
 @media (max-width: 767px) {
   .slideshow {
     border-radius: 22px;
@@ -577,5 +684,14 @@ footer .image-block {
 
   .product-single__benefits li {
     padding-left: 2.55rem;
+  }
+
+  .faggi-seo-editorial__features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .faggi-seo-editorial__feature {
+    padding: 1.2rem 1rem;
   }
 }

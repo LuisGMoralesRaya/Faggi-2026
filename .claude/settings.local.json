@@ -5,7 +5,8 @@
       "Bash(grep -E \"\\\\.\\(css|js\\)$\")",
       "Bash(xargs ls *)",
       "Bash(ls \"c:/Users/luisg/Desktop/Portafolio 2026/Faggi/Nuevo Tema/Tema/sections\"/*.json)",
-      "Bash(/c/Python312/python)"
+      "Bash(/c/Python312/python)",
+      "Bash(/c/Python312/python _translate_locale.py)"
     ]
   }
 }

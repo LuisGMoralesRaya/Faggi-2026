@@ -3784,7 +3784,7 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/img-5-8.jpg",
-            "tab_label": "Grooming",
+            "tab_label": "Grabado con Texto",
             "title": "Shine With Care",
             "stitle": "Mar 08, 2025",
             "desc": "Professional grooming that keeps your pets clean, comfortable, and full of confidence every single day, naturally bright..."
@@ -3983,7 +3983,7 @@
               "type": "text",
               "name": "Text",
               "settings": {
-                "text": "<p><a href=\"#\" title=\"#\">Grooming</a></p>",
+                "text": "<p><a href=\"#\" title=\"#\">Grabado con Texto</a></p>",
                 "color": "#1c1c1c",
                 "color_link": "#1f2937",
                 "color_link_hover": "#ffd100",
@@ -6514,8 +6514,8 @@
                   "settings": {
                     "enable_custom_form1": true,
                     "enable_custom_form_title1": "Choose Services",
-                    "custom_form_value11": "Grooming",
-                    "custom_form_value12": "Boarding",
+                    "custom_form_value11": "Grabado con Texto",
+                    "custom_form_value12": "Grabado con Foto",
                     "custom_form_value13": "Charms Personalizados",
                     "custom_form_value14": "Training",
                     "custom_form_value15": "Cuidado de Joyeria",
