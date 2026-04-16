@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- Pawzy 1 v.1.0.0 -->
+<!-- Pawzy 2 v.1.0.0 -->
 {%- if settings.lang_iso_rtl != blank -%}
   {% assign list_iso_rtl = settings.lang_iso_rtl | downcase %}
   {% if list_iso_rtl contains request.locale.iso_code and settings.enable_rtl %}
@@ -10,37 +10,12 @@
 {%- endif -%}
 <html class="no-js{% if iso_rtl %} lang-rtl{% endif %}"{% if iso_rtl %} dir="rtl"{% endif %} lang="{{ request.locale.iso_code }}">
   <head>
-    {%- liquid
-      assign meta_description = page_description | strip
-
-      if meta_description == blank
-        if request.page_type == 'product'
-          if product.description != blank
-            assign meta_description = product.description | strip_html | strip_newlines | truncate: 160
-          else
-            assign meta_description = 'Joyería personalizada diseñada para celebrar nombres, iniciales, fechas y momentos con significado.'
-          endif
-        elsif request.page_type == 'collection'
-          if collection.description != blank
-            assign meta_description = collection.description | strip_html | strip_newlines | truncate: 160
-          else
-            assign meta_description = collection.title | append: ' con joyería personalizada llena de significado y piezas perfectas para regalar.' | truncate: 160
-          endif
-        elsif request.page_type == 'page' and page.content != blank
-          assign meta_description = page.content | strip_html | strip_newlines | truncate: 160
-        else
-          assign meta_description = shop.description | default: shop.name
-        endif
-      endif
-    -%}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-    <meta name="theme-color" content="#f668a0">
+    <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
@@ -64,41 +39,10 @@
       {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
     </title>
 
-    <meta name="description" content="{{ meta_description | escape }}">
+    {% if page_description %}
+      <meta name="description" content="{{ page_description | escape }}">
+    {% endif %}
     {% render 'social-meta-tags' %}
-    {%- liquid
-      assign organization_logo = ''
-
-      if settings.brand_logo_external != blank
-        assign organization_logo = settings.brand_logo_external
-      elsif settings.share_image != blank
-        assign organization_logo = settings.share_image | image_url: width: 600 | prepend: 'https:'
-      elsif shop.brand.logo != blank
-        assign organization_logo = shop.brand.logo | image_url: width: 600 | prepend: 'https:'
-      endif
-    -%}
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": {{ shop.name | json }},
-        "url": {{ request.origin | json }}{% if organization_logo != blank %},
-        "logo": {{ organization_logo | json }}{% endif %}
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": {{ shop.name | json }},
-        "url": {{ request.origin | json }},
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": {{ request.origin | append: routes.search_url | append: '?q={search_term_string}' | json }},
-          "query-input": "required name=search_term_string"
-        }
-      }
-    </script>
     {{ content_for_header }}
     {% render 'font-icon' %}
     {% render 'css-variables' %}
@@ -106,7 +50,6 @@
     {% if iso_rtl %}
       {{ 'css-theme-rtl.css' | asset_url | stylesheet_tag }}
     {% endif %}
-    {{ 'faggi-brand.css' | asset_url | stylesheet_tag }}
     {% render 'nov-head-js' %}
     {% render 'variant-options' %}
 
@@ -114,7 +57,6 @@
   </head>
 
   <body class="template-{{ template | split: '.' | first }}">
-    <a class="skip-to-content-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
     {% if template.name != "index" and settings.enable_loadpage %}
       <div class="preloader_nov">
         <div class="nov_load"></div>

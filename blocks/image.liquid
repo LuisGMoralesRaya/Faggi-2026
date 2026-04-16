@@ -2,8 +2,6 @@
 {%- liquid
   assign bst = block.settings
   assign aspect = bst.aspect
-  assign external_image_url = bst.external_image_url | strip
-  assign image_alt = bst.external_image_alt | default: bst.image.alt | default: shop.name
   if aspect == 'custom'
     assign aspect = bst.aspect_custom
   endif
@@ -33,23 +31,12 @@
   assign image_style = style_width | append: style_height | append: style_object_fit | append: style_radius | append: style_mt | append: style_mb
 -%}
 
-<div class="theme-blocks-item image-block position-relative{% if bst.width_custom %} custom-width align-{{ bst.align }}{% endif %}{% if bst.height_custom %} custom-height{% endif %}{% if bst.width_custom == false %} w-100{% endif %} {{ bst.img_animation }}" style="{{ image_style }}">
+<div class="theme-blocks-item image-block position-relative{% if bst.width_custom %} custom-width align-{{ bst.align }}{% endif %}{% if bst.height_custom %} custom-height{% endif %}{% if bst.width_custom == false %} w-100{% endif %}" style="{{ image_style }}">
   {% if bst.link != blank %}
     <a href="{{ bst.link }}" class="d-block w-100">
   {% endif %}
-  {% if external_image_url != blank %}
-    <div class="image-wrapper">
-      <img
-        src="{{ external_image_url }}"
-        alt="{{ image_alt | escape }}"
-        loading="lazy"
-        width="{{ bst.image_width | default: 320 }}"
-        height="{{ bst.image_width | default: 320 }}"
-        style="height: auto;"
-      >
-    </div>
-  {% elsif bst.image != blank %}
-    <div class="image-wrapper">
+  {% if bst.image != blank %}
+    <div class="image-wrapper position-relative {{ bst.img_animation }}">
       {% render 'nov-aspect-image', image: bst.image, aspect: aspect, class: class %}
     </div>
   {% else %}
@@ -60,19 +47,28 @@
   {% if bst.link != blank %}
     </a>
   {% endif %}
-  {% if bst.pattern_image != blank %}
-    <div class="pattern-image position-absolute {{ bst.pattern_position }}" style="--horizontal: {{ bst.pattern_position_horizontal }}%;--vertical: {{ bst.pattern_position_vertical }}%; width: {{ bst.pattern_width }}%;">
-      {% if bst.pattern_image_animation %}
-        <div class="img_animate">
-          <div class="layer" data-depth="0.7">
-            {% render 'nov-aspect-image', image: bst.pattern_image, class: 'no-ef' %}
+  {% for i in (1..2) %}
+    {% assign pattern_image_id = 'pattern_image' | append: i %}
+    {% assign pattern_image_animation_id = 'pattern_image_animation' | append: i %}
+    {% assign pattern_position_id = 'pattern_position' | append: i %}
+    {% assign pattern_position_horizontal_id = 'pattern_position_horizontal' | append: i %}
+    {% assign pattern_position_vertical_id = 'pattern_position_vertical' | append: i %}
+    {% assign pattern_width_id = 'pattern_width' | append: i %}
+    {% assign pattern_index_id = 'pattern_index' | append: i %}
+    {% if bst[pattern_image_id] != blank %}
+      <div class="pattern-image position-absolute {{ bst[pattern_position_id] }}" style="--horizontal: {{ bst[pattern_position_horizontal_id] }}%;--vertical: {{ bst[pattern_position_vertical_id] }}%; width: {{ bst[pattern_width_id] }}%;{% if bst[pattern_index_id] == 'up' %} z-index: 2;{% endif %}">
+        {% if bst[pattern_image_animation_id] %}
+          <div class="img_animate">
+            <div class="layer" data-depth="{{ forloop.index | plus: 5 | times: 0.1 }}">
+              {% render 'nov-aspect-image', image: bst[pattern_image_id], class: 'no-ef' %}
+            </div>
           </div>
-        </div>
-      {% else %}
-        {% render 'nov-aspect-image', image: bst.pattern_image, class: 'no-ef' %}
-      {% endif %}
-    </div>
-  {% endif %}
+        {% else %}
+          {% render 'nov-aspect-image', image: bst[pattern_image_id], class: 'no-ef' %}
+        {% endif %}
+      </div>
+    {% endif %}
+  {% endfor %}
   {% if bst.content %}
     <div class="img-blocks-content position-absolute {{ bst.content_position }}{% if bst.show_when_hover_image %} show-when-hover-image{% endif %}" style="--horizontal: {{ bst.content_position_horizontal }}%;--vertical: {{ bst.content_position_vertical }}%; width: {{ bst.content_width }}%;">
       {% content_for 'blocks' %}
@@ -103,16 +99,6 @@
         "type": "image_picker",
         "id": "image",
         "label": "Image"
-      },
-      {
-        "type": "text",
-        "id": "external_image_url",
-        "label": "External image URL"
-      },
-      {
-        "type": "text",
-        "id": "external_image_alt",
-        "label": "External image alt text"
       },
       {
         "type": "url",
@@ -294,23 +280,35 @@
       },
       {
         "type": "header",
-        "content": "Pattern"
+        "content": "Pattern 1"
       },
       {
         "type": "image_picker",
-        "id": "pattern_image",
+        "id": "pattern_image1",
         "label": "Pattern image"
       },
       {
         "type": "checkbox",
-        "id": "pattern_image_animation",
+        "id": "pattern_image_animation1",
         "label": "Pattern image animation",
         "default": false,
-        "info": "Enable to show pattern image animation"
+        "info": "Enable to show pattern image animation",
+        "visible_if": "{{ block.settings.pattern_image1 != blank }}"
       },
       {
         "type": "select",
-        "id": "pattern_position",
+        "id": "pattern_index1",
+        "label": "Pattern index",
+        "default": "up",
+        "options": [
+          {"value": "up", "label": "Up" },
+          {"value": "down", "label": "Down"}
+        ],
+        "visible_if": "{{ block.settings.pattern_image1 != blank }}"
+      },
+      {
+        "type": "select",
+        "id": "pattern_position1",
         "label": "Pattern position",
         "default": "left-center",
         "options": [
@@ -324,40 +322,119 @@
           {"value": "center-center", "label": "Middle center"},
           {"value": "bottom-center", "label": "Bottom center"}
         ],
-        "visible_if": "{{ block.settings.pattern_image != blank }}"
+        "visible_if": "{{ block.settings.pattern_image1 != blank }}"
       },
       {
         "type": "range",
-        "id": "pattern_position_horizontal",
+        "id": "pattern_position_horizontal1",
         "label": "Pattern position horizontal",
-        "default": 50,
-        "min": 0,
-        "max": 100,
+        "default": 5,
+        "min": -40,
+        "max": 60,
         "step": 1,
         "unit": "%",
-        "visible_if": "{{ block.settings.pattern_image != blank }}"
+        "visible_if": "{{ block.settings.pattern_image1 != blank }}"
       },
       {
         "type": "range",
-        "id": "pattern_position_vertical",
+        "id": "pattern_position_vertical1",
         "label": "Pattern position vertical",
-        "default": 50,
-        "min": 0,
-        "max": 100,
+        "default": 5,
+        "min": -40,
+        "max": 60,
         "step": 1,
         "unit": "%",
-        "visible_if": "{{ block.settings.pattern_image != blank }}"
+        "visible_if": "{{ block.settings.pattern_image1 != blank }}"
       },
       {
         "type": "range",
-        "id": "pattern_width",
+        "id": "pattern_width1",
         "label": "Pattern width",
-        "default": 30,
+        "default": 20,
         "min": 10,
         "max": 100,
         "step": 1,
         "unit": "%",
-        "visible_if": "{{ block.settings.pattern_image != blank }}"
+        "visible_if": "{{ block.settings.pattern_image1 != blank }}"
+      },
+      {
+        "type": "header",
+        "content": "Pattern 2"
+      },
+      {
+        "type": "image_picker",
+        "id": "pattern_image2",
+        "label": "Pattern image"
+      },
+      {
+        "type": "checkbox",
+        "id": "pattern_image_animation2",
+        "label": "Pattern image animation",
+        "default": false,
+        "info": "Enable to show pattern image animation",
+        "visible_if": "{{ block.settings.pattern_image2 != blank }}"
+      },
+      {
+        "type": "select",
+        "id": "pattern_index2",
+        "label": "Pattern index",
+        "default": "up",
+        "options": [
+          {"value": "up", "label": "Up" },
+          {"value": "down", "label": "Down"}
+        ],
+        "visible_if": "{{ block.settings.pattern_image2 != blank }}"
+      },
+      {
+        "type": "select",
+        "id": "pattern_position2",
+        "label": "Pattern position",
+        "default": "left-center",
+        "options": [
+          {"value": "left-top", "label": "Left top" },
+          {"value": "left-center", "label": "Left center"},
+          {"value": "left-bottom", "label": "Left bottom"},
+          {"value": "right-top", "label": "Right top" },
+          {"value": "right-center", "label": "Right center"},
+          {"value": "right-bottom", "label": "Right bottom"},
+          {"value": "top-center", "label": "Top center"},
+          {"value": "center-center", "label": "Middle center"},
+          {"value": "bottom-center", "label": "Bottom center"}
+        ],
+        "visible_if": "{{ block.settings.pattern_image2 != blank }}"
+      },
+      {
+        "type": "range",
+        "id": "pattern_position_horizontal2",
+        "label": "Pattern position horizontal",
+        "default": 5,
+        "min": -40,
+        "max": 60,
+        "step": 1,
+        "unit": "%",
+        "visible_if": "{{ block.settings.pattern_image2 != blank }}"
+      },
+      {
+        "type": "range",
+        "id": "pattern_position_vertical2",
+        "label": "Pattern position vertical",
+        "default": 5,
+        "min": -40,
+        "max": 60,
+        "step": 1,
+        "unit": "%",
+        "visible_if": "{{ block.settings.pattern_image2 != blank }}"
+      },
+      {
+        "type": "range",
+        "id": "pattern_width2",
+        "label": "Pattern width",
+        "default": 20,
+        "min": 10,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "visible_if": "{{ block.settings.pattern_image2 != blank }}"
       },
       {
         "type": "header",

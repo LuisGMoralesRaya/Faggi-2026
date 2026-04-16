@@ -1,0 +1,144 @@
+{%- liquid
+  assign supported_personalization_tags = 'Personalización_1,Personalización_2,Personalización_3,Personalización_4,Personalización_5,Personalización_6,Personalización_7,Personalización_8,Personalización_9' | split: ','
+  assign active_personalization_tag = blank
+
+  for supported_tag in supported_personalization_tags
+    if product.tags contains supported_tag
+      assign active_personalization_tag = supported_tag
+      break
+    endif
+  endfor
+
+  assign personalizer_font_blocks = section.blocks | where: 'type', 'personalizer_font'
+  assign personalizer_charm_blocks = section.blocks | where: 'type', 'personalizer_charm'
+  assign shape_option_names = section.settings.personalizer_shape_option_names | split: ','
+-%}
+
+{%- if section.settings.enable_product_personalizer and active_personalization_tag != blank -%}
+  {{ 'product-personalizer.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'product-personalizer.js' | asset_url }}" defer></script>
+
+  <div
+    class="product-personalizer"
+    data-product-personalizer
+    data-section-id="{{ section.id }}"
+    data-form-id="product-form-{{ section.id }}"
+    data-active-tag="{{ active_personalization_tag }}"
+  >
+    <div class="pp-shell">
+      <div class="pp-shell__header">
+        <p class="pp-shell__eyebrow">{{ section.settings.product_eyebrow | escape }}</p>
+        <div class="pp-shell__title-row">
+          <h2 class="pp-shell__title">{{ section.settings.personalizer_heading | escape }}</h2>
+          <span class="pp-shell__rule-badge" data-preview-rule-label>{{ active_personalization_tag | replace: 'Personalización_', 'Personalizado ' }}</span>
+        </div>
+        <p class="pp-shell__subtitle">{{ section.settings.personalizer_subheading | escape }}</p>
+        {%- if section.settings.personalization_note != blank -%}
+          <div class="pp-shell__note rte">{{ section.settings.personalization_note }}</div>
+        {%- endif -%}
+      </div>
+
+      <div class="pp-shell__layout">
+        <div class="pp-shell__preview-column">
+          <div class="pp-card pp-card--preview">
+            <div class="pp-card__header">
+              <div>
+                <p class="pp-card__eyebrow">Preview</p>
+                <h3 class="pp-card__title">Vista previa dinámica</h3>
+              </div>
+              <span class="pp-card__shape-pill" data-preview-shape-badge hidden></span>
+            </div>
+
+            <div class="pp-preview" data-preview-stage>
+              <div class="pp-preview__empty" data-preview-empty>
+                <span class="pp-preview__empty-icon">+</span>
+                <p>{{ section.settings.personalizer_preview_empty | escape }}</p>
+              </div>
+              <div class="pp-preview__main" data-preview-main></div>
+              <div class="pp-preview__gallery" data-preview-gallery hidden></div>
+              <div class="pp-preview__charms" data-preview-charms hidden></div>
+            </div>
+          </div>
+
+          <div class="pp-card pp-card--summary">
+            <div class="pp-card__header">
+              <div>
+                <p class="pp-card__eyebrow">Resumen</p>
+                <h3 class="pp-card__title">{{ section.settings.personalizer_summary_title | escape }}</h3>
+              </div>
+            </div>
+            <div class="pp-summary" data-summary-list></div>
+          </div>
+        </div>
+
+        <div class="pp-shell__controls-column">
+          <div class="pp-card pp-card--controls">
+            <div class="pp-card__header">
+              <div>
+                <p class="pp-card__eyebrow">Configuración</p>
+                <h3 class="pp-card__title">Personaliza tu pieza</h3>
+              </div>
+            </div>
+            <div class="pp-status" data-personalizer-status></div>
+            <div class="pp-errors" data-personalizer-errors></div>
+            <div class="pp-fields" data-personalizer-fields></div>
+            <div class="pp-properties" data-personalizer-properties></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="application/json" data-personalizer-config>
+      {
+        "sectionId": {{ section.id | json }},
+        "activeTag": {{ active_personalization_tag | json }},
+        "productId": {{ product.id | json }},
+        "productTitle": {{ product.title | json }},
+        "productHandle": {{ product.handle | json }},
+        "productUrl": {{ product.url | json }},
+        "productTags": {{ product.tags | json }},
+        "selectedVariantId": {{ product.selected_or_first_available_variant.id | json }},
+        "variants": {{ product.variants | json }},
+        "shapeOptionNames": {{ shape_option_names | json }},
+        "fonts": [
+          {%- for block in personalizer_font_blocks -%}
+            {
+              "id": {{ block.id | json }},
+              "label": {{ block.settings.title | json }},
+              "family": {{ block.settings.font_family | json }},
+              "weight": {{ block.settings.font_weight | json }},
+              "style": {{ block.settings.font_style | json }},
+              "previewText": {{ block.settings.preview_text | json }}
+            }{%- unless forloop.last -%},{%- endunless -%}
+          {%- endfor -%}
+        ],
+        "charms": [
+          {%- for block in personalizer_charm_blocks -%}
+            {
+              "id": {{ block.id | json }},
+              "code": {{ block.settings.code | default: block.settings.title | handleize | json }},
+              "label": {{ block.settings.title | json }},
+              "description": {{ block.settings.description | json }},
+              "accent": {{ block.settings.accent | json }},
+              "image": {% if block.settings.image != blank %}{{ block.settings.image | image_url: width: 280 | json }}{% else %}null{% endif %}
+            }{%- unless forloop.last -%},{%- endunless -%}
+          {%- endfor -%}
+        ],
+        "ui": {
+          "heading": {{ section.settings.personalizer_heading | json }},
+          "subheading": {{ section.settings.personalizer_subheading | json }},
+          "summaryTitle": {{ section.settings.personalizer_summary_title | json }},
+          "emptyPreview": {{ section.settings.personalizer_preview_empty | json }},
+          "iconHelp": {{ section.settings.personalizer_icon_help | json }},
+          "shapeConsumesNote": {{ section.settings.personalizer_shape_consumes_note | json }}
+        }
+      }
+    </script>
+
+    <noscript>
+      <div class="pp-noscript">
+        Activa JavaScript para personalizar esta pieza antes de agregarla al carrito.
+      </div>
+    </noscript>
+  </div>
+{%- endif -%}

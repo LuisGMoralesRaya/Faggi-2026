@@ -1,9 +1,5 @@
 {{ 'css-header2.css' | asset_url | stylesheet_tag }}
 {% assign sst = section.settings %}
-{%- liquid
-  assign brand_logo_external = settings.brand_logo_external | strip
-  assign brand_logo_alt = settings.brand_logo_alt | default: shop.name
--%}
 {% style -%}
   @media(min-width: 768px) {
     .site-header__logo {
@@ -39,9 +35,7 @@
     "@context": "http://schema.org",
     "@type": "Organization",
     "name": {{ shop.name | json }},
-    {% if brand_logo_external != blank %}
-      "logo": {{ brand_logo_external | json }},
-    {% elsif sst.logo %}
+    {% if sst.logo %}
       "logo": {{ sst.logo | image_url: width: 500 | prepend: "https:" | json }},
     {% endif %}
     "url": {{ request.origin | append: page.url | json }}
@@ -105,19 +99,7 @@
             <span class="icon"><span></span></span>
           </div>
           <div class="contentsticky_logo d-flex align-items-center justify-content-center">
-            {% if brand_logo_external != blank %}
-              <a href="{{ routes.root_url }}" class="site-header__logo d-flex position-relative">
-                <img
-                  src="{{ brand_logo_external }}"
-                  class="w-100 img-fluid"
-                  alt="{{ brand_logo_alt | escape }}"
-                  width="{{ sst.w_logo }}"
-                  height="{{ sst.w_logo }}"
-                  style="height: auto;"
-                  fetchpriority="high"
-                >
-              </a>
-            {% elsif sst.logo %}
+            {% if sst.logo %}
               <a href="{{ routes.root_url }}" class="site-header__logo d-flex position-relative">
                 {%- assign image_size_2x = sst.w_logo | times: 2 | at_most: 5760 -%}
                 <img srcset="{{ sst.logo | image_url: width: sst.w_logo }} 1x, {{ sst.logo | image_url: width: image_size_2x }} 2x"
@@ -214,18 +196,7 @@
           </div>
         </div>
         <div class="mobile_logo col-6 text-center">
-          {% if brand_logo_external != blank %}
-            <a href="{{ routes.root_url }}" class="site-header__logo-image img-fluid d-inline-block">
-              <img
-                src="{{ brand_logo_external }}"
-                alt="{{ brand_logo_alt | escape }}"
-                width="{{ sst.wm_logo }}"
-                height="{{ sst.wm_logo }}"
-                style="height: auto;"
-                fetchpriority="high"
-              >
-            </a>
-          {% elsif sst.logo_mobile %}
+          {% if sst.logo_mobile %}
             <a href="{{ routes.root_url }}" class="site-header__logo-image img-fluid d-inline-block">
               {%- assign logo_alt = sst.logo_mobile.alt | default: shop.name | escape -%}
               {%- assign logo_height = sst.wm_logo | divided_by: sst.logo_mobile.aspect_ratio | round -%}

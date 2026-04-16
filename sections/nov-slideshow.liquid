@@ -203,7 +203,7 @@
     <div class="container-inner{{ bg_class_contain }}">
 
       {% comment %} Slideshow {% endcomment %}
-      <div class="slideshow position-relative overflow_hidden {{ sst.dots_color }}{% if sst.pattern != blank %} has-pattern{% endif %} {{ sst.dot_position }}">
+      <div class="slideshow position-relative overflow_hidden{% if sst.pattern != blank %} has-pattern{% endif %} {{ sst.dot_position }} {{ sst.dots_color }} {{ sst.arrow_color }}">
         <div class="main-slider" data-autoplay="{{ sst.autoplay }}" data-speed="{{ sst.autoplay_speed }}000" data-arrows="false" data-dots="{{ sst.show_dots }}"{% if sst.loading_bar %} data-loading-bar{% endif %} data-zoom="{{ sst.zoom }}">
           {% for block in section.blocks %}
             {% assign bst = block.settings %}
@@ -348,16 +348,6 @@
                                 <i class="rbb-icon-direction-74 position-relative"></i>
                               </span>
                             </div>
-                          </div>
-                        {% endif %}
-                        {% if bst.btn_img != blank %}
-                          <div class="iten-btn-img" style="width: {{ bst.btn_img_width }}px">
-                            {% render 'nov-aspect-image', image: bst.btn_img, class: 'w-100 no-ef' %}
-                          </div>
-                        {% endif %}
-                        {% if bst.btn_text != blank %}
-                          <div class="item-btn-text font-600">
-                            {{ bst.btn_text }}
                           </div>
                         {% endif %}
                       </div>
@@ -2250,26 +2240,6 @@
               {"value": "zoomInUp", "label": "zoomInUp"},
               {"value": "rollIn", "label": "rollIn"}
             ],
-          },
-          {
-            "type": "image_picker",
-            "id": "btn_img",
-            "label": "Image"
-          },
-          {
-            "type": "range",
-            "id": "btn_img_width",
-            "min": 10,
-            "max": 200,
-            "step": 5,
-            "unit": "px",
-            "label": "Width image",
-            "default": 100
-          },
-          {
-            "type": "text",
-            "id": "btn_text",
-            "label": "Text"
           },
           {
             "type": "header",

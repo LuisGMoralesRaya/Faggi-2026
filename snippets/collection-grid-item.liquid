@@ -5,6 +5,7 @@
 {% else %}
   {% assign collection_image = blank %}
 {% endif %}
+
 <div class="collection-grid-item text-center">
   <a href="{% if collection.products == empty %}#{% else %}{{ collection.url }}{% endif %}" class="collection-grid-item__link">
     {% if collection_image == blank %}
@@ -18,7 +19,7 @@
         </div>
       {% else %}
         <div class="collection-grid-item__overlay">
-          {% render 'nov-aspect-image', image: collection_image, aspect: '11', alt: collection.title %}
+          {% render 'nov-aspect-image', image: collection_image, aspect: '11' %}
         </div>
       {% endif %}
    {% endif %}

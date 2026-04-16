@@ -188,7 +188,7 @@
             {% if sst.style == 'style1' or sst.style == 'style3' %}
               <div class="policy__item--content position-relative h-100 style1 block-{{ forloop.index }} d-flex align-items-start d-sm-block text-left{% if sst.style == 'style1' %} text-sm-center{% endif %}">
                 {% if bst.policy_icon != blank %}
-                  <div class="policy-icon d-inline-flex align-items-center justify-content-center mb-20 position-relative">
+                  <div class="policy-icon d-inline-flex align-items-center justify-content-center mb-25 position-relative">
                     {% render 'nov-aspect-image', image: bst.policy_icon, class: 'w-100 no-ef' %}
                   </div>
                 {% endif %}

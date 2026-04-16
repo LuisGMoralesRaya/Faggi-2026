@@ -82,13 +82,7 @@
         "cb": true,
         "show_tags": true,
         "show_desc": true,
-        "bg_b": "#f2f2f2",
-        "show_collection_intro": true,
-        "collection_intro_eyebrow": "Colección de joyas con significado",
-        "collection_intro_text": "Descubre joyas personalizadas pensadas para regalar, celebrar momentos importantes y llevar cerca a las personas que más quieres.",
-        "collection_chip_1": "Ideas listas para regalar",
-        "collection_chip_2": "Nombres, iniciales y fechas",
-        "collection_chip_3": "Diseñado con intención"
+        "bg_b": "#f2f2f2"
       }
     },
     "nov_policy_PVFmgJ": {
@@ -98,9 +92,9 @@
           "type": "item_policy",
           "settings": {
             "policy_icon": "shopify://shop_images/p-2.png",
-            "title_policy": "Elaboración cuidada",
+            "title_policy": "Free Shipping",
             "stitle_policy": "",
-            "desc_policy": "Joyería con significado preparada con atención a cada detalle.",
+            "desc_policy": "Get free shipping on all orders for a hassle free shopping experience!",
             "mw": 285,
             "link_label": "",
             "link": "",
@@ -114,9 +108,9 @@
           "type": "item_policy",
           "settings": {
             "policy_icon": "shopify://shop_images/p-3.png",
-            "title_policy": "Compra segura",
+            "title_policy": "Secured Payments",
             "stitle_policy": "",
-            "desc_policy": "Compra con confianza gracias a pagos seguros y una experiencia fluida.",
+            "desc_policy": "Experience secure payments with advanced encryption for your peace of mind.",
             "mw": 285,
             "link_label": "",
             "link": "",
@@ -130,9 +124,9 @@
           "type": "item_policy",
           "settings": {
             "policy_icon": "shopify://shop_images/p-1.png",
-            "title_policy": "Acompañamiento para regalar",
+            "title_policy": "Return Policy",
             "stitle_policy": "",
-            "desc_policy": "Te ayudamos a encontrar piezas personalizadas para momentos especiales.",
+            "desc_policy": "Easy returns! Return items within 30 days for a refund or exchange.",
             "mw": 285,
             "link_label": "",
             "link": "",
@@ -232,7 +226,7 @@
     "recent-products": {
       "type": "nov-recently-viewed",
       "settings": {
-        "heading": "<p>Piezas vistas recientemente</p>",
+        "heading": "<p>Recently Viewed Products</p>",
         "heading_color": "#181818",
         "subheading": "",
         "subheading_color": "#666666",

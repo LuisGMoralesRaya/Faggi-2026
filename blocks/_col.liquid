@@ -12,20 +12,6 @@
   assign style_padding_left = '--pl-xl: ' | append: bst.pl_xl | append: 'px; --pl-lg: ' | append: bst.pl_lg | append: 'px; --pl-md: ' | append: bst.pl_md | append: 'px; --pl-sm: ' | append: bst.pl_sm | append: 'px; --pl-xs: ' | append: bst.pl_xs | append: 'px;'
   assign style_padding_right = '--pr-xl: ' | append: bst.pr_xl | append: 'px; --pr-lg: ' | append: bst.pr_lg | append: 'px; --pr-md: ' | append: bst.pr_md | append: 'px; --pr-sm: ' | append: bst.pr_sm | append: 'px; --pr-xs: ' | append: bst.pr_xs | append: 'px;'
 
-  assign class_border = ''
-  if bst.bd_top != 'none'
-    assign class_border = class_border | append: ' ' | append: bst.bd_top
-  endif
-  if bst.bd_bottom != 'none'
-    assign class_border = class_border | append: ' ' | append: bst.bd_bottom
-  endif
-  if bst.bd_left != 'none'
-    assign class_border = class_border | append: ' ' | append: bst.bd_left
-  endif
-  if bst.bd_right != 'none'
-    assign class_border = class_border | append: ' ' | append: bst.bd_right
-  endif
-
   assign class_align = ''
   if bst.align_content_enable
     assign class_align = class_align | append: ' d-flex justify-content-xl-' | append: bst.align_content_horizontal_xl | append: ' align-items-xl-' | append: bst.align_content_vertical_xl | append: ' justify-content-lg-' | append: bst.align_content_horizontal_lg | append: ' align-items-lg-' | append: bst.align_content_vertical_lg | append: ' justify-content-md-' | append: bst.align_content_horizontal_md | append: ' align-items-md-' | append: bst.align_content_vertical_md | append: ' justify-content-sm-' | append: bst.align_content_horizontal_sm | append: ' align-items-sm-' | append: bst.align_content_vertical_sm | append: ' justify-content-' | append: bst.align_content_horizontal_xs | append: ' align-items-' | append: bst.align_content_vertical_xs
@@ -36,35 +22,17 @@
 -%}
 {% style %}
   #block-{{ block.id }} {
-    --corner-radius: {{ bst.corner_radius }}px;
-    --color-border: {{ bst.bd_color }};
     {{ style_mt }}
     {{ style_mb }}
-    {% if bst.show_bg %}--bg-color: {{ bst.bg_color }};{% endif %}
     {% if bst.wu != 'column' %}{{ style_width }}{% endif %}
     {% if bst.align_content_enable and bst.width_type == 'custom' %}--width-content: {{ bst.width_content }}{{ bst.width_content_unit }};{% endif %}
     {% if bst.pl_enable %}{{ style_padding_left }}{% endif %}
     {% if bst.pr_enable %}{{ style_padding_right }}{% endif %}
-    {% if bst.style_hover %}
-      --bg-color-hover: {{ bst.bg_color_hover }};
-      --color-border-hover: {{ bst.border_color_hover }};
-    {% endif %}
   }
-  {% if bst.bg_image != blank %}
-    #block-{{ block.id }} .block-container {
-      background-image: url("{{ bst.bg_image | image_url: width: 960 }}");
-    }
-  {% endif %}
-  {% if bst.show_box_shadow %}
-    #block-{{ block.id }} .block-container {
-      box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
-    }
-  {% endif %}
-  {% if bst.show_box_shadow_hover %}
-    #block-{{ block.id }}.style-hover:hover .block-container {
-      box-shadow: 7px 7px 25px rgba(0,0,0,0.1);
-    }
-  {% endif %}
+  #block-{{ block.id }} .block-container {
+    background: {{ bst.background }};
+    border-radius: {{ bst.corner_radius }}px;
+  }
   {% if bst.enable_order %}
     @media(min-width: 1200px) {
       #block-{{ block.id }} {
@@ -94,8 +62,8 @@
   {% endif %}
 {% endstyle %}
 
-<div id="block-{{ block.id }}" class="col-block{% if bst.style_hover %} style-hover{% endif %}{% if wu != 'column' %} unit-px-percent{% endif %}{% if wu == 'column' %} {{ style_width_column }}{% endif %}{% if bst.animate != 'none' %} wow {{ bst.animate }}{% endif %}">
-  <div class="block-container h-100{{ class_border }}{{ class_align }}{% if bst.show_bg %} bg{% endif %}">
+<div id="block-{{ block.id }}" class="col-block{% if wu != 'column' %} unit-px-percent{% endif %}{% if wu == 'column' %} {{ style_width_column }}{% endif %}{% if bst.animate != 'none' %} wow {{ bst.animate }}{% endif %}">
+  <div class="block-container h-100{{ class_align }}">
     <div class="col-block-content position-relative{% if bst.pl_enable %} pl{% endif %}{% if bst.pr_enable %} pr{% endif %}{% if block.settings.width_type == 'custom' and block.settings.align_content_enable %} width-custom{% endif %}">
       {% content_for 'blocks' %}
     </div>
@@ -135,7 +103,7 @@
           },
           {
             "value": "column",
-            "label": "column"
+            "label": "Column"
           }
         ],
         "default": "%",
@@ -597,145 +565,6 @@
       },
       {
         "type": "header",
-        "content": "Background"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_bg",
-        "label": "Show background"
-      },
-      {
-        "type": "color",
-        "id": "bg_color",
-        "label": "Background color",
-        "default": "#f2f2f2"
-      },
-      {
-        "type": "image_picker",
-        "id": "bg_image",
-        "label": "Background image"
-      },
-      {
-        "type": "header",
-        "content": "Border",
-        "info": "Start border display from"
-      },
-      {
-        "type": "color",
-        "id": "bd_color",
-        "alpha": true,
-        "label": "Border color",
-        "default": "#d2d2d2"
-      },
-      {
-        "type": "select",
-        "id": "bd_top",
-        "label": "Border top",
-        "options": [
-          { "value": "none", "label": "None" },
-          { "value": "bd-t", "label": "All screens" },
-          { "value": "bd-xl-t", "label": "Large laptop" },
-          { "value": "bd-lg-t", "label": "Laptop" },
-          { "value": "bd-md-t", "label": "Tablet" },
-          { "value": "bd-sm-t", "label": "Large Mobile" },
-        ],
-        "default": "none"
-      },
-      {
-        "type": "select",
-        "id": "bd_bottom",
-        "label": "Border bottom",
-        "options": [
-          { "value": "none", "label": "None" },
-          { "value": "bd-b", "label": "All screens" },
-          { "value": "bd-xl-b", "label": "Large laptop" },
-          { "value": "bd-lg-b", "label": "Laptop" },
-          { "value": "bd-md-b", "label": "Tablet" },
-          { "value": "bd-sm-b", "label": "Large Mobile" },
-        ],
-        "default": "none"
-      },
-      {
-        "type": "select",
-        "id": "bd_left",
-        "label": "Border left",
-        "options": [
-          { "value": "none", "label": "None" },
-          { "value": "bd-l", "label": "All screens" },
-          { "value": "bd-xl-l", "label": "Large laptop" },
-          { "value": "bd-lg-l", "label": "Laptop" },
-          { "value": "bd-md-l", "label": "Tablet" },
-          { "value": "bd-sm-l", "label": "Large Mobile" },
-        ],
-        "default": "none"
-      },
-      {
-        "type": "select",
-        "id": "bd_right",
-        "label": "Border right",
-        "options": [
-          { "value": "none", "label": "None" },
-          { "value": "bd-r", "label": "All screens" },
-          { "value": "bd-xl-r", "label": "Large laptop" },
-          { "value": "bd-lg-r", "label": "Laptop" },
-          { "value": "bd-md-r", "label": "Tablet" },
-          { "value": "bd-sm-r", "label": "Large Mobile" },
-        ],
-        "default": "none"
-      },
-      {
-        "type": "header",
-        "content": "Box shadow"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_box_shadow",
-        "label": "Show box shadow",
-      },
-      {
-        "type": "header",
-        "content": "Corner radius"
-      },
-      {
-        "type": "range",
-        "id": "corner_radius",
-        "min": 0,
-        "max": 50,
-        "step": 1,
-        "unit": "px",
-        "label": "Corner radius",
-        "default": 0
-      },
-      {
-        "type": "header",
-        "content": "Style Hover"
-      },
-      {
-        "type": "checkbox",
-        "id": "style_hover",
-        "label": "Enable style when hover"
-      },
-      {
-        "type": "color",
-        "id": "bg_color_hover",
-        "label": "Background color",
-        "default": "#f2f2f2",
-        "visible_if": "{{ block.settings.style_hover == true }}"
-      },
-      {
-        "type": "color",
-        "id": "border_color_hover",
-        "label": "Border color",
-        "default": "#f2f2f2",
-        "visible_if": "{{ block.settings.style_hover == true }}"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_box_shadow_hover",
-        "label": "Show box shadow"
-      },
-      {
-        "type": "header",
         "content": "Order",
         "info": "Change the display order of elements"
       },
@@ -782,6 +611,21 @@
         "label": "Mobile",
         "default": 0,
         "visible_if": "{{ block.settings.enable_order }}"
+      },
+      {
+        "type": "header",
+        "content": "Style"
+      },
+      {
+        "type": "color",
+        "id": "background",
+        "label": "Background"
+      },
+      {
+        "type": "number",
+        "id": "corner_radius",
+        "label": "Corner radius",
+        "default": 0
       },
       {
         "type": "header",

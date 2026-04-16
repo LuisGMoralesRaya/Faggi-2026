@@ -1,4 +1,4 @@
-<form action="{{ routes.search_url }}" method="get" class="search-header-inline{% if settings.show_border_product %} product-has-border{% endif %}" role="search">
+<form action="search" method="get" class="search-header-inline{% if settings.show_border_product %} product-has-border{% endif %}" role="search">
 	<div class="search-header__content position-relative">
 		<div class="search-header__placeholder text-animate-js">{{ 'general.search.i_am_looking_for' | t }}</div>
 		<input type="hidden" name="type" value="product">
@@ -6,8 +6,7 @@
 		type="search"
 		name="q"
 		placeholder="{{ 'general.search.title' | t }}"
-		aria-label="{{ 'general.search.title' | t }}"
-		autocomplete="off">
+		aria-label="{{ 'general.search.title' | t }}">
 		<button class="search-header__submit d-flex align-items-center justify-content-center{% if section.settings.search_btn_color %} color-{{ section.settings.search_btn_color }} {{ section.settings.search_btn_color_type }}{% endif %}" type="submit" title="{{ 'general.search.submit' | t }}">
 			<span class="search-header__submit-icon">
 				{% render 'icon-search' %}

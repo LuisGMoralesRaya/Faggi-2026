@@ -1146,12 +1146,14 @@ novtheme.NovAccordion = function() {
                     $accordion.find('.nov-accordion__title').removeClass('act');
                     $accordion.find('.nov-accordion__content').slideUp();
                     $accordion.find('.nov-accordion__item').removeClass('act');
-
                     $title.addClass('act');
                     $title.parent().addClass('act');
                     $content.slideDown();
                 }
             });
+        });
+        $accordion.find('.nov-accordion__item').each(function(index) {
+            $(this).attr('data-index', index);
         });
     });
 };

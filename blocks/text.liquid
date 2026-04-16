@@ -6,7 +6,7 @@
   assign style_text = 'color: ' | append: bst.color | append: '; --color-link: ' | append: bst.color_link | append: '; --color-link-hover: ' | append: bst.color_link_hover | append: '; letter-spacing: ' | append: bst.letter_spacing | append: 'px; line-height: ' | append: bst.line_height | append: '; --max-width: ' | append: bst.max_w | append: 'px; --bg-seemore: ' | append: bst.bg_seemore | append: '; --mt-xl: ' | append: bst.mt_xl | append: 'px; --mt-lg: ' | append: bst.mt_lg | append: 'px; --mt-md: ' | append: bst.mt_md | append: 'px; --mt-sm: ' | append: bst.mt_sm | append: 'px; --mb-xl: ' | append: bst.mb_xl | append: 'px; --mb-lg: ' | append: bst.mb_lg | append: 'px; --mb-md: ' | append: bst.mb_md | append: 'px; --mb-sm: ' | append: bst.mb_sm | append: 'px;'
 -%}
 
-<div class="theme-blocks-item text-block text-{{ bst.alignment }}{% if bst.responsive_alignment %} text-xl-{{ bst.alignment_xl }} text-lg-{{ bst.alignment_lg }} text-md-{{ bst.alignment_md }}  text-sm-{{ bst.alignment_sm }}{% endif %} {{ bst.text_transform }} {{ class_text }} {% if bst.show_seemore %} nov_item_act position-relative js-height{% endif %}{% if bst.text_behind != blank %}d-flex align-items-{{ bst.text_behind_vertical_align }}{% endif %}"{% if bst.show_seemore %}data-act="{{ block.id }}" data-max_height="{{ bst.height_seemore }}"{% endif %} style="{{ style_text }}">
+<div class="theme-blocks-item text-block text-{{ bst.alignment }}{% if bst.responsive_alignment %} text-xl-{{ bst.alignment_xl }} text-lg-{{ bst.alignment_lg }} text-md-{{ bst.alignment_md }}  text-sm-{{ bst.alignment_sm }}{% endif %} {{ bst.text_transform }} {{ class_text }} {% if bst.show_seemore %} nov_item_act position-relative js-height{% endif %}"{% if bst.show_seemore %}data-act="{{ block.id }}" data-max_height="{{ bst.height_seemore }}"{% endif %} style="{{ style_text }}">
   <div class="text-content position-relative d-inline-flex">
     {{ bst.text }}
     {% if bst.pattern != blank %}
@@ -15,9 +15,6 @@
       </div>
     {% endif %}
   </div>
-  {% if bst.text_behind != blank %}
-    <span class="text-behind fs-{{ bst.text_behind_fs }} {{ bst.text_behind_fw }}{% if bst.line_through %} line-through{% endif %}" style="color: {{ bst.text_behind_color }};--gap: {{ bst.text_behind_gap }}px; text-decoration-color: {{ bst.line_through_color }}; line-height: {{ bst.text_behind_lh }}">{{ bst.text_behind }}</span>
-  {% endif %}
 </div>
 {% if bst.show_seemore %}
   <div class="btn-show__content font-700 fs-16 text-center mt-30 nov_btn_act color-title position-relative" data-toggle="{{ block.id }}">
@@ -270,155 +267,6 @@
       "label": "Show icon",
       "default": false,
       "visible_if": "{{ block.settings.show_seemore == true }}"
-    },
-    {
-      "type": "header",
-      "content": "Text Behind"
-    },
-    {
-      "type": "text",
-      "id": "text_behind",
-      "label": "Text"
-    },
-    {
-      "type": "select",
-      "id": "text_behind_vertical_align",
-      "label": "Vertical alignment",
-      "options": [
-        {
-          "value": "start",
-          "label": "Top"
-        },
-        {
-          "value": "center",
-          "label": "Center"
-        },
-        {
-          "value": "end",
-          "label": "Bottom"
-        }
-      ],
-      "default": "center",
-      "visible_if": "{{ block.settings.text_behind != blank }}"
-    },
-    {
-      "type": "number",
-      "id": "text_behind_gap",
-      "label": "Gap",
-      "default": 10,
-      "info": "Unit: px",
-      "visible_if": "{{ block.settings.text_behind != blank }}"
-    },
-    {
-      "type": "number",
-      "id": "text_behind_fs",
-      "label": "Font size",
-      "default": 16,
-      "visible_if": "{{ block.settings.text_behind != blank }}"
-    },
-    {
-      "type": "select",
-      "id": "text_behind_fw",
-      "label": "Font weight",
-      "options": [
-        {"value": "font-100","label": "Thin - 100"},
-        {"value": "font-300","label": "Light - 300"},
-        {"value": "font-400","label": "Regular - 400"},
-        {"value": "font-500","label": "Medium - 500"},
-        {"value": "font-600","label": "SemiBold - 600"},
-        {"value": "font-700","label": "Bold - 700"},
-        {"value": "font-800","label": "ExtraBold - 800"},
-        {"value": "font-900","label": "Black - 900"}
-      ],
-      "default": "font-400",
-      "visible_if": "{{ block.settings.text_behind != blank }}"
-    },
-    {
-      "type": "text",
-      "id": "text_behind_lh",
-      "label": "Line height",
-      "default": "1.5",
-      "visible_if": "{{ block.settings.text_behind != blank }}"
-    },
-    {
-      "type": "color",
-      "id": "text_behind_color",
-      "label": "Text color",
-      "default": "#666",
-      "visible_if": "{{ block.settings.text_behind != blank }}"
-    },
-    {
-      "type": "checkbox",
-      "id": "line_through",
-      "label": "Show line through",
-      "visible_if": "{{ block.settings.text_behind != blank }}"
-    },
-    {
-      "type": "color",
-      "id": "line_through_color",
-      "label": "Line through color",
-      "default": "#FF0000",
-      "visible_if": "{{ block.settings.text_behind != blank and block.settings.line_through == true }}"
-    },
-    {
-      "type": "header",
-      "content": "Pattern Image"
-    },
-    {
-      "type": "image_picker",
-      "id": "pattern",
-      "label": "Pattern"
-    },
-    {
-      "type": "select",
-      "id": "pattern_position",
-      "label": "Position",
-      "default": "left-center",
-      "options": [
-        {"value": "left-top", "label": "Left top" },
-        {"value": "left-center", "label": "Left center"},
-        {"value": "left-bottom", "label": "Left bottom"},
-        {"value": "right-top", "label": "Right top" },
-        {"value": "right-center", "label": "Right center"},
-        {"value": "right-bottom", "label": "Right bottom"},
-        {"value": "top-center", "label": "Top center"},
-        {"value": "center-center", "label": "Middle center"},
-        {"value": "bottom-center", "label": "Bottom center"}
-      ],
-      "visible_if": "{{ block.settings.pattern != blank }}"
-    },
-    {
-      "type": "range",
-      "id": "pattern_horizontal",
-      "min": -40,
-      "max": 60,
-      "step": 1,
-      "label": "Position horizontal",
-      "default": 5,
-      "unit": "%",
-      "visible_if": "{{ block.settings.pattern != blank }}"
-    },
-    {
-      "type": "range",
-      "id": "pattern_vertical",
-      "min": -40,
-      "max": 60,
-      "step": 1,
-      "label": "Position vertical",
-      "default": 0,
-      "unit": "%",
-      "visible_if": "{{ block.settings.pattern != blank }}"
-    },
-    {
-      "type": "range",
-      "id": "pattern_width",
-      "min": 1,
-      "max": 100,
-      "step": 1,
-      "label": "Width",
-      "unit": "%",
-      "default": 20,
-      "visible_if": "{{ block.settings.pattern != blank }}"
     },
     {
       "type": "header",

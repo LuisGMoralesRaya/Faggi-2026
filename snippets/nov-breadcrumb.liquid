@@ -79,149 +79,33 @@
     {% endif %}
   {% endunless %}
 {% endstyle %}
-{%- liquid
-  assign breadcrumb_position = 2
-  capture breadcrumb_items
-    echo '{
-      "@type": "ListItem",
-      "position": 1,
-      "name": '
-    echo 'general.breadcrumbs.home' | t | json
-    echo ',
-      "item": '
-    echo shop.url | json
-    echo '
-    }'
-
-    if template contains 'article'
-      assign breadcrumb_position = breadcrumb_position | plus: 0
-      echo ',{
-        "@type": "ListItem",
-        "position": 2,
-        "name": '
-      echo blog.title | json
-      echo ',
-        "item": '
-      echo shop.url | append: blog.url | json
-      echo '
-      },{
-        "@type": "ListItem",
-        "position": 3,
-        "name": '
-      echo article.title | json
-      echo ',
-        "item": '
-      echo shop.url | append: article.url | json
-      echo '
-      }'
-    elsif template contains 'product'
-      if collection
-        echo ',{
-          "@type": "ListItem",
-          "position": 2,
-          "name": '
-        echo collection.title | json
-        echo ',
-          "item": '
-        echo shop.url | append: collection.url | json
-        echo '
-        },{
-          "@type": "ListItem",
-          "position": 3,
-          "name": '
-        echo product.title | json
-        echo ',
-          "item": '
-        echo shop.url | append: product.url | json
-        echo '
-        }'
-      else
-        echo ',{
-          "@type": "ListItem",
-          "position": 2,
-          "name": '
-        echo product.title | json
-        echo ',
-          "item": '
-        echo shop.url | append: product.url | json
-        echo '
-        }'
-      endif
-    elsif template contains 'collection' and collection
-      echo ',{
-        "@type": "ListItem",
-        "position": 2,
-        "name": '
-      echo collection.title | json
-      echo ',
-        "item": '
-      echo shop.url | append: collection.url | json
-      echo '
-      }'
-      if current_tags
-        echo ',{
-          "@type": "ListItem",
-          "position": 3,
-          "name": '
-        echo current_tags | join: ' + ' | json
-        echo ',
-          "item": '
-        echo canonical_url | json
-        echo '
-        }'
-      endif
-    elsif template contains 'blog'
-      echo ',{
-        "@type": "ListItem",
-        "position": 2,
-        "name": '
-      echo blog.title | json
-      echo ',
-        "item": '
-      echo shop.url | append: blog.url | json
-      echo '
-      }'
-      if current_tags
-        echo ',{
-          "@type": "ListItem",
-          "position": 3,
-          "name": '
-        echo current_tags | join: ' + ' | json
-        echo ',
-          "item": '
-        echo canonical_url | json
-        echo '
-        }'
-      endif
-    elsif template contains 'page'
-      echo ',{
-        "@type": "ListItem",
-        "position": 2,
-        "name": '
-      echo page.title | json
-      echo ',
-        "item": '
-      echo canonical_url | json
-      echo '
-      }'
-    elsif page_title != blank
-      echo ',{
-        "@type": "ListItem",
-        "position": 2,
-        "name": '
-      echo page_title | json
-      echo ',
-        "item": '
-      echo canonical_url | json
-      echo '
-      }'
-    endif
-  endcapture
--%}
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "itemListElement": [{{ breadcrumb_items }}]
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "{{ shop.url }}"
+      }
+      {% if collection %}
+      ,{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{ collection.title | escape }}",
+        "item": "{{ shop.url }}/collections/{{ collection.handle }}"
+      }
+      {% endif %}
+      {% if product %}
+      ,{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "{{ product.title | escape }}",
+        "item": "{{ shop.url }}{{ product.url }}"
+      }
+      {% endif %}
+    ]
   }
   </script>

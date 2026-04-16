@@ -19,10 +19,7 @@
 
   #shopify-section-{{ section.id }} .testimonial-item {
     background: {{ sst.item_bg }};
-    border-radius: {{ sst.item_corner }}px;
-    padding: 2rem;
-  }
-  #shopify-section-{{ section.id }} .testimonial-avatar {
+    border: 1px solid {{ sst.item_bd }};
     border-radius: {{ sst.item_corner }}px;
   }
   {% if sst.text_mw != blank %}
@@ -44,30 +41,37 @@
   <div class="{{ sst.container }}">
     <div class="container-inner{{ bg_class_contain }}">
       <div class="row">
-        <div class="col-xl-4 mb-lg-20 {{ sst.heading_alignment }}">
-          {% render 'heading-section', sub_position: sst.subheading_position, class: 'mb-0' %}
-          {% if sst.show_nav %}
-            <div class="d-inline-flex justify-content-center align-items-center mt-35 mt-md-30">
-              <div class="nav-arrow nav-prev pointer"></div>
-              <div class="nav-arrow nav-next pointer"></div>
+        <div class="col-lg-4 mb-md-40">
+          {% render 'heading-section', sub_position: sst.subheading_position %}
+          {% if sst.img_left != blank or sst.text_left != blank %}
+            <div class="block-left-bottom">
+              {% if sst.img_left != blank %}
+                <div class="img-left">
+                  {% render 'nov-aspect-image', image: sst.img_left %}
+                </div>
+              {% endif %}
+              {% if sst.text_left != blank %}
+                <div class="block-left-text fs-12 font-500 color-title mt-15">
+                  {{ sst.text_left }}
+                </div>
+              {% endif %}
             </div>
           {% endif %}
         </div>
-        <div class="col-xl-8">
+        <div class="col-lg-8">
           <div
             class="nov-slick-carousel row spacing-30{% if sst.animate %} wow fadeInRight{% endif %}"
             data-loop="true"
             data-dots="{{ sst.show_dots }}"
             data-nav="{{ sst.show_nav }}"
-            data-items_xxl="1"
-            data-items_xl="1"
-            data-items_lg="1"
-            data-items_md="1"
-            data-items_sm="1"
-            data-items_xs="1"
-            data-row="1"
+            data-items_xxl="{{ sst.xxl }}"
+            data-items_xl="{{ sst.xl }}"
+            data-items_lg="{{ sst.lg }}"
+            data-items_md="{{ sst.md }}"
+            data-items_sm="{{ sst.sm }}"
+            data-items_xs="{{ sst.xs }}"
+            data-row="{{ sst.row_number }}"
             data-speed="700"
-            data-custnav
             data-oneslider="true"
           >
             {% for block in section.blocks %}
@@ -77,7 +81,7 @@
                   when 1
                     assign ns = '<i class="rating"></i><i></i><i></i><i></i><i></i>'
                   when 2
-
+    
                     assign ns = '<i class="rating"></i><i class="rating"></i><i></i><i></i><i></i>'
                   when 3
                     assign ns = '<i class="rating"></i><i class="rating"></i><i class="rating"></i><i></i><i></i>'
@@ -89,45 +93,43 @@
               -%}
               {% if block.type == 'quote' %}
                 <div class="sp-item position-relative {% render 'number-to-col', xxl: sst.xxl, xl: sst.xl, lg: sst.lg, md: sst.md, sm: sst.sm, xs: sst.xs  %}">
-                  <div class="testimonial-item position-relative">
+                  <div class="testimonial-item position-relative overflow_hidden">
                     {% if sst.pattern != blank %}
                       <div class="item-pattern position-absolute">
                         {% render 'nov-aspect-image', image: sst.pattern %}
                       </div>
                     {% endif %}
-                    <div class="d-sm-flex align-items-center">
-                      {% if sst.show_avatar %}
-                        <div class="testimonial-avatar overflow_hidden mb-sm-20">
-                          {% if bst.avatar != blank %}
-                            {% render 'nov-aspect-image', image: bst.avatar %}
-                          {% else %}
-                            {%- capture current -%}{% cycle 1, 2, 3, 4 %}{%- endcapture -%}
-                            {{ 'collection-apparel-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
-                          {% endif %}
-                        </div>
-                      {% endif %}
-                      <div class="testimonial-item_right">
-                        {% if sst.s_star %}
-                          <div class="testimonial-rating mb-20 mb-sm-10">{{ ns }}</div>
-                        {% endif %}
-                        {% if bst.title != blank %}
-                          <h2 class="testimonial-title fs-18 mb-15 color-title">{{ bst.title }}</h2>
-                        {% endif %}
-                        {% if bst.quote != blank %}
-                          <div class="testimonial-item__quote fs-20 fs-lg-16 fs-sm-14 font-700 color-title">{{ bst.quote }}</div>
-                        {% endif %}
-                        {% if bst.name != blank or bst.info != blank %}
-                          <div class="d-flex align-items-center mt-30 mt-sm-15">
-                            {% if bst.name != blank %}
-                              <div class="testimonial-name fs-14 fs-sm-12 font-700 color-title">{{ bst.name }}</div>
-                            {% endif %}
-                            {% if bst.info != blank %}
-                              <div class="testimonial-info fs-14 fs-sm-12 font-700 color-text">&nbsp;{{ bst.info }}</div>
+                    {% if sst.s_star %}
+                      <div class="testimonial-rating mb-15 mb-sm-10">{{ ns }}</div>
+                    {% endif %}
+                    {% if bst.title != blank %}
+                      <h2 class="testimonial-title fs-18 mb-15 color-title">{{ bst.title }}</h2>
+                    {% endif %}
+                    {% if bst.quote != blank %}
+                      <div class="testimonial-item__quote fs-16 fs-sm-14 font-500 color-title">{{ bst.quote }}</div>
+                    {% endif %}
+                    {% if bst.name != blank or bst.info != blank or sst.show_avatar %}
+                      <div class="d-flex align-items-center mt-25 mt-sm-15">
+                        {% if sst.show_avatar %}
+                          <div class="testimonial-avatar overflow_hidden r-100">
+                            {% if bst.avatar != blank %}
+                              {% render 'nov-aspect-image', image: bst.avatar %}
+                            {% else %}
+                              {%- capture current -%}{% cycle 1, 2, 3, 4 %}{%- endcapture -%}
+                              {{ 'collection-apparel-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
                             {% endif %}
                           </div>
                         {% endif %}
+                        <div class="name-info">
+                          {% if bst.name != blank %}
+                            <div class="testimonial-name fs-14 fs-sm-12 font-700 color-title">{{ bst.name }}</div>
+                          {% endif %}
+                          {% if bst.info != blank %}
+                            <div class="testimonial-info fs-14 fs-sm-12 font-700 color-text">{{ bst.info }}</div>
+                          {% endif %}
+                        </div>
                       </div>
-                    </div>
+                    {% endif %}
                   </div>
                 </div>
               {% endif %}
@@ -207,15 +209,13 @@
     },
     {
       "type": "image_picker",
-      "id": "img_heading",
-      "label": "Image heading"
+      "id": "img_left",
+      "label": "Image left"
     },
     {
-      "type": "checkbox",
-      "id": "img_heading_animate",
-      "label": "Image heading animate",
-      "default": false,
-      "visible_if": "{{ section.settings.img_heading != blank }}"
+      "type": "text",
+      "id": "text_left",
+      "label": "Text left"
     },
     {
       "type": "select",
@@ -236,6 +236,79 @@
           "label": "Right"
         }
       ]
+    },
+    {
+      "type": "header",
+      "content": "Item Per Row"
+    },
+    {
+      "type": "range",
+      "id": "xxl",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "label": "Desktop",
+      "default": 3,
+      "info": "Breakpoint 1441px"
+    },
+    {
+      "type": "range",
+      "id": "xl",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "label": "Large laptop",
+      "default": 3,
+      "info": "Breakpoint 1200px"
+    },
+    {
+      "type": "range",
+      "id": "lg",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "label": "Laptop",
+      "default": 3,
+      "info": "Breakpoint 992px"
+    },
+    {
+      "type": "range",
+      "id": "md",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "label": "Tablet",
+      "default": 3,
+      "info": "Breakpoint 768px"
+    },
+    {
+      "type": "range",
+      "id": "sm",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "label": "Large mobile",
+      "default": 2,
+      "info": "Breakpoint 576px"
+    },
+    {
+      "type": "range",
+      "id": "xs",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "label": "Mobile",
+      "default": 2,
+      "info": "Breakpoint"
+    },
+    {
+      "type": "range",
+      "id": "row_number",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "label": "Number row",
+      "default": 1
     },
     {
       "type": "header",
@@ -288,6 +361,12 @@
       "id": "item_bg",
       "label": "Background",
       "default": "#d5d5d5"
+    },
+    {
+      "type": "color",
+      "id": "item_bd",
+      "label": "Border color",
+      "default": "#d2d2d2"
     },
     {
       "type": "range",

@@ -83,19 +83,7 @@
           {% render 'nov-aspect-image', image: sst.pattern_3, class: 'no-ef' %}
         </div>
       {% endif %}
-      {% if sst.viewall_label == blank %}
-        {% render 'heading-section', sub_position: sst.subheading_position %}
-      {% else %}
-        <div class="d-sm-flex align-items-end justify-content-between mb-55 mb-sm-40">
-          {% render 'heading-section', sub_position: sst.subheading_position, class: 'mb-0 mb-xs-20' %}
-          <div class="d-flex align-items-center">
-            <a href="{{ collection.url }}" class="link font-700">
-              <span>{{ sst.viewall_label }}</span>
-              <i class="zmdi zmdi-long-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      {% endif %}
+      {% render 'heading-section', sub_position: sst.subheading_position %}
 
       <div class="grid--view-items{% if sst.layout_type == 'slider' %} nov-swiper-carousel swiper{% if sst.right_overflow %} overflow-right{% endif %}{% endif %}"
         {% if sst.layout_type == 'slider' %}
@@ -151,6 +139,13 @@
           {% endif %}
         {% endif %}
       </div>
+      {% if sst.viewall_label != blank %}
+        <div class="text-center mt-65 mt-sm-30">
+          <a href="{{ collection.url }}" class="btn btn-large">
+            <span>{{ sst.viewall_label }}</span>
+          </a>
+        </div>
+      {% endif %}
     </div>
   </div>
 </div>
@@ -497,7 +492,7 @@
       },
       {
         "type": "header",
-        "content": "Botón Ver todo"
+        "content": "Button View All"
       },
       {
         "type": "text",
