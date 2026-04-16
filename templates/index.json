@@ -4816,6 +4816,7 @@
                   "type": "image",
                   "name": "Image",
                   "settings": {
+                    "image": "shopify://shop_images/Collar1.1_e2ac2697-8864-44fa-b068-5cb107aa0d7e.jpg",
                     "link": "#",
                     "width_custom": false,
                     "image_width_unit": "%",
@@ -4937,6 +4938,7 @@
                   "type": "image",
                   "name": "Image",
                   "settings": {
+                    "image": "shopify://shop_images/plokijh.jpg",
                     "link": "#",
                     "width_custom": false,
                     "image_width_unit": "%",
@@ -4989,6 +4991,7 @@
                   "type": "image",
                   "name": "Image",
                   "settings": {
+                    "image": "shopify://shop_images/1f6507f16df49cb0dd6b7adf3f99037d.jpg",
                     "link": "#",
                     "width_custom": false,
                     "image_width_unit": "%",
