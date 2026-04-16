@@ -3704,7 +3704,7 @@
         "row_mobile": 2,
         "show_dots": false,
         "dots_color": "dots_on_light",
-        "show_nav": false,
+        "show_nav": true,
         "slider_arrow_color": "#222222",
         "slider_arrow_color_act": "#666666",
         "show_pagination_progress": false,
