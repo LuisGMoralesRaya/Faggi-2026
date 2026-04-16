@@ -18,7 +18,7 @@
           "type": "image",
           "name": "Image",
           "settings": {
-            "image": "shopify://shop_images/logo_-_black.png",
+            "image": "shopify://shop_images/Un_dia_a_la_vez_3_651bf1a9-cfcc-4be9-b37c-cf8a31ae7ead.png",
             "link": "#",
             "width_custom": true,
             "image_width_unit": "px",
@@ -295,7 +295,6 @@
                     "icon_znd4HU": {
                       "type": "icon",
                       "settings": {
-                        "icon": "shopify://shop_images/icon-pin.png",
                         "icon_svg": "",
                         "icon_color": "#444444",
                         "icon_color_hover": "#000000",
@@ -392,7 +391,6 @@
                     "icon_qAVwLH": {
                       "type": "icon",
                       "settings": {
-                        "icon": "shopify://shop_images/icon-phone.png",
                         "icon_svg": "",
                         "icon_color": "#444444",
                         "icon_color_hover": "#000000",
@@ -489,7 +487,6 @@
                     "icon_Xfz9cA": {
                       "type": "icon",
                       "settings": {
-                        "icon": "shopify://shop_images/icon-email.png",
                         "icon_svg": "",
                         "icon_color": "#444444",
                         "icon_color_hover": "#000000",
@@ -586,7 +583,6 @@
                     "icon_CwPeYt": {
                       "type": "icon",
                       "settings": {
-                        "icon": "shopify://shop_images/icon-calendar.png",
                         "icon_svg": "",
                         "icon_color": "#444444",
                         "icon_color_hover": "#000000",
@@ -735,7 +731,7 @@
                   "settings": {
                     "block_title": "Information",
                     "mobile_acc": true,
-                    "menu_handle": "information",
+                    "menu_handle": "",
                     "text_alignment": "left",
                     "title_font_size": 18,
                     "title_font_weight": "font-400",
@@ -830,7 +826,7 @@
                   "settings": {
                     "block_title": "Our Policies",
                     "mobile_acc": true,
-                    "menu_handle": "our-policies",
+                    "menu_handle": "",
                     "text_alignment": "left",
                     "title_font_size": 18,
                     "title_font_weight": "font-400",
@@ -1009,6 +1005,7 @@
                   "type": "email-signup",
                   "name": "Email Signup",
                   "settings": {
+                    "style_line_bottom": false,
                     "input_color": "#1f2937",
                     "input_place_color": "#b5b5b5",
                     "input_bg": "#ffffff",
@@ -1279,7 +1276,6 @@
                   "type": "payment-method",
                   "name": "Payment Method",
                   "settings": {
-                    "payment": "shopify://shop_images/payment-footer.png",
                     "payment_mw": 220,
                     "mt_xl": 0,
                     "mt_lg": 0,
