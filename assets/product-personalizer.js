@@ -506,6 +506,9 @@
       this.modal = this.root.querySelector('[data-pp-modal]');
       this.triggerSubtitle = this.root.querySelector('[data-pp-trigger-subtitle]');
       this.triggerCheck = this.root.querySelector('[data-pp-trigger-check]');
+      this.inlinePanel = this.root.querySelector('[data-pp-inline-panel]');
+      this.inlinePreview = this.root.querySelector('[data-pp-inline-preview]');
+      this.inlineDetails = this.root.querySelector('[data-pp-inline-details]');
       this.confirmButton = this.root.querySelector('[data-action="confirm-personalizer"]');
       this._escHandler = this.handleEscape.bind(this);
       this.state = this.buildInitialState();
@@ -1026,7 +1029,7 @@
       }
 
       return [
-        '<span class="pp-charm-card__placeholder" style="--charm-accent:' + escapeHtml(charm.accent || '#b9996e') + ';">',
+        '<span class="pp-charm-card__placeholder" style="--charm-accent:' + escapeHtml(charm.accent || '#f669a0') + ';">',
         '<span>' + escapeHtml((charm.label || 'C').slice(0, 2).toUpperCase()) + '</span>',
         '</span>'
       ].join('');
@@ -1977,26 +1980,89 @@
 
     updateInlineSummary() {
       if (!this.triggerSubtitle) return;
-      var parts = [];
+      var tags = [];
+      var previewHtml = [];
       var selectedCharms = this.getSelectedCharms();
       var selectedPhotos = this.state.photos ? this.state.photos.filter(function (item) { return !!item.file; }) : [];
+      var activeShape = this.state.productShape || this.state.engravingShape || '';
 
-      if (this.state.productShape) parts.push(this.state.productShape);
-      if (this.state.engravingShape) parts.push('Forma: ' + this.state.engravingShape);
-      if (this.state.mainFrontActive && this.state.mainFrontText) parts.push('Texto frente');
-      if (this.state.mainBackActive && this.state.mainBackText) parts.push('Texto atras');
-      if (this.state.singleText) parts.push('Mensaje');
-      if (this.state.shapeText) parts.push('Grabado forma');
-      if (this.state.textSlots && this.state.textSlots.length) parts.push(this.state.textSlots.length + ' texto(s)');
-      if (selectedPhotos.length) parts.push(selectedPhotos.length + ' foto(s)');
-      if (selectedCharms.length) parts.push(this.getTotalCharms() + ' charm(s)');
+      if (this.state.productShape) tags.push('Forma: ' + this.state.productShape);
+      if (this.state.engravingShape) tags.push('Grabado: ' + this.state.engravingShape);
 
-      var hasSelections = parts.length > 0;
-      this.triggerSubtitle.textContent = hasSelections ? parts.join(' \u00B7 ') : 'Toca para configurar tu diseno';
+      if (this.state.mainFrontActive && this.state.mainFrontText) {
+        var frontFont = this.getFontById(this.state.mainFrontFont);
+        tags.push('Frente');
+        previewHtml.push(
+          '<div class="pp-inline-preview-face">' +
+          (activeShape ? '<div class="pp-inline-preview-face__shape">' + shapeSvg(activeShape) + '</div>' : '') +
+          '<span class="pp-inline-preview-face__label">Frente</span>' +
+          '<span class="pp-inline-preview-face__text" style="font-family:' + frontFont.family + ';font-weight:' + frontFont.weight + '">' + escapeHtml(rawToPropertyValue(this.state.mainFrontText)) + '</span>' +
+          '</div>'
+        );
+      }
+      if (this.state.mainBackActive && this.state.mainBackText) {
+        var backFont = this.getFontById(this.state.mainBackFont);
+        tags.push('Atras');
+        previewHtml.push(
+          '<div class="pp-inline-preview-face">' +
+          '<span class="pp-inline-preview-face__label">Atras</span>' +
+          '<span class="pp-inline-preview-face__text" style="font-family:' + backFont.family + ';font-weight:' + backFont.weight + '">' + escapeHtml(rawToPropertyValue(this.state.mainBackText)) + '</span>' +
+          '</div>'
+        );
+      }
+      if (this.state.singleText) {
+        tags.push('Mensaje');
+        previewHtml.push(
+          '<div class="pp-inline-preview-face">' +
+          '<span class="pp-inline-preview-face__label">Mensaje</span>' +
+          '<span class="pp-inline-preview-face__text">' + escapeHtml(rawToPropertyValue(this.state.singleText)) + '</span>' +
+          '</div>'
+        );
+      }
+      if (this.state.shapeText) {
+        tags.push('Texto forma');
+        previewHtml.push(
+          '<div class="pp-inline-preview-face">' +
+          (this.state.engravingShape ? '<div class="pp-inline-preview-face__shape">' + shapeSvg(this.state.engravingShape) + '</div>' : '') +
+          '<span class="pp-inline-preview-face__label">Forma</span>' +
+          '<span class="pp-inline-preview-face__text">' + escapeHtml(rawToPropertyValue(this.state.shapeText)) + '</span>' +
+          '</div>'
+        );
+      }
+      if (this.state.textSlots && this.state.textSlots.length) {
+        tags.push(this.state.textSlots.length + ' texto(s)');
+      }
+
+      selectedPhotos.forEach(function (item, index) {
+        previewHtml.push('<div class="pp-inline-preview-photo"><img src="' + item.url + '" alt="Foto ' + (index + 1) + '"></div>');
+      });
+
+      selectedCharms.forEach(function (charm) {
+        var visual = charm.image ? '<img src="' + charm.image + '" alt="' + escapeHtml(charm.label) + '">' : '';
+        previewHtml.push('<span class="pp-inline-preview-charm">' + visual + escapeHtml(charm.label) + ' x' + charm.quantity + '</span>');
+      });
+
+      if (selectedPhotos.length) tags.push(selectedPhotos.length + ' foto(s)');
+      if (selectedCharms.length) tags.push(this.getTotalCharms() + ' charm(s)');
+
+      var hasSelections = tags.length > 0;
+      this.triggerSubtitle.textContent = hasSelections ? tags.join(' \u00B7 ') : 'Toca para configurar tu diseno';
 
       var trigger = this._triggerRoot.querySelector('.pp-trigger');
       if (trigger) trigger.classList.toggle('has-selections', hasSelections);
       if (this.triggerCheck) this.triggerCheck.hidden = !hasSelections;
+
+      if (this.inlinePanel) {
+        this.inlinePanel.hidden = !hasSelections;
+      }
+      if (this.inlinePreview) {
+        this.inlinePreview.innerHTML = previewHtml.join('');
+      }
+      if (this.inlineDetails) {
+        this.inlineDetails.innerHTML = tags.map(function (tag) {
+          return '<span class="pp-inline-tag">' + escapeHtml(tag) + '</span>';
+        }).join('');
+      }
     }
 
     toggleAddToCart() {

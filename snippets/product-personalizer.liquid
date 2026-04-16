@@ -39,6 +39,16 @@
       <span class="pp-trigger__arrow" aria-hidden="true">&rarr;</span>
     </button>
 
+    {%- comment -%} ── Inline summary panel (shows after configuring) ── {%- endcomment -%}
+    <div class="pp-inline-panel" data-pp-inline-panel hidden>
+      <div class="pp-inline-panel__preview" data-pp-inline-preview></div>
+      <div class="pp-inline-panel__details" data-pp-inline-details></div>
+      <button type="button" class="pp-inline-panel__edit" data-action="open-personalizer">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M10 1.5l2.5 2.5M1 13l.8-3.2L10.3 1.3a1 1 0 011.4 0l1 1a1 1 0 010 1.4L4.2 12.2 1 13z"/></svg>
+        Editar
+      </button>
+    </div>
+
     {%- comment -%} ── Hidden properties (inside form, submitted with cart) ── {%- endcomment -%}
     <div data-personalizer-properties style="display:none"></div>
 
@@ -151,7 +161,7 @@
                 "code": {{ charm_product.handle | json }},
                 "label": {{ charm_product.title | json }},
                 "description": {{ charm_product.description | strip_html | truncate: 80 | json }},
-                "accent": "#b9996e",
+                "accent": "#f669a0",
                 "image": {% if charm_product.featured_image != blank %}{{ charm_product.featured_image | image_url: width: 280 | json }}{% else %}null{% endif %},
                 "price": {{ charm_product.price | json }},
                 "variantId": {{ charm_product.selected_or_first_available_variant.id | json }}
