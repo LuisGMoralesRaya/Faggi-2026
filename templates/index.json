@@ -2146,7 +2146,7 @@
         "subheading_position": "bottom",
         "descheading": "",
         "descheading_color": "#666666",
-        "heading_alignment": "text-center",
+        "heading_alignment": "text-left",
         "style": "style2",
         "show_bgitem": false,
         "bg_itemcolor": "",
