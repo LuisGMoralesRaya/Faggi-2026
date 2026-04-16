@@ -41,6 +41,7 @@
     <div class="col-md-6 d-flex">
       <div class="product-single__right w-100">
 
+        {% render 'product-personalizer' %}
         {% render 'product-single-addtocart', current_variant: product.selected_or_first_available_variant %}
 
         {% render 'product-single-share-ask' %}

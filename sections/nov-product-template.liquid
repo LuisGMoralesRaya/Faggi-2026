@@ -399,6 +399,71 @@
         "type": "color",
         "id": "background_color",
         "label": "Background Tab Description"
+      },
+      {
+        "type": "header",
+        "content": "── Product Personalizer ──"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_product_personalizer",
+        "label": "Enable product personalizer",
+        "default": true,
+        "info": "Activates personalization for products tagged Personalización_1 through Personalización_9."
+      },
+      {
+        "type": "text",
+        "id": "product_eyebrow",
+        "label": "Personalizer eyebrow text",
+        "default": "Joyería a tu medida"
+      },
+      {
+        "type": "text",
+        "id": "personalizer_heading",
+        "label": "Personalizer heading",
+        "default": "Personaliza tu pieza"
+      },
+      {
+        "type": "text",
+        "id": "personalizer_subheading",
+        "label": "Personalizer subheading",
+        "default": "Diseña cada detalle para que sea única. Elige charms, textos, tipografías e imágenes según tu estilo."
+      },
+      {
+        "type": "text",
+        "id": "personalizer_summary_title",
+        "label": "Summary card title",
+        "default": "Tu selección"
+      },
+      {
+        "type": "text",
+        "id": "personalizer_preview_empty",
+        "label": "Empty preview text",
+        "default": "Comienza a personalizar para ver la vista previa"
+      },
+      {
+        "type": "text",
+        "id": "personalizer_icon_help",
+        "label": "Icon help text",
+        "default": "Los íconos cuentan como un carácter."
+      },
+      {
+        "type": "text",
+        "id": "personalizer_shape_consumes_note",
+        "label": "Shape consumes charm note",
+        "default": "Seleccionar una forma reduce en 1 el número disponible de charms."
+      },
+      {
+        "type": "richtext",
+        "id": "personalization_note",
+        "label": "Personalization note (optional)"
+      },
+      {
+        "type": "text",
+        "id": "personalizer_shape_option_names",
+        "label": "Shape option names (comma-separated)",
+        "default": "Forma,Shape,Estilo,Style",
+        "info": "Product option names that represent shapes, used for variant synchronization."
       }
     ],
     "blocks": [
@@ -600,6 +665,77 @@
             "type": "richtext",
             "id": "c10",
             "label": "Content"
+          }
+        ]
+      },
+      {
+        "type": "personalizer_font",
+        "name": "Personalizer Font",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Font name",
+            "default": "Classic Serif"
+          },
+          {
+            "type": "text",
+            "id": "font_family",
+            "label": "CSS font family",
+            "default": "\"Cormorant Garamond\", \"Palatino Linotype\", serif"
+          },
+          {
+            "type": "text",
+            "id": "font_weight",
+            "label": "Font weight",
+            "default": "600"
+          },
+          {
+            "type": "text",
+            "id": "font_style",
+            "label": "Font style",
+            "default": "normal"
+          },
+          {
+            "type": "text",
+            "id": "preview_text",
+            "label": "Preview text",
+            "default": "Amor"
+          }
+        ]
+      },
+      {
+        "type": "personalizer_charm",
+        "name": "Personalizer Charm",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Charm name",
+            "default": "Corazón"
+          },
+          {
+            "type": "text",
+            "id": "code",
+            "label": "Charm code (optional)",
+            "info": "Unique identifier. Defaults to handleized title if empty."
+          },
+          {
+            "type": "text",
+            "id": "description",
+            "label": "Charm description",
+            "default": "Charm seleccionado a la medida"
+          },
+          {
+            "type": "color",
+            "id": "accent",
+            "label": "Accent color",
+            "default": "#d26a7a"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Charm image"
           }
         ]
       },
