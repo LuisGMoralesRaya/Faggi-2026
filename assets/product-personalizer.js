@@ -88,7 +88,7 @@
   ];
 
   const PERSONALIZATION_RULES = {
-    'Personalización_1': {
+    'Personalizacion_1': {
       displayName: 'Collar Multicharms',
       label: 'Personalizado 1',
       previewStyle: 'multicharm',
@@ -109,7 +109,7 @@
       },
       photos: { enabled: false }
     },
-    'Personalización_2': {
+    'Personalizacion_2': {
       displayName: 'Brazaletes',
       label: 'Personalizado 2',
       previewStyle: 'bracelet',
@@ -128,7 +128,7 @@
       charms: { enabled: false },
       photos: { enabled: false }
     },
-    'Personalización_3': {
+    'Personalizacion_3': {
       displayName: 'Pulseras y Esclavas',
       label: 'Personalizado 3',
       previewStyle: 'bracelet',
@@ -147,7 +147,7 @@
       charms: { enabled: true, max: 1, optional: true, minWhenSelected: 1 },
       photos: { enabled: false }
     },
-    'Personalización_4': {
+    'Personalizacion_4': {
       displayName: 'Sobre con mensaje especial',
       label: 'Personalizado 4',
       previewStyle: 'envelope',
@@ -162,7 +162,7 @@
       charms: { enabled: true, max: 2, optional: true, minWhenSelected: 1 },
       photos: { enabled: true, min: 0, max: 1 }
     },
-    'Personalización_5': {
+    'Personalizacion_5': {
       displayName: 'Llaveritos',
       label: 'Personalizado 5',
       previewStyle: 'keychain',
@@ -181,7 +181,7 @@
       charms: { enabled: true, max: 3, optional: true, minWhenSelected: 1 },
       photos: { enabled: true, min: 0, max: 1 }
     },
-    'Personalización_6': {
+    'Personalizacion_6': {
       displayName: 'Personalizacion avanzada completa',
       label: 'Personalizado 6',
       previewStyle: 'atelier',
@@ -207,7 +207,7 @@
       charms: { enabled: true, max: 5, optional: true, minWhenSelected: 1 },
       photos: { enabled: true, min: 0, max: 4 }
     },
-    'Personalización_7': {
+    'Personalizacion_7': {
       displayName: 'Dije y Collar Plaquita',
       label: 'Personalizado 7',
       previewStyle: 'plate',
@@ -232,7 +232,7 @@
       charms: { enabled: true, max: 3, optional: true, minWhenSelected: 1 },
       photos: { enabled: true, min: 0, max: 1 }
     },
-    'Personalización_8': {
+    'Personalizacion_8': {
       displayName: 'Relicario',
       label: 'Personalizado 8',
       previewStyle: 'locket',
@@ -257,7 +257,7 @@
       charms: { enabled: true, max: 3, optional: true, minWhenSelected: 1 },
       photos: { enabled: true, min: 1, max: 2 }
     },
-    'Personalización_9': {
+    'Personalizacion_9': {
       displayName: 'Collares para perros',
       label: 'Personalizado 9',
       previewStyle: 'pet',

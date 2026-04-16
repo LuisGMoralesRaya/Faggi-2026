@@ -10,8 +10,9 @@
   endfor
 
   assign personalizer_font_blocks = section.blocks | where: 'type', 'personalizer_font'
-  assign personalizer_charm_blocks = section.blocks | where: 'type', 'personalizer_charm'
   assign shape_option_names = section.settings.personalizer_shape_option_names | split: ','
+  assign charm_collection_handle = section.settings.personalizer_charm_collection | default: 'charms-bar'
+  assign charm_collection = collections[charm_collection_handle]
 -%}
 
 {%- if section.settings.enable_product_personalizer and active_personalization_tag != blank -%}
@@ -30,7 +31,7 @@
         <p class="pp-shell__eyebrow">{{ section.settings.product_eyebrow | escape }}</p>
         <div class="pp-shell__title-row">
           <h2 class="pp-shell__title">{{ section.settings.personalizer_heading | escape }}</h2>
-          <span class="pp-shell__rule-badge" data-preview-rule-label>{{ active_personalization_tag | replace: 'Personalización_', 'Personalizado ' }}</span>
+          <span class="pp-shell__rule-badge" data-preview-rule-label>{{ active_personalization_tag | replace: 'Personalizacion_', 'Personalizado ' }}</span>
         </div>
         <p class="pp-shell__subtitle">{{ section.settings.personalizer_subheading | escape }}</p>
         {%- if section.settings.personalization_note != blank -%}
@@ -113,16 +114,20 @@
           {%- endfor -%}
         ],
         "charms": [
-          {%- for block in personalizer_charm_blocks -%}
-            {
-              "id": {{ block.id | json }},
-              "code": {{ block.settings.code | default: block.settings.title | handleize | json }},
-              "label": {{ block.settings.title | json }},
-              "description": {{ block.settings.description | json }},
-              "accent": {{ block.settings.accent | json }},
-              "image": {% if block.settings.image != blank %}{{ block.settings.image | image_url: width: 280 | json }}{% else %}null{% endif %}
-            }{%- unless forloop.last -%},{%- endunless -%}
-          {%- endfor -%}
+          {%- if charm_collection != blank -%}
+            {%- for charm_product in charm_collection.products -%}
+              {
+                "id": {{ charm_product.id | json }},
+                "code": {{ charm_product.handle | json }},
+                "label": {{ charm_product.title | json }},
+                "description": {{ charm_product.description | strip_html | truncate: 80 | json }},
+                "accent": "#b9996e",
+                "image": {% if charm_product.featured_image != blank %}{{ charm_product.featured_image | image_url: width: 280 | json }}{% else %}null{% endif %},
+                "price": {{ charm_product.price | json }},
+                "variantId": {{ charm_product.selected_or_first_available_variant.id | json }}
+              }{%- unless forloop.last -%},{%- endunless -%}
+            {%- endfor -%}
+          {%- endif -%}
         ],
         "ui": {
           "heading": {{ section.settings.personalizer_heading | json }},
