@@ -15,43 +15,37 @@
         "list_collection_T9gidL": {
           "type": "list_collection",
           "settings": {
-            "image": "shopify://shop_images/Food.jpg",
-            "collection": "cat-food"
+            "collection": "joyeria-personalizada"
           }
         },
         "list_collection_UXEHUr": {
           "type": "list_collection",
           "settings": {
-            "image": "shopify://shop_images/Grooming.jpg",
-            "collection": "grooming"
+            "collection": "collar-personalizado"
           }
         },
         "list_collection_3Q9Ldz": {
           "type": "list_collection",
           "settings": {
-            "image": "shopify://shop_images/Outfits.jpg",
-            "collection": "outfit"
+            "collection": "pulsera-personalizada"
           }
         },
         "list_collection_N4DEiC": {
           "type": "list_collection",
           "settings": {
-            "image": "shopify://shop_images/Pet_Furniture.jpg",
-            "collection": "pet-bedding"
+            "collection": "charms-bar"
           }
         },
         "list_collection_drWmdB": {
           "type": "list_collection",
           "settings": {
-            "image": "shopify://shop_images/Pet_Toys.jpg",
-            "collection": "toy"
+            "collection": "aretes"
           }
         },
         "list_collection_MyCMJJ": {
           "type": "list_collection",
           "settings": {
-            "image": "shopify://shop_images/Training.jpg",
-            "collection": "training"
+            "collection": "anillos"
           }
         }
       },
@@ -92,9 +86,9 @@
           "type": "item_policy",
           "settings": {
             "policy_icon": "shopify://shop_images/p-2.png",
-            "title_policy": "Free Shipping",
+            "title_policy": "Envio Gratis desde $799",
             "stitle_policy": "",
-            "desc_policy": "Get free shipping on all orders for a hassle free shopping experience!",
+            "desc_policy": "Recibe tu joyeria personalizada en la puerta de tu casa sin costo extra.",
             "mw": 285,
             "link_label": "",
             "link": "",
@@ -108,9 +102,9 @@
           "type": "item_policy",
           "settings": {
             "policy_icon": "shopify://shop_images/p-3.png",
-            "title_policy": "Secured Payments",
+            "title_policy": "Pago 100% Seguro",
             "stitle_policy": "",
-            "desc_policy": "Experience secure payments with advanced encryption for your peace of mind.",
+            "desc_policy": "Compra con confianza. Tus datos estan protegidos con encriptacion avanzada.",
             "mw": 285,
             "link_label": "",
             "link": "",
@@ -124,9 +118,9 @@
           "type": "item_policy",
           "settings": {
             "policy_icon": "shopify://shop_images/p-1.png",
-            "title_policy": "Return Policy",
+            "title_policy": "Garantia de Calidad",
             "stitle_policy": "",
-            "desc_policy": "Easy returns! Return items within 30 days for a refund or exchange.",
+            "desc_policy": "Cada pieza es revisada a detalle antes de enviarse a tus manos.",
             "mw": 285,
             "link_label": "",
             "link": "",
@@ -226,7 +220,7 @@
     "recent-products": {
       "type": "nov-recently-viewed",
       "settings": {
-        "heading": "<p>Recently Viewed Products</p>",
+        "heading": "<p>Productos Vistos Recientemente</p>",
         "heading_color": "#181818",
         "subheading": "",
         "subheading_color": "#666666",

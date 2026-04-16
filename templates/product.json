@@ -15,31 +15,31 @@
         "03cca96b-c43d-43d4-8322-c16e4b7e8266": {
           "type": "block_text",
           "settings": {
-            "custom_title": "Delivery policy",
-            "custom_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate, lectus ac pretium maximus, magna neque fermentum arcu, ut pulvinar arcu erat vel massa. Pellentesque ac arcu blandit, vestibulum tortor eget, dictum magna. Curabitur sit amet metus nulla. Pellentesque et augue et urna volutpat vestibulum vitae eget ligula. Maecenas mi augue, faucibus scelerisque facilisis in, dignissim vitae justo. Sed venenatis lectus et leo malesuada iaculis. Nunc lacinia arcu id elementum rhoncus. Duis tempor, enim vel vulputate interdum, magna sapien lacinia enim, nec lobortis quam enim eu erat. Aenean faucibus ex vitae nibh accumsan ullamcorper. Sed a orci augue. Maecenas porttitor venenatis semper.</p>"
+            "custom_title": "Produccion y Envio",
+            "custom_content": "<p>Tu joya personalizada se elabora a mano en un plazo de 3 a 5 dias habiles. Al finalizar tu compra, nos ponemos en contacto contigo por email o WhatsApp para confirmar todos los detalles de tu diseno. El envio es GRATIS en compras a partir de $799 MXN y enviamos a toda la Republica Mexicana con numero de rastreo.</p>"
           }
         },
         "a3d01db6-4304-4e3d-b6f3-f75fc7a51212": {
           "type": "block_text",
           "settings": {
-            "custom_title": "Shipping & Return",
-            "custom_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus libero quis mauris vestibulum dapibus.</p><p>Maecenas ullamcorper erat mi, vel consequat enim suscipit at. Pellentesque a elit at elit</p>"
+            "custom_title": "Garantia y Devoluciones",
+            "custom_content": "<p>Revisamos cada pieza antes de enviarla para garantizar la mejor calidad. Si tu joya llega con algun defecto de fabricacion, contamos con garantia de reposicion.</p><p>Al ser un producto personalizado, no aplican devoluciones por cambio de opinion, pero estamos para ayudarte en cualquier situacion.</p>"
           }
         },
         "03b6d121-b452-4ee2-beed-a6128ccc6fd5": {
           "type": "block_customtab",
           "settings": {
-            "custom_title": "Custom Tab",
-            "t1": "Lorem ipsum dolor sit amet",
-            "c1": "<p>Maecenas ullamcorper erat mi, vel consequat enim suscipit at.</p>",
-            "t2": "Quisque in felis ut tellus",
-            "c2": "<p>Pellentesque a elit at elit auctor tempus sed vitae mi</p>",
-            "t3": "Morbi blandit auctor",
-            "c3": "<p>Vestibulum sollicitudin tortor dui, quis aliquet sapien convallis sed.</p>",
-            "t4": "Sed sit amet risus quis velit lacinia gravida.",
-            "c4": "<p>Aenean interdum elementum arcu. Vivamus purus lorem, semper quis libero et.</p>",
-            "t5": "Morbi dictum orci neque.",
-            "c5": "<p>Curabitur vehicula tellus sit amet neque placerat, vel sagittis.</p>",
+            "custom_title": "Preguntas sobre este Producto",
+            "t1": "Como personalizo mi joya?",
+            "c1": "<p>Usa nuestro personalizador en esta misma pagina para elegir charms, texto grabado, fuente y mas. Al finalizar tu compra, confirmamos los detalles contigo por WhatsApp o email.</p>",
+            "t2": "Que materiales utilizan?",
+            "c2": "<p>Trabajamos con acero inoxidable, banos de oro y plata de alta calidad. Nuestros materiales son hipoalergenicos y resistentes al uso diario.</p>",
+            "t3": "Cuanto tarda la produccion?",
+            "c3": "<p>Los pedidos personalizados se elaboran en 3 a 5 dias habiles. Te avisamos cuando tu pieza este lista para envio.</p>",
+            "t4": "Puedo agregar una foto a mi joya?",
+            "c4": "<p>Si, nuestros relicarios y dijes permiten grabado con fotografia. Solo necesitas enviarnos la imagen despues de tu compra.</p>",
+            "t5": "Hacen envios a todo Mexico?",
+            "c5": "<p>Si, enviamos a toda la Republica Mexicana. El envio es GRATIS en compras a partir de $799 MXN con numero de rastreo.</p>",
             "t6": "",
             "c6": "",
             "t7": "",
@@ -83,13 +83,13 @@
         "related_limit": 10,
         "show_description": true,
         "show_payments": true,
-        "title_payments": "The Benefits of Choosing Us",
+        "title_payments": "Por que Elegir Faggi",
         "payments": "shopify://shop_images/policy-detailpage.jpg",
         "payments_width": 520,
-        "time": "Orders ship within 5 to 10 business days.",
+        "time": "Tu pedido se elabora en 3 a 5 dias habiles.",
         "size_time": "14px",
         "color_time": "#535353",
-        "truck": "Hoorey ! This item ships free to the US",
+        "truck": "Envio GRATIS en compras desde $799 MXN a todo Mexico",
         "size_truck": "14px",
         "color_truck": "#535353",
         "background_color": ""
@@ -123,9 +123,9 @@
           "type": "item_policy",
           "settings": {
             "policy_icon": "shopify://shop_images/p-2.png",
-            "title_policy": "Free Shipping",
+            "title_policy": "Envio Gratis desde $799",
             "stitle_policy": "",
-            "desc_policy": "Get free shipping on all orders for a hassle free shopping experience!",
+            "desc_policy": "Recibe tu joyeria personalizada en casa sin costo extra.",
             "mw": 285,
             "link_label": "",
             "link": "",
@@ -139,9 +139,9 @@
           "type": "item_policy",
           "settings": {
             "policy_icon": "shopify://shop_images/p-3.png",
-            "title_policy": "Secured Payments",
+            "title_policy": "Pago 100% Seguro",
             "stitle_policy": "",
-            "desc_policy": "Experience secure payments with advanced encryption for your peace of mind.",
+            "desc_policy": "Tus datos estan protegidos con encriptacion avanzada.",
             "mw": 285,
             "link_label": "",
             "link": "",
@@ -155,9 +155,9 @@
           "type": "item_policy",
           "settings": {
             "policy_icon": "shopify://shop_images/p-1.png",
-            "title_policy": "Return Policy",
+            "title_policy": "Garantia de Calidad",
             "stitle_policy": "",
-            "desc_policy": "Easy returns! Return items within 30 days for a refund or exchange.",
+            "desc_policy": "Cada pieza es revisada antes de enviarse a tus manos.",
             "mw": 285,
             "link_label": "",
             "link": "",
@@ -303,7 +303,7 @@
     "2046dd06-c8ff-4d5c-9e09-e8c21ef98855": {
       "type": "nov-product-template-related",
       "settings": {
-        "heading": "<p>Product Related</p>",
+        "heading": "<p>Productos Relacionados</p>",
         "heading_color": "#181818",
         "subheading": "",
         "subheading_color": "#666666",
@@ -324,7 +324,7 @@
       "type": "nov-product-recommendations",
       "disabled": true,
       "settings": {
-        "heading": "<h2>You Might Also Like</h2>",
+        "heading": "<h2>Tambien Te Puede Gustar</h2>",
         "heading_color": "#222222",
         "subheading": "",
         "subheading_color": "#666666",
@@ -352,7 +352,7 @@
     "recent-products": {
       "type": "nov-recently-viewed",
       "settings": {
-        "heading": "<p>Recently Viewed Products</p>",
+        "heading": "<p>Productos Vistos Recientemente</p>",
         "heading_color": "#181818",
         "subheading": "",
         "subheading_color": "#666666",
