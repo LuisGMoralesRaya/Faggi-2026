@@ -27,7 +27,6 @@
             "banner_br": 5,
             "novmenu_banner_enable1": true,
             "banner_xl_1": "col-xl-2",
-            "novmenu_banner1": "shopify://shop_images/menu-img.jpg",
             "novmenu_banner_link1": "",
             "novmenu_banner_text1": "",
             "novmenu_banner_text_color1": "",
@@ -123,7 +122,6 @@
             "title": "Dogs",
             "type_width": "custom",
             "custom_width": 665,
-            "icon_menu": "shopify://shop_images/v-1.png",
             "novmenu_menu_enable": true,
             "show_title": true,
             "novmenu_xl": "col-xl-5",
@@ -131,7 +129,6 @@
             "banner_br": 5,
             "novmenu_banner_enable1": true,
             "banner_xl_1": "col-xl-7",
-            "novmenu_banner1": "shopify://shop_images/img-v-1.jpg",
             "novmenu_banner_link1": "#",
             "novmenu_banner_text1": "",
             "novmenu_banner_text_color1": "",
@@ -173,7 +170,6 @@
             "title": "Cats",
             "type_width": "custom",
             "custom_width": 830,
-            "icon_menu": "shopify://shop_images/v-2.png",
             "novmenu_menu_enable": true,
             "show_title": true,
             "novmenu_xl": "col-xl-8",
@@ -181,7 +177,6 @@
             "banner_br": 5,
             "novmenu_banner_enable1": true,
             "banner_xl_1": "col-xl-4",
-            "novmenu_banner1": "shopify://shop_images/img-v-2.jpg",
             "novmenu_banner_link1": "#",
             "novmenu_banner_text1": "<p>Playful Little<br/>Friends</p>",
             "novmenu_banner_text_color1": "background-2",
@@ -220,50 +215,43 @@
         "icon_menu_wJUPyJ": {
           "type": "icon_menu",
           "settings": {
-            "title": "Hamster",
-            "icon_menu": "shopify://shop_images/v-3.png"
+            "title": "Hamster"
           }
         },
         "icon_menu_9fj3m9": {
           "type": "icon_menu",
           "settings": {
-            "title": "Fish",
-            "icon_menu": "shopify://shop_images/v-4.png"
+            "title": "Fish"
           }
         },
         "icon_menu_R66MrN": {
           "type": "icon_menu",
           "settings": {
-            "title": "Birds",
-            "icon_menu": "shopify://shop_images/v-5.png"
+            "title": "Birds"
           }
         },
         "icon_menu_jBDgyF": {
           "type": "icon_menu",
           "settings": {
-            "title": "Rabbit",
-            "icon_menu": "shopify://shop_images/v-6.png"
+            "title": "Rabbit"
           }
         },
         "icon_menu_9Lgixz": {
           "type": "icon_menu",
           "settings": {
-            "title": "Pet services",
-            "icon_menu": "shopify://shop_images/v-7.png"
+            "title": "Pet services"
           }
         },
         "icon_menu_n3TEQz": {
           "type": "icon_menu",
           "settings": {
-            "title": "Pet Furniture",
-            "icon_menu": "shopify://shop_images/v-8.png"
+            "title": "Pet Furniture"
           }
         },
         "icon_menu_AKAtbC": {
           "type": "icon_menu",
           "settings": {
-            "title": "Pet Toys",
-            "icon_menu": "shopify://shop_images/v-9.png"
+            "title": "Pet Toys"
           }
         }
       },
@@ -282,11 +270,10 @@
       ],
       "custom_css": [],
       "settings": {
-        "logo": "shopify://shop_images/logo_-_black.png",
+        "logo": "shopify://shop_images/Un_dia_a_la_vez_3_651bf1a9-cfcc-4be9-b37c-cf8a31ae7ead.png",
         "w_logo": 160,
         "w_logo_lg": 150,
         "w_logo_md": 120,
-        "logo_mobile": "shopify://shop_images/logo_-_black.png",
         "wm_logo": 120,
         "container": "container",
         "color_header": "background-1",
@@ -318,7 +305,7 @@
         "show_icons": true,
         "main_linklist": "main-menu",
         "color_menu": "background-1",
-        "vertical_menu": "vertical-menu",
+        "vertical_menu": "",
         "vertical_menu_limit": 13,
         "vertical_menu_btn_type": "btn-primary",
         "show_icons_arrow": true,
