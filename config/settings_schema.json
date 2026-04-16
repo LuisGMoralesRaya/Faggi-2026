@@ -3067,22 +3067,5 @@
         "default": "#fff"
       }
     ]
-  },
-  {
-    "name": "Faggi Branding",
-    "settings": [
-      {
-        "type": "text",
-        "id": "brand_logo_external",
-        "label": "External brand logo URL",
-        "default": ""
-      },
-      {
-        "type": "text",
-        "id": "brand_logo_alt",
-        "label": "Brand logo alt text",
-        "default": "Faggi joyer?a personalizada"
-      }
-    ]
   }
 ]
