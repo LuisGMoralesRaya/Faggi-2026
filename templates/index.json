@@ -3773,6 +3773,7 @@
         "item_mcaA9B": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/10.png",
             "tab_label": "Grabado con Texto",
             "title": "Shine With Care",
             "stitle": "Mar 08, 2025",
@@ -3782,6 +3783,7 @@
         "item_tVCWnd": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/Un_dia_a_la_vez_14.png",
             "tab_label": "Grabado con Foto",
             "title": "Stay With Care",
             "stitle": "Mar 08, 2025",
@@ -3791,6 +3793,7 @@
         "item_q8QwfU": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/1a64560314fd55a869b4f7eff294b72c.jpg",
             "tab_label": "Charms",
             "title": "Steps With Love",
             "stitle": "Mar 08, 2025",
@@ -3800,6 +3803,7 @@
         "item_L6UpGG": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/plokijh.jpg",
             "tab_label": "Multicharms",
             "title": "Smart Obedient Pets",
             "stitle": "Mar 08, 2025",
@@ -3809,6 +3813,7 @@
         "item_BeXx9k": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/oiu765.jpg",
             "tab_label": "Transportation",
             "title": "Envio Seguro a Todo Mexico",
             "stitle": "Mar 08, 2025",
@@ -3818,6 +3823,7 @@
         "item_869RDe": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/Collar1.1_e2ac2697-8864-44fa-b068-5cb107aa0d7e.jpg",
             "tab_label": "Relicarios",
             "title": "Materiales de Alta Calidad",
             "stitle": "Mar 08, 2025",
