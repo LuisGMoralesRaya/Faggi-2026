@@ -511,9 +511,22 @@
       this.state = this.buildInitialState();
 
       this.renderFields();
+
+      this._triggerRoot = this.root;
+      if (this.modal) {
+        document.body.appendChild(this.modal);
+        this.root = this.modal;
+        var formId = this.form.id;
+        if (formId) {
+          Array.from(this.modal.querySelectorAll('input[type="file"][name]')).forEach(function (el) {
+            el.setAttribute('form', formId);
+          });
+        }
+      }
+
       this.bindEvents();
       this.updateAll();
-      this.root.classList.add('is-ready');
+      this._triggerRoot.classList.add('is-ready');
     }
 
     readConfig() {
@@ -558,6 +571,9 @@
     }
 
     bindEvents() {
+      if (this._triggerRoot && this._triggerRoot !== this.root) {
+        this._triggerRoot.addEventListener('click', this.handleClick.bind(this));
+      }
       this.root.addEventListener('click', this.handleClick.bind(this));
       this.root.addEventListener('change', this.handleChange.bind(this));
       this.root.addEventListener('input', this.handleInput.bind(this));
@@ -650,8 +666,8 @@
       const validation = this.validateState();
       if (validation.errors.length) {
         event.preventDefault();
+        this.openModal();
         this.updateAll();
-        this.root.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     }
 
@@ -1978,7 +1994,7 @@
       var hasSelections = parts.length > 0;
       this.triggerSubtitle.textContent = hasSelections ? parts.join(' \u00B7 ') : 'Toca para configurar tu diseno';
 
-      var trigger = this.root.querySelector('.pp-trigger');
+      var trigger = this._triggerRoot.querySelector('.pp-trigger');
       if (trigger) trigger.classList.toggle('has-selections', hasSelections);
       if (this.triggerCheck) this.triggerCheck.hidden = !hasSelections;
     }
@@ -1990,7 +2006,7 @@
       var shouldDisable = validation.errors.length > 0;
       this.addButton.disabled = shouldDisable;
       this.addButton.classList.toggle('is-personalizer-disabled', shouldDisable);
-      this.root.classList.toggle('is-invalid', shouldDisable);
+      this._triggerRoot.classList.toggle('is-invalid', shouldDisable);
       if (this.confirmButton) this.confirmButton.disabled = shouldDisable;
     }
   }
