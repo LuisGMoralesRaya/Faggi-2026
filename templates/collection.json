@@ -73,7 +73,7 @@
         "sort_enable": true,
         "loadmore": true,
         "type_loadmore": "btn",
-        "cb": true,
+        "cb": false,
         "show_tags": true,
         "show_desc": true,
         "bg_b": "#f2f2f2"
@@ -85,7 +85,6 @@
         "item_policy_cnKz73": {
           "type": "item_policy",
           "settings": {
-            "policy_icon": "shopify://shop_images/p-2.png",
             "title_policy": "Envio Gratis desde $799",
             "stitle_policy": "",
             "desc_policy": "Recibe tu joyeria personalizada en la puerta de tu casa sin costo extra.",
@@ -101,7 +100,6 @@
         "item_policy_KnKipc": {
           "type": "item_policy",
           "settings": {
-            "policy_icon": "shopify://shop_images/p-3.png",
             "title_policy": "Pago 100% Seguro",
             "stitle_policy": "",
             "desc_policy": "Compra con confianza. Tus datos estan protegidos con encriptacion avanzada.",
@@ -117,7 +115,6 @@
         "item_policy_daW7aM": {
           "type": "item_policy",
           "settings": {
-            "policy_icon": "shopify://shop_images/p-1.png",
             "title_policy": "Garantia de Calidad",
             "stitle_policy": "",
             "desc_policy": "Cada pieza es revisada a detalle antes de enviarse a tus manos.",
