@@ -3920,6 +3920,7 @@
               "type": "image",
               "name": "Image",
               "settings": {
+                "image": "shopify://shop_images/23.png",
                 "link": "#",
                 "width_custom": false,
                 "image_width_unit": "%",
@@ -5221,6 +5222,7 @@
     },
     "nov_blog_Kfjggp": {
       "type": "nov-blog",
+      "disabled": true,
       "name": "Vinova Blog",
       "settings": {
         "heading": "<p>Nuestro Blog</p>",
