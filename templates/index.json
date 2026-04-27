@@ -504,7 +504,7 @@
         },
         "group_H6fLBg": {
           "type": "group",
-          "name": "Group - Category",
+          "name": "Categorías fotos",
           "settings": {
             "row_spacing": 30,
             "row_spacing_md": 15,
@@ -600,11 +600,11 @@
                     "link": "#",
                     "width_custom": true,
                     "image_width_unit": "%",
-                    "image_width": 30,
+                    "image_width": 28,
                     "align": "left",
                     "height_custom": true,
                     "image_height_unit": "%",
-                    "image_height": 30,
+                    "image_height": 100,
                     "image_height_xl": 100,
                     "image_height_lg": 100,
                     "image_height_md": 100,
@@ -647,7 +647,6 @@
                     "text_tDbztB": {
                       "type": "text",
                       "name": "Text",
-                      "disabled": true,
                       "settings": {
                         "text": "<p>Collares Personalizados</p>",
                         "color": "#1f2937",
@@ -699,7 +698,7 @@
                         "link_fs": 14,
                         "link_fw": "font-700",
                         "link_color": "#1f2937",
-                        "link_color_hover": "#ffd100",
+                        "link_color_hover": "#f669a0",
                         "color_scheme": "",
                         "button_size": "btn-normal",
                         "button_type_color": "btn-primary",
@@ -795,7 +794,7 @@
                   "type": "image",
                   "name": "Image",
                   "settings": {
-                    "image": "shopify://shop_images/25.png",
+                    "image": "shopify://shop_images/Un_dia_a_la_vez_15.png",
                     "link": "#",
                     "width_custom": false,
                     "image_width_unit": "%",
