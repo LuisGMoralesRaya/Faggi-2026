@@ -15,7 +15,8 @@
         "image_hN3KG6": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Sin_titulo_1800_x_850_px_72fbaf7f-452b-4dc1-932d-10e7a752529e.png",
+            "image": "shopify://shop_images/Diseno_sin_titulo_93d25996-1a56-4518-ad2e-e434cca40a4c.png",
+            "img_xs": "shopify://shop_images/Diseno_sin_titulo_1.png",
             "slider_link": "#",
             "img_animate": true,
             "img_position": "right-center",

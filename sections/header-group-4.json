@@ -54,11 +54,11 @@
         "vertical_menu": "",
         "vertical_menu_limit": 1,
         "vertical_menu_btn_type": "btn-secondary",
-        "show_icons_arrow": true,
+        "show_icons_arrow": false,
         "vertical_menu_color": "background-1",
-        "phone": "5573946941",
-        "phone_title": "Contáctanos por WA",
-        "phone_icon": true
+        "phone": "",
+        "phone_title": "",
+        "phone_icon": false
       }
     }
   },
