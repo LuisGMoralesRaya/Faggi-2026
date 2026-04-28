@@ -1,10 +1,31 @@
 {%- liquid
-  assign supported_personalization_tags = 'Personalizacion_1,Personalizacion_2,Personalizacion_3,Personalizacion_4,Personalizacion_5,Personalizacion_6,Personalizacion_7,Personalizacion_8,Personalizacion_9' | split: ','
   assign active_personalization_tag = blank
 
-  for supported_tag in supported_personalization_tags
-    if product.tags contains supported_tag
-      assign active_personalization_tag = supported_tag
+  for product_tag in product.tags
+    assign normalized_tag = product_tag | handleize
+
+    case normalized_tag
+      when 'personalizacion-1'
+        assign active_personalization_tag = 'Personalizacion_1'
+      when 'personalizacion-2'
+        assign active_personalization_tag = 'Personalizacion_2'
+      when 'personalizacion-3'
+        assign active_personalization_tag = 'Personalizacion_3'
+      when 'personalizacion-4'
+        assign active_personalization_tag = 'Personalizacion_4'
+      when 'personalizacion-5'
+        assign active_personalization_tag = 'Personalizacion_5'
+      when 'personalizacion-6'
+        assign active_personalization_tag = 'Personalizacion_6'
+      when 'personalizacion-7'
+        assign active_personalization_tag = 'Personalizacion_7'
+      when 'personalizacion-8'
+        assign active_personalization_tag = 'Personalizacion_8'
+      when 'personalizacion-9'
+        assign active_personalization_tag = 'Personalizacion_9'
+    endcase
+
+    if active_personalization_tag != blank
       break
     endif
   endfor
@@ -13,6 +34,7 @@
   assign shape_option_names = section.settings.personalizer_shape_option_names | split: ','
   assign charm_collection_handle = section.settings.personalizer_charm_collection | default: 'charms-bar'
   assign charm_collection = collections[charm_collection_handle]
+  assign trigger_heading = 'Personaliza tu ' | append: product.title | downcase
 -%}
 
 {%- if section.settings.enable_product_personalizer and active_personalization_tag != blank -%}
@@ -26,12 +48,11 @@
     data-form-id="product-form-{{ section.id }}"
     data-active-tag="{{ active_personalization_tag }}"
   >
-    {%- comment -%} ── Inline trigger button (always visible in PDP) ── {%- endcomment -%}
     <button type="button" class="pp-trigger" data-action="open-personalizer">
       <span class="pp-trigger__icon" aria-hidden="true">&#10022;</span>
       <span class="pp-trigger__copy">
-        <span class="pp-trigger__title">{{ section.settings.personalizer_heading | default: 'Personaliza tu pieza' | escape }}</span>
-        <span class="pp-trigger__subtitle" data-pp-trigger-subtitle>Toca para configurar tu diseño</span>
+        <span class="pp-trigger__title">{{ trigger_heading | escape }}</span>
+        <span class="pp-trigger__subtitle" data-pp-trigger-subtitle>Configura tu dise&#241;o personalizado</span>
       </span>
       <span class="pp-trigger__check" data-pp-trigger-check hidden aria-hidden="true">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="9" fill="currentColor"/><path d="M5.5 9.5L7.5 11.5L12.5 6.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -39,29 +60,29 @@
       <span class="pp-trigger__arrow" aria-hidden="true">&rarr;</span>
     </button>
 
-    {%- comment -%} ── Inline summary panel (shows after configuring) ── {%- endcomment -%}
     <div class="pp-inline-panel" data-pp-inline-panel hidden>
       <div class="pp-inline-panel__preview" data-pp-inline-preview></div>
       <div class="pp-inline-panel__details" data-pp-inline-details></div>
+      <div class="pp-inline-panel__total" data-pp-inline-total hidden>
+        <span class="pp-inline-panel__total-label">Total personalizado</span>
+        <strong class="pp-inline-panel__total-value" data-pp-inline-total-value>{{ product.selected_or_first_available_variant.price | money }}</strong>
+      </div>
       <button type="button" class="pp-inline-panel__edit" data-action="open-personalizer">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M10 1.5l2.5 2.5M1 13l.8-3.2L10.3 1.3a1 1 0 011.4 0l1 1a1 1 0 010 1.4L4.2 12.2 1 13z"/></svg>
         Editar
       </button>
     </div>
 
-    {%- comment -%} ── Hidden properties (inside form, submitted with cart) ── {%- endcomment -%}
     <div data-personalizer-properties style="display:none"></div>
 
-    {%- comment -%} ── Modal overlay ── {%- endcomment -%}
     <div class="pp-modal" data-pp-modal hidden>
       <div class="pp-modal__backdrop" data-action="close-personalizer"></div>
       <div class="pp-modal__dialog" role="dialog" aria-modal="true" aria-label="Personalizador de producto">
-
-        {%- comment -%} Modal header {%- endcomment -%}
         <div class="pp-modal__header">
           <div class="pp-modal__header-copy">
             <p class="pp-modal__eyebrow">{{ section.settings.product_eyebrow | escape }}</p>
             <h2 class="pp-modal__heading">{{ section.settings.personalizer_heading | escape }}</h2>
+            <p class="pp-modal__product">{{ product.title }}</p>
             <span class="pp-modal__badge" data-preview-rule-label>{{ active_personalization_tag | replace: 'Personalizacion_', 'Personalizado ' }}</span>
           </div>
           <button type="button" class="pp-modal__close" data-action="close-personalizer" aria-label="Cerrar personalizador">
@@ -69,7 +90,6 @@
           </button>
         </div>
 
-        {%- comment -%} Modal body — two-column layout {%- endcomment -%}
         <div class="pp-modal__body">
           <div class="pp-modal__subtitle">{{ section.settings.personalizer_subheading | escape }}</div>
           {%- if section.settings.personalization_note != blank -%}
@@ -77,13 +97,12 @@
           {%- endif -%}
 
           <div class="pp-modal__layout">
-            {%- comment -%} Preview column {%- endcomment -%}
             <div class="pp-modal__preview-col">
               <div class="pp-card pp-card--preview">
                 <div class="pp-card__header">
                   <div>
-                    <p class="pp-card__eyebrow">Preview</p>
-                    <h3 class="pp-card__title">Vista previa</h3>
+                    <p class="pp-card__eyebrow">Vista previa</p>
+                    <h3 class="pp-card__title">Tu dise&#241;o</h3>
                   </div>
                   <span class="pp-card__shape-pill" data-preview-shape-badge hidden></span>
                 </div>
@@ -109,7 +128,6 @@
               </div>
             </div>
 
-            {%- comment -%} Controls column {%- endcomment -%}
             <div class="pp-modal__controls-col">
               <div class="pp-status" data-personalizer-status></div>
               <div class="pp-errors" data-personalizer-errors></div>
@@ -118,17 +136,14 @@
           </div>
         </div>
 
-        {%- comment -%} Modal footer {%- endcomment -%}
         <div class="pp-modal__footer">
           <button type="button" class="pp-modal__confirm" data-action="confirm-personalizer">
-            Confirmar personalización
+            Confirmar personalizaci&#243;n
           </button>
         </div>
-
       </div>
     </div>
 
-    {%- comment -%} ── Config JSON ── {%- endcomment -%}
     <script type="application/json" data-personalizer-config>
       {
         "sectionId": {{ section.id | json }},
@@ -138,6 +153,7 @@
         "productHandle": {{ product.handle | json }},
         "productUrl": {{ product.url | json }},
         "productTags": {{ product.tags | json }},
+        "moneyFormat": {{ shop.money_format | json }},
         "selectedVariantId": {{ product.selected_or_first_available_variant.id | json }},
         "variants": {{ product.variants | json }},
         "shapeOptionNames": {{ shape_option_names | json }},
@@ -170,6 +186,7 @@
           {%- endif -%}
         ],
         "ui": {
+          "triggerHeading": {{ trigger_heading | json }},
           "heading": {{ section.settings.personalizer_heading | json }},
           "subheading": {{ section.settings.personalizer_subheading | json }},
           "summaryTitle": {{ section.settings.personalizer_summary_title | json }},

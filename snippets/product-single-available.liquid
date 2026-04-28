@@ -1,21 +1,28 @@
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+<div id="ProductAvailability-{{ section.id }}" class="available_product d-flex align-items-center">
 {% unless product.available %}
-  <div class="available_product d-flex align-items-center">
     <div class="available_name product-single__control-label">
-      {{ "products.product.available" | t }}
+      Disponibilidad
     </div>
     <span class="product__available sold-out">
       <span>{{ "products.product.sold_out" | t }}</span>
       <i class="zmdi zmdi-block"></i>
     </span>
-  </div>
 {% else %}
-  <div class="available_product d-flex align-items-center">
     <div class="available_name product-single__control-label">
-      {{ "products.product.available" | t }}
+      {% if current_variant.inventory_management == 'shopify' and current_variant.inventory_policy != 'continue' and current_variant.inventory_quantity > 0 %}
+        Piezas restantes
+      {% else %}
+        Disponibilidad
+      {% endif %}
     </div>
     <span class="product__available in-stock">
-      <span>{{ "products.product.in_stock" | t }}</span>
+      {% if current_variant.inventory_management == 'shopify' and current_variant.inventory_policy != 'continue' and current_variant.inventory_quantity > 0 %}
+        <span>Quedan {{ current_variant.inventory_quantity }} piezas</span>
+      {% else %}
+        <span>{{ "products.product.in_stock" | t }}</span>
+      {% endif %}
       {% render 'icon-check' %}
     </span>
-  </div>
 {% endunless %}
+</div>

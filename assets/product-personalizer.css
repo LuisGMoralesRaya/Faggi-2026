@@ -3,6 +3,8 @@
    Premium jewelry customization UI
    ═══════════════════════════════════════════ */
 
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@400;500;600&family=Great+Vibes&display=swap");
+
 .product-personalizer,
 .pp-modal {
   --pp-bg: #fff6fa;
@@ -24,7 +26,7 @@
 }
 
 .product-personalizer {
-  margin: 20px 0 8px;
+  margin: 32px 0 8px;
 }
 
 /* ─── Inline Summary Panel ─── */
@@ -137,6 +139,32 @@
   flex-wrap: wrap;
   gap: 6px;
   min-width: 0;
+}
+
+.product-personalizer .pp-inline-panel__total {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--pp-border);
+  min-width: 160px;
+}
+
+.product-personalizer .pp-inline-panel__total-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--pp-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.product-personalizer .pp-inline-panel__total-value {
+  font-size: 18px;
+  line-height: 1;
+  color: var(--pp-accent-dark);
+  font-family: "Cormorant Garamond", "Palatino Linotype", serif;
 }
 
 .product-personalizer .pp-inline-panel__details:empty {
@@ -348,6 +376,13 @@
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.03em;
+}
+
+.pp-modal__product {
+  margin: 8px 0 0;
+  color: var(--pp-title);
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .pp-modal__close {
@@ -570,6 +605,15 @@
   height: 96px;
 }
 
+.pp-modal .pp-preview-face__meta {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+  color: var(--pp-title);
+  font-size: 13px;
+  font-weight: 700;
+}
+
 .pp-modal .pp-preview-face__label {
   position: relative;
   z-index: 1;
@@ -593,6 +637,34 @@
 .pp-modal .pp-preview-face__placeholder {
   color: var(--pp-muted);
   font-size: 13px;
+}
+
+.pp-modal .pp-preview-face--split {
+  min-height: 220px;
+}
+
+.pp-modal .pp-preview-face__split {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: auto;
+}
+
+.pp-modal .pp-preview-face__split.is-single {
+  grid-template-columns: 1fr;
+}
+
+.pp-modal .pp-preview-face__side {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(222, 79, 135, 0.14);
+  min-height: 94px;
 }
 
 .pp-modal .pp-preview-face--stack {
@@ -731,6 +803,7 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 1;
+  margin-bottom: 2rem;
 }
 
 .pp-modal .pp-section__description {
@@ -911,6 +984,7 @@
   background: rgba(255, 255, 255, 0.95);
   min-height: 54px;
   padding: 12px 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .pp-modal .pp-token-field__editor {
@@ -920,6 +994,11 @@
   line-height: 1.55;
   outline: none;
   word-break: break-word;
+}
+
+.pp-modal .pp-token-field__editor-shell:focus-within {
+  border-color: rgba(246, 105, 160, 0.52);
+  box-shadow: 0 0 0 4px rgba(246, 105, 160, 0.08);
 }
 
 .pp-modal .pp-token-field__editor:empty::before {
@@ -1072,6 +1151,20 @@
   color: var(--pp-muted);
   font-weight: 700;
   font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pp-modal .pp-photo-slot__placeholder strong {
+  color: var(--pp-title);
+  font-size: 14px;
+}
+
+.pp-modal .pp-photo-slot__placeholder small {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 /* ─── Charm slider (two-row) ─── */
@@ -1180,8 +1273,8 @@
 }
 
 .pp-modal .pp-charm-card__title {
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 600;
   color: var(--pp-title);
   margin: 0;
 }
@@ -1272,9 +1365,50 @@
 
 /* ─── Disabled state ─── */
 
-.product-personalizer .is-personalizer-disabled {
+.is-personalizer-disabled {
   opacity: 0.68;
   cursor: not-allowed;
+}
+
+.pp-add-to-cart {
+  background: linear-gradient(135deg, #f669a0, #de4f87);
+  border-color: #de4f87;
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(222, 79, 135, 0.22);
+}
+
+.pp-add-to-cart:hover {
+  background: linear-gradient(135deg, #de4f87, #c43f74);
+  border-color: #c43f74;
+  color: #fff;
+}
+
+.product-single__price-total {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.product-single__price-total-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #9a7e8c;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.product-single__price-total-value {
+  font-size: 18px;
+  color: #de4f87;
+  font-family: "Cormorant Garamond", "Palatino Linotype", serif;
+}
+
+@media (min-width: 900px) {
+  .pp-modal .pp-card--summary {
+    display: none;
+  }
 }
 
 /* ─── Responsive ─── */
@@ -1321,6 +1455,10 @@
 
   .pp-modal .pp-summary__value {
     text-align: left;
+  }
+
+  .pp-modal .pp-preview-face__split {
+    grid-template-columns: 1fr;
   }
 
   .pp-modal .pp-charm-slider {

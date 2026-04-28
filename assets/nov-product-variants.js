@@ -106,10 +106,14 @@ class ProductVariantDropdown extends HTMLElement {
       .then((response) => response.text())
       .then((responseText) => {
         const id = `ProductPrice-${this.dataset.productId}`;
+        const availabilityId = `ProductAvailability-${this.dataset.productId}`;
         const html = new DOMParser().parseFromString(responseText, 'text/html')
         const destination = document.getElementById(id);
         const source = html.getElementById(id);
         if (source && destination) destination.innerHTML = source.innerHTML;
+        const availabilityDestination = document.getElementById(availabilityId);
+        const availabilitySource = html.getElementById(availabilityId);
+        if (availabilitySource && availabilityDestination) availabilityDestination.innerHTML = availabilitySource.innerHTML;
         this.toggleAddButton(!this.currentVariant.available, window.variantStrings.notify_me);
         const variant_id = document.getElementById("variant_id").getAttribute('value');
         const sku = document.getElementById("productSelect").querySelector('[value="'+variant_id+'"]').getAttribute('data-sku');
@@ -117,6 +121,16 @@ class ProductVariantDropdown extends HTMLElement {
         if (typeof variantSku !== 'undefined' && variantSku) {
           variantSku.innerHTML = sku;
         }
+        const quantityInput = document.getElementById('Quantity');
+        if (quantityInput && this.currentVariant.inventory_quantity > 0) {
+          quantityInput.setAttribute('max', this.currentVariant.inventory_quantity);
+        }
+        document.dispatchEvent(new CustomEvent('product:variant:rendered', {
+          detail: {
+            sectionId: sectionId,
+            variantId: requestedVariantId
+          }
+        }));
       });
   }
 
@@ -237,7 +251,7 @@ class ProductVariantSelectsStick extends ProductVariantDropdown {
       if(inventoryPolicy == 'continue' && inventoryManagement == 'shopify' ) {
         addButtonText.textContent = window.variantStrings.preorder;
       } else {
-        addButtonText.textContent = window.variantStrings.addTobag;
+        addButtonText.textContent = window.variantStrings.addToCart;
       }
       addButtonParent.classList.remove('soldout');
       addButtonParent.removeAttribute('data-toggle');

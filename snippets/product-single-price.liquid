@@ -1,17 +1,23 @@
-<div id="ProductPrice-{{ section.id }}" class="product-single__price price-st d-flex flex-wrap align-items-center {{ mb }}">
-  {% if current_variant.compare_at_price > current_variant.price %}
-    <span class="product-price__price product-price__sale product-price__sale--single">
-      <span itemprop="price" content="{{ current_variant.price | divided_by: 100.00 }}">
-        {{ current_variant.price | money }}
+<div id="ProductPrice-{{ section.id }}" class="product-single__price price-st d-flex flex-wrap align-items-center {{ mb }}" data-personalizer-price-root data-money-format="{{ shop.money_format | escape }}">
+  <div class="product-single__price-main d-flex flex-wrap align-items-center" data-personalizer-base-price>
+    {% if current_variant.compare_at_price > current_variant.price %}
+      <span class="product-price__price product-price__sale product-price__sale--single">
+        <span itemprop="price" content="{{ current_variant.price | divided_by: 100.00 }}">
+          {{ current_variant.price | money }}
+        </span>
       </span>
-    </span>
-    <s>{{ current_variant.compare_at_price | money }}</s>
-    <span class="product-price__badge">-{{ current_variant.compare_at_price | minus: current_variant.price | times: 100 | divided_by: current_variant.compare_at_price | round: 4 }}%</span>
-  {% else %}
-    <span class="product-price__price">
-      <span itemprop="price" content="{{ current_variant.price | divided_by: 100.00 }}">
-        {{ current_variant.price | money }}
+      <s>{{ current_variant.compare_at_price | money }}</s>
+      <span class="product-price__badge">-{{ current_variant.compare_at_price | minus: current_variant.price | times: 100 | divided_by: current_variant.compare_at_price | round: 4 }}%</span>
+    {% else %}
+      <span class="product-price__price">
+        <span itemprop="price" content="{{ current_variant.price | divided_by: 100.00 }}">
+          {{ current_variant.price | money }}
+        </span>
       </span>
-    </span>
-  {% endif %}
+    {% endif %}
+  </div>
+  <div class="product-single__price-total" data-personalizer-price-summary hidden>
+    <span class="product-single__price-total-label">Total personalizado</span>
+    <strong class="product-single__price-total-value" data-personalizer-total-price>{{ current_variant.price | money }}</strong>
+  </div>
 </div>

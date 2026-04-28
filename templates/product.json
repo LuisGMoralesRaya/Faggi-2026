@@ -29,39 +29,39 @@
         "pp_font_classic": {
           "type": "personalizer_font",
           "settings": {
-            "title": "Classic Serif",
-            "font_family": "\"Cormorant Garamond\", \"Iowan Old Style\", \"Palatino Linotype\", serif",
-            "font_weight": "600",
+            "title": "SignPainter Medium",
+            "font_family": "\"SignPainter\", \"Brush Script MT\", cursive",
+            "font_weight": "500",
             "font_style": "normal",
-            "preview_text": "Amor"
+            "preview_text": "Siempre"
           }
         },
         "pp_font_modern": {
           "type": "personalizer_font",
           "settings": {
-            "title": "Modern Sans",
-            "font_family": "\"Avenir Next\", \"Trebuchet MS\", sans-serif",
-            "font_weight": "600",
+            "title": "Great Vibes",
+            "font_family": "\"Great Vibes\", \"Snell Roundhand\", cursive",
+            "font_weight": "400",
             "font_style": "normal",
-            "preview_text": "Forever"
+            "preview_text": "Amor"
           }
         },
         "pp_font_script": {
           "type": "personalizer_font",
           "settings": {
-            "title": "Romantic Script",
-            "font_family": "\"Snell Roundhand\", \"Brush Script MT\", cursive",
+            "title": "Atma",
+            "font_family": "\"Atma\", \"Trebuchet MS\", sans-serif",
             "font_weight": "400",
             "font_style": "normal",
-            "preview_text": "Siempre"
+            "preview_text": "Familia"
           }
         },
         "pp_font_mono": {
           "type": "personalizer_font",
           "settings": {
-            "title": "Engraver Mono",
-            "font_family": "\"Courier Prime\", \"Courier New\", monospace",
-            "font_weight": "500",
+            "title": "Georgia",
+            "font_family": "Georgia, \"Times New Roman\", serif",
+            "font_weight": "400",
             "font_style": "normal",
             "preview_text": "A+M"
           }
