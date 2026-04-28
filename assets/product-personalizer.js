@@ -842,9 +842,7 @@
       });
       const hasCharms = this.getTotalCharms() > 0;
       const hasEngravingShape = !!this.state.engravingShape;
-      const hasChangedProductShape = !!this.state.productShape && this.state.productShape !== this.initialProductShape;
-
-      return hasMainText || hasEngravingText || hasSingleText || hasMultiText || hasPhotos || hasCharms || hasEngravingShape || hasChangedProductShape;
+      return hasMainText || hasEngravingText || hasSingleText || hasMultiText || hasPhotos || hasCharms || hasEngravingShape;
     }
 
     renderFields() {
@@ -2295,12 +2293,10 @@
       var selectedCharms = this.getSelectedCharms();
       var selectedPhotos = this.state.photos ? this.state.photos.filter(function (item) { return !!item.file; }) : [];
       var activeShape = this.shouldShowShapeInPreview() ? this.state.engravingShape : '';
-      var hasChangedProductShape = !!this.state.productShape && this.state.productShape !== this.initialProductShape;
       var hasSelections = this.hasMeaningfulSelection();
       var frontLabel = this.rule.sideText && this.rule.sideText.sides.front ? this.rule.sideText.sides.front.label : 'Frente';
       var backLabel = this.rule.sideText && this.rule.sideText.sides.back ? this.rule.sideText.sides.back.label : 'Atrás';
 
-      if (hasChangedProductShape) tags.push('Forma: ' + this.state.productShape);
       if (this.state.engravingShape) tags.push(this.getEngravingShapeFieldLabel() + ': ' + this.state.engravingShape);
 
       if (this.state.mainFrontActive && hasRawValue(this.state.mainFrontText)) {

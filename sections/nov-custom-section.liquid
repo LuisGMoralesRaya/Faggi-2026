@@ -19,7 +19,98 @@
     #shopify-section-{{ section.id }} .distance.bg:before {
       background: {{ sst.background_gradient }};
     }
-  {% endif %} 
+  {% endif %}
+  {% if sst.class_section contains 'faggi-home-categories' %}
+    #shopify-section-{{ section.id }} .faggi-home-categories {
+      text-align: center;
+    }
+    #shopify-section-{{ section.id }} .faggi-home-categories .pattern-section,
+    #shopify-section-{{ section.id }} .faggi-home-categories .pattern-image,
+    #shopify-section-{{ section.id }} .faggi-home-categories .button-block {
+      display: none !important;
+    }
+    #shopify-section-{{ section.id }} .faggi-home-categories .container-inner {
+      max-width: 1460px;
+      margin: 0 auto;
+    }
+    #shopify-section-{{ section.id }} .faggi-home-categories .text-block {
+      text-align: center !important;
+    }
+    #shopify-section-{{ section.id }} .faggi-home-categories .text-block .text-content {
+      display: block;
+      width: 100%;
+    }
+    #shopify-section-{{ section.id }} .faggi-home-categories .group-block + .group-block .row-block {
+      justify-content: center;
+    }
+    #shopify-section-{{ section.id }} .faggi-home-categories .group-block + .group-block .col-block {
+      flex: 0 0 16.6667%;
+      max-width: 16.6667%;
+    }
+    #shopify-section-{{ section.id }} .faggi-home-categories .group-block + .group-block .image-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    #shopify-section-{{ section.id }} .faggi-home-categories .group-block + .group-block .image-block > a {
+      display: block;
+      width: 100%;
+    }
+    #shopify-section-{{ section.id }} .faggi-home-categories .group-block + .group-block .image-wrapper {
+      width: min(208px, 100%);
+      margin: 0 auto;
+      padding: 24px;
+      background: #eff5ff;
+      border-radius: 40% 60% 56% 44% / 44% 38% 62% 56%;
+      overflow: hidden;
+    }
+    #shopify-section-{{ section.id }} .faggi-home-categories .group-block + .group-block .image-wrapper .respone_image {
+      padding-top: 100% !important;
+    }
+    #shopify-section-{{ section.id }} .faggi-home-categories .group-block + .group-block .image-wrapper img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 58%;
+      height: 58%;
+      object-fit: contain;
+      transform: translate(-50%, -50%);
+    }
+    #shopify-section-{{ section.id }} .faggi-home-categories .group-block + .group-block .img-blocks-content {
+      position: static !important;
+      inset: auto !important;
+      width: 100% !important;
+      margin-top: 18px;
+      transform: none !important;
+    }
+    #shopify-section-{{ section.id }} .faggi-home-categories .group-block + .group-block .img-blocks-content .text-block {
+      margin: 0;
+    }
+    #shopify-section-{{ section.id }} .faggi-home-categories .group-block + .group-block .img-blocks-content p {
+      margin: 0;
+      color: #1f2937;
+      font-size: clamp(18px, 1.5vw, 22px);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    @media (max-width: 1199px) {
+      #shopify-section-{{ section.id }} .faggi-home-categories .group-block + .group-block .col-block {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+      }
+    }
+    @media (max-width: 767px) {
+      #shopify-section-{{ section.id }} .faggi-home-categories .group-block + .group-block .col-block {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      #shopify-section-{{ section.id }} .faggi-home-categories .group-block + .group-block .image-wrapper {
+        width: min(168px, 100%);
+        padding: 18px;
+      }
+    }
+  {% endif %}
 {%- endstyle -%}
 
 <div class="custom-section position-relative{{ bg_class_full }}">

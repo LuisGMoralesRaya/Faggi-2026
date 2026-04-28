@@ -1,5 +1,11 @@
 {{ 'css-header4.css' | asset_url | stylesheet_tag }}
 {% assign sst = section.settings %}
+{% assign show_lang_cur_top = false %}
+{% if sst.show_language_currency %}
+  {% if settings.show_multiple_currencies or settings.show_language and localization.available_languages.size > 1 %}
+    {% assign show_lang_cur_top = true %}
+  {% endif %}
+{% endif %}
 {% style -%}
   @media(min-width: 768px) {
     .site-header__logo {
@@ -26,35 +32,47 @@
     --search-input-border: {{ sst.search_input_border }};
     --search-placeholder: {{ sst.search_placeholder }};
   }
+  #shopify-section-{{ section.id }} .header-top {
+    background: #f669a0;
+  }
+  #shopify-section-{{ section.id }} .header-top .header-announcement {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+  #shopify-section-{{ section.id }} .header-top .header-announcement p,
+  #shopify-section-{{ section.id }} .header-top .header-announcement span,
+  #shopify-section-{{ section.id }} .header-top .header-announcement a {
+    color: inherit;
+  }
 {%- endstyle %}
 <header class="site-header{% if sst.stickymenu %} sticky-header{% endif %}">
   {% if sst.show_header_top %}
-    <div class="header-top color-{{ sst.color_header_top }} d-none d-md-block">
+    <div class="header-top color-{{ sst.color_header_top }}">
       <div class="{{ sst.container }}">
         <div class="row align-items-center">
           {% if sst.announcement != blank %}
-            <div class="item header-announcement col color-title font-500 fs-12">
+            <div class="item header-announcement {% if show_lang_cur_top %}col{% else %}col-12{% endif %} color-title font-500 fs-12">
               {{ sst.announcement }}
             </div>
           {% endif %}
-          <div class="col d-none d-md-block">
-            {% if sst.show_language_currency %}
-              {% if settings.show_multiple_currencies or settings.show_language and localization.available_languages.size > 1 %}
-                <div class="nov-lang-cur nov_ud_toggle d-none justify-content-end d-flex" data-ud_collapse="true">
-                  {%- if settings.show_language and localization.available_languages.size > 1 -%}
-                    <div class="block-language nov_ud_group">
-                      {% render 'nov-block-language' id: 'HeaderLanguage' %}
-                    </div>
-                  {%- endif -%}
-                  {% if settings.show_multiple_currencies %}
-                    <div class="block-currency nov_ud_group">
-                      {% render 'nov-block-currency' %}
-                    </div>
-                  {% endif %}
-                </div>
-              {% endif %}
-            {% endif %}
-          </div>
+          {% if show_lang_cur_top %}
+            <div class="col d-none d-md-block">
+              <div class="nov-lang-cur nov_ud_toggle d-none justify-content-end d-flex" data-ud_collapse="true">
+                {%- if settings.show_language and localization.available_languages.size > 1 -%}
+                  <div class="block-language nov_ud_group">
+                    {% render 'nov-block-language' id: 'HeaderLanguage' %}
+                  </div>
+                {%- endif -%}
+                {% if settings.show_multiple_currencies %}
+                  <div class="block-currency nov_ud_group">
+                    {% render 'nov-block-currency' %}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
         </div>
       </div>
     </div>

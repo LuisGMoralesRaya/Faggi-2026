@@ -119,7 +119,7 @@
         <div class="product__type">{{ product.type | link_to_type }}</div>
       {% endif %}
       <div class="product__title {{ settings.title_product_line }}"><a href="{{ product.url | within: collection }}">{{ product.title }}</a></div>
-      {% if settings.show_rating %}
+      {% if settings.show_rating and template != 'index' %}
         <div class="AirReviews-Widget AirReviews-Widget--Stars mb-10" data-review-avg="{{ product.metafields.air_reviews_product.review_avg }}" data-review-count="{{ product.metafields.air_reviews_product.review_count }}"></div>
       {% endif %}
       <div class="price-box price-st">

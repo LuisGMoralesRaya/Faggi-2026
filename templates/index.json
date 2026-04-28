@@ -1755,7 +1755,7 @@
         "pattern_width3": 20,
         "animate": true,
         "container": "container-fluid",
-        "class_section": "",
+        "class_section": "faggi-home-categories",
         "ss_bg_enable": false,
         "background_color": "#ffffff",
         "background_gradient": "",
