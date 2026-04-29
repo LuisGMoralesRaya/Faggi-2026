@@ -1,14 +1,10 @@
 {%- liquid
   assign sst = section.settings
-  assign personalization_tags = 'Personalizacion_1,Personalizacion_2,Personalizacion_3,Personalizacion_4,Personalizacion_5,Personalizacion_6,Personalizacion_7,Personalizacion_8,Personalizacion_9,Personalización_1,Personalización_2,Personalización_3,Personalización_4,Personalización_5,Personalización_6,Personalización_7,Personalización_8,Personalización_9' | split: ','
-  assign has_personalization_tag = false
-
-  for personalization_tag in personalization_tags
-    if product.tags contains personalization_tag
-      assign has_personalization_tag = true
-      break
-    endif
-  endfor
+  capture active_personalization_tag
+    render 'personalization-tag', product: product
+  endcapture
+  assign active_personalization_tag = active_personalization_tag | strip
+  assign has_personalization_tag = active_personalization_tag != blank
 
   if template == 'product.left'
     assign viewtype = 'left'

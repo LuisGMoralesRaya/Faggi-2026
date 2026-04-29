@@ -1,34 +1,13 @@
 {%- liquid
-  assign active_personalization_tag = blank
+  capture active_personalization_tag
+    render 'personalization-tag', product: product
+  endcapture
+  assign active_personalization_tag = active_personalization_tag | strip
 
-  for product_tag in product.tags
-    assign normalized_tag = product_tag | handleize
-
-    case normalized_tag
-      when 'personalizacion-1'
-        assign active_personalization_tag = 'Personalizacion_1'
-      when 'personalizacion-2'
-        assign active_personalization_tag = 'Personalizacion_2'
-      when 'personalizacion-3'
-        assign active_personalization_tag = 'Personalizacion_3'
-      when 'personalizacion-4'
-        assign active_personalization_tag = 'Personalizacion_4'
-      when 'personalizacion-5'
-        assign active_personalization_tag = 'Personalizacion_5'
-      when 'personalizacion-6'
-        assign active_personalization_tag = 'Personalizacion_6'
-      when 'personalizacion-7'
-        assign active_personalization_tag = 'Personalizacion_7'
-      when 'personalizacion-8'
-        assign active_personalization_tag = 'Personalizacion_8'
-      when 'personalizacion-9'
-        assign active_personalization_tag = 'Personalizacion_9'
-    endcase
-
-    if active_personalization_tag != blank
-      break
-    endif
-  endfor
+  assign personalizer_enabled = true
+  if section.settings.enable_product_personalizer == false
+    assign personalizer_enabled = false
+  endif
 
   assign personalizer_font_blocks = section.blocks | where: 'type', 'personalizer_font'
   assign shape_option_names = section.settings.personalizer_shape_option_names | split: ','
@@ -37,7 +16,7 @@
   assign trigger_heading = 'Personaliza tu ' | append: product.title | downcase
 -%}
 
-{%- if section.settings.enable_product_personalizer and active_personalization_tag != blank -%}
+{%- if personalizer_enabled and active_personalization_tag != blank -%}
   {{ 'product-personalizer.css' | asset_url | stylesheet_tag }}
   <script src="{{ 'product-personalizer.js' | asset_url }}" defer></script>
 

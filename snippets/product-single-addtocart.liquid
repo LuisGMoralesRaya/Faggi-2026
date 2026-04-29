@@ -1,13 +1,9 @@
 {%- liquid
-  assign has_personalization_tag = false
-
-  for product_tag in product.tags
-    assign normalized_tag = product_tag | handleize
-    if normalized_tag == 'personalizacion-1' or normalized_tag == 'personalizacion-2' or normalized_tag == 'personalizacion-3' or normalized_tag == 'personalizacion-4' or normalized_tag == 'personalizacion-5' or normalized_tag == 'personalizacion-6' or normalized_tag == 'personalizacion-7' or normalized_tag == 'personalizacion-8' or normalized_tag == 'personalizacion-9'
-      assign has_personalization_tag = true
-      break
-    endif
-  endfor
+  capture active_personalization_tag
+    render 'personalization-tag', product: product
+  endcapture
+  assign active_personalization_tag = active_personalization_tag | strip
+  assign has_personalization_tag = active_personalization_tag != blank
 -%}
 
 <div class="product-single__quantity mt-35"> 

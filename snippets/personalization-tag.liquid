@@ -1,0 +1,27 @@
+{%- liquid
+  assign detected_tag = blank
+
+  if product.tags contains 'Personalizacion_1' or product.tags contains 'Personalización_1' or product.tags contains 'Personalizacion 1' or product.tags contains 'Personalización 1' or product.tags contains 'Personalizacion-1' or product.tags contains 'Personalización-1'
+    assign detected_tag = 'Personalizacion_1'
+  elsif product.tags contains 'Personalizacion_2' or product.tags contains 'Personalización_2' or product.tags contains 'Personalizacion 2' or product.tags contains 'Personalización 2' or product.tags contains 'Personalizacion-2' or product.tags contains 'Personalización-2'
+    assign detected_tag = 'Personalizacion_2'
+  elsif product.tags contains 'Personalizacion_3' or product.tags contains 'Personalización_3' or product.tags contains 'Personalizacion 3' or product.tags contains 'Personalización 3' or product.tags contains 'Personalizacion-3' or product.tags contains 'Personalización-3'
+    assign detected_tag = 'Personalizacion_3'
+  elsif product.tags contains 'Personalizacion_4' or product.tags contains 'Personalización_4' or product.tags contains 'Personalizacion 4' or product.tags contains 'Personalización 4' or product.tags contains 'Personalizacion-4' or product.tags contains 'Personalización-4'
+    assign detected_tag = 'Personalizacion_4'
+  elsif product.tags contains 'Personalizacion_5' or product.tags contains 'Personalización_5' or product.tags contains 'Personalizacion 5' or product.tags contains 'Personalización 5' or product.tags contains 'Personalizacion-5' or product.tags contains 'Personalización-5'
+    assign detected_tag = 'Personalizacion_5'
+  elsif product.tags contains 'Personalizacion_6' or product.tags contains 'Personalización_6' or product.tags contains 'Personalizacion 6' or product.tags contains 'Personalización 6' or product.tags contains 'Personalizacion-6' or product.tags contains 'Personalización-6'
+    assign detected_tag = 'Personalizacion_6'
+  elsif product.tags contains 'Personalizacion_7' or product.tags contains 'Personalización_7' or product.tags contains 'Personalizacion 7' or product.tags contains 'Personalización 7' or product.tags contains 'Personalizacion-7' or product.tags contains 'Personalización-7'
+    assign detected_tag = 'Personalizacion_7'
+  elsif product.tags contains 'Personalizacion_8' or product.tags contains 'Personalización_8' or product.tags contains 'Personalizacion 8' or product.tags contains 'Personalización 8' or product.tags contains 'Personalizacion-8' or product.tags contains 'Personalización-8'
+    assign detected_tag = 'Personalizacion_8'
+  elsif product.tags contains 'Personalizacion_9' or product.tags contains 'Personalización_9' or product.tags contains 'Personalizacion 9' or product.tags contains 'Personalización 9' or product.tags contains 'Personalizacion-9' or product.tags contains 'Personalización-9'
+    assign detected_tag = 'Personalizacion_9'
+  endif
+
+  if detected_tag != blank
+    echo detected_tag
+  endif
+-%}
