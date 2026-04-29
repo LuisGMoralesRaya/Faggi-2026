@@ -3,7 +3,10 @@
     render 'personalization-tag', product: product
   endcapture
   assign active_personalization_tag = active_personalization_tag | strip
-  assign has_personalization_tag = active_personalization_tag != blank
+  assign has_personalization_tag = false
+  if active_personalization_tag != blank
+    assign has_personalization_tag = true
+  endif
 -%}
 
 <div class="product-single__quantity mt-35"> 
