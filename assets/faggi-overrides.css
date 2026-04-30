@@ -125,7 +125,8 @@ footer .container {
   max-width: min(48ch, calc(100% - 48px));
 }
 
-.template-product .product-single__sticky {
+.template-product .product-single__sticky,
+.template-product .product-template__scroll #productThumbs .thumb_slick {
   position: static !important;
   top: auto !important;
 }

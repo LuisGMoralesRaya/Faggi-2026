@@ -237,8 +237,8 @@
       previewStyle: 'locket',
       highlights: ['1 o 2 fotos obligatorias', 'Al menos un lado con texto', 'Forma sincronizable'],
       shapeSelector: {
-        enabled: true,
-        required: true,
+        enabled: false,
+        required: false,
         syncVariant: false,
         shapes: ['Circulo chico', 'Circulo grande', 'Corazon chico', 'Corazon grande']
       },
@@ -262,8 +262,8 @@
       previewStyle: 'pet',
       highlights: ['Al menos un lado con texto', 'Hasta 25 caracteres o íconos', '1 o 3 charms opcionales'],
       shapeSelector: {
-        enabled: true,
-        required: true,
+        enabled: false,
+        required: false,
         syncVariant: false,
         shapes: ['Corazon', 'Circulo', 'Hueso grande', 'Hueso pequeno']
       },

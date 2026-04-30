@@ -1482,6 +1482,10 @@
   display: none !important;
 }
 
+.pp-modal [hidden] {
+  display: none !important;
+}
+
 .pp-modal__header {
   padding: 18px 24px 14px;
 }
@@ -1629,5 +1633,74 @@
   .pp-modal .pp-preview-face__text,
   .pp-modal .pp-preview-stack__line {
     font-size: 17px;
+  }
+}
+
+.pp-modal__dialog {
+  width: min(calc(100vw - 12px), 1000px);
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.pp-modal__body {
+  overflow-x: hidden;
+}
+
+.pp-modal__layout,
+.pp-modal__preview-col,
+.pp-modal__controls-col,
+.pp-modal .pp-card,
+.pp-modal .pp-section,
+.pp-modal .pp-side-panel,
+.pp-modal .pp-side-panel__body,
+.pp-modal .pp-token-field,
+.pp-modal .pp-font-picker,
+.pp-modal .pp-photo-slot,
+.pp-modal .pp-preview,
+.pp-modal .pp-preview__main,
+.pp-modal .pp-preview__gallery,
+.pp-modal .pp-preview__charms,
+.pp-modal .pp-font-card,
+.pp-modal .pp-shape-card {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.pp-modal .pp-preview__gallery,
+.pp-modal .pp-preview__charms {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .pp-modal__body {
+    padding-inline: 14px;
+  }
+
+  .pp-modal .pp-preview__main,
+  .pp-modal .pp-preview-face__split,
+  .pp-modal .pp-photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pp-modal .pp-font-picker__grid,
+  .pp-modal .pp-shape-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pp-modal .pp-token-field__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .pp-modal .pp-preview__charms {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .pp-modal .pp-preview-face,
+  .pp-modal .pp-preview-face--split {
+    min-height: auto;
   }
 }
