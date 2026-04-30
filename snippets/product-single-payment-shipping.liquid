@@ -1,6 +1,6 @@
 {% if section.settings.show_payments %}
   <div class="product-single__payment mt-45 mb-45" style="--width-payment: {{ section.settings.payments_width }}px;">
-    <div class="product-single__control-label mb-10">{{ section.settings.title_payments }}</div>
+    <div class="product-single__control-label mb-10">&#191;Por qu&#233; elegir Faggi?</div>
     {% if section.settings.payments != blank %}
       <div class="payments overflow-hidden">
         <img class="lazyload" src="{{ section.settings.payments | image_url: width: 1 }}" data-src="{{ section.settings.payments | image_url: width: 700 }}" width="{{ section.settings.payments_width }}" height="{{ section.settings.payments_width | divided_by: section.settings.payments.aspect_ratio | round }}" alt="Payments" />

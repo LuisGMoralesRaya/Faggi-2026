@@ -13,7 +13,7 @@
   assign shape_option_names = section.settings.personalizer_shape_option_names | split: ','
   assign charm_collection_handle = section.settings.personalizer_charm_collection | default: 'charms-bar'
   assign charm_collection = collections[charm_collection_handle]
-  assign trigger_heading = 'Personaliza tu ' | append: product.title | downcase
+  assign trigger_heading = 'Personaliza tu ' | append: product.title
 -%}
 
 {%- if personalizer_enabled and active_personalization_tag != blank -%}
@@ -62,7 +62,6 @@
             <p class="pp-modal__eyebrow">{{ section.settings.product_eyebrow | escape }}</p>
             <h2 class="pp-modal__heading">{{ section.settings.personalizer_heading | escape }}</h2>
             <p class="pp-modal__product">{{ product.title }}</p>
-            <span class="pp-modal__badge" data-preview-rule-label>{{ active_personalization_tag | replace: 'Personalizacion_', 'Personalizado ' }}</span>
           </div>
           <button type="button" class="pp-modal__close" data-action="close-personalizer" aria-label="Cerrar personalizador">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>

@@ -211,11 +211,10 @@
       displayName: 'Dije y Collar Plaquita',
       label: 'Personalizado 7',
       previewStyle: 'plate',
-      highlights: ['Forma sincronizable con variantes', 'Texto opcional 1 o 2 lados', '1 foto y hasta 3 charms'],
       shapeSelector: {
-        enabled: true,
-        required: true,
-        syncVariant: true,
+        enabled: false,
+        required: false,
+        syncVariant: false,
         shapes: ['Corazon', 'Circulo', 'Rombo', 'Rectangulo Vertical']
       },
       sideText: {
@@ -240,7 +239,7 @@
       shapeSelector: {
         enabled: true,
         required: true,
-        syncVariant: true,
+        syncVariant: false,
         shapes: ['Circulo chico', 'Circulo grande', 'Corazon chico', 'Corazon grande']
       },
       sideText: {
@@ -265,7 +264,7 @@
       shapeSelector: {
         enabled: true,
         required: true,
-        syncVariant: true,
+        syncVariant: false,
         shapes: ['Corazon', 'Circulo', 'Hueso grande', 'Hueso pequeno']
       },
       sideText: {
@@ -848,8 +847,6 @@
     renderFields() {
       const sections = [];
 
-      sections.push(this.renderHighlights());
-
       if (this.rule.shapeSelector && this.rule.shapeSelector.enabled) {
         sections.push(this.renderShapeSelectorSection());
       }
@@ -887,26 +884,13 @@
       this.renderMultiTextSlots();
     }
 
-    renderHighlights() {
-      const highlights = this.rule.highlights || [];
-      return [
-        '<section class="pp-section pp-section--highlights">',
-        '<div class="pp-highlight-list">',
-        highlights.map(function (item) {
-          return '<span class="pp-highlight-pill">' + escapeHtml(item) + '</span>';
-        }).join(''),
-        '</div>',
-        '</section>'
-      ].join('');
-    }
-
     renderShapeSelectorSection() {
-      const syncCopy = this.nativeShapeControl ? 'Sincronizado con la variante real del producto.' : 'Guardado como selector visual configurable.';
+      const description = this.rule.shapeSelector && this.rule.shapeSelector.description ? this.rule.shapeSelector.description : '';
       return [
         '<section class="pp-section" data-section-role="product-shape">',
         '<div class="pp-section__head">',
         '<div><p class="pp-section__eyebrow">Forma</p><h4 class="pp-section__title">Elige la forma de la pieza</h4></div>',
-        '<p class="pp-section__description">' + escapeHtml(syncCopy) + '</p>',
+        description ? '<p class="pp-section__description">' + escapeHtml(description) + '</p>' : '',
         '</div>',
         '<div class="pp-shape-grid">',
         this.rule.shapeSelector.shapes.map(function (shape) {
@@ -1064,8 +1048,11 @@
           '<div class="pp-photo-slot__frame">',
           '<input type="file" accept="image/*" class="pp-photo-slot__input" name="properties[' + label + ']" data-photo-input="' + index + '">',
           '<div class="pp-photo-slot__surface" data-photo-surface="' + index + '">',
-          '<span class="pp-photo-slot__placeholder"><strong>' + escapeHtml(label) + '</strong><small>Toca para cargar</small></span>',
-          '<img data-photo-thumb="' + index + '" alt="' + escapeHtml(label) + '" hidden>',
+          '<span class="pp-photo-slot__placeholder">',
+          '<small>Subir fotografia</small>',
+          '<strong>' + escapeHtml(label) + '</strong>',
+          '<em class="pp-photo-slot__filename" data-photo-file-name="' + index + '">Ningun archivo seleccionado</em>',
+          '</span>',
           '</div>',
           '</div>',
           '<button type="button" class="pp-inline-button pp-inline-button--muted" data-action="clear-photo" data-photo-index="' + index + '" hidden>Quitar</button>',
@@ -1387,7 +1374,7 @@
     }
 
     findNativeShapeControl() {
-      if (!this.rule.shapeSelector || !this.rule.shapeSelector.enabled) return null;
+      if (!this.rule.shapeSelector || !this.rule.shapeSelector.enabled || !this.rule.shapeSelector.syncVariant) return null;
 
       const preferredNames = (this.config.shapeOptionNames || []).map(normalizeValue);
       const desiredValues = this.rule.shapeSelector.shapes.map(normalizeValue);
@@ -1739,22 +1726,21 @@
 
     updatePhotoSlots() {
       this.state.photos.forEach(function (item, index) {
-        const thumb = this.root.querySelector('[data-photo-thumb="' + index + '"]');
         const placeholder = this.root.querySelector('[data-photo-surface="' + index + '"] .pp-photo-slot__placeholder');
+        const surface = this.root.querySelector('[data-photo-surface="' + index + '"]');
+        const fileName = this.root.querySelector('[data-photo-file-name="' + index + '"]');
         const clear = this.root.querySelector('[data-photo-index="' + index + '"]');
 
-        if (thumb) {
-          if (item.url) {
-            thumb.hidden = false;
-            thumb.src = item.url;
-          } else {
-            thumb.hidden = true;
-            thumb.removeAttribute('src');
-          }
+        if (placeholder) {
+          placeholder.hidden = false;
         }
 
-        if (placeholder) {
-          placeholder.hidden = !!item.url;
+        if (surface) {
+          surface.classList.toggle('has-file', !!item.url);
+        }
+
+        if (fileName) {
+          fileName.textContent = item.file ? item.file.name : 'Ningun archivo seleccionado';
         }
 
         if (clear) {
@@ -1765,20 +1751,9 @@
 
     updateStatusAndErrors() {
       const validation = this.validateState();
-      const notices = validation.notices.concat(this.rule.shapeSelector && this.nativeShapeControl ? ['La forma visual está sincronizada con la variante del producto.'] : []);
       this.state.isValid = validation.errors.length === 0;
-
-      this.statusContainer.innerHTML = notices.length
-        ? notices.map(function (notice) {
-            return '<div class="pp-alert pp-alert--info">' + escapeHtml(notice) + '</div>';
-          }).join('')
-        : '';
-
-      this.errorsContainer.innerHTML = validation.errors.length
-        ? validation.errors.map(function (error) {
-            return '<div class="pp-alert pp-alert--error">' + escapeHtml(error) + '</div>';
-          }).join('')
-        : '';
+      this.statusContainer.innerHTML = '';
+      this.errorsContainer.innerHTML = '';
     }
 
     buildPreviewFaces() {
