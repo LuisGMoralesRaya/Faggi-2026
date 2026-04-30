@@ -25,7 +25,7 @@
         "color_header": "background-1",
         "badge_color": "#1f2937",
         "badge_bg": "#f669a0",
-        "stickymenu": true,
+        "stickymenu": false,
         "color_header_sticky": "background-1",
         "stickymenu_sm": true,
         "color_header_sm": "background-1",
