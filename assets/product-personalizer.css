@@ -1524,6 +1524,9 @@
   white-space: nowrap;
   line-height: 1.1;
 }
+.pp-toggle input{
+  width:auto;
+}
 
 .pp-modal .pp-side-panel + .pp-side-panel {
   margin-top: 10px;
