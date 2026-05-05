@@ -133,7 +133,7 @@
     "breadcrumb_inner_top": 160,
     "breadcrumb_inner_bottom": 160,
     "breadcrumb_inner_margin_bottom": 80,
-    "show_second_image_product": true,
+    "show_second_image_product": false,
     "aspect_product_image": "auto",
     "title_product_line": "line-clamp-2",
     "time_newproduct": 30,
