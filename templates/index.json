@@ -208,8 +208,8 @@
         "distance_top_lg": 0,
         "distance_top_md": 0,
         "distance_top_sm": 0,
-        "distance_bottom_xl": 140,
-        "distance_bottom_lg": 100,
+        "distance_bottom_xl": 40,
+        "distance_bottom_lg": 40,
         "distance_bottom_md": 60,
         "distance_bottom_sm": 60
       }
