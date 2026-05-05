@@ -122,7 +122,7 @@
         fontSelectable: true,
         sides: {
           front: { label: 'Grabado frente', defaultActive: false },
-          back: { label: 'Grabado atras', defaultActive: false }
+          back: { label: 'Grabado atrás', defaultActive: false }
         }
       },
       charms: { enabled: false },
@@ -141,7 +141,7 @@
         fontSelectable: true,
         sides: {
           front: { label: 'Grabado frente', defaultActive: false },
-          back: { label: 'Grabado atras', defaultActive: false }
+          back: { label: 'Grabado atrás', defaultActive: false }
         }
       },
       charms: { enabled: true, max: 1, optional: true, minWhenSelected: 1 },
@@ -225,7 +225,7 @@
         fontSelectable: true,
         sides: {
           front: { label: 'Grabado frente', defaultActive: false },
-          back: { label: 'Grabado atras', defaultActive: false }
+          back: { label: 'Grabado atrás', defaultActive: false }
         }
       },
       charms: { enabled: true, max: 3, optional: true, minWhenSelected: 1 },
@@ -250,7 +250,7 @@
         fontSelectable: true,
         sides: {
           front: { label: 'Grabado frente', defaultActive: true },
-          back: { label: 'Grabado atras', defaultActive: false }
+          back: { label: 'Grabado atrás', defaultActive: false }
         }
       },
       charms: { enabled: true, max: 3, optional: true, minWhenSelected: 1 },
@@ -275,7 +275,7 @@
         fontSelectable: true,
         sides: {
           front: { label: 'Grabado frente', defaultActive: true },
-          back: { label: 'Grabado atras', defaultActive: false }
+          back: { label: 'Grabado atrás', defaultActive: false }
         }
       },
       charms: { enabled: true, max: 3, optional: true, minWhenSelected: 1, allowedTotalCounts: [1, 3] },
