@@ -1838,7 +1838,7 @@
 
   .pp-modal .pp-font-picker__grid,
   .pp-modal .pp-icon-picker__grid {
-    display: grid;
+    display: flex;
     grid-auto-flow: column;
     grid-auto-columns: minmax(165px, 74vw);
     gap: 10px;
