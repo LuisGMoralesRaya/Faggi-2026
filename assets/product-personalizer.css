@@ -1859,6 +1859,8 @@
 
   .pp-modal .pp-icon-button {
     min-height: 58px;
+            width: auto;
+        min-width: 120px;
   }
 
   .pp-modal .pp-token-field__label,
