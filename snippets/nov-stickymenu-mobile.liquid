@@ -16,6 +16,9 @@
       <div class="stickymenu-item col d-flex align-items-center justify-content-center">
         <a href="/cart">
               {% render 'icon-cart' %}
+               <span class="site-header__cart-count">
+                        <span class="CartCount">{{ cart.item_count }}</span>
+                      </span>
           <span>{{ 'layout.cart.title_cart' | t }}</span>
           <div class="WishlistCount font-600 position-absolute text-center rounded-circle white bg_black">0</div>
         </a>
