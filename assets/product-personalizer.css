@@ -1668,6 +1668,9 @@
   min-width: 0;
   max-width: 100%;
 }
+.pp-modal .pp-font-card{
+  min-width: 120px!important;
+}
 
 .pp-modal .pp-preview__gallery,
 .pp-modal .pp-preview__charms {
