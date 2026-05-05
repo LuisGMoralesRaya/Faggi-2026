@@ -4,6 +4,7 @@
   const ICON_LIBRARY = [
     { name: 'heart-o', className: 'zmdi-favorite-outline' },
     { name: 'star', className: 'zmdi-star' },
+    { name: 'flower', className: 'zmdi-flower-alt' },
     { name: 'Bicycle', className: 'zmdi-bike' },
     { name: 'briefcase', className: 'zmdi-case' },
     { name: 'camera-retro', className: 'zmdi-camera' },
@@ -35,8 +36,8 @@
     { name: 'music', className: 'zmdi-collection-music' },
     { name: 'moon', fallback: 'MO' },
     { name: 'leaf', className: 'zmdi-nature' },
-    { name: 'home', className: 'zmdi-home' },
-    { name: 'flower', className: 'zmdi-flower-alt' }
+    { name: 'home', className: 'zmdi-home' }
+    
   ];
 
   const FALLBACK_FONTS = [
