@@ -1766,7 +1766,7 @@
 }
 
 .pp-modal .pp-charm-slider {
-  grid-template-columns: 44px minmax(0, 1fr) 44px;
+   grid-template-columns: 1fr;
 }
 
 .pp-modal .pp-charm-slider__track {
