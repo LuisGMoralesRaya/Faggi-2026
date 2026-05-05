@@ -60,7 +60,7 @@
         <form class="form-btn-item-product {% if product.has_only_default_variant %}variants-default{% else %}one-option-color{% endif %} color-{{ settings.color_btn_addtocart }} {{ settings.btn_addtocart_type }}" id="grid-product-form--{{ product.id }}-{{ section_id }}" data-id="product-actions-{{ product.id }}">
           <a 
             href="{{ product.url | within: collection }}"
-            class="add-to-cart-btn btn-default{% unless settings.cart_status_addtocart == 'goto_page_cart' %} product-form__cart-submit{% endunless %}"
+            class="btn-default"
             aria-label="Personalizar {{ product.title | escape }}"
           >
             <span>Personalizar</span>
