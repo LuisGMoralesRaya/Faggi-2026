@@ -69,7 +69,7 @@ footer .container {
 .site-header .site-header__cart-icon.position-relative,
 .site-header .header-wishlist-icon.position-relative,
 .site-header .contentsticky_account .header-icon {
-  width: 54px;
+  width: auto;
   height: auto;
   display: inline-flex;
   align-items: center;
