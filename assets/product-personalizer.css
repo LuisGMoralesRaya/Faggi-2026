@@ -1828,6 +1828,9 @@
 }
 
 @media (max-width: 767px) {
+  .product-personalizer .pp-inline-panel{
+    flex-direction:column;
+  }
   .pp-modal .pp-side-panels {
     grid-template-columns: 1fr;
     gap: 10px;
