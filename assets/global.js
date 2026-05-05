@@ -234,9 +234,9 @@ novtheme.StickyHeader = function() {
     $('.header-content').css('--height', $('.header-content').outerHeight() + 'px');
     $(window).scroll(function() {
         if ($(window).scrollTop() > $(window).height()) {
-            $('.header-top').hide();
+            //$('.header-top').hide();
         } else {
-            $('.header-top').show();
+            //$('.header-top').show();
         }
       });
 
