@@ -1734,7 +1734,7 @@
 }
 
 .pp-modal .pp-toggle {
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .pp-modal .pp-toggle input {
