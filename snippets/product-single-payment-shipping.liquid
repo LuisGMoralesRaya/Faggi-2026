@@ -1,16 +1,11 @@
 {%- liquid
-  assign payment_heading = section.settings.title_payments | default: '¿Por qué elegir Faggi?'
-  assign payment_copy = section.settings.payments_copy
+  assign payment_heading = section.settings.title_payments | default: '&#191;Por qu&#233; elegir Faggi?'
   assign payment_image = section.settings.payments
   assign ship_time = section.settings.time
   assign ship_truck = section.settings.truck
 
   if product.metafields.custom.faggi_payment_title != blank
     assign payment_heading = product.metafields.custom.faggi_payment_title.value | default: product.metafields.custom.faggi_payment_title
-  endif
-
-  if product.metafields.custom.faggi_payment_text != blank
-    assign payment_copy = product.metafields.custom.faggi_payment_text.value | default: product.metafields.custom.faggi_payment_text
   endif
 
   if product.metafields.custom.faggi_payment_image != blank
@@ -25,6 +20,18 @@
     assign ship_truck = product.metafields.custom.faggi_shipping_text.value | default: product.metafields.custom.faggi_shipping_text
   endif
 -%}
+
+{%- capture payment_copy_markup -%}
+  {{ section.settings.payments_copy }}
+{%- endcapture -%}
+
+{%- if product.metafields.custom.faggi_payment_text != blank -%}
+  {%- if product.metafields.custom.faggi_payment_text.type == 'rich_text_field' -%}
+    {%- capture payment_copy_markup -%}{{ product.metafields.custom.faggi_payment_text | metafield_tag }}{%- endcapture -%}
+  {%- else -%}
+    {%- capture payment_copy_markup -%}<p>{{ product.metafields.custom.faggi_payment_text.value | default: product.metafields.custom.faggi_payment_text }}</p>{%- endcapture -%}
+  {%- endif -%}
+{%- endif -%}
 
 {% if section.settings.show_payments %}
   <div class="product-single__payment mt-45 mb-45" style="--width-payment: {{ section.settings.payments_width }}px;">
@@ -51,9 +58,10 @@
       </div>
     {% endif %}
 
-    {% if payment_copy != blank %}
+    {% assign payment_copy_markup = payment_copy_markup | strip %}
+    {% if payment_copy_markup != blank %}
       <div class="payments__copy rte">
-        {{ payment_copy }}
+        {{ payment_copy_markup }}
       </div>
     {% endif %}
   </div>
