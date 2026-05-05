@@ -5,11 +5,12 @@
     { name: 'heart-o', className: 'zmdi-favorite-outline' },
     { name: 'star', className: 'zmdi-star' },
     { name: 'flower', className: 'zmdi-flower-alt' },
+        { name: 'eye', className: 'zmdi-eye' },
+            { name: 'smile-o', className: 'zmdi-mood' },
     { name: 'Bicycle', className: 'zmdi-bike' },
     { name: 'briefcase', className: 'zmdi-case' },
     { name: 'camera-retro', className: 'zmdi-camera' },
     { name: 'coffee', className: 'zmdi-coffee' },
-    { name: 'eye', className: 'zmdi-eye' },
     { name: 'flash', className: 'zmdi-flash' },
     { name: 'gamepad', className: 'zmdi-gamepad' },
     { name: 'hand-peace-o', fallback: 'V' },
@@ -31,13 +32,12 @@
     { name: 'female', className: 'zmdi-female' },
     { name: 'male', className: 'zmdi-male' },
     { name: 'car', className: 'zmdi-car' },
-    { name: 'smile-o', className: 'zmdi-mood' },
     { name: 'paw', fallback: 'PA' },
     { name: 'music', className: 'zmdi-collection-music' },
     { name: 'moon', fallback: 'MO' },
     { name: 'leaf', className: 'zmdi-nature' },
     { name: 'home', className: 'zmdi-home' }
-    
+
   ];
 
   const FALLBACK_FONTS = [
