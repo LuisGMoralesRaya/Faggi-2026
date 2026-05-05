@@ -70,10 +70,13 @@ footer .container {
 .site-header .header-wishlist-icon.position-relative,
 .site-header .contentsticky_account .header-icon {
   width: 54px;
-  height: 54px;
+  height: auto;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+.site-header .site-header__cart-icon.position-relative{
+  height: auto;
 }
 
 .site-header .site-header__cart-icon.position-relative i,
