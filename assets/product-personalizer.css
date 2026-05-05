@@ -1868,3 +1868,6 @@
     grid-auto-columns: minmax(124px, 124px);
   }
 }
+.available_product{
+gap: 10px;
+}
