@@ -54,7 +54,7 @@
 
     <div data-personalizer-properties style="display:none"></div>
 
-    <div class="pp-modal" data-pp-modal hidden>
+    <div class="pp-modal pp-modal--{{ active_personalization_tag | handleize }}" data-pp-modal data-active-tag="{{ active_personalization_tag }}" hidden>
       <div class="pp-modal__backdrop" data-action="close-personalizer"></div>
       <div class="pp-modal__dialog" role="dialog" aria-modal="true" aria-label="Personalizador de producto">
         <div class="pp-modal__header">

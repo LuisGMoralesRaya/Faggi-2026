@@ -953,7 +953,8 @@
         '<div class="pp-section__head">',
         '<div><p class="pp-section__eyebrow">Texto</p><h4 class="pp-section__title">' + escapeHtml(title) + '</h4></div>',
         '<p class="pp-section__description">Cada ícono cuenta como 1 carácter.</p>',
-        '</div>'
+        '</div>',
+        '<div class="pp-side-panels">'
       ];
 
       sections.push(this.renderSidePanel({
@@ -980,6 +981,7 @@
         }));
       }
 
+      sections.push('</div>');
       sections.push('</section>');
       return sections.join('');
     }
@@ -1049,9 +1051,9 @@
           '<input type="file" accept="image/*" class="pp-photo-slot__input" name="properties[' + label + ']" data-photo-input="' + index + '">',
           '<div class="pp-photo-slot__surface" data-photo-surface="' + index + '">',
           '<span class="pp-photo-slot__placeholder">',
-          '<small>Subir fotografia</small>',
+          '<small>Subir fotografía</small>',
           '<strong>' + escapeHtml(label) + '</strong>',
-          '<em class="pp-photo-slot__filename" data-photo-file-name="' + index + '">Ningun archivo seleccionado</em>',
+          '<em class="pp-photo-slot__filename" data-photo-file-name="' + index + '">Ningún archivo seleccionado</em>',
           '</span>',
           '</div>',
           '</div>',
@@ -1634,6 +1636,10 @@
       Array.from(this.root.querySelectorAll('[data-side-body]')).forEach(function (body) {
         const field = body.getAttribute('data-side-body');
         body.hidden = !this.state[field];
+        const wrapper = body.closest('[data-side-wrapper]');
+        if (wrapper) {
+          wrapper.classList.toggle('is-active', !body.hidden);
+        }
       }, this);
 
       const multiTextButton = this.root.querySelector('[data-action="add-slot"]');
@@ -1740,7 +1746,7 @@
         }
 
         if (fileName) {
-          fileName.textContent = item.file ? item.file.name : 'Ningun archivo seleccionado';
+          fileName.textContent = item.file ? item.file.name : 'Ningún archivo seleccionado';
         }
 
         if (clear) {

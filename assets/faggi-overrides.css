@@ -5,8 +5,31 @@
   --faggi-muted: #7e6976;
 }
 
+html {
+  scrollbar-gutter: stable both-edges;
+}
+
 body {
   color: var(--faggi-text);
+}
+
+body,
+#MainContent,
+.template-index,
+.template-product,
+.template-cart {
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+.template-index .wow,
+.template-index .ewow,
+.template-product .wow,
+.template-product .ewow,
+.template-cart .wow,
+.template-cart .ewow {
+  animation: none !important;
+  visibility: visible !important;
 }
 
 .site-header .header-top {
@@ -157,6 +180,62 @@ footer .container {
   color: var(--faggi-text);
 }
 
+.template-product .product-single__payment .payments {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.template-product .product-single__payment .payments img {
+  display: block;
+  margin-inline: auto;
+}
+
+.template-product .product-single__payment .payments__copy {
+  margin-top: 12px;
+  color: var(--faggi-muted);
+  font-size: 12px;
+  line-height: 1.65;
+  text-align: center;
+}
+
+.template-product .product-single__payment .payments__copy p {
+  margin: 0;
+}
+
+.template-product .product-single__shiping {
+  display: grid;
+  gap: 12px;
+}
+
+.template-cart .cart__meta-text--personalized,
+.ajaxcart .ajaxcart__product-meta--personalized,
+.cart-popup__content .cart__meta-text--personalized {
+  display: grid;
+  gap: 4px;
+  margin-top: 8px;
+  color: var(--faggi-muted);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.45;
+  text-transform: none;
+}
+
+.template-cart .cart__meta-text--personalized .cart__meta-property,
+.ajaxcart .ajaxcart__product-meta--personalized .cart__meta-property,
+.cart-popup__content .cart__meta-text--personalized .cart__meta-property {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.template-cart .cart__meta-text--personalized strong,
+.ajaxcart .ajaxcart__product-meta--personalized strong,
+.cart-popup__content .cart__meta-text--personalized strong {
+  color: var(--faggi-text);
+  font-weight: 700;
+}
+
 @media (max-width: 767px) {
   .site-header .site-header__logo.d-flex.position-relative {
     margin-left: 0;
@@ -176,5 +255,12 @@ footer .container {
   .site-header .search-header-inline .search-header__content,
   .site-header .site-header__search {
     max-width: 100%;
+  }
+
+  .template-cart .cart__meta-text--personalized,
+  .ajaxcart .ajaxcart__product-meta--personalized,
+  .cart-popup__content .cart__meta-text--personalized {
+    font-size: 10px;
+    line-height: 1.35;
   }
 }

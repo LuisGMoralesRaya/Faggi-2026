@@ -1,0 +1,85 @@
+{%- liquid
+  assign wrapper_class = class_name | default: 'cart__meta-text cart__meta-text--personalized'
+  assign photo_count = ''
+
+  for p in item.properties
+    if p.first == 'Cantidad de fotos' and p.last != blank
+      assign photo_count = p.last
+    endif
+  endfor
+-%}
+
+{%- capture personalization_lines -%}
+  {%- if photo_count != blank -%}
+    <span class="cart__meta-property">
+      <strong>Fotos:</strong>
+      <span>{{ photo_count }}</span>
+    </span>
+  {%- endif -%}
+
+  {%- for p in item.properties -%}
+    {%- assign property_key = p.first | strip -%}
+    {%- assign property_value = p.last -%}
+    {%- assign skip_property = false -%}
+    {%- assign display_key = property_key -%}
+
+    {%- if property_value == blank or property_key == blank -%}
+      {%- assign skip_property = true -%}
+    {%- endif -%}
+
+    {%- if property_key contains '_' or property_key contains 'Tipografía ' or property_key contains 'Fuente ' -%}
+      {%- assign skip_property = true -%}
+    {%- endif -%}
+
+    {%- case property_key -%}
+      {%- when 'Tipo de personalización' -%}
+        {%- assign skip_property = true -%}
+      {%- when 'Lado frente activo' -%}
+        {%- assign skip_property = true -%}
+      {%- when 'Lado atrás activo' -%}
+        {%- assign skip_property = true -%}
+      {%- when 'Lado forma frente activo' -%}
+        {%- assign skip_property = true -%}
+      {%- when 'Lado forma atrás activo' -%}
+        {%- assign skip_property = true -%}
+      {%- when 'Forma sincronizada con variante' -%}
+        {%- assign skip_property = true -%}
+      {%- when 'Cantidad de fotos' -%}
+        {%- assign skip_property = true -%}
+      {%- when 'Fotos seleccionadas' -%}
+        {%- assign skip_property = true -%}
+      {%- when 'Cantidad de charms' -%}
+        {%- assign skip_property = true -%}
+      {%- when 'Costo charms' -%}
+        {%- assign skip_property = true -%}
+      {%- when 'Total personalizado estimado' -%}
+        {%- assign skip_property = true -%}
+      {%- when 'Charms seleccionados' -%}
+        {%- assign display_key = 'Charms' -%}
+      {%- when 'Forma seleccionada' -%}
+        {%- assign display_key = 'Forma' -%}
+      {%- when 'Mini dije grabado' -%}
+        {%- assign display_key = 'Mini dije' -%}
+      {%- when 'Mensaje personalizado' -%}
+        {%- assign display_key = 'Mensaje' -%}
+    {%- endcase -%}
+
+    {%- unless skip_property -%}
+      <span class="cart__meta-property">
+        <strong>{{ display_key }}:</strong>
+        {%- if property_value contains '/uploads/' -%}
+          <a href="{{ property_value }}">{{ property_value | split: '/' | last }}</a>
+        {%- else -%}
+          <span>{{ property_value }}</span>
+        {%- endif -%}
+      </span>
+    {%- endunless -%}
+  {%- endfor -%}
+{%- endcapture -%}
+
+{%- assign personalization_lines = personalization_lines | strip -%}
+{%- if personalization_lines != blank -%}
+  <div class="{{ wrapper_class }}">
+    {{- personalization_lines -}}
+  </div>
+{%- endif -%}
