@@ -2199,12 +2199,21 @@
 
       try {
         const formData = new FormData(this.form);
-        const response = await fetch('/cart/add.js', {
+        const hasSelectedPhotos = this.state.photos.some(function (item) {
+          return !!(item && item.file);
+        });
+        const endpoint = hasSelectedPhotos ? '/cart/add' : '/cart/add.js';
+        const requestHeaders = hasSelectedPhotos
+          ? {
+              'X-Requested-With': 'XMLHttpRequest'
+            }
+          : {
+              'Accept': 'application/json',
+              'X-Requested-With': 'XMLHttpRequest'
+            };
+        const response = await fetch(endpoint, {
           method: 'POST',
-          headers: {
-            'Accept': 'application/json',
-            'X-Requested-With': 'XMLHttpRequest'
-          },
+          headers: requestHeaders,
           body: formData
         });
 
