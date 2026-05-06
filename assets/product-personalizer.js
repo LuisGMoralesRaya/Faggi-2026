@@ -2134,11 +2134,6 @@
         properties.push({ name: 'Fuente espacio ' + (index + 1), value: this.getFontById(slot.font).label });
       }, this);
 
-      if (selectedPhotos.length) {
-        properties.push({ name: 'Cantidad de fotos', value: String(selectedPhotos.length) });
-        properties.push({ name: 'Fotos seleccionadas', value: selectedPhotos.map(function (item) { return item.file.name; }).join(', ') });
-      }
-
       if (selectedCharms.length) {
         properties.push({ name: 'Charms seleccionados', value: selectedCharms.map(function (item) { return item.label + ' x' + item.quantity; }).join(', ') });
         properties.push({ name: 'Cantidad de charms', value: String(this.getTotalCharms()) });
@@ -2199,6 +2194,13 @@
 
       try {
         const formData = new FormData(this.form);
+        const photoInputs = Array.from(this.modal.querySelectorAll('input[type="file"][name]'));
+        photoInputs.forEach(function (input) {
+          formData.delete(input.name);
+          if (input.files && input.files[0]) {
+            formData.append(input.name, input.files[0], input.files[0].name);
+          }
+        });
         const hasSelectedPhotos = this.state.photos.some(function (item) {
           return !!(item && item.file);
         });
