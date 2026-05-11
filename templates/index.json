@@ -561,7 +561,7 @@
                 "image_height_xs": 100,
                 "image_radius": 5,
                 "image_object_fit": "cover",
-                "aspect": "43",
+                "aspect": "34",
                 "aspect_custom": 100,
                 "img_animation": "nov-sh-image-1",
                 "img_loading_animation": true,
