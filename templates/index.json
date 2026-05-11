@@ -545,6 +545,7 @@
               "type": "image",
               "name": "Image",
               "settings": {
+                "image": "shopify://shop_images/alhajerograbado1_64e169fe-ceb5-4d01-8a95-9dc4c7047531.png",
                 "link": "",
                 "width_custom": false,
                 "image_width_unit": "%",
