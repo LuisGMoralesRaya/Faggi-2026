@@ -283,7 +283,7 @@
                 "color": "#4c4b4b",
                 "color_link": "#f669a0",
                 "color_link_hover": "#4c4b4b",
-                "alignment": "left",
+                "alignment": "center",
                 "responsive_alignment": false,
                 "alignment_xl": "left",
                 "alignment_lg": "left",
