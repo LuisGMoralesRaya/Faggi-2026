@@ -433,14 +433,14 @@
         },
         "slider_item_rLbzTy": {
           "type": "_slider_item",
-          "name": "Pulsera",
+          "name": "Llavero",
           "settings": {},
           "blocks": {
             "image_jRQQ3x": {
               "type": "image",
               "name": "Image",
               "settings": {
-                "image": "shopify://shop_images/brazalete.png",
+                "image": "shopify://shop_images/llavero_plateado.png",
                 "link": "",
                 "width_custom": false,
                 "image_width_unit": "%",
@@ -493,7 +493,7 @@
               "type": "text",
               "name": "Text",
               "settings": {
-                "text": "<p>Pulseras</p>",
+                "text": "<p>Llaveros</p>",
                 "color": "#4c4b4b",
                 "color_link": "#f669a0",
                 "color_link_hover": "#4c4b4b",
