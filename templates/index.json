@@ -219,14 +219,14 @@
       "blocks": {
         "slider_item_MmPBtd": {
           "type": "_slider_item",
-          "name": "Slider Item",
+          "name": "Relicario",
           "settings": {},
           "blocks": {
             "image_FC3zHB": {
               "type": "image",
               "name": "Image",
               "settings": {
-                "image": "shopify://shop_images/26.png",
+                "image": "shopify://shop_images/relicario_fondo_blanco.png",
                 "link": "",
                 "width_custom": false,
                 "image_width_unit": "%",
@@ -279,7 +279,7 @@
               "type": "text",
               "name": "Text",
               "settings": {
-                "text": "<p>Relicarios</p>",
+                "text": "<p>Relicario</p>",
                 "color": "#4c4b4b",
                 "color_link": "#f669a0",
                 "color_link_hover": "#4c4b4b",
@@ -324,15 +324,16 @@
             "text_RPqzAj"
           ]
         },
-        "slider_item_qfftVc": {
+        "slider_item_qPMhQx": {
           "type": "_slider_item",
-          "name": "Slider Item",
+          "name": "Pulsera",
           "settings": {},
           "blocks": {
-            "image_MaQBGK": {
+            "image_Vnd9tt": {
               "type": "image",
               "name": "Image",
               "settings": {
+                "image": "shopify://shop_images/brazalete.png",
                 "link": "",
                 "width_custom": false,
                 "image_width_unit": "%",
@@ -381,15 +382,15 @@
               },
               "blocks": {}
             },
-            "text_VQxWaN": {
+            "text_wfhtQB": {
               "type": "text",
               "name": "Text",
               "settings": {
-                "text": "<p>Lorem ipsum dolor sit amet.</p>",
-                "color": "#000000",
-                "color_link": "#000000",
-                "color_link_hover": "#000000",
-                "alignment": "left",
+                "text": "<p>Pulseras</p>",
+                "color": "#4c4b4b",
+                "color_link": "#f669a0",
+                "color_link_hover": "#4c4b4b",
+                "alignment": "center",
                 "responsive_alignment": false,
                 "alignment_xl": "left",
                 "alignment_lg": "left",
@@ -397,7 +398,7 @@
                 "alignment_ms": "left",
                 "font_family": "f_df",
                 "font_weight": "font-400",
-                "text_transform": "text-capitalize",
+                "text_transform": "none",
                 "letter_spacing": "0",
                 "line_height": "1.5",
                 "max_w": 960,
@@ -405,18 +406,18 @@
                 "font_size_xl": 18,
                 "font_size_lg": 18,
                 "font_size_md": 18,
-                "font_size_sm": 18,
-                "font_size_xs": 18,
+                "font_size_sm": 15,
+                "font_size_xs": 15,
                 "show_seemore": false,
                 "bg_seemore": "#ffffff",
                 "height_seemore": 160,
                 "see_more_label": "See more",
                 "see_less_label": "See less",
                 "show_seemore_icon": false,
-                "mt_xl": 0,
-                "mt_lg": 0,
-                "mt_md": 0,
-                "mt_sm": 0,
+                "mt_xl": 6,
+                "mt_lg": 6,
+                "mt_md": 3,
+                "mt_sm": 4,
                 "mb_xl": 10,
                 "mb_lg": 10,
                 "mb_md": 10,
@@ -426,19 +427,20 @@
             }
           },
           "block_order": [
-            "image_MaQBGK",
-            "text_VQxWaN"
+            "image_Vnd9tt",
+            "text_wfhtQB"
           ]
         },
-        "slider_item_BqUcdT": {
+        "slider_item_rLbzTy": {
           "type": "_slider_item",
-          "name": "Slider Item",
+          "name": "Pulsera",
           "settings": {},
           "blocks": {
-            "image_fQQhnH": {
+            "image_jRQQ3x": {
               "type": "image",
               "name": "Image",
               "settings": {
+                "image": "shopify://shop_images/brazalete.png",
                 "link": "",
                 "width_custom": false,
                 "image_width_unit": "%",
@@ -487,15 +489,15 @@
               },
               "blocks": {}
             },
-            "text_UMJKWi": {
+            "text_whXrD6": {
               "type": "text",
               "name": "Text",
               "settings": {
-                "text": "<p>Lorem ipsum dolor sit amet.</p>",
-                "color": "#000000",
-                "color_link": "#000000",
-                "color_link_hover": "#000000",
-                "alignment": "left",
+                "text": "<p>Pulseras</p>",
+                "color": "#4c4b4b",
+                "color_link": "#f669a0",
+                "color_link_hover": "#4c4b4b",
+                "alignment": "center",
                 "responsive_alignment": false,
                 "alignment_xl": "left",
                 "alignment_lg": "left",
@@ -503,7 +505,7 @@
                 "alignment_ms": "left",
                 "font_family": "f_df",
                 "font_weight": "font-400",
-                "text_transform": "text-capitalize",
+                "text_transform": "none",
                 "letter_spacing": "0",
                 "line_height": "1.5",
                 "max_w": 960,
@@ -511,18 +513,18 @@
                 "font_size_xl": 18,
                 "font_size_lg": 18,
                 "font_size_md": 18,
-                "font_size_sm": 18,
-                "font_size_xs": 18,
+                "font_size_sm": 15,
+                "font_size_xs": 15,
                 "show_seemore": false,
                 "bg_seemore": "#ffffff",
                 "height_seemore": 160,
                 "see_more_label": "See more",
                 "see_less_label": "See less",
                 "show_seemore_icon": false,
-                "mt_xl": 0,
-                "mt_lg": 0,
-                "mt_md": 0,
-                "mt_sm": 0,
+                "mt_xl": 6,
+                "mt_lg": 6,
+                "mt_md": 3,
+                "mt_sm": 4,
                 "mb_xl": 10,
                 "mb_lg": 10,
                 "mb_md": 10,
@@ -532,36 +534,36 @@
             }
           },
           "block_order": [
-            "image_fQQhnH",
-            "text_UMJKWi"
+            "image_jRQQ3x",
+            "text_whXrD6"
           ]
         },
-        "slider_item_fbBYmA": {
+        "slider_item_KP4VmM": {
           "type": "_slider_item",
-          "name": "Slider Item",
+          "name": "Pulsera",
           "settings": {},
           "blocks": {
-            "image_aYnAih": {
+            "image_eHHMDT": {
               "type": "image",
               "name": "Image",
               "settings": {
                 "image": "shopify://shop_images/alhajerograbado1_64e169fe-ceb5-4d01-8a95-9dc4c7047531.png",
                 "link": "",
-                "width_custom": true,
+                "width_custom": false,
                 "image_width_unit": "%",
-                "image_width": 500,
-                "align": "center",
-                "height_custom": true,
+                "image_width": 100,
+                "align": "left",
+                "height_custom": false,
                 "image_height_unit": "%",
-                "image_height": 50,
+                "image_height": 100,
                 "image_height_xl": 100,
-                "image_height_lg": 50,
+                "image_height_lg": 100,
                 "image_height_md": 100,
                 "image_height_sm": 100,
                 "image_height_xs": 100,
                 "image_radius": 5,
                 "image_object_fit": "cover",
-                "aspect": "34",
+                "aspect": "auto",
                 "aspect_custom": 100,
                 "img_animation": "nov-sh-image-1",
                 "img_loading_animation": true,
@@ -594,15 +596,15 @@
               },
               "blocks": {}
             },
-            "text_jKyXTf": {
+            "text_wfMKg8": {
               "type": "text",
               "name": "Text",
               "settings": {
-                "text": "<p>Lorem ipsum dolor sit amet.</p>",
-                "color": "#000000",
-                "color_link": "#000000",
-                "color_link_hover": "#000000",
-                "alignment": "left",
+                "text": "<p>Alhajeros y complementos</p>",
+                "color": "#4c4b4b",
+                "color_link": "#f669a0",
+                "color_link_hover": "#4c4b4b",
+                "alignment": "center",
                 "responsive_alignment": false,
                 "alignment_xl": "left",
                 "alignment_lg": "left",
@@ -610,7 +612,7 @@
                 "alignment_ms": "left",
                 "font_family": "f_df",
                 "font_weight": "font-400",
-                "text_transform": "text-capitalize",
+                "text_transform": "none",
                 "letter_spacing": "0",
                 "line_height": "1.5",
                 "max_w": 960,
@@ -618,18 +620,18 @@
                 "font_size_xl": 18,
                 "font_size_lg": 18,
                 "font_size_md": 18,
-                "font_size_sm": 18,
-                "font_size_xs": 18,
+                "font_size_sm": 15,
+                "font_size_xs": 15,
                 "show_seemore": false,
                 "bg_seemore": "#ffffff",
                 "height_seemore": 160,
                 "see_more_label": "See more",
                 "see_less_label": "See less",
                 "show_seemore_icon": false,
-                "mt_xl": 0,
-                "mt_lg": 0,
-                "mt_md": 0,
-                "mt_sm": 0,
+                "mt_xl": 6,
+                "mt_lg": 6,
+                "mt_md": 3,
+                "mt_sm": 4,
                 "mb_xl": 10,
                 "mb_lg": 10,
                 "mb_md": 10,
@@ -639,18 +641,18 @@
             }
           },
           "block_order": [
-            "image_aYnAih",
-            "text_jKyXTf"
+            "image_eHHMDT",
+            "text_wfMKg8"
           ]
         }
       },
       "block_order": [
         "slider_item_MmPBtd",
-        "slider_item_qfftVc",
-        "slider_item_BqUcdT",
-        "slider_item_fbBYmA"
+        "slider_item_qPMhQx",
+        "slider_item_rLbzTy",
+        "slider_item_KP4VmM"
       ],
-      "name": "Vinova Slider",
+      "name": "Encuentra tu regalo ideal",
       "settings": {
         "heading": "<p>Encuentra el regalo ideal</p>",
         "heading_color": "#f669a0",
