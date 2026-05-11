@@ -16,7 +16,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/pareja.png",
-            "img_xs": "shopify://shop_images/Diseno_sin_titulo_1.png",
+            "img_xs": "shopify://shop_images/Pareja-mobile.png",
             "slider_link": "#",
             "img_animate": true,
             "img_position": "right-center",
