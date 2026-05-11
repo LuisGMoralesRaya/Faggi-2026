@@ -865,7 +865,7 @@
       "name": "Vinova Slider",
       "settings": {
         "heading": "<p>Categorías de Joyería Personalizada</p>",
-        "heading_color": "#222222",
+        "heading_color": "#f669a0",
         "subheading": "<p>Subtitle from happy customers</p>",
         "subheading_color": "#666666",
         "subheading_position": "bottom",
