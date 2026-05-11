@@ -547,10 +547,10 @@
               "settings": {
                 "image": "shopify://shop_images/alhajerograbado1_64e169fe-ceb5-4d01-8a95-9dc4c7047531.png",
                 "link": "",
-                "width_custom": false,
+                "width_custom": true,
                 "image_width_unit": "%",
                 "image_width": 100,
-                "align": "left",
+                "align": "right",
                 "height_custom": false,
                 "image_height_unit": "%",
                 "image_height": 100,
