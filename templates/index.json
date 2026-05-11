@@ -873,7 +873,7 @@
         "descheading_color": "#666666",
         "img_heading_animate": false,
         "heading_alignment": "text-center",
-        "item_corner": 60,
+        "item_corner": 3,
         "show_item_boxshadow": false,
         "show_item_boxshadow_when_hover": false,
         "autoplay": false,
