@@ -1518,9 +1518,9 @@
                       "type": "text",
                       "name": "Text",
                       "settings": {
-                        "text": "<p>Charms y Dijes</p>",
-                        "color": "#1f2937",
-                        "color_link": "#000000",
+                        "text": "<p>Collares multicharms </p>",
+                        "color": "#636363",
+                        "color_link": "#f669a0",
                         "color_link_hover": "#000000",
                         "alignment": "left",
                         "responsive_alignment": false,
