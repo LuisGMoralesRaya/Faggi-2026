@@ -764,7 +764,7 @@
               "type": "_col",
               "name": "Categorías",
               "settings": {
-                "width_unit": "column",
+                "width_unit": "%",
                 "w_xxl": 70,
                 "w_xl": 70,
                 "w_lg": 70,
