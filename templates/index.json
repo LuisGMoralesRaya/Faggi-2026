@@ -736,7 +736,7 @@
       "blocks": {
         "group_PwKQzA": {
           "type": "group",
-          "name": "Group - Heading",
+          "name": "Colecciones",
           "settings": {
             "row_spacing": 30,
             "row_spacing_md": 30,
@@ -762,7 +762,7 @@
           "blocks": {
             "col_EgB3Y4": {
               "type": "_col",
-              "name": "Column",
+              "name": "Categorías",
               "settings": {
                 "width_unit": "%",
                 "w_xxl": 70,
@@ -824,58 +824,15 @@
                 "mb_xs": 0
               },
               "blocks": {
-                "text_qyRQ9Q": {
-                  "type": "text",
-                  "name": "Text",
-                  "settings": {
-                    "text": "<p>Nuestra Colección</p>",
-                    "color": "#1f2937",
-                    "color_link": "#000000",
-                    "color_link_hover": "#000000",
-                    "alignment": "left",
-                    "responsive_alignment": false,
-                    "alignment_xl": "left",
-                    "alignment_lg": "left",
-                    "alignment_md": "left",
-                    "alignment_ms": "left",
-                    "font_family": "f_df",
-                    "font_weight": "font-700",
-                    "text_transform": "text-capitalize",
-                    "letter_spacing": "0",
-                    "line_height": "1.5",
-                    "max_w": 960,
-                    "font_size_xxl": 14,
-                    "font_size_xl": 14,
-                    "font_size_lg": 14,
-                    "font_size_md": 14,
-                    "font_size_sm": 14,
-                    "font_size_xs": 14,
-                    "show_seemore": false,
-                    "bg_seemore": "#ffffff",
-                    "height_seemore": 160,
-                    "see_more_label": "Ver mas",
-                    "see_less_label": "Ver menos",
-                    "show_seemore_icon": false,
-                    "mt_xl": 0,
-                    "mt_lg": 0,
-                    "mt_md": 0,
-                    "mt_sm": 0,
-                    "mb_xl": 15,
-                    "mb_lg": 15,
-                    "mb_md": 15,
-                    "mb_sm": 15
-                  },
-                  "blocks": {}
-                },
                 "text_CKCUHj": {
                   "type": "text",
                   "name": "Text",
                   "settings": {
                     "text": "<p>Categorías de Joyería Personalizada</p>",
-                    "color": "#1f2937",
+                    "color": "#f669a0",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
-                    "alignment": "left",
+                    "alignment": "center",
                     "responsive_alignment": false,
                     "alignment_xl": "left",
                     "alignment_lg": "left",
@@ -912,7 +869,6 @@
                 }
               },
               "block_order": [
-                "text_qyRQ9Q",
                 "text_CKCUHj"
               ]
             },
@@ -1113,7 +1069,7 @@
                   "type": "image",
                   "name": "Image",
                   "settings": {
-                    "image": "shopify://shop_images/Un_dia_a_la_vez_2.png",
+                    "image": "shopify://shop_images/Un_dia_a_la_vez_0c1cc896-f80b-421f-9cdf-e3bd9d4f8bd5.png",
                     "link": "#",
                     "width_custom": false,
                     "image_width_unit": "px",
