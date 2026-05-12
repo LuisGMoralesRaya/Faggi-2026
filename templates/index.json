@@ -1716,7 +1716,7 @@
                       "type": "text",
                       "name": "Text",
                       "settings": {
-                        "text": "<p>Collares multicharms</p>",
+                        "text": "<p>Llaveros </p>",
                         "color": "#636363",
                         "color_link": "#f669a0",
                         "color_link_hover": "#000000",
@@ -1728,7 +1728,7 @@
                         "alignment_ms": "left",
                         "font_family": "f_df",
                         "font_weight": "font-700",
-                        "text_transform": "text-uppercase",
+                        "text_transform": "text-capitalize",
                         "letter_spacing": "0",
                         "line_height": "1.5",
                         "max_w": 960,
