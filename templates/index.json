@@ -875,6 +875,7 @@
             "col_jCXRtR": {
               "type": "_col",
               "name": "Column",
+              "disabled": true,
               "settings": {
                 "width_unit": "%",
                 "w_xxl": 30,
