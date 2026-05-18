@@ -3561,6 +3561,7 @@
         },
         "item_policy_Tn6Hfa": {
           "type": "item_policy",
+          "name": "Agrega charms",
           "settings": {
             "policy_icon": "shopify://shop_images/alhajero2.png",
             "title_policy": "Agrega charms a tu diseño",
@@ -3577,6 +3578,7 @@
         },
         "item_policy_KcRKdP": {
           "type": "item_policy",
+          "name": "Envíos a todo México",
           "settings": {
             "policy_icon": "shopify://shop_images/1_3f48f635-c6b3-4738-8219-388e0417701d.png",
             "title_policy": "Envíos a todo México",
