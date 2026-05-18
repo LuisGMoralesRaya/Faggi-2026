@@ -833,7 +833,7 @@
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
                     "alignment": "center",
-                    "responsive_alignment": true,
+                    "responsive_alignment": false,
                     "alignment_xl": "left",
                     "alignment_lg": "left",
                     "alignment_md": "center",
