@@ -3545,9 +3545,9 @@
           "type": "item_policy",
           "settings": {
             "policy_icon": "shopify://shop_images/alhajero2.png",
-            "title_policy": "Free Delivery From $ 250",
-            "stitle_policy": "",
-            "desc_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod tempor",
+            "title_policy": "Personalízalo a tu estilo",
+            "stitle_policy": "Agrega texto, elige tipografías o sube fotografías",
+            "desc_policy": "",
             "mw": 500,
             "link_label": "",
             "link": "",
