@@ -1798,6 +1798,7 @@
             "col_Gk4DXW": {
               "type": "_col",
               "name": "Column",
+              "disabled": true,
               "settings": {
                 "width_unit": "column",
                 "w_xxl": 50,
