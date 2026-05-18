@@ -3578,9 +3578,10 @@
         "item_policy_KcRKdP": {
           "type": "item_policy",
           "settings": {
-            "title_policy": "Pago 100% Seguro",
+            "policy_icon": "shopify://shop_images/1_3f48f635-c6b3-4738-8219-388e0417701d.png",
+            "title_policy": "Envíos a todo México",
             "stitle_policy": "",
-            "desc_policy": "Compra con confianza. Tus datos están protegidos con encriptación avanzada.",
+            "desc_policy": "Recibe en 5/7 días",
             "mw": 295,
             "link_label": "",
             "link": "",
