@@ -764,7 +764,7 @@
               "type": "_col",
               "name": "Categorías",
               "settings": {
-                "width_unit": "column",
+                "width_unit": "%",
                 "w_xxl": 70,
                 "w_xl": 70,
                 "w_lg": 70,
@@ -780,7 +780,7 @@
                 "align_content_enable": true,
                 "width_type": "custom",
                 "width_content": 100,
-                "width_content_unit": "px",
+                "width_content_unit": "%",
                 "align_content_horizontal_xl": "start",
                 "align_content_horizontal_lg": "start",
                 "align_content_horizontal_md": "start",
@@ -827,6 +827,7 @@
                 "text_nMypqF": {
                   "type": "text",
                   "name": "Text",
+                  "disabled": true,
                   "settings": {
                     "text": "<p>Momentos que importan </p>",
                     "color": "#f669a0",
