@@ -3527,11 +3527,12 @@
       "blocks": {
         "item_policy_ynUJzQ": {
           "type": "item_policy",
+          "name": "Elige tu elemento principal",
           "settings": {
             "policy_icon": "shopify://shop_images/1_3f48f635-c6b3-4738-8219-388e0417701d.png",
             "title_policy": "Elige tu elemento principal",
             "stitle_policy": "",
-            "desc_policy": "",
+            "desc_policy": "Un collar, una pulsera, relicario, ¡y más!",
             "mw": 295,
             "link_label": "",
             "link": "",
@@ -3546,8 +3547,8 @@
           "settings": {
             "policy_icon": "shopify://shop_images/alhajero2.png",
             "title_policy": "Personalízalo a tu estilo",
-            "stitle_policy": "Agrega texto, elige tipografías o sube fotografías",
-            "desc_policy": "",
+            "stitle_policy": "",
+            "desc_policy": "Agrega texto, elige tipografías o sube fotografías",
             "mw": 500,
             "link_label": "",
             "link": "",
@@ -3560,7 +3561,8 @@
         "item_policy_Tn6Hfa": {
           "type": "item_policy",
           "settings": {
-            "title_policy": "Envío Gratis desde $799",
+            "policy_icon": "shopify://shop_images/alhajero2.png",
+            "title_policy": "Personaliza a tu estilo",
             "stitle_policy": "",
             "desc_policy": "Recibe tu joyería personalizada en la puerta de tu casa sin costo extra.",
             "mw": 285,
