@@ -3528,6 +3528,7 @@
         "item_policy_ynUJzQ": {
           "type": "item_policy",
           "settings": {
+            "policy_icon": "shopify://shop_images/1_3f48f635-c6b3-4738-8219-388e0417701d.png",
             "title_policy": "Garantía de Calidad",
             "stitle_policy": "",
             "desc_policy": "Cada pieza es revisada a detalle antes de enviarse a tus manos.",
