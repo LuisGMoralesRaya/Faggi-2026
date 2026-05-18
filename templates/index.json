@@ -3544,6 +3544,7 @@
         },
         "item_policy_8dEHPq": {
           "type": "item_policy",
+          "name": "Personalízalo a tu estilo",
           "settings": {
             "policy_icon": "shopify://shop_images/alhajero2.png",
             "title_policy": "Personalízalo a tu estilo",
@@ -3562,9 +3563,9 @@
           "type": "item_policy",
           "settings": {
             "policy_icon": "shopify://shop_images/alhajero2.png",
-            "title_policy": "Personaliza a tu estilo",
+            "title_policy": "Agrega charms a tu diseño",
             "stitle_policy": "",
-            "desc_policy": "Recibe tu joyería personalizada en la puerta de tu casa sin costo extra.",
+            "desc_policy": "Elige entre más de 20 diseños de charms",
             "mw": 285,
             "link_label": "",
             "link": "",
