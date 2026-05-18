@@ -843,7 +843,7 @@
                     "text_transform": "none",
                     "letter_spacing": "0",
                     "line_height": "1",
-                    "max_w": 600,
+                    "max_w": 499,
                     "font_size_xxl": 54,
                     "font_size_xl": 36,
                     "font_size_lg": 30,
