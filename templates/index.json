@@ -3536,9 +3536,24 @@
             "link_label": "",
             "link": "",
             "bg_icon": "#eff5ff",
-            "item_border_top_color": "",
+            "item_border_top_color": "#ffffff",
             "border_icon": "",
             "class": "mb-md-30"
+          }
+        },
+        "item_policy_8dEHPq": {
+          "type": "item_policy",
+          "settings": {
+            "title_policy": "Free Delivery From $ 250",
+            "stitle_policy": "",
+            "desc_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod tempor",
+            "mw": 500,
+            "link_label": "",
+            "link": "",
+            "bg_icon": "",
+            "item_border_top_color": "",
+            "border_icon": "",
+            "class": ""
           }
         },
         "item_policy_Tn6Hfa": {
@@ -3589,6 +3604,7 @@
       },
       "block_order": [
         "item_policy_ynUJzQ",
+        "item_policy_8dEHPq",
         "item_policy_Tn6Hfa",
         "item_policy_KcRKdP",
         "item_policy_jm7Lef"
@@ -3606,12 +3622,12 @@
         "heading_alignment": "text-center",
         "style": "style1",
         "show_bgitem": false,
-        "bg_itemcolor": "",
+        "bg_itemcolor": "#ffffff",
         "bd_radius": 0,
         "box_shadow": false,
         "show_border_item": false,
         "show_border_right_item": false,
-        "c_border_item": "",
+        "c_border_item": "#ffffff",
         "show_border_top_item": false,
         "pt": 0,
         "pb": 0,
@@ -3623,12 +3639,12 @@
         "bd_radius_icon": 100,
         "show_border_icon": false,
         "bg_icon_shadow": false,
-        "shadow_color": "",
+        "shadow_color": "#f669a0",
         "shadow_opacity": 40,
         "icon_animate": true,
-        "text_fz": 20,
+        "text_fz": 30,
         "text_ff": "f_pr",
-        "t_fw": "font-400",
+        "t_fw": "font-600",
         "t_letter_spacing": "0",
         "stext_fz": 14,
         "stext_ff": "f_pr",
@@ -3645,7 +3661,7 @@
         "spacing": 30,
         "animate": true,
         "container": "container",
-        "color_section": "",
+        "color_section": "scheme-a200f3c8-b22b-4979-9687-4bbcfcd74fcf",
         "class_section": "",
         "ss_bg_enable": false,
         "background_color": "#eff5ff",
