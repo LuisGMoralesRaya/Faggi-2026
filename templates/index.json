@@ -3592,29 +3592,13 @@
             "border_icon": "",
             "class": "mb-sm-30"
           }
-        },
-        "item_policy_jm7Lef": {
-          "type": "item_policy",
-          "settings": {
-            "title_policy": "Producción Artesanal",
-            "stitle_policy": "",
-            "desc_policy": "Cada joya es elaborada a mano con dedicación y materiales de calidad.",
-            "mw": 285,
-            "link_label": "",
-            "link": "",
-            "bg_icon": "#f6f6df",
-            "item_border_top_color": "",
-            "border_icon": "",
-            "class": ""
-          }
         }
       },
       "block_order": [
         "item_policy_ynUJzQ",
         "item_policy_8dEHPq",
         "item_policy_Tn6Hfa",
-        "item_policy_KcRKdP",
-        "item_policy_jm7Lef"
+        "item_policy_KcRKdP"
       ],
       "custom_css": [],
       "name": "Vinova Policy",
