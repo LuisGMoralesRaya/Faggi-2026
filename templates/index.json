@@ -828,7 +828,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Categorías de Joyería Personalizada</p>",
+                    "text": "<p>Categorías de joyería personalizada</p>",
                     "color": "#f669a0",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
