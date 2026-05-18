@@ -828,7 +828,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Categorías de joyería personalizada</p>",
+                    "text": "<p>Detalles inolvidables</p>",
                     "color": "#f669a0",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
@@ -843,7 +843,7 @@
                     "text_transform": "none",
                     "letter_spacing": "0",
                     "line_height": "1",
-                    "max_w": 899,
+                    "max_w": 910,
                     "font_size_xxl": 54,
                     "font_size_xl": 36,
                     "font_size_lg": 30,
