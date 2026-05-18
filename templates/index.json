@@ -679,7 +679,7 @@
         "direction_position": "bottom",
         "show_dots": false,
         "dots_color": "dots_on_light",
-        "show_nav": true,
+        "show_nav": false,
         "arrow_color": "arrow_on_light",
         "padding_left_xl": 0,
         "padding_left_lg": 0,
