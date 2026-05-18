@@ -824,11 +824,11 @@
                 "mb_xs": 0
               },
               "blocks": {
-                "text_CKCUHj": {
+                "text_nMypqF": {
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Detalles inolvidables</p>",
+                    "text": "<p>Momentos que importan </p>",
                     "color": "#f669a0",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
@@ -836,40 +836,40 @@
                     "responsive_alignment": false,
                     "alignment_xl": "left",
                     "alignment_lg": "left",
-                    "alignment_md": "center",
-                    "alignment_ms": "center",
+                    "alignment_md": "left",
+                    "alignment_ms": "left",
                     "font_family": "f_df",
                     "font_weight": "font-600",
                     "text_transform": "none",
                     "letter_spacing": "0",
-                    "line_height": "1",
-                    "max_w": 500,
-                    "font_size_xxl": 54,
-                    "font_size_xl": 36,
-                    "font_size_lg": 30,
-                    "font_size_md": 30,
-                    "font_size_sm": 24,
-                    "font_size_xs": 25,
+                    "line_height": "1.5",
+                    "max_w": 960,
+                    "font_size_xxl": 18,
+                    "font_size_xl": 18,
+                    "font_size_lg": 18,
+                    "font_size_md": 18,
+                    "font_size_sm": 18,
+                    "font_size_xs": 18,
                     "show_seemore": false,
-                    "bg_seemore": "#ffffff",
+                    "bg_seemore": "#fff",
                     "height_seemore": 160,
-                    "see_more_label": "Ver mas",
-                    "see_less_label": "Ver menos",
+                    "see_more_label": "See more",
+                    "see_less_label": "See less",
                     "show_seemore_icon": false,
-                    "mt_xl": 2,
-                    "mt_lg": 2,
+                    "mt_xl": 0,
+                    "mt_lg": 0,
                     "mt_md": 0,
                     "mt_sm": 0,
-                    "mb_xl": 0,
-                    "mb_lg": 0,
-                    "mb_md": 0,
-                    "mb_sm": 0
+                    "mb_xl": 10,
+                    "mb_lg": 10,
+                    "mb_md": 10,
+                    "mb_sm": 10
                   },
                   "blocks": {}
                 }
               },
               "block_order": [
-                "text_CKCUHj"
+                "text_nMypqF"
               ]
             },
             "col_jCXRtR": {
