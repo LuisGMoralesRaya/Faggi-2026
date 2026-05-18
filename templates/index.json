@@ -3529,9 +3529,9 @@
           "type": "item_policy",
           "settings": {
             "policy_icon": "shopify://shop_images/1_3f48f635-c6b3-4738-8219-388e0417701d.png",
-            "title_policy": "Garantía de Calidad",
+            "title_policy": "Elige tu elemento principal",
             "stitle_policy": "",
-            "desc_policy": "Cada pieza es revisada a detalle antes de enviarse a tus manos.",
+            "desc_policy": "",
             "mw": 295,
             "link_label": "",
             "link": "",
@@ -3544,6 +3544,7 @@
         "item_policy_8dEHPq": {
           "type": "item_policy",
           "settings": {
+            "policy_icon": "shopify://shop_images/alhajero2.png",
             "title_policy": "Free Delivery From $ 250",
             "stitle_policy": "",
             "desc_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod tempor",
