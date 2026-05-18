@@ -3642,7 +3642,7 @@
         "shadow_color": "#f669a0",
         "shadow_opacity": 40,
         "icon_animate": true,
-        "text_fz": 30,
+        "text_fz": 20,
         "text_ff": "f_pr",
         "t_fw": "font-600",
         "t_letter_spacing": "0",
