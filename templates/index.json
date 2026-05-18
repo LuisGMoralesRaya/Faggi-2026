@@ -842,7 +842,7 @@
                     "font_weight": "font-600",
                     "text_transform": "none",
                     "letter_spacing": "0",
-                    "line_height": ".8",
+                    "line_height": "1",
                     "max_w": 960,
                     "font_size_xxl": 54,
                     "font_size_xl": 36,
