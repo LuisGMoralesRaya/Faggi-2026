@@ -3820,12 +3820,13 @@
         },
         "item_869RDe": {
           "type": "item",
+          "name": "Atención al cliente",
           "settings": {
             "image": "shopify://shop_images/Collar1.1_e2ac2697-8864-44fa-b068-5cb107aa0d7e.jpg",
-            "tab_label": "Relicarios",
-            "title": "Materiales de Alta Calidad",
-            "stitle": "Mar 08, 2025",
-            "desc": "Keep your furry friend happy and thriving with a simple daily routine. From feeding schedules to playtime and hygiene tips..."
+            "tab_label": "Atención",
+            "title": "Atención real y cercana",
+            "stitle": "",
+            "desc": "Estamos aquí para ayudarte a crear algo especial. Si tienes dudas o una idea personalizada, escríbenos para orientarte en el proceso para hacerla realidad."
           }
         }
       },
