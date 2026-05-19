@@ -767,6 +767,32 @@
           "border": "#eaeaea",
           "shadow": "#000000"
         }
+      },
+      "scheme-f0f115f6-c745-4939-b0ad-f99d94f19d61": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "title": "#f669a0",
+          "sub_title": "#d4d4d4",
+          "text": "#6b7280",
+          "primary_button": "#f669a0",
+          "on_primary_button": "#ffffff",
+          "primary_button_border": "#f669a0",
+          "primary_button_hover": "#f669a0",
+          "on_primary_button_hover": "#eaeaea",
+          "primary_button_border_hover": "#f669a0",
+          "secondary_button": "#ffffff",
+          "on_secondary_button": "#f669a0",
+          "secondary_button_border": "#f669a0",
+          "secondary_button_hover": "#ffffff",
+          "on_secondary_button_hover": "#f669a0",
+          "secondary_button_border_hover": "#b5b5b5",
+          "links_hover": "#f669a0",
+          "icons": "#1f2937",
+          "links": "#1f2937",
+          "border": "#eaeaea",
+          "shadow": "#000000"
+        }
       }
     }
   },
