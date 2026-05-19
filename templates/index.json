@@ -3774,21 +3774,11 @@
     "nov_tab_img_slider_zXb8wh": {
       "type": "nov-tab-img-slider",
       "blocks": {
-        "item_mcaA9B": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/10.png",
-            "tab_label": "Grabado con Texto",
-            "title": "Shine With Care",
-            "stitle": "Mar 08, 2025",
-            "desc": "Professional grooming that keeps your pets clean, comfortable, and full of confidence every single day, naturally bright..."
-          }
-        },
         "item_tVCWnd": {
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/Un_dia_a_la_vez_14.png",
-            "tab_label": "Grabado con Foto",
+            "tab_label": "Grabado",
             "title": "Stay With Care",
             "stitle": "Mar 08, 2025",
             "desc": "Comfortable and safe boarding spaces where pets feel at home, ensuring peace, joy, and loving care always..."
@@ -3836,7 +3826,6 @@
         }
       },
       "block_order": [
-        "item_mcaA9B",
         "item_tVCWnd",
         "item_q8QwfU",
         "item_L6UpGG",
@@ -3854,7 +3843,7 @@
         "descheading_color": "#6b7280",
         "img_heading_animate": false,
         "heading_alignment": "text-left",
-        "color_button": "background-2",
+        "color_button": "scheme-a200f3c8-b22b-4979-9687-4bbcfcd74fcf",
         "button_type_color": "btn-primary",
         "color_label": "background-2",
         "color_img_content": "",
