@@ -3809,12 +3809,13 @@
         },
         "item_BeXx9k": {
           "type": "item",
+          "name": "Diseño",
           "settings": {
             "image": "shopify://shop_images/oiu765.jpg",
-            "tab_label": "Transportation",
-            "title": "Envio Seguro a Todo Mexico",
-            "stitle": "Mar 08, 2025",
-            "desc": "Reliable transportation ensuring stress-free and secure journeys for your pets, with safety, comfort, and trust every trip..."
+            "tab_label": "Diseño",
+            "title": "Diseñados para emocionar",
+            "stitle": "",
+            "desc": "Muchas veces no compras una joya… compras una emoción. Por eso buscamos que cada detalle —desde la personalización hasta el empaque— se sienta especial desde el primer momento."
           }
         },
         "item_869RDe": {
