@@ -3581,10 +3581,10 @@
           "type": "item_policy",
           "name": "Envíos a todo México",
           "settings": {
-            "policy_icon": "shopify://shop_images/1_3f48f635-c6b3-4738-8219-388e0417701d.png",
+            "policy_icon": "shopify://shop_images/4_dabe078b-136d-4494-a58b-e0934d96a3dd.png",
             "title_policy": "Envíos a todo México",
             "stitle_policy": "",
-            "desc_policy": "Recibe en 5/7 días",
+            "desc_policy": "Recibe tu pedido en 5/7 días hábiles.",
             "mw": 295,
             "link_label": "",
             "link": "",
