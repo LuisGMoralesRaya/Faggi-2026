@@ -3548,9 +3548,9 @@
           "name": "Personalízalo a tu estilo",
           "settings": {
             "policy_icon": "shopify://shop_images/2_a4e08992-c2a9-40df-affa-362ece85cc99.png",
-            "title_policy": "Personalízalo a tu estilo",
+            "title_policy": "Agrega elementos únicos",
             "stitle_policy": "",
-            "desc_policy": "Agrega texto, elige tipografías o sube fotografías",
+            "desc_policy": "Coloca texto, elige tipografías o sube fotografías",
             "mw": 500,
             "link_label": "",
             "link": "",
@@ -3564,7 +3564,7 @@
           "type": "item_policy",
           "name": "Agrega charms",
           "settings": {
-            "policy_icon": "shopify://shop_images/alhajero2.png",
+            "policy_icon": "shopify://shop_images/3_4db152c8-5119-4bf3-9156-434eedbbeaad.png",
             "title_policy": "Agrega charms a tu diseño",
             "stitle_policy": "",
             "desc_policy": "Elige entre más de 20 diseños de charms",
