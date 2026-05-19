@@ -3798,12 +3798,13 @@
         },
         "item_L6UpGG": {
           "type": "item",
+          "name": "Energía",
           "settings": {
             "image": "shopify://shop_images/plokijh.jpg",
-            "tab_label": "Multicharms",
-            "title": "Smart Obedient Pets",
-            "stitle": "Mar 08, 2025",
-            "desc": "Professional training that builds discipline, behavior, and confidence, helping pets grow smarter, stronger, and happier daily..."
+            "tab_label": "Energía",
+            "title": "Hecho con intención",
+            "stitle": "",
+            "desc": "Creemos que los objetos también guardan energía. Por eso cada pieza se realiza con dedicación, cuidado y muchísimo cariño"
           }
         },
         "item_BeXx9k": {
