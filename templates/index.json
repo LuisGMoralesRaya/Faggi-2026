@@ -3787,12 +3787,13 @@
         },
         "item_q8QwfU": {
           "type": "item",
+          "name": "Materiales",
           "settings": {
             "image": "shopify://shop_images/1a64560314fd55a869b4f7eff294b72c.jpg",
-            "tab_label": "Charms",
+            "tab_label": "Materiales",
             "title": "Steps With Love",
-            "stitle": "Mar 08, 2025",
-            "desc": "Daily walks designed to keep pets active, happy, and bonded with you through every step, always safe..."
+            "stitle": "",
+            "desc": "Nuestra joyería está elaborada en acero inoxidable y titanio de alta calidad. Son materiales resistentes al agua, pensados para acompañarte durante años."
           }
         },
         "item_L6UpGG": {
