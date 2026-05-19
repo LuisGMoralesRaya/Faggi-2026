@@ -3845,7 +3845,7 @@
         "img_heading_animate": false,
         "heading_alignment": "text-left",
         "color_button": "scheme-f0f115f6-c745-4939-b0ad-f99d94f19d61",
-        "button_type_color": "btn-primary",
+        "button_type_color": "btn-secondary",
         "color_label": "scheme-a200f3c8-b22b-4979-9687-4bbcfcd74fcf",
         "color_img_content": "",
         "color_block_right": "background-1",
