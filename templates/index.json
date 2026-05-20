@@ -4880,7 +4880,7 @@
                     "image_width_unit": "%",
                     "image_width": 100,
                     "align": "left",
-                    "height_custom": false,
+                    "height_custom": true,
                     "image_height_unit": "%",
                     "image_height": 100,
                     "image_height_xl": 100,
