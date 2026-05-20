@@ -78,9 +78,9 @@
             "cap_animate_1": "fadeInLeft",
             "caption_2": "Joyería personalizada",
             "color_cap2": "#ffffff",
-            "fz_cap2_xxl": 44,
-            "fz_cap2_xl": 44,
-            "fz_cap2_lg": 36,
+            "fz_cap2_xxl": 48,
+            "fz_cap2_xl": 48,
+            "fz_cap2_lg": 38,
             "fz_cap2_md": 24,
             "fz_cap2_sm": 22,
             "fz_cap2_xs": 18,
@@ -127,7 +127,7 @@
             "color_button": "",
             "button_animate": "fadeInRight",
             "cap_content": "container",
-            "text_align": "center",
+            "text_align": "left",
             "text_align_xs": "left",
             "position": "left-center",
             "position_xs": "left-center-xs",
@@ -158,7 +158,7 @@
       "block_order": [
         "image_hN3KG6"
       ],
-      "name": "Vinova Slideshow",
+      "name": "Slideshow de portada",
       "settings": {
         "autoplay": true,
         "zoom": true,
