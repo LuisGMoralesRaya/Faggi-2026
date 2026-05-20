@@ -5538,7 +5538,7 @@
                         "col_md": "col-md-6",
                         "col_sm": "col-sm-6",
                         "col_xs": "col-12",
-                        "align_content_enable": false,
+                        "align_content_enable": true,
                         "width_type": "auto",
                         "width_content": 100,
                         "width_content_unit": "%",
@@ -6395,7 +6395,7 @@
             },
             "col_WaPiz7": {
               "type": "_col",
-              "name": "Column",
+              "name": "Contáctanos",
               "settings": {
                 "width_unit": "%",
                 "w_xxl": 70,
