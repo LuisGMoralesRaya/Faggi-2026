@@ -5606,14 +5606,15 @@
                               "type": "icon",
                               "static": true,
                               "settings": {
+                                "icon": "shopify://shop_images/ubicacion.png",
                                 "icon_svg": "",
                                 "icon_color": "#444444",
                                 "icon_color_hover": "#000000",
-                                "icon_size": 20,
+                                "icon_size": 25,
                                 "aspect": "auto",
                                 "background_size": 50,
-                                "background_color": "#ffd100",
-                                "background_color_hover": "#ffd100",
+                                "background_color": "#f669a0",
+                                "background_color_hover": "#f669a0",
                                 "border_radius": 999,
                                 "hover_effect": true,
                                 "mt_xl": 0,
@@ -5631,8 +5632,8 @@
                               "type": "text",
                               "static": true,
                               "settings": {
-                                "text": "<p>Visitanos</p>",
-                                "color": "#1f2937",
+                                "text": "<p>Ubicación</p>",
+                                "color": "#666666",
                                 "color_link": "#000000",
                                 "color_link_hover": "#000000",
                                 "alignment": "left",
@@ -5674,7 +5675,7 @@
                               "type": "text",
                               "static": true,
                               "settings": {
-                                "text": "<p>Puebla, Mexico</p>",
+                                "text": "<p>Tlalnepantla, México</p>",
                                 "color": "#6b7280",
                                 "color_link": "#000000",
                                 "color_link_hover": "#000000",
@@ -6625,7 +6626,7 @@
       "block_order": [
         "group_dpJ4pp"
       ],
-      "name": "Custom Section - Contact Form",
+      "name": "Información de contacto",
       "settings": {
         "pattern_respon": "d-block",
         "pattern_animate1": "pattern-animate-1",
