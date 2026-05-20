@@ -5052,7 +5052,7 @@
                   "settings": {
                     "image": "shopify://shop_images/ChatGPT_Image_20_may_2026_01_58_36_p.m..png",
                     "link": "#",
-                    "width_custom": false,
+                    "width_custom": true,
                     "image_width_unit": "%",
                     "image_width": 100,
                     "align": "left",
