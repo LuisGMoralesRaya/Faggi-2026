@@ -5031,7 +5031,7 @@
                     "pattern_width2": 30,
                     "content": true,
                     "show_when_hover_image": false,
-                    "content_position": "top-center",
+                    "content_position": "right-top",
                     "content_position_horizontal": 0,
                     "content_position_vertical": 4,
                     "content_width": 100,
