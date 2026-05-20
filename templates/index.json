@@ -6336,6 +6336,7 @@
                 "image_4XXXEF": {
                   "type": "image",
                   "name": "Image",
+                  "disabled": true,
                   "settings": {
                     "link": "",
                     "width_custom": false,
@@ -6460,8 +6461,8 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Contactanos</p>",
-                    "color": "#1f2937",
+                    "text": "<p><strong>Contáctanos</strong></p>",
+                    "color": "#f669a0",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
                     "alignment": "center",
@@ -6503,8 +6504,8 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Tienes dudas sobre tu pedido o personalizacion? Escribenos y te ayudamos con gusto.</p>",
-                    "color": "#6b7280",
+                    "text": "<p>¿Tienes una idea especial, buscas mayoreo o necesitas ayuda con tu pedido? Estamos para ayudarte.</p>",
+                    "color": "#666666",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
                     "alignment": "center",
