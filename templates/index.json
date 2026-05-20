@@ -5726,7 +5726,7 @@
                       "type": "_col",
                       "name": "Column",
                       "settings": {
-                        "width_unit": "column",
+                        "width_unit": "%",
                         "w_xxl": 50,
                         "w_xl": 50,
                         "w_lg": 50,
