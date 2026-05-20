@@ -4999,9 +4999,9 @@
                   "settings": {
                     "image": "shopify://shop_images/IMG_4715.jpg",
                     "link": "#",
-                    "width_custom": false,
+                    "width_custom": true,
                     "image_width_unit": "%",
-                    "image_width": 100,
+                    "image_width": 90,
                     "align": "left",
                     "height_custom": true,
                     "image_height_unit": "%",
