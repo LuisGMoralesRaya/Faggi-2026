@@ -5050,7 +5050,7 @@
                   "type": "image",
                   "name": "Image",
                   "settings": {
-                    "image": "shopify://shop_images/IMG_3568.jpg",
+                    "image": "shopify://shop_images/IMG_3568_warmHD.jpg",
                     "link": "#",
                     "width_custom": false,
                     "image_width_unit": "%",
