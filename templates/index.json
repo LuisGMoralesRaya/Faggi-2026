@@ -4999,10 +4999,10 @@
                   "settings": {
                     "image": "shopify://shop_images/ChatGPT_Image_20_may_2026_01_52_38_p.m..png",
                     "link": "#",
-                    "width_custom": false,
+                    "width_custom": true,
                     "image_width_unit": "%",
-                    "image_width": 100,
-                    "align": "left",
+                    "image_width": 80,
+                    "align": "center",
                     "height_custom": true,
                     "image_height_unit": "%",
                     "image_height": 30,
