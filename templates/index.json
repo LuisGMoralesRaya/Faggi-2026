@@ -5926,7 +5926,6 @@
                     "col_EjFeiU": {
                       "type": "_col",
                       "name": "Column",
-                      "disabled": true,
                       "settings": {
                         "width_unit": "column",
                         "w_xxl": 50,
@@ -6009,14 +6008,15 @@
                               "type": "icon",
                               "static": true,
                               "settings": {
+                                "icon": "shopify://shop_images/email.png",
                                 "icon_svg": "",
                                 "icon_color": "#444444",
                                 "icon_color_hover": "#000000",
                                 "icon_size": 20,
                                 "aspect": "auto",
                                 "background_size": 50,
-                                "background_color": "#ffd100",
-                                "background_color_hover": "#ffd100",
+                                "background_color": "#f669a0",
+                                "background_color_hover": "#f669a0",
                                 "border_radius": 999,
                                 "hover_effect": true,
                                 "mt_xl": 0,
@@ -6034,7 +6034,7 @@
                               "type": "text",
                               "static": true,
                               "settings": {
-                                "text": "<p>Escribenos</p>",
+                                "text": "<p>Email</p>",
                                 "color": "#1f2937",
                                 "color_link": "#000000",
                                 "color_link_hover": "#000000",
@@ -6077,7 +6077,7 @@
                               "type": "text",
                               "static": true,
                               "settings": {
-                                "text": "<p>contacto@faggi.shop</p>",
+                                "text": "<p>faggi.shopmx@gmail.com</p>",
                                 "color": "#6b7280",
                                 "color_link": "#000000",
                                 "color_link_hover": "#000000",
