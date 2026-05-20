@@ -5134,7 +5134,7 @@
         "pattern_vertical3": 0,
         "pattern_width3": 20,
         "animate": false,
-        "container": "container",
+        "container": "container-full",
         "class_section": "",
         "ss_bg_enable": false,
         "background_color": "#ffffff",
