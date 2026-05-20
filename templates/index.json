@@ -5172,7 +5172,7 @@
             "star": 5,
             "title": "",
             "name": "Candace V. Miller",
-            "info": "From Tunisia",
+            "info": "Yoselín",
             "quote": "<p>My dog absolutely loves everything we got from here - the toys, the bed, even the treats! Shopping has never been this fun for both of us. Great quality, fast delivery!</p>"
           }
         },
@@ -5213,6 +5213,7 @@
         "quote_rAcXnz",
         "quote_TraPKL"
       ],
+      "disabled": true,
       "custom_css": [
         ".title_section .desc {max-width: 380px;}",
         "@media (max-width: 1199px) and (min-width: 992px) {.title_section .title {font-size: 2.6rem; }}"
@@ -5220,9 +5221,9 @@
       "name": "Vinova Testimonials",
       "settings": {
         "heading": "<p>Lo que Dicen Nuestras Clientas</p>",
-        "heading_color": "#1f2937",
+        "heading_color": "#f669a0",
         "subheading": "<p>Testimonios Reales</p>",
-        "subheading_color": "#1f2937",
+        "subheading_color": "#666666",
         "subheading_position": "top",
         "descheading": "<p>Hear heartwarming stories and honest reviews from real pet parents who’ve experienced our dedicated care.</p>",
         "descheading_color": "#6b7280",
@@ -5456,7 +5457,7 @@
                   "name": "Text",
                   "settings": {
                     "text": "<p>Informacion de Contacto</p>",
-                    "color": "#1f2937",
+                    "color": "#f669a0",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
                     "alignment": "center",
@@ -5830,8 +5831,8 @@
                               "type": "text",
                               "static": true,
                               "settings": {
-                                "text": "<p>Llamanos</p>",
-                                "color": "#1f2937",
+                                "text": "<p>Escríbenos</p>",
+                                "color": "#666666",
                                 "color_link": "#000000",
                                 "color_link_hover": "#000000",
                                 "alignment": "left",
@@ -5842,7 +5843,7 @@
                                 "alignment_ms": "left",
                                 "font_family": "f_df",
                                 "font_weight": "font-700",
-                                "text_transform": "text-capitalize",
+                                "text_transform": "none",
                                 "letter_spacing": "0",
                                 "line_height": "1.5",
                                 "max_w": 960,
@@ -5873,9 +5874,9 @@
                               "type": "text",
                               "static": true,
                               "settings": {
-                                "text": "<p>WhatsApp disponible</p>",
+                                "text": "<p><a href=\"https://wa.me/message/DCRH6CWOYI2XD1\" target=\"_blank\" title=\"Faggi WhatsApp Link\">Haz clic y ve a WhatsApp</a></p>",
                                 "color": "#6b7280",
-                                "color_link": "#000000",
+                                "color_link": "#f669a0",
                                 "color_link_hover": "#000000",
                                 "alignment": "left",
                                 "responsive_alignment": false,
@@ -5885,7 +5886,7 @@
                                 "alignment_ms": "left",
                                 "font_family": "f_df",
                                 "font_weight": "font-400",
-                                "text_transform": "text-capitalize",
+                                "text_transform": "none",
                                 "letter_spacing": "0",
                                 "line_height": "1.5",
                                 "max_w": 960,
@@ -5923,6 +5924,7 @@
                     "col_EjFeiU": {
                       "type": "_col",
                       "name": "Column",
+                      "disabled": true,
                       "settings": {
                         "width_unit": "column",
                         "w_xxl": 50,
@@ -6123,6 +6125,7 @@
                     "col_m46FTt": {
                       "type": "_col",
                       "name": "Column",
+                      "disabled": true,
                       "settings": {
                         "width_unit": "column",
                         "w_xxl": 50,
