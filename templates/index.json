@@ -5938,7 +5938,7 @@
                         "col_xl": "col-xl-4",
                         "col_lg": "col-lg-4",
                         "col_md": "col-md-4",
-                        "col_sm": "col-sm-6",
+                        "col_sm": "col-sm-4",
                         "col_xs": "col-12",
                         "align_content_enable": true,
                         "width_type": "auto",
