@@ -4997,7 +4997,7 @@
                   "type": "image",
                   "name": "Image",
                   "settings": {
-                    "image": "shopify://shop_images/IMG_4715.jpg",
+                    "image": "shopify://shop_images/IMG_4715_warmHD.jpg",
                     "link": "#",
                     "width_custom": true,
                     "image_width_unit": "%",
