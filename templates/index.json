@@ -6461,7 +6461,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p><strong>Contáctanos</strong></p>",
+                    "text": "<p><strong>Personaliza tu experiencia</strong></p>",
                     "color": "#f669a0",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
@@ -6473,7 +6473,7 @@
                     "alignment_ms": "left",
                     "font_family": "f_pr",
                     "font_weight": "font-400",
-                    "text_transform": "text-capitalize",
+                    "text_transform": "none",
                     "letter_spacing": "0",
                     "line_height": "1.5",
                     "max_w": 960,
