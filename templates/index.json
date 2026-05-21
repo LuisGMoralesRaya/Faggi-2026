@@ -1468,7 +1468,7 @@
                   "type": "image",
                   "name": "Image",
                   "settings": {
-                    "image": "shopify://shop_images/ChatGPT_Image_24_nov_2025_02_45_27_p.m..png",
+                    "image": "shopify://shop_images/ChatGPT_Image_21_may_2026_10_17_29_a.m..png",
                     "link": "#",
                     "width_custom": false,
                     "image_width_unit": "%",
@@ -1520,7 +1520,7 @@
                       "type": "text",
                       "name": "Text",
                       "settings": {
-                        "text": "<p>Pulseras y Esclavas</p>",
+                        "text": "<p>Amor y pareja</p>",
                         "color": "#636363",
                         "color_link": "#f669a0",
                         "color_link_hover": "#000000",
@@ -1532,7 +1532,7 @@
                         "alignment_ms": "left",
                         "font_family": "f_df",
                         "font_weight": "font-700",
-                        "text_transform": "text-capitalize",
+                        "text_transform": "none",
                         "letter_spacing": "0",
                         "line_height": "1.5",
                         "max_w": 960,
