@@ -5456,7 +5456,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p><strong>Informacion de Contacto</strong></p>",
+                    "text": "<p><strong>Información de contacto</strong></p>",
                     "color": "#f669a0",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
