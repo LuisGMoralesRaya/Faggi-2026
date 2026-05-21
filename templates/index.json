@@ -6725,7 +6725,7 @@
           "type": "text",
           "name": "Text",
           "settings": {
-            "text": "<p>Preguntas Frecuentes sobre Joyeria Personalizada</p>",
+            "text": "<p>Preguntas Frecuentes </p>",
             "color": "#1f2937",
             "color_link": "#000000",
             "color_link_hover": "#000000",
@@ -6829,8 +6829,8 @@
                   "type": "text",
                   "static": true,
                   "settings": {
-                    "text": "<p>Que tipo de personalizacion ofrecen?</p>",
-                    "color": "#1f2937",
+                    "text": "<p>¿Qué tipo de personalización ofrecen?</p>",
+                    "color": "#f669a0",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
                     "alignment": "left",
@@ -6872,7 +6872,7 @@
                   "type": "text",
                   "static": true,
                   "settings": {
-                    "text": "<p>Ofrecemos grabado con texto, grabado con fotografia, seleccion de charms, diseno multicharms, relicarios personalizados y mas. Cada pieza se elabora a mano segun tus indicaciones.</p>",
+                    "text": "<p>Ofrecemos grabado láser con texto, fotografías, charms, relicarios, llaveros y más. Cada pieza se elabora a mano según tus indicaciones.</p>",
                     "color": "#6b7280",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
@@ -6949,8 +6949,8 @@
                   "type": "text",
                   "static": true,
                   "settings": {
-                    "text": "<p>Cuanto tarda mi pedido personalizado?</p>",
-                    "color": "#1f2937",
+                    "text": "<p>¿Cuánto tarda mi pedido en llegar?</p>",
+                    "color": "#f669a0",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
                     "alignment": "left",
@@ -6992,7 +6992,7 @@
                   "type": "text",
                   "static": true,
                   "settings": {
-                    "text": "<p>Los pedidos personalizados se elaboran en 3 a 5 dias habiles. Al finalizar tu compra, nos ponemos en contacto contigo por email o WhatsApp para confirmar los detalles de tu diseno.</p>",
+                    "text": "<p>Los pedidos personalizados se elaboran en 3 a 7 días hábiles. Al finalizar tu compra, nos ponemos en contacto contigo por email o WhatsApp en caso de tener alguna duda de tu diseño.</p>",
                     "color": "#6b7280",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
@@ -7069,8 +7069,8 @@
                   "type": "text",
                   "static": true,
                   "settings": {
-                    "text": "<p>Hacen envios a toda la Republica?</p>",
-                    "color": "#1f2937",
+                    "text": "<p>¿Hacen envíos a todo México?</p>",
+                    "color": "#f669a0",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
                     "alignment": "left",
@@ -7112,7 +7112,7 @@
                   "type": "text",
                   "static": true,
                   "settings": {
-                    "text": "<p>Si, enviamos a todo Mexico. El envio es GRATIS en compras a partir de $799 MXN. Los paquetes se envian con seguimiento para que puedas rastrear tu pedido en todo momento.</p>",
+                    "text": "<p>Sí, enviamos a todo Mexico. El envío es GRATIS en compras a partir de $799 MXN. Los paquetes se envían a través de FedEx o DHL.</p>",
                     "color": "#6b7280",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
@@ -7189,8 +7189,8 @@
                   "type": "text",
                   "static": true,
                   "settings": {
-                    "text": "<p>Puedo incluir una foto en mi joya?</p>",
-                    "color": "#1f2937",
+                    "text": "<p>¿La joyería es resistente al agua?</p>",
+                    "color": "#f669a0",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
                     "alignment": "left",
@@ -7232,7 +7232,7 @@
                   "type": "text",
                   "static": true,
                   "settings": {
-                    "text": "<p>Claro! Nuestros relicarios y dijes permiten grabado con fotografia de alta resolucion. Solo necesitas enviarnos la imagen y nosotras nos encargamos de que quede perfecta.</p>",
+                    "text": "<p>Claro! Nuestras piezas resistentes al agua y buscan ser de uso diario, aunque nuestra recomendación es evitar el uso rudo diario para que duren más.<br/><br/></p>",
                     "color": "#6b7280",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
@@ -7309,8 +7309,8 @@
                   "type": "text",
                   "static": true,
                   "settings": {
-                    "text": "<p>Los materiales son de buena calidad?</p>",
-                    "color": "#1f2937",
+                    "text": "<p>¿Qué garantía ofrecen?</p>",
+                    "color": "#f669a0",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
                     "alignment": "left",
@@ -7352,7 +7352,7 @@
                   "type": "text",
                   "static": true,
                   "settings": {
-                    "text": "<p>Todas nuestras piezas estan elaboradas con materiales hipoalergenicos y resistentes al uso diario. Trabajamos con acero inoxidable, banos de oro y plata de alta calidad para que tu joya dure mucho tiempo.</p>",
+                    "text": "<p>Si tu producto presenta algún defecto de fabricación, cuentas con garantía para ayudarte a resolverlo. <br/>Si tienes algún inconveniente con tu pedido, escríbenos dentro de las primeras 48 horas después de recibirlo y con gusto revisaremos tu caso.</p>",
                     "color": "#6b7280",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
