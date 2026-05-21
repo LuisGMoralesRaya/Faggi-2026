@@ -71,8 +71,8 @@
           "type": "text",
           "name": "Text",
           "settings": {
-            "text": "<p>Thank you for choosing us to be part of your pet’s journey. Your trust means the world a lot to us.</p>",
-            "color": "#1f2937",
+            "text": "<p>Gracias por permitirnos crear piezas que formen parte de tu historia. Tu confianza lo significa todo para nosotros.<br/><br/></p>",
+            "color": "#666666",
             "color_link": "#000000",
             "color_link_hover": "#000000",
             "alignment": "center",
@@ -115,7 +115,7 @@
           "name": "Social",
           "settings": {
             "icon_width": 14,
-            "color_section": "scheme-8f3f414a-36b4-4137-aa8d-ad2be605322c",
+            "color_section": "scheme-a200f3c8-b22b-4979-9687-4bbcfcd74fcf",
             "type": "btn",
             "size": 40,
             "radius": 99,
