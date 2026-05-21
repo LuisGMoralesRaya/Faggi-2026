@@ -1521,7 +1521,7 @@
                       "name": "Text",
                       "settings": {
                         "text": "<p>Amor y pareja</p>",
-                        "color": "#636363",
+                        "color": "#ffffff",
                         "color_link": "#f669a0",
                         "color_link_hover": "#000000",
                         "alignment": "left",
