@@ -1666,7 +1666,7 @@
                   "type": "image",
                   "name": "Image",
                   "settings": {
-                    "image": "shopify://shop_images/Multicharms.png",
+                    "image": "shopify://shop_images/e362c1d8-9255-4abb-84fc-d36cfb1eaf1d.png",
                     "link": "#",
                     "width_custom": false,
                     "image_width_unit": "%",
@@ -1718,8 +1718,8 @@
                       "type": "text",
                       "name": "Text",
                       "settings": {
-                        "text": "<p>Collares multicharms</p>",
-                        "color": "#636363",
+                        "text": "<p>Mascotas</p>",
+                        "color": "#ffffff",
                         "color_link": "#f669a0",
                         "color_link_hover": "#000000",
                         "alignment": "left",
