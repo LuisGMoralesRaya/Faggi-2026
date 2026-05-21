@@ -1270,7 +1270,7 @@
                   "type": "image",
                   "name": "Image",
                   "settings": {
-                    "image": "shopify://shop_images/Un_dia_a_la_vez_0c1cc896-f80b-421f-9cdf-e3bd9d4f8bd5.png",
+                    "image": "shopify://shop_images/ChatGPT_Image_21_may_2026_10_57_38_a.m..png",
                     "link": "#",
                     "width_custom": false,
                     "image_width_unit": "%",
@@ -1322,8 +1322,8 @@
                       "type": "text",
                       "name": "Text",
                       "settings": {
-                        "text": "<p>Collares personalizados</p>",
-                        "color": "#636363",
+                        "text": "<p>Familia y amistad</p>",
+                        "color": "#ffffff",
                         "color_link": "#f669a0",
                         "color_link_hover": "#000000",
                         "alignment": "left",
@@ -1334,7 +1334,7 @@
                         "alignment_ms": "left",
                         "font_family": "f_df",
                         "font_weight": "font-700",
-                        "text_transform": "text-capitalize",
+                        "text_transform": "none",
                         "letter_spacing": "0",
                         "line_height": "1.5",
                         "max_w": 960,
