@@ -6588,7 +6588,7 @@
                     "btn_width": 155,
                     "submit_color": "",
                     "submit_btn_type": "btn-primary",
-                    "btn_alignment": "left",
+                    "btn_alignment": "center",
                     "full_width": true,
                     "color_link": "#000000",
                     "color_hover": "#000000",
