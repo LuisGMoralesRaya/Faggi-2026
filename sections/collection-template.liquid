@@ -237,7 +237,7 @@
               <div id="product-grid" data-id="{{ section.id }}"{% if paginate.next %} data-next-url="{{ paginate.next.url }}"{% endif %} class="product-collection collection__grid-loadmore row grid--view-items spacing-md-15">
                 {%- for product in collection.products -%}
                   <div class="product--item item col mb-md-15">
-                    {% render 'product-grid-item-style-collection', product: product, section_id: section.id, viewtype: viewtype %}
+                    {% render 'product-grid-item-style-1-1', product: product, section_id: section.id, viewtype: viewtype %}
                   </div>
                 {%- endfor -%}
               </div>
