@@ -42,9 +42,11 @@
           {% endfor %}
         </div>
       </a>
+
       {% if settings.enable_product_countdowntime and product.metafields.sale.countdown != blank %}
         <div class="countdownfree d-flex mt-30{% if settings.product_countdown_shadow %} shadow{% endif %}" data-countdown="{{ product.metafields.sale.countdown }}" data-show-days="{{ settings.show_day }}" data-restart="{{ settings.restart }}"></div>
       {% endif %}
+
       <div class="button--top">
         {% if settings.quickview_enable %}
           {% render 'nov-quickview', id: product.variants.first.id, handle: product.handle %}
@@ -53,6 +55,7 @@
           {% render 'nov-wishlist', id: product.id, handle: product.handle %}
         {% endif %}
       </div>
+      
       {% if settings.addtocart_enable %}
         {% if swatch_color or product.has_only_default_variant %}
           <form action="{{ routes.cart_url }}/add" method="post" class="form-btn-item-product {% if product.has_only_default_variant %}variants-default{% else %}one-option-color{% endif %} color-{{ settings.color_btn_addtocart }} {{ settings.btn_addtocart_type }}" id="grid-product-form--{{ product.id }}-{{ section_id }}" data-id="product-actions-{{ product.id }}" enctype="multipart/form-data">
