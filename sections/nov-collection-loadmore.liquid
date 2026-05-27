@@ -83,7 +83,7 @@
                 data-xs="{{ sst.xs }}">
                 {% for product in collection.products %}
                   <div class="item {% render 'number-to-col', xxl: sst.xxl, xl: sst.xl, lg: sst.lg, md: sst.md, sm: sst.sm, xs: sst.xs  %}">
-                    {% render 'product-grid-item-style-1', product: product, section_id: block.id %}
+                    {% render 'product-grid-item-style-1-1', product: product, section_id: block.id %}
                   </div>
                 {% else %}
                   {%- for i in (1..8) -%}
