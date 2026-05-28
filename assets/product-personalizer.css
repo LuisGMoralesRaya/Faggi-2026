@@ -322,7 +322,7 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 100%;
   max-height: 100dvh;
   background:#FFF;
   /**background:
@@ -1644,7 +1644,7 @@
 
 .pp-modal__dialog {
   width: min(calc(100vw - 12px), 1000px);
-  max-width: 100%;
+  max-width: 500px;
   overflow: hidden;
 }
 
