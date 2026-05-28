@@ -1150,7 +1150,7 @@
           return [
             '<button type="button" class="pp-font-card" data-action="font-select" data-font-field="' + fieldKey + '" data-font-id="' + escapeHtml(font.id) + '" style="' + escapeHtml(style) + '">',
             '<span class="pp-font-card__name">' + escapeHtml(font.label) + '</span>',
-            '<span class="pp-font-card__preview">' + escapeHtml(font.previewText || 'Texto') + '</span>',
+            '<!--span class="pp-font-card__preview">' + escapeHtml(font.previewText || 'Texto') + '</span-->',
             '</button>'
           ].join('');
         }).join(''),
