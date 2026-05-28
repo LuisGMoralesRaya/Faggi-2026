@@ -321,7 +321,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 500px;
   max-height: 100dvh;
   background:#FFF;
   /**background:
@@ -432,7 +432,7 @@
 
 .pp-modal__layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  /**grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);**/
   gap: 24px;
   margin-top: 0px;
 }
