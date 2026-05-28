@@ -900,9 +900,9 @@
 .pp-modal .pp-font-card {
   appearance: none;
   border: 1px solid var(--pp-border);
-  border-radius: 16px;
-  padding: 12px;
-  min-height: 80px;
+  border-radius: 12px;
+  padding: 8px;
+  min-height: 70px;
   text-align: left;
   background: rgba(255, 255, 255, 0.92);
   color: var(--pp-title);
@@ -1671,7 +1671,7 @@
   max-width: 100%;
 }
 .pp-modal .pp-font-card{
-  min-width: 100px!important;
+  min-width: 115px!important;
 }
 
 .pp-modal .pp-preview__gallery,
@@ -1756,7 +1756,7 @@
   width: 100%;
   padding: 10px 14px;
   border: 1px solid var(--pp-border);
-  border-radius: 16px;
+  border-radius: 12px;
   background: rgba(255, 255, 255, 0.92);
 }
 
