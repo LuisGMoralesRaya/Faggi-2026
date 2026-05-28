@@ -1114,7 +1114,7 @@
 .pp-modal .pp-photo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-  gap: 10px;
+  gap: 8px;
 }
 
 .pp-modal .pp-photo-slot {
