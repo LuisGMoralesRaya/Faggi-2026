@@ -1209,7 +1209,7 @@
 .pp-modal .pp-charm-slider__track {
   display: grid;
   grid-auto-flow: column;
-  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(1, minmax(0, 1fr));
   grid-auto-columns: minmax(155px, 155px);
   gap: 12px 14px;
 }
