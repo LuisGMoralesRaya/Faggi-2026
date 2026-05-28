@@ -779,7 +779,7 @@
 .pp-modal .pp-section + .pp-section {
   margin-top: 22px;
   padding-top: 22px;
-  border-top: 1px solid rgba(222, 79, 135, 0.12);
+  border-top: 1px solid rgba(237, 233, 235, 1);
 }
 
 .pp-modal .pp-section__head {
