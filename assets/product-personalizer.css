@@ -360,7 +360,7 @@
 
 .pp-modal__heading {
   margin: 0;
-  color: #CCC;
+  color: #1f2937;
   font-family: "Cormorant Garamond", "Palatino Linotype", serif;
   font-size: clamp(20px, 1vw, 24px);
   font-weight: 600;
