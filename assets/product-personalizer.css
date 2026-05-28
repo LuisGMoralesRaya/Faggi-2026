@@ -901,9 +901,9 @@
 .pp-modal .pp-font-card {
   appearance: none;
   border: 1px solid var(--pp-border);
-  border-radius: 12px;
-  padding: 8px;
-  min-height: 70px;
+  border-radius: 30px;
+  padding: 12px;
+  min-height: 55px;
   text-align: left;
   background: rgba(255, 255, 255, 0.92);
   color: var(--pp-title);
@@ -924,7 +924,7 @@
 }
 
 .pp-modal .pp-font-card__name {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--pp-title);
 }
