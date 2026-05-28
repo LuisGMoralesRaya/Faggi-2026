@@ -953,7 +953,7 @@
         '<section class="pp-section" data-section-role="' + prefix + '-sides">',
         '<div class="pp-section__head">',
         '<div><!--p class="pp-section__eyebrow">Texto</p--><h4 class="pp-section__title">' + escapeHtml(title) + '</h4></div>',
-        '<p class="pp-section__description">Puedes elegir tu tipo de letra y agregar iconos <i>(cada icono cuenta como un caracter). Máx. 40 caracteres</i></p>',
+        '<p class="pp-section__description">Elige tu tipo de letra y agrega iconos <i>(cada icono cuenta como un caracter). Máx. 40 caracteres</i></p>',
         '</div>',
         '<div class="pp-side-panels">'
       ];
