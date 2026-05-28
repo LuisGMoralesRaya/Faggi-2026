@@ -890,7 +890,7 @@
       return [
         '<section class="pp-section" data-section-role="product-shape">',
         '<div class="pp-section__head">',
-        '<div><p class="pp-section__eyebrow">Forma</p><h4 class="pp-section__title">Elige la forma de la pieza</h4></div>',
+        '<div><!--p class="pp-section__eyebrow">Forma</p--><h4 class="pp-section__title">Elige la forma de la pieza</h4></div>',
         description ? '<p class="pp-section__description">' + escapeHtml(description) + '</p>' : '',
         '</div>',
         '<div class="pp-shape-grid">',
