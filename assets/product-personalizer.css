@@ -894,8 +894,8 @@
 
 .pp-modal .pp-font-picker__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 0fr));
+  gap: 8px;
 }
 
 .pp-modal .pp-font-card {
