@@ -1013,7 +1013,7 @@
       return [
         '<section class="pp-section" data-section-role="single-text">',
         '<div class="pp-section__head">',
-        '<div><p class="pp-section__eyebrow">Mensaje</p><h4 class="pp-section__title">' + escapeHtml(this.rule.singleText.label) + '</h4></div>',
+        '<div><!--p class="pp-section__eyebrow">Mensaje</p--><h4 class="pp-section__title">' + escapeHtml(this.rule.singleText.label) + '</h4></div>',
         '<p class="pp-section__description">Puedes mezclar texto con íconos dentro del mensaje.</p>',
         '</div>',
         this.renderTokenField({
