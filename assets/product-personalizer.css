@@ -902,9 +902,9 @@
   appearance: none;
   border: 1px solid var(--pp-border);
   border-radius: 30px;
-  padding: 12px;
-  min-height: 55px;
-  text-align: left;
+  padding: 10px;
+  min-height: 50px;
+  text-align: center;
   background: rgba(255, 255, 255, 0.92);
   color: var(--pp-title);
   cursor: pointer;
