@@ -1083,7 +1083,7 @@
         '<p class="pp-section__description" data-charm-limit-copy></p>',
         '</div>',
         '<div class="pp-charm-slider">',
-        '<div><button type="button" class="pp-slider-button" data-action="scroll-charms" data-direction="prev" aria-label="Ver charms anteriores">&larr;</button> <button type="button" class="pp-slider-button" style="float: right;" data-action="scroll-charms" data-direction="next" aria-label="Ver más charms">&rarr;</button></div>',
+        '<div style="margin-top: 10px;"><button type="button" class="pp-slider-button" data-action="scroll-charms" data-direction="prev" aria-label="Ver charms anteriores">&larr;</button> <button type="button" class="pp-slider-button" style="float: right;" data-action="scroll-charms" data-direction="next" aria-label="Ver más charms">&rarr;</button></div>',
         '<div class="pp-charm-slider__viewport" data-charm-scroll>',
         '<div class="pp-charm-slider__track">',
         this.charmsCatalog.map(function (charm) {
