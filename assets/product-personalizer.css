@@ -1779,8 +1779,8 @@
 .pp-modal .pp-charm-slider__track {
   width: max-content;
   min-width: 100%;
-  grid-auto-columns: minmax(132px, 132px);
-  gap: 10px 12px;
+  grid-auto-columns: minmax(130px, 130px);
+  gap: 8px 10px;
 }
 
 .pp-modal .pp-charm-card {
