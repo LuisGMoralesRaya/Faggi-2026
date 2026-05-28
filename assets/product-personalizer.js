@@ -141,7 +141,7 @@
         minRequiredSides: 0,
         fontSelectable: true,
         sides: {
-          front: { label: 'Grabado frente', defaultActive: false },
+          front: { label: 'Grabado frente', defaultActive: true },
           back: { label: 'Grabado atrás', defaultActive: false }
         }
       },
