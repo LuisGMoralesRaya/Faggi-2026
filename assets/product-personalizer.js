@@ -175,7 +175,7 @@
         minRequiredSides: 0,
         fontSelectable: true,
         sides: {
-          front: { label: 'Texto principal', defaultActive: false },
+          front: { label: 'Texto principal', defaultActive: true },
           back: { label: 'Texto secundario', defaultActive: false }
         }
       },
