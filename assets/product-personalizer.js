@@ -1065,7 +1065,7 @@
       return [
         '<section class="pp-section" data-section-role="photos">',
         '<div class="pp-section__head">',
-        '<!--div><p class="pp-section__eyebrow">Fotos</p><h4 class="pp-section__title">Carga tus imágenes</h4></div-->',
+        '<div><!--p class="pp-section__eyebrow">Fotos</p--><h4 class="pp-section__title">Carga tus imágenes</h4></div>',
         '<p class="pp-section__description">Selecciona de ' + this.rule.photos.min + ' a ' + this.rule.photos.max + ' imágenes según este diseño.</p>',
         '</div>',
         '<div class="pp-photo-grid">',
