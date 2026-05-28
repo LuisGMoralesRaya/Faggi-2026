@@ -323,9 +323,10 @@
   flex-direction: column;
   width: 100%;
   max-height: 100dvh;
-  background:
+  background:#FFF;
+  /**background:
     radial-gradient(circle at top left, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0) 38%),
-    linear-gradient(135deg, #fff8fb, #fef0f5 56%, #fce4ed);
+    linear-gradient(135deg, #fff8fb, #fef0f5 56%, #fce4ed);**/
   box-shadow: 0 0 80px rgba(180, 50, 100, 0.2);
   transform: translateY(20px);
   transition: transform 0.3s ease;
