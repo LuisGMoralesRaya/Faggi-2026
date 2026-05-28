@@ -1182,7 +1182,7 @@
         }).join(''),
         '</div>',
         '</details>',
-        '<p class="pp-token-field__hint">Mín. ' + options.min + ' - Máx. ' + options.max + '. ' + escapeHtml(this.config.ui.iconHelp || 'Los íconos cuentan como un carácter.') + '</p>',
+        '<!--p class="pp-token-field__hint">Mín. ' + options.min + ' - Máx. ' + options.max + '. ' + escapeHtml(this.config.ui.iconHelp || 'Los íconos cuentan como un carácter.') + '</p-->',
         '</div>'
       ].join('');
     }
