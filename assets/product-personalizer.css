@@ -434,7 +434,7 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
   gap: 24px;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .pp-modal__preview-col,
