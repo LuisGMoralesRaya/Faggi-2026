@@ -839,6 +839,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   gap: 10px;
+  margin-top:10px;
 }
 
 .pp-modal .pp-shape-card {
