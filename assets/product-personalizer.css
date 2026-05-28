@@ -418,7 +418,7 @@
 
 .pp-modal__subtitle {
   color: var(--pp-text);
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.55;
   max-width: 760px;
   margin-bottom: 6px;
@@ -809,7 +809,7 @@
 
 .pp-modal .pp-section__description {
   color: var(--pp-text);
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.55;
 }
 
