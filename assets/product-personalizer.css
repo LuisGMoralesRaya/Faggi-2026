@@ -1524,6 +1524,7 @@
 .pp-modal .pp-toggle span {
   display: inline-flex;
   align-items: center;
+  font-weight: 600;
   white-space: nowrap;
   line-height: 1.1;
 }
