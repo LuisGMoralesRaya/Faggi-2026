@@ -1647,6 +1647,7 @@
 .pp-modal__dialog {
   width: min(calc(100vw - 12px), 1000px);
   max-width: 500px;
+  height: 100%;
   overflow: hidden;
 }
 
