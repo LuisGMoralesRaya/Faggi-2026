@@ -318,7 +318,8 @@
 }
 
 .pp-modal__dialog {
-  position: relative;
+  right:0px;
+  position: absolute;
   display: flex;
   flex-direction: column;
   width: 500px;
