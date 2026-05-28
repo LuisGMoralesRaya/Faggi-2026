@@ -1045,14 +1045,13 @@
     renderPhotosSection() {
       const slots = [];
       for (let index = 0; index < this.rule.photos.max; index += 1) {
-        const label = 'Foto ' + (index + 1);
+        const label = 'Subir Fotografía ' + (index + 1);
         slots.push([
           '<div class="pp-photo-slot" data-photo-slot="' + index + '">',
           '<div class="pp-photo-slot__frame">',
           '<input type="file" accept="image/*" class="pp-photo-slot__input" name="properties[' + label + ']" data-photo-input="' + index + '">',
           '<div class="pp-photo-slot__surface" data-photo-surface="' + index + '">',
           '<span class="pp-photo-slot__placeholder">',
-          '<small>Subir fotografía</small>',
           '<strong>' + escapeHtml(label) + '</strong>',
           '<em class="pp-photo-slot__filename" data-photo-file-name="' + index + '">Ningún archivo seleccionado</em>',
           '</span>',
