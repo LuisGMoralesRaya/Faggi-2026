@@ -811,7 +811,7 @@
     }
 
     getMainTextSectionTitle() {
-      return this.config.activeTag === 'Personalizacion_5' ? 'Grabado de los elementos' : 'Grabado por lados';
+      return this.config.activeTag === 'Personalizacion_5' ? 'Grabado de los elementos' : 'Ingresa tu texto';
     }
 
     getEngravingShapeFieldLabel() {
