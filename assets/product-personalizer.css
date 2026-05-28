@@ -893,7 +893,7 @@
 
 .pp-modal .pp-font-picker__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 10px;
 }
 
@@ -1671,7 +1671,7 @@
   max-width: 100%;
 }
 .pp-modal .pp-font-card{
-  min-width: 120px!important;
+  min-width: 100px!important;
 }
 
 .pp-modal .pp-preview__gallery,
