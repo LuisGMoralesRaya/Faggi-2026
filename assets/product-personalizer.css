@@ -782,7 +782,7 @@
 }
 
 .pp-modal .pp-section__head {
-  display: flex;
+  display: block;
   align-items: flex-start;
   justify-content: space-between;
   gap: 14px;
