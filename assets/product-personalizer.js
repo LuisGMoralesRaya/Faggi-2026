@@ -910,7 +910,7 @@
       return [
         '<section class="pp-section" data-section-role="engraving-shape">',
         '<div class="pp-section__head">',
-        '<div><p class="pp-section__eyebrow">' + escapeHtml(this.getEngravingShapeFieldLabel()) + '</p><h4 class="pp-section__title">' + escapeHtml(this.getEngravingShapeSelectionTitle()) + '</h4></div>',
+        '<div><!--p class="pp-section__eyebrow">' + escapeHtml(this.getEngravingShapeFieldLabel()) + '</p--><h4 class="pp-section__title">' + escapeHtml(this.getEngravingShapeSelectionTitle()) + '</h4></div>',
         '<p class="pp-section__description">' + escapeHtml(description) + '</p>',
         '</div>',
         '<div class="pp-shape-grid">',
