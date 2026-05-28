@@ -1079,7 +1079,7 @@
       return [
         '<section class="pp-section" data-section-role="charms">',
         '<div class="pp-section__head">',
-        '<div><p class="pp-section__eyebrow">Charms</p><h4 class="pp-section__title">Selecciona tus charms</h4></div>',
+        '<div><!--p class="pp-section__eyebrow">Charms</p--><h4 class="pp-section__title">Selecciona tus charms</h4></div>',
         '<p class="pp-section__description" data-charm-limit-copy></p>',
         '</div>',
         '<div class="pp-charm-slider">',
