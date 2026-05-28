@@ -1585,8 +1585,8 @@
 
 .pp-modal .pp-photo-slot__surface {
   aspect-ratio: auto;
-  min-height: 92px;
-  padding: 14px 16px;
+  min-height: 80px;
+  padding: 12px 16px;
   justify-content: flex-start;
   background: #fff;
   border-style: solid;
