@@ -1,9 +1,9 @@
 {%- assign current_variant = product.selected_or_first_available_variant -%}
 <div id="ProductAvailability-{{ section.id }}" class="available_product d-flex align-items-center">
 {% unless product.available %}
-    <div class="available_name product-single__control-label">
+    <!--div class="available_name product-single__control-label">
       Disponibilidad
-    </div>
+    </div-->
     <span class="product__available sold-out">
       <span>{{ "products.product.sold_out" | t }}</span>
       <i class="zmdi zmdi-block"></i>
