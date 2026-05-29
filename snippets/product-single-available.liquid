@@ -9,13 +9,13 @@
       <i class="zmdi zmdi-block"></i>
     </span>
 {% else %}
-    <div class="available_name product-single__control-label">
+    <!--div class="available_name product-single__control-label">
       {% if current_variant.inventory_management == 'shopify' and current_variant.inventory_policy != 'continue' and current_variant.inventory_quantity > 0 %}
         Piezas restantes
       {% else %}
         Disponibilidad
       {% endif %}
-    </div>
+    </div-->
     <span class="product__available in-stock">
       {% if current_variant.inventory_management == 'shopify' and current_variant.inventory_policy != 'continue' and current_variant.inventory_quantity > 0 %}
         <span>Quedan {{ current_variant.inventory_quantity }} piezas</span>
