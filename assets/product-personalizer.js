@@ -1142,7 +1142,8 @@
     renderFontPicker(fieldKey) {
       return [
         '<div class="pp-font-picker" data-font-picker="' + fieldKey + '">',
-        '<div class="pp-font-picker__grid"><span class="pp-font-picker__label" style="margin-top:10px;">Tipo de letra:</span>',
+        '<span class="pp-font-picker__label" style="margin-top:10px;">Tipo de letra:</span>',
+        '<div class="pp-font-picker__grid">',
         this.fonts.map(function (font) {
           const style = 'font-family:' + font.family + ';font-weight:' + font.weight + ';font-style:' + font.style + ';';
           return [
