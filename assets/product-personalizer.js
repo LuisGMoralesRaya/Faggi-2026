@@ -94,7 +94,6 @@
       label: 'Personalizado 1',
       previewStyle: 'multicharm',
       highlights: ['1 a 5 espacios totales', 'Mini dije grabado opcional', 'Hasta 10 caracteres o íconos por lado'],
-      charms: { enabled: true, max: 5, combinedMin: 1, optional: false },
       engravingShape: {
         enabled: true,
         optional: true,
@@ -103,6 +102,7 @@
         minChars: 1,
         maxChars: 10,
         fontSelectable: true,
+        charms: { enabled: true, max: 5, combinedMin: 1, optional: false },
         sides: {
           front: { label: 'Frente', defaultActive: true },
           back: { label: 'Atrás', defaultActive: false }
@@ -885,7 +885,60 @@
       this.renderMultiTextSlots();
     }
 
-    
+    renderShapeSelectorSection() {
+      const description = this.rule.shapeSelector && this.rule.shapeSelector.description ? this.rule.shapeSelector.description : '';
+      return [
+        '<section class="pp-section" data-section-role="product-shape">',
+        '<div class="pp-section__head">',
+        '<div><!--p class="pp-section__eyebrow">Forma</p--><h4 class="pp-section__title">Elige la forma de la pieza</h4></div>',
+        description ? '<p class="pp-section__description">' + escapeHtml(description) + '</p>' : '',
+        '</div>',
+        '<div class="pp-shape-grid">',
+        this.rule.shapeSelector.shapes.map(function (shape) {
+          return this.renderShapeCard('productShape', shape);
+        }, this).join(''),
+        '</div>',
+        '</section>'
+      ].join('');
+    }
+
+    renderEngravingShapeSection() {
+      const description = this.rule.engravingShape.singleText
+        ? 'Activa un mini dije si deseas agregar un grabado especial.'
+        : 'Selecciona la forma de tu Mini Dije.';
+
+      return [
+        '<section class="pp-section" data-section-role="engraving-shape">',
+        '<div class="pp-section__head">',
+        '<div><!--p class="pp-section__eyebrow">' + escapeHtml(this.getEngravingShapeFieldLabel()) + '</p--><h4 class="pp-section__title">' + escapeHtml(this.getEngravingShapeSelectionTitle()) + '</h4></div>',
+        '<p class="pp-section__description">' + escapeHtml(description) + '</p>',
+        '</div>',
+        '<div class="pp-shape-grid">',
+        this.rule.engravingShape.optional ? this.renderShapeCard('engravingShape', '', 'Sin forma') : '',
+        this.rule.engravingShape.shapes.map(function (shape) {
+          return this.renderShapeCard('engravingShape', shape);
+        }, this).join(''),
+        '</div>',
+        this.rule.engravingShape.singleText ? this.renderShapeSingleTextPanel() : '',
+        '</section>'
+      ].join('');
+    }
+
+    renderShapeSingleTextPanel() {
+      return [
+        '<div class="pp-shape-text-panel" data-shape-text-panel>',
+        this.renderTokenField({
+          fieldKey: 'shapeText',
+          fontFieldKey: 'shapeFont',
+          label: this.rule.engravingShape.singleTextLabel || 'Texto para el mini dije',
+          min: this.rule.engravingShape.minChars,
+          max: this.rule.engravingShape.maxChars,
+          placeholder: 'Escribe el texto del mini dije'
+        }),
+        this.rule.engravingShape.fontSelectable ? this.renderFontPicker('shapeFont') : '',
+        '</div>'
+      ].join('');
+    }
 
     renderSideTextSection(prefix, config, title) {
       const isEngraving = prefix === 'engraving';
@@ -1071,61 +1124,6 @@
         '<span class="pp-charm-card__placeholder" style="--charm-accent:' + escapeHtml(charm.accent || '#f669a0') + ';">',
         '<span>' + escapeHtml((charm.label || 'C').slice(0, 2).toUpperCase()) + '</span>',
         '</span>'
-      ].join('');
-    }
-
-    renderShapeSelectorSection() {
-      const description = this.rule.shapeSelector && this.rule.shapeSelector.description ? this.rule.shapeSelector.description : '';
-      return [
-        '<section class="pp-section" data-section-role="product-shape">',
-        '<div class="pp-section__head">',
-        '<div><!--p class="pp-section__eyebrow">Forma</p--><h4 class="pp-section__title">Elige la forma de la pieza</h4></div>',
-        description ? '<p class="pp-section__description">' + escapeHtml(description) + '</p>' : '',
-        '</div>',
-        '<div class="pp-shape-grid">',
-        this.rule.shapeSelector.shapes.map(function (shape) {
-          return this.renderShapeCard('productShape', shape);
-        }, this).join(''),
-        '</div>',
-        '</section>'
-      ].join('');
-    }
-
-    renderEngravingShapeSection() {
-      const description = this.rule.engravingShape.singleText
-        ? 'Activa un mini dije si deseas agregar un grabado especial.'
-        : 'Selecciona la forma de tu Mini Dije.';
-
-      return [
-        '<section class="pp-section" data-section-role="engraving-shape">',
-        '<div class="pp-section__head">',
-        '<div><!--p class="pp-section__eyebrow">' + escapeHtml(this.getEngravingShapeFieldLabel()) + '</p--><h4 class="pp-section__title">' + escapeHtml(this.getEngravingShapeSelectionTitle()) + '</h4></div>',
-        '<p class="pp-section__description">' + escapeHtml(description) + '</p>',
-        '</div>',
-        '<div class="pp-shape-grid">',
-        this.rule.engravingShape.optional ? this.renderShapeCard('engravingShape', '', 'Sin forma') : '',
-        this.rule.engravingShape.shapes.map(function (shape) {
-          return this.renderShapeCard('engravingShape', shape);
-        }, this).join(''),
-        '</div>',
-        this.rule.engravingShape.singleText ? this.renderShapeSingleTextPanel() : '',
-        '</section>'
-      ].join('');
-    }
-
-    renderShapeSingleTextPanel() {
-      return [
-        '<div class="pp-shape-text-panel" data-shape-text-panel>',
-        this.renderTokenField({
-          fieldKey: 'shapeText',
-          fontFieldKey: 'shapeFont',
-          label: this.rule.engravingShape.singleTextLabel || 'Texto para el mini dije',
-          min: this.rule.engravingShape.minChars,
-          max: this.rule.engravingShape.maxChars,
-          placeholder: 'Escribe el texto del mini dije'
-        }),
-        this.rule.engravingShape.fontSelectable ? this.renderFontPicker('shapeFont') : '',
-        '</div>'
       ].join('');
     }
 
