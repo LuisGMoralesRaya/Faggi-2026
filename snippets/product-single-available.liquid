@@ -18,7 +18,7 @@
     </div-->
     <span class="product__available in-stock">
       {% if current_variant.inventory_management == 'shopify' and current_variant.inventory_policy != 'continue' and current_variant.inventory_quantity > 0 %}
-        <span>Quedan {{ current_variant.inventory_quantity }} piezas</span>
+        <span style="font-weight:bolder;">¡Quedan {{ current_variant.inventory_quantity }} piezas!</span>
       {% else %}
         <span>{{ "products.product.in_stock" | t }}</span>
       {% endif %}
