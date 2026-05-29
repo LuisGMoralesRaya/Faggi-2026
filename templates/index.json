@@ -334,7 +334,7 @@
               "name": "Image",
               "settings": {
                 "image": "shopify://shop_images/brazalete.png",
-                "link": "",
+                "link": "/collections/pulseras-personalizadas",
                 "width_custom": false,
                 "image_width_unit": "%",
                 "image_width": 100,
@@ -441,7 +441,7 @@
               "name": "Image",
               "settings": {
                 "image": "shopify://shop_images/llavero_plateado.png",
-                "link": "",
+                "link": "/collections/llaveros-1",
                 "width_custom": false,
                 "image_width_unit": "%",
                 "image_width": 100,
@@ -548,7 +548,7 @@
               "name": "Image",
               "settings": {
                 "image": "shopify://shop_images/alhajerograbado1_64e169fe-ceb5-4d01-8a95-9dc4c7047531.png",
-                "link": "",
+                "link": "/collections/alhajeros-y-mas",
                 "width_custom": false,
                 "image_width_unit": "%",
                 "image_width": 100,
