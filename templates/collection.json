@@ -58,7 +58,7 @@
         "list_collection_MyCMJJ"
       ],
       "settings": {
-        "show_list_collection": true,
+        "show_list_collection": false,
         "show_nav": true,
         "xxl": 5,
         "xl": 4,
