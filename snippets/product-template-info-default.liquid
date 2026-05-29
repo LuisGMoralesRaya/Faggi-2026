@@ -2,7 +2,7 @@
   <div class="d-md-flex align-items-center justify-content-between mb-10">
     <h1 itemprop="name" class="product-single__title text-capitalize">{{ product.title }}</h1>
     {% if collection.previous_product or collection.next_product %}
-    <div class="product-single__direction d-flex align-items-center">
+    <!--div class="product-single__direction d-flex align-items-center">
       {% if collection.previous_product %}
       <div class="btn-direction"{% if settings.tooltip_enable %} data-toggle="tooltip" data-placement="top" title="{{ 'products.general.previous_product' | t }}"{% endif %}>
         {{ '<i class="rbb-icon-direction-36"></i>' | link_to: collection.previous_product.url, collection.previous_product.title }}
@@ -14,7 +14,7 @@
           {{ '<i class="rbb-icon-direction-39"></i>' | link_to: collection.next_product.url, collection.next_product.title }}
         {% endif %}
       </div>
-    </div>
+    </div-->
     {% endif %}
   </div>
 
