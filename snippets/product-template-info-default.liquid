@@ -32,10 +32,6 @@
 
   {% render 'product-single-deal' %}
 
-  {% if section.settings.show_available %}
-    {% render 'product-single-available' %}
-  {% endif %}
-
   {% render 'product-single-info' %}
 
   <form action="{{ routes.cart_add_url }}" method="post" enctype="multipart/form-data" id="product-form-{{ section.id }}">
@@ -44,7 +40,9 @@
     {% render 'product-single-addtocart', current_variant: product.selected_or_first_available_variant %}
   </form>
 
-  {% render 'product-single-available' %}
+  {% if section.settings.show_available %}
+    {% render 'product-single-available' %}
+  {% endif %}
 
   {% render 'product-single-share-ask' %}
   {% if viewtype == 'accordiontwo' %}
