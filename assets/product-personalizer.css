@@ -875,7 +875,7 @@
 
 .pp-modal .pp-shape-card__label {
   font-size: 12px;
-  font-weight: 700;
+  font-weight: bolder;
   color: var(--pp-title);
 }
 
