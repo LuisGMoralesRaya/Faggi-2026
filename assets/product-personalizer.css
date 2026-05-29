@@ -845,7 +845,7 @@
 .pp-modal .pp-shape-card {
   appearance: none;
   padding: 10px 10px;
-  border: 2px solid var(--pp-border);
+  border: 1px solid var(--pp-border);
   border-radius: 55px;
   background: rgba(255, 255, 255, 0.92);
   color: var(--pp-title);
