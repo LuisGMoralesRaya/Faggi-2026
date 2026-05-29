@@ -67,21 +67,7 @@
         <div class="pp-modal__header">
           <div class="pp-modal__header-copy">
             <div style="float: left;margin-right: 10px;height:40px;width:40px;">
-              <div class="thumbItem{% if forloop.first %} active{% endif %} {{ class }}" data-media-id="{{ section.id }}-{{ media.id }}" data-position="{% if viewtype == 'scroll' %}{{ forloop.index }}{% else %}{{ forloop.index0 }}{% endif %}">
-          <a href="#" data-image="{{ media.preview_image | image_url: width: 1440 }}" class="product-single__thumbnail position-relative w-100"{% if media.media_type == 'video' or media.media_type =='external_video' %} style="padding-top: {{ 1 | divided_by: product.media.first.preview_image.aspect_ratio | times: 100 | append: '%' }}"{% endif %}>
-            <img class="product-single__thumbnail-image img-fluid{% if media.media_type == 'video' or media.media_type =='external_video' %} position-absolute w-100 h-100{% endif %}" src="{{ media.preview_image | image_url: width: 150 }}" width="150" height="150" alt="{{ media.preview_image.alt }}" style="object-fit: cover;">
-            {%- if media.media_type == 'video' or media.media_type =='external_video' -%}
-              <div class="product-single__thumbnail-badge video position-absolute">
-                <i class="zmdi zmdi-play-circle-outline"></i>
-              </div>
-            {%- endif -%}
-            {%- if media.media_type == 'model' -%}
-              <div class="product-single__thumbnail-badge model position-absolute">
-                {% render 'icon-3d-model' %}
-              </div>
-            {%- endif -%}
-          </a>
-        </div>
+              <img style="border-radius:12px;" src="{{ media.preview_image | image_url: width: 40 }}" width="40" height="40">
             </div>
             <!--p class="pp-modal__eyebrow">{{ section.settings.product_eyebrow | escape }}</p-->
             <h2 class="pp-modal__heading">Personaliza tu<!--{{ section.settings.personalizer_heading | escape }}--> {{ product.title }}</h2>
