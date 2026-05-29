@@ -819,7 +819,7 @@
     }
 
     getEngravingShapeSelectionTitle() {
-      return 'Elige la forma del mini dije grabado';
+      return '¿Quieres agregar un Mini Dije grabado?';
     }
 
     getEngravingTextSectionTitle() {
