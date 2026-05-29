@@ -1701,7 +1701,7 @@
   }
 
   .pp-modal .pp-token-field__head {
-    flex-direction: column;
+    /**flex-direction: column;**/
     align-items: flex-start;
     gap: 4px;
   }
