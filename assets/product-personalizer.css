@@ -1850,7 +1850,7 @@
     display: flex;
     grid-auto-flow: column;
     grid-auto-columns: minmax(165px, 74vw);
-    gap: 10px;
+    gap: 5px;
     overflow-x: auto;
     padding-bottom: 16px;
     scroll-snap-type: x proximity;
