@@ -57,6 +57,9 @@
         "list_collection_drWmdB",
         "list_collection_MyCMJJ"
       ],
+      "custom_css": [
+        "#NovBreadcrumbs.breadcrumb_collection {padding-top: 50px;padding-bottom:50px;}"
+      ],
       "settings": {
         "show_list_collection": false,
         "show_nav": true,
