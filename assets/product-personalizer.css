@@ -845,7 +845,7 @@
 .pp-modal .pp-shape-card {
   appearance: none;
   padding: 10px 10px;
-  border: 1px solid var(--pp-border);
+  border: 2px solid var(--pp-border);
   border-radius: 55px;
   background: rgba(255, 255, 255, 0.92);
   color: var(--pp-title);
@@ -880,6 +880,7 @@
 }
 
 .pp-modal .pp-shape-card.is-active {
+  border: 2px;
   border-color: rgba(246, 105, 160, 0.52);
   background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 230, 240, 1));
   box-shadow: inset 0 0 0 1px rgba(246, 105, 160, 0.12), 0 12px 28px rgba(222, 79, 135, 0.12);
