@@ -1163,7 +1163,7 @@
         '<div class="pp-token-field" data-token-field data-field-key="' + options.fieldKey + '" data-min="' + options.min + '" data-max="' + options.max + '"' + (options.fontFieldKey ? ' data-font-field-key="' + options.fontFieldKey + '"' : '') + '>',
         '<div class="pp-token-field__head">',
         '<!--label class="pp-token-field__label">' + escapeHtml(options.label) + '</label-->',
-        '<span class="pp-token-field__count">Caracteres:</span><span class="pp-token-field__count" data-token-count="' + options.fieldKey + '"> 0 / '+ <span>Max:</span> + options.max + '</span>',
+        '<span class="pp-token-field__count">Caracteres:</span><span class="pp-token-field__count" data-token-count="' + options.fieldKey + '"> 0 / '+ '<span>Max:</span>' + options.max + '</span>',
         '</div>',
         '<div class="pp-token-field__editor-shell">',
         '<div class="pp-token-field__editor" contenteditable="true" spellcheck="false" data-token-editor="' + options.fieldKey + '" data-placeholder="' + escapeHtml(options.placeholder) + '"></div>',
