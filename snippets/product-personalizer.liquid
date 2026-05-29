@@ -67,7 +67,10 @@
         <div class="pp-modal__header">
           <div class="pp-modal__header-copy">
             <div style="float: left;margin-right: 10px;">
-              <img style="border-radius:12px;" src="{{ media | image_url: width: 1 }}" width="40" height="40">
+              <img class="lazyload"
+                src="{{ media | image_url: width: 1 }}"
+                data-src="{{ media | image_url: width: 180 }}"
+                data-srcset="{{ media | image_url: width: 380 }} 380w,{{ media | image_url: width: 580 }} 580w,{{ media | image_url: width: 768 }} 768w,{{ media | image_url: width: 900 }} 900w,{{ media | image_url: width: 1080 }} 1080w,{{ media | image_url: width: 1296 }} 1296w,{{ media | image_url: width: 1512 }} 1512w,{{ media | image_url: width: 1728 }} 1728w, {{ media | image_url: width: 2048 }} 2048w" data-sizes="auto"  loading="lazy" width="{{ media.width }}" height="{{ media.height }}" alt="{{ media.alt }}"/>
             </div>
             <!--p class="pp-modal__eyebrow">{{ section.settings.product_eyebrow | escape }}</p-->
             <h2 class="pp-modal__heading">Personaliza tu<!--{{ section.settings.personalizer_heading | escape }}--> {{ product.title }}</h2>
