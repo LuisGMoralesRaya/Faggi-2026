@@ -66,16 +66,6 @@
       <div class="pp-modal__dialog" role="dialog" aria-modal="true" aria-label="Personalizador de producto">
         <div class="pp-modal__header">
           <div class="pp-modal__header-copy">
-            <div style="float: left;margin-right: 10px;height:40px;width:40px;">
-              <div class="item-content">
-            <div class="respone_image{% if section.settings.enable_zoom and viewtype != 'left' %} image-zoom{% endif %}" style="padding-top:{{ 1 | divided_by: media.aspect_ratio | times: 100}}%;" data-zoom="{{ media | image_url: width: 1120 }}">
-              <img class="lazyload"
-                src="{{ media | image_url: width: 1 }}"
-                data-src="{{ media | image_url: width: 180 }}"
-                data-srcset="{{ media | image_url: width: 380 }} 380w,{{ media | image_url: width: 580 }} 580w,{{ media | image_url: width: 768 }} 768w,{{ media | image_url: width: 900 }} 900w,{{ media | image_url: width: 1080 }} 1080w,{{ media | image_url: width: 1296 }} 1296w,{{ media | image_url: width: 1512 }} 1512w,{{ media | image_url: width: 1728 }} 1728w, {{ media | image_url: width: 2048 }} 2048w" data-sizes="auto"  loading="lazy" width="{{ media.width }}" height="{{ media.height }}" alt="{{ media.alt }}"/>
-            </div>
-          </div>
-            </div>
             <!--p class="pp-modal__eyebrow">{{ section.settings.product_eyebrow | escape }}</p-->
             <h2 class="pp-modal__heading">Personaliza tu<!--{{ section.settings.personalizer_heading | escape }}--> {{ product.title }}</h2>
             <!--p class="pp-modal__product">{{ product.title }}</p-->
