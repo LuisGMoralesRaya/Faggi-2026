@@ -60,7 +60,8 @@
       "custom_css": [
         "#NovBreadcrumbs.breadcrumb_collection {padding-top: 50px; padding-bottom: 50px;}",
         "#NovBreadcrumbs {background: #ffe9f2;}",
-        "#NovBreadcrumbs.breadcrumb_collection .headingBreacrumb {color: #f669a0;}"
+        "#NovBreadcrumbs.breadcrumb_collection .headingBreacrumb {color: #f669a0;}",
+        ".breadcrumb{display:none;}"
       ],
       "settings": {
         "show_list_collection": false,
