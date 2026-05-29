@@ -866,7 +866,7 @@
   justify-content: center;
   height: 60px;
   /**color: rgba(246, 105, 160, 0.55);**/
-  color: linear-gradient(180deg,#fff,#ffe6f0)
+  color: linear-gradient(180deg,#fff,#ffe6f0);
 }
 
 .pp-modal .pp-shape-card__icon svg {
