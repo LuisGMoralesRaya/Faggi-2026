@@ -905,7 +905,7 @@
     renderEngravingShapeSection() {
       const description = this.rule.engravingShape.singleText
         ? 'Activa un mini dije si deseas agregar un grabado especial.'
-        : 'Selecciona un mini dije si deseas agregar grabado.';
+        : 'Selecciona la forma de tu Mini Dije.';
 
       return [
         '<section class="pp-section" data-section-role="engraving-shape">',
