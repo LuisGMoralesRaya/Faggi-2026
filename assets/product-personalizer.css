@@ -1852,7 +1852,7 @@
     grid-auto-columns: minmax(165px, 74vw);
     gap: 10px;
     overflow-x: auto;
-    padding-bottom: 6px;
+    padding-bottom: 16px;
     scroll-snap-type: x proximity;
     scrollbar-width: thin;
     overscroll-behavior-inline: contain;
