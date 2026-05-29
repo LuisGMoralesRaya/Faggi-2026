@@ -227,7 +227,7 @@
               "name": "Image",
               "settings": {
                 "image": "shopify://shop_images/relicario_fondo_blanco.png",
-                "link": "",
+                "link": "/collections/collares-personalizados",
                 "width_custom": false,
                 "image_width_unit": "%",
                 "image_width": 100,
