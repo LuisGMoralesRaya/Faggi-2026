@@ -66,6 +66,9 @@
       <div class="pp-modal__dialog" role="dialog" aria-modal="true" aria-label="Personalizador de producto">
         <div class="pp-modal__header">
           <div class="pp-modal__header-copy">
+            <div>
+              <img class="product-single__thumbnail-image img-fluid{% if media.media_type == 'video' or media.media_type =='external_video' %} position-absolute w-100 h-100{% endif %}" src="{{ media.preview_image | image_url: width: 150 }}" width="40" height="40">
+            </div>
             <!--p class="pp-modal__eyebrow">{{ section.settings.product_eyebrow | escape }}</p-->
             <h2 class="pp-modal__heading">Personaliza tu<!--{{ section.settings.personalizer_heading | escape }}--> {{ product.title }}</h2>
             <!--p class="pp-modal__product">{{ product.title }}</p-->
