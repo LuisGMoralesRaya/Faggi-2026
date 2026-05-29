@@ -106,9 +106,9 @@
           </div>
           <div class="product-single__information position-static {{ col_info }} mt-sm-40{% if viewtype == 'scroll' %} mt-md-50{% endif %}">
             {% if viewtype contains 'sliderimg' %}
-              {% render 'product-template-info-sliderimg', viewtype: viewtype %}a
+              {% render 'product-template-info-sliderimg', viewtype: viewtype %}
             {% else %}
-              {% render 'product-template-info-default', viewtype: viewtype %}
+              {% render 'product-template-info-default', viewtype: viewtype %}a
             {% endif %}
           </div>
         </div>
