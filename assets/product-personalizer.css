@@ -903,8 +903,8 @@
   appearance: none;
   border: 1px solid var(--pp-border);
   border-radius: 30px;
-  padding: 10px;
-  min-height: 50px;
+  padding: 7px;
+  min-height: 45px;
   text-align: center;
   background: rgba(255, 255, 255, 0.92);
   color: var(--pp-title);
