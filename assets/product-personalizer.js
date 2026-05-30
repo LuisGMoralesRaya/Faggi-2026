@@ -914,7 +914,7 @@
         '<p class="pp-section__description">' + escapeHtml(description) + '</p>',
         '</div>',
         '<div class="pp-shape-grid">',
-        this.rule.engravingShape.optional ? this.renderShapeCard('engravingShape', '', 'No, no quiero') : '',
+        this.rule.engravingShape.optional ? this.renderShapeCard('engravingShape', '', 'Sin Mini Dije') : '',
         this.rule.engravingShape.shapes.map(function (shape) {
           return this.renderShapeCard('engravingShape', shape);
         }, this).join(''),
