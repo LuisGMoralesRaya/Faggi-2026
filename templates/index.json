@@ -17,7 +17,7 @@
           "settings": {
             "image": "shopify://shop_images/pareja.png",
             "img_xs": "shopify://shop_images/Pareja-mobile.png",
-            "slider_link": "#",
+            "slider_link": "https://www.faggi.shop/collections/joyeria-personalizada",
             "img_animate": true,
             "img_position": "right-center",
             "img_position_xs": "left-center-xs",
