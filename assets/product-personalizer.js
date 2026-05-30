@@ -885,60 +885,6 @@
       this.renderMultiTextSlots();
     }
 
-    
-
-    renderCharmsSection() {
-      return [
-        '<section class="pp-section" data-section-role="charms">',
-        '<div class="pp-section__head">',
-        '<div><!--p class="pp-section__eyebrow">Charms</p--><h4 class="pp-section__title">Selecciona tus charms</h4></div>',
-        '<p class="pp-section__description" data-charm-limit-copy></p>',
-        '</div>',
-        '<div class="pp-charm-slider">',
-        '<div class="pp-charm-slider__viewport" data-charm-scroll>',
-        '<div class="pp-charm-slider__track">',
-        this.charmsCatalog.map(function (charm) {
-          return this.renderCharmCard(charm);
-        }, this).join(''),
-        '</div>',
-        '</div>',
-        '</div>',
-        '<div style="margin-top: 10px;"><button type="button" class="pp-slider-button" data-action="scroll-charms" data-direction="prev" aria-label="Ver charms anteriores">&larr;</button> <button type="button" class="pp-slider-button" style="float: right;" data-action="scroll-charms" data-direction="next" aria-label="Ver más charms">&rarr;</button></div>',
-        '</section>'
-      ].join('');
-    }
-
-    renderCharmCard(charm) {
-      return [
-        '<article class="pp-charm-card" data-charm-card="' + escapeHtml(charm.code) + '">',
-        '<div class="pp-charm-card__visual">',
-        this.renderCharmVisual(charm),
-        '<span class="pp-charm-card__badge" data-charm-badge="' + escapeHtml(charm.code) + '" hidden>0</span>',
-        '</div>',
-        '<div class="pp-charm-card__body">',
-        '<h5 class="pp-charm-card__title">' + escapeHtml(charm.label) + '</h5>',
-        '</div>',
-        '<div class="pp-charm-card__controls">',
-        '<button type="button" data-action="charm-decrease" data-charm-code="' + escapeHtml(charm.code) + '" aria-label="Restar charm">-</button>',
-        '<span class="pp-charm-card__qty" data-charm-qty="' + escapeHtml(charm.code) + '">0</span>',
-        '<button type="button" data-action="charm-increase" data-charm-code="' + escapeHtml(charm.code) + '" aria-label="Sumar charm">+</button>',
-        '</div>',
-        '</article>'
-      ].join('');
-    }
-
-    renderCharmVisual(charm) {
-      if (charm.image) {
-        return '<img src="' + charm.image + '" alt="' + escapeHtml(charm.label) + '">';
-      }
-
-      return [
-        '<span class="pp-charm-card__placeholder" style="--charm-accent:' + escapeHtml(charm.accent || '#f669a0') + ';">',
-        '<span>' + escapeHtml((charm.label || 'C').slice(0, 2).toUpperCase()) + '</span>',
-        '</span>'
-      ].join('');
-    }
-
     renderShapeSelectorSection() {
       const description = this.rule.shapeSelector && this.rule.shapeSelector.description ? this.rule.shapeSelector.description : '';
       return [
@@ -1126,6 +1072,58 @@
         slots.join(''),
         '</div>',
         '</section>'
+      ].join('');
+    }
+
+    renderCharmsSection() {
+      return [
+        '<section class="pp-section" data-section-role="charms">',
+        '<div class="pp-section__head">',
+        '<div><!--p class="pp-section__eyebrow">Charms</p--><h4 class="pp-section__title">Selecciona tus charms</h4></div>',
+        '<p class="pp-section__description" data-charm-limit-copy></p>',
+        '</div>',
+        '<div class="pp-charm-slider">',
+        '<div class="pp-charm-slider__viewport" data-charm-scroll>',
+        '<div class="pp-charm-slider__track">',
+        this.charmsCatalog.map(function (charm) {
+          return this.renderCharmCard(charm);
+        }, this).join(''),
+        '</div>',
+        '</div>',
+        '</div>',
+        '<div style="margin-top: 10px;"><button type="button" class="pp-slider-button" data-action="scroll-charms" data-direction="prev" aria-label="Ver charms anteriores">&larr;</button> <button type="button" class="pp-slider-button" style="float: right;" data-action="scroll-charms" data-direction="next" aria-label="Ver más charms">&rarr;</button></div>',
+        '</section>'
+      ].join('');
+    }
+
+    renderCharmCard(charm) {
+      return [
+        '<article class="pp-charm-card" data-charm-card="' + escapeHtml(charm.code) + '">',
+        '<div class="pp-charm-card__visual">',
+        this.renderCharmVisual(charm),
+        '<span class="pp-charm-card__badge" data-charm-badge="' + escapeHtml(charm.code) + '" hidden>0</span>',
+        '</div>',
+        '<div class="pp-charm-card__body">',
+        '<h5 class="pp-charm-card__title">' + escapeHtml(charm.label) + '</h5>',
+        '</div>',
+        '<div class="pp-charm-card__controls">',
+        '<button type="button" data-action="charm-decrease" data-charm-code="' + escapeHtml(charm.code) + '" aria-label="Restar charm">-</button>',
+        '<span class="pp-charm-card__qty" data-charm-qty="' + escapeHtml(charm.code) + '">0</span>',
+        '<button type="button" data-action="charm-increase" data-charm-code="' + escapeHtml(charm.code) + '" aria-label="Sumar charm">+</button>',
+        '</div>',
+        '</article>'
+      ].join('');
+    }
+
+    renderCharmVisual(charm) {
+      if (charm.image) {
+        return '<img src="' + charm.image + '" alt="' + escapeHtml(charm.label) + '">';
+      }
+
+      return [
+        '<span class="pp-charm-card__placeholder" style="--charm-accent:' + escapeHtml(charm.accent || '#f669a0') + ';">',
+        '<span>' + escapeHtml((charm.label || 'C').slice(0, 2).toUpperCase()) + '</span>',
+        '</span>'
       ].join('');
     }
 
