@@ -1175,7 +1175,7 @@
           return [
             '<button type="button" class="pp-icon-button" data-action="insert-icon" data-icon-name="' + escapeHtml(icon.name) + '" title="' + escapeHtml(icon.name) + '">',
             createIconTokenElement(icon.name).outerHTML,
-            '<span>' + escapeHtml(icon.name) + 1 +'</span>',
+            '<span>' + escapeHtml(icon.name) + '</span>',
             '</button>'
           ].join('');
         }).join(''),
