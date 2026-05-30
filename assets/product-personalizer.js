@@ -32,7 +32,7 @@
     { name: 'female', className: 'zmdi-female' },
     { name: 'male', className: 'zmdi-male' },
     { name: 'car', className: 'zmdi-car' },
-    { name: 'paw', className: 'zmdi-paw' },
+    { name: 'paw', fallback: 'PA' },
     { name: 'music', className: 'zmdi-collection-music' },
     { name: 'moon', fallback: 'MO' },
     { name: 'leaf', className: 'zmdi-nature' },
@@ -1175,7 +1175,7 @@
           return [
             '<button type="button" class="pp-icon-button" data-action="insert-icon" data-icon-name="' + escapeHtml(icon.name) + '" title="' + escapeHtml(icon.name) + '">',
             createIconTokenElement(icon.name).outerHTML,
-            '<span>' + escapeHtml(icon.name) + '</span>',
+            '<span>' + escapeHtml(icon.name) + 1 +'</span>',
             '</button>'
           ].join('');
         }).join(''),
