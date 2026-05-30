@@ -359,7 +359,7 @@
       "type": "nov-product-template-related",
       "settings": {
         "heading": "<p>Productos Relacionados</p>",
-        "heading_color": "#181818",
+        "heading_color": "#f669a0",
         "subheading": "",
         "subheading_color": "#666666",
         "heading_alignment": "text-center",
