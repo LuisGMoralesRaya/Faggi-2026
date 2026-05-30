@@ -152,6 +152,7 @@
     },
     "13c52cf8-9f43-42cd-98aa-3998e98b4ab4": {
       "type": "nov-line",
+      "disabled": true,
       "settings": {
         "height": 1,
         "color": "#e7e8eb",
@@ -225,6 +226,7 @@
         "item_policy_nPyhch",
         "item_policy_kHdtgd"
       ],
+      "disabled": true,
       "name": "Vinova Policy",
       "settings": {
         "heading": "",
@@ -333,6 +335,7 @@
     },
     "nov_line_pMB7RB": {
       "type": "nov-line",
+      "disabled": true,
       "settings": {
         "height": 1,
         "color": "#e7e8eb",
