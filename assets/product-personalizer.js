@@ -559,8 +559,6 @@
       }
 
       return {
-        productShape: initialShape || (this.rule.shapeSelector && this.rule.shapeSelector.required ? this.rule.shapeSelector.shapes[0] : ''),
-        engravingShape: '',
         engravingFrontActive: false,
         engravingBackActive: false,
         engravingFrontText: '',
@@ -580,6 +578,8 @@
         textSlots: [],
         charms: {},
         photos: photos,
+        productShape: initialShape || (this.rule.shapeSelector && this.rule.shapeSelector.required ? this.rule.shapeSelector.shapes[0] : ''),
+        engravingShape: '',
         isValid: true
       };
     }
