@@ -95,19 +95,7 @@
       previewStyle: 'multicharm',
       highlights: ['1 a 5 espacios totales', 'Mini dije grabado opcional', 'Hasta 10 caracteres o íconos por lado'],
       charms: { enabled: true, max: 5, combinedMin: 1, optional: false },
-      engravingShape: {
-        enabled: true,
-        optional: true,
-        shapes: ['Rectangulo Vertical', 'Circulo', 'Corazon'],
-        consumesCharmSlot: 1,
-        minChars: 1,
-        maxChars: 10,
-        fontSelectable: true,
-        sides: {
-          front: { label: 'Frente', defaultActive: true },
-          back: { label: 'Atrás', defaultActive: false }
-        }
-      },
+      
       photos: { enabled: false }
     },
     'Personalizacion_2': {
