@@ -36,10 +36,14 @@
     { name: 'music', className: 'zmdi-collection-music' },
     { name: 'moon', fallback: 'MO' },
     { name: 'leaf', className: 'zmdi-nature' },
-    { name: 'home', className: 'zmdi-home' }
+    { name: 'home', className: 'zmdi-home' },
+    { name: 'paw', svg: '<svg viewBox="0 0 24 24" aria-hidden="true">...</svg>' },
 
   ];
 
+    if (icon.svg) {  token.innerHTML = icon.svg;
+     } else if (icon.className) {
+      
   const FALLBACK_FONTS = [
     {
       id: 'signpainter-medium',
