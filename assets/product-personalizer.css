@@ -485,8 +485,8 @@
 /* ─── Cards ─── */
 
 .pp-modal .pp-card {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(255, 240, 246, 0.96));
-  border: 1px solid var(--pp-border);
+  /**background: linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(255, 240, 246, 0.96));
+  border: 1px solid var(--pp-border);**/
   border-radius: var(--pp-radius-lg);
 }
 
