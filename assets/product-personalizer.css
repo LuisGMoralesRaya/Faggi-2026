@@ -533,12 +533,12 @@
 .pp-modal .pp-preview {
   position: relative;
   min-height: 280px;
-  background:
+  /**background:
     radial-gradient(circle at top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0) 55%),
     linear-gradient(180deg, #fffafc, #fef0f5);
   border: 1px solid rgba(222, 79, 135, 0.12);
   border-radius: var(--pp-radius-lg);
-  padding: 20px;
+  padding: 20px;**/
   overflow: hidden;
 }
 
