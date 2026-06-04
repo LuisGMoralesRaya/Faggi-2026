@@ -32,11 +32,12 @@
     { name: 'female', className: 'zmdi-female' },
     { name: 'male', className: 'zmdi-male' },
     { name: 'car', className: 'zmdi-car' },
+    { name: 'paw', fallback: 'PA' },
     { name: 'music', className: 'zmdi-collection-music' },
     { name: 'moon', fallback: 'MO' },
     { name: 'leaf', className: 'zmdi-nature' },
     { name: 'home', className: 'zmdi-home' },
-    { name: 'paw', svg: '<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve"> <rect x="10.5" y="10.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -12.4264 30)" width="39" height="39"/> </svg>' },
+    { name: 'paw', svg: '<svg viewBox="0 0 24 24" aria-hidden="true">...</svg>' },
 
   ];
 
