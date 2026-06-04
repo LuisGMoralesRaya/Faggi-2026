@@ -3,6 +3,7 @@
 
   const ICON_LIBRARY = [
     { name: 'heart-o', className: 'zmdi-favorite-outline' },
+    { name: 'heartbeat', className: 'zmdi-favorite' },
     { name: 'star', className: 'zmdi-star' },
     { name: 'flower', className: 'zmdi-flower-alt' },
         { name: 'eye', className: 'zmdi-eye' },
@@ -26,7 +27,6 @@
     { name: 'soccer-ball-o', fallback: 'SO' },
     { name: 'plane', className: 'zmdi-airplane' },
     { name: 'motorcycle', fallback: 'MC' },
-    { name: 'heartbeat', className: 'zmdi-favorite' },
     { name: 'glass', className: 'zmdi-cocktail' },
     { name: 'film', className: 'zmdi-movie' },
     { name: 'female', className: 'zmdi-female' },
