@@ -132,14 +132,14 @@
               </div>
               <div class="grid">
                 <div class="grid__item">
-                  <div class="cart__total d-flex align-items-center justify-content-between" style="color: #333;">
+                  <div class="cart__total d-flex align-items-center justify-content-between">
                     <span class="cart__subtotal-title">{{ 'cart.general.total' | t }}:</span>
-                    <span class="cart__subtotal price-st">{{ cart.total_price | money }}</span>
+                    <span class="cart__subtotal price-st" style="color: #333;">{{ cart.total_price | money }}</span>
                   </div>
                   {% if cart.total_discounts > 0 %}
                     <div class="cart__savings">
                       {{ 'cart.general.savings' | t }}
-                      <span class="cart__savings-amount">{{ cart.total_discounts | money }}</span>
+                      <span class="cart__savings-amount" style="color: #333;">{{ cart.total_discounts | money }}</span>
                     </div>
                   {% endif %}
                   <div class="cart__shipping d-flex align-items-xl-center justify-content-between">
