@@ -40,6 +40,12 @@
 
   ];
 
+  if (icon.svg) {  
+    token.innerHTML = icon.svg; 
+  } else if (icon.className) {  
+    token.innerHTML = '<i class="zmdi ' + icon.className + '" aria-hidden="true"></i>'; 
+  } else {  token.innerHTML = '<span class="pp-inline-icon__fallback">' + icon.fallback + '</span>'; }
+
   const FALLBACK_FONTS = [
     {
       id: 'signpainter-medium',
