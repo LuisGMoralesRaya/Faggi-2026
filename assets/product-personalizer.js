@@ -22,7 +22,7 @@
     { name: 'Registrado', fallback: 'R' },
     { name: 'Nieve', fallback: '*' },
     { name: 'Sol', className: 'zmdi-sun' },
-    { name: 'Switch', fallback: 'ON' },
+    { name: 'Switch', svg: '<svg x="0px" y="0px" viewBox="0 0 12 12"  style="width: 12px;"><style type="text/css">.st0{fill:#DE4F87;}</style><path class="st0" d="M26,12h-0.64l-1.76-1.76c0,0-2.24,0.66-4.24-0.23s-3-2.82-3.34-4.24c-0.34-1.42-1.08-4.74-1.3-5.04c0,0,4.44-0.41,7.19,1.6s2.45,6.18,2.13,7.51L26,12zM19.5,4.26c-1.14-1.79-3.34-2.61-3.34-2.61c0.62,0.11,1.49,1.26,3.27,4.47c1.79,3.21,4.05,3.57,4.05,3.57C21.6,8.75,20.64,6.05,19.5,4.26z"/><path class="st0"d="M8.38,9.33H4.12c-2,0-3.62-1.62-3.62-3.62v0c0-2,1.62-3.62,3.62-3.62h4.26c2,0,3.62,1.62,3.62,3.62v0C12,7.71,10.38,9.33,8.38,9.33z M8.38,2.84c-1.58,0-2.86,1.28-2.86,2.86S6.8,8.57,8.38,8.57s2.86-1.28,2.86-2.86 S9.96,2.84,8.38,2.84z"/></svg>' },
     { name: 'Camión', className: 'zmdi-truck' },
     { name: 'Balón', fallback: 'SO' },
     { name: 'Avión', className: 'zmdi-airplane' },
