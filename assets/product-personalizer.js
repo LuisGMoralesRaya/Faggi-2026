@@ -35,7 +35,7 @@
     { name: 'Huella', svg: '<svg x="0px" y="0px" viewBox="0 0 12 12" style="width: 12px;"><style type="text/css">.st0{fill:#DE4F87;}</style><g><ellipse transform="matrix(0.9691 -0.2468 0.2468 0.9691 -0.5979 1.096)" class="st0" cx="4.07" cy="2.93" rx="1.59" ry="2.14"/><ellipse transform="matrix(0.9444 -0.3288 0.3288 0.9444 -1.9277 0.8841)" class="st0" cx="1.65" cy="6.14" rx="1.6" ry="2.03"/><ellipse transform="matrix(0.2785 -0.9604 0.9604 0.2785 1.5791 14.3852)" class="st0" cx="10.36" cy="6.14" rx="2.03" ry="1.6"/><ellipse transform="matrix(0.1867 -0.9824 0.9824 0.1867 3.6659 10.2943)" class="st0" cx="8.05" cy="2.93" rx="2.14" ry="1.59"/><path class="st0" d="M6.01,6.5c1.4-0.19,3.6,1.95,3.96,3.29c0.36,1.33,0.14,1.56-0.22,1.82c-0.36,0.26-1.16,0.26-2.01,0 s-1.21-0.52-1.73-0.47c-0.52,0.05-1.47,0.38-1.75,0.47s-1.33,0.52-2.09-0.12s0.24-2.39,0.86-3.09S4.61,6.69,6.01,6.5z"/></g></svg>' },
     { name: 'Música', className: 'zmdi-collection-music' },
     { name: 'Luna', svg: '<svg x="0px" y="0px" viewBox="0 0 12 12" style="width: 12px;"><style type="text/css">.st0{fill:#DE4F87;}</style><path class="st0" d="M5.64,0c0,0-2.47,3.24-0.44,6.48s6.44,2.27,6.44,2.27s-1.63,3.88-6.5,3.16c-4.88-0.72-5.44-5.94-4.6-8.1 S3.95,0,5.64,0z"/></svg>' },
-    { name: 'Hoja', className: 'zmdi-nature' },
+    { name: 'Hoja', svg: '<svg x="0px" y="0px" viewBox="0 0 12 12" style="width: 12px;"><style type="text/css">.st0{fill:#DE4F87;}</style><path class="st0" d="M12,12h-0.64L9.6,10.24c0,0-2.24,0.66-4.24-0.23s-3-2.82-3.34-4.24s-1.08-4.74-1.3-5.04c0,0,4.44-0.41,7.19,1.6s2.45,6.18,2.13,7.51L12,12z M5.5,4.26C4.35,2.48,2.16,1.65,2.16,1.65c0.62,0.11,1.49,1.26,3.27,4.47s4.05,3.57,4.05,3.57C7.6,8.75,6.64,6.05,5.5,4.26z"/></svg>' },
     { name: 'Casa', className: 'zmdi-home' }
 
   ];
