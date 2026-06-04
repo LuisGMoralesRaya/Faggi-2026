@@ -370,11 +370,6 @@
     } else {
       token.innerHTML = '<span class="pp-inline-icon__fallback">' + escapeHtml(icon.fallback || icon.name.slice(0, 2).toUpperCase()) + '</span>';
     }
-    if (icon.svg) {  
-      token.innerHTML = icon.svg; 
-    } else if (icon.className) {  
-      token.innerHTML = '<i class="zmdi ' + icon.className + '" aria-hidden="true"></i>'; } else {  token.innerHTML = '<span class="pp-inline-icon__fallback">' + icon.fallback + '</span>'; 
-    }
 
     return token;
   }
