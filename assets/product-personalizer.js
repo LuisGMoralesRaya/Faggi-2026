@@ -32,7 +32,7 @@
     { name: 'female', className: 'zmdi-female' },
     { name: 'male', className: 'zmdi-male' },
     { name: 'car', className: 'zmdi-car' },
-    { name: 'Huella', svg: '<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve"> <rect x="10.5" y="10.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -12.4264 30)" width="39" height="39"/> </svg>' },
+    { name: 'Huella', svg: '<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve"> <style type="text/css">.st0{fill:#DE4F87;}</style><g><ellipse transform="matrix(0.9691 -0.2468 0.2468 0.9691 -0.8636 1.7881)" class="st0" cx="6.7" cy="4.34" rx="2.07" ry="2.77"/><ellipse transform="matrix(0.9444 -0.3288 0.3288 0.9444 -2.5999 1.6414)" class="st0" cx="3.55" cy="8.51" rx="2.08" ry="2.64"/><ellipse transform="matrix(0.2785 -0.9604 0.9604 0.2785 2.5607 20.4244)" class="st0" cx="14.88" cy="8.51" rx="2.64" ry="2.08"/><ellipse transform="matrix(0.1867 -0.9824 0.9824 0.1867 5.3899 15.1889)" class="st0" cx="11.87" cy="4.34" rx="2.77" ry="2.07"/><path class="st0" d="M9.22,8.97c1.83-0.25,4.67,2.54,5.14,4.27c0.47,1.73,0.18,2.02-0.29,2.36s-1.51,0.34-2.61,0s-1.57-0.67-2.25-0.61s-1.91,0.49-2.27,0.61c-0.36,0.11-1.73,0.67-2.72-0.16s0.31-3.1,1.12-4.02S7.4,9.22,9.22,8.97z"/></g></svg>' },
     { name: 'music', className: 'zmdi-collection-music' },
     { name: 'moon', fallback: 'MO' },
     { name: 'leaf', className: 'zmdi-nature' },
