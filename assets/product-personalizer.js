@@ -32,7 +32,6 @@
     { name: 'female', className: 'zmdi-female' },
     { name: 'male', className: 'zmdi-male' },
     { name: 'car', className: 'zmdi-car' },
-    { name: 'paw', fallback: 'PA' },
     { name: 'music', className: 'zmdi-collection-music' },
     { name: 'moon', fallback: 'MO' },
     { name: 'leaf', className: 'zmdi-nature' },
