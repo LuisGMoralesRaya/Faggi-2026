@@ -488,7 +488,6 @@
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(255, 240, 246, 0.96));
   border: 1px solid var(--pp-border);
   border-radius: var(--pp-radius-lg);
-  padding: 22px;
 }
 
 .pp-modal .pp-card__header {
@@ -1441,7 +1440,7 @@
   }
 
   .pp-modal .pp-card {
-    padding: 16px;
+    padding: 0px;
   }
 
   .pp-modal .pp-preview {
