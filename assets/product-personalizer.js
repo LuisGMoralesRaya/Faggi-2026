@@ -75,18 +75,7 @@
     }
   ];
 
-  const FALLBACK_CHARMS = [
-    { id: 'charm-heart', code: 'heart', label: 'Corazon', description: 'Charm romantico', accent: '#d26a7a', image: '' },
-    { id: 'charm-star', code: 'star', label: 'Estrella', description: 'Brillo delicado', accent: '#c9a851', image: '' },
-    { id: 'charm-moon', code: 'moon', label: 'Luna', description: 'Acabado nocturno', accent: '#6b7194', image: '' },
-    { id: 'charm-flower', code: 'flower', label: 'Flor', description: 'Detalle suave', accent: '#b77b90', image: '' },
-    { id: 'charm-sun', code: 'sun', label: 'Sol', description: 'Acento luminoso', accent: '#d8aa5d', image: '' },
-    { id: 'charm-leaf', code: 'leaf', label: 'Hoja', description: 'Textura organica', accent: '#7a9470', image: '' },
-    { id: 'charm-home', code: 'home', label: 'Hogar', description: 'Recuerdo cercano', accent: '#8f7b67', image: '' },
-    { id: 'charm-paw', code: 'paw', label: 'Huella', description: 'Compania fiel', accent: '#6f6258', image: '' },
-    { id: 'charm-music', code: 'music', label: 'Musica', description: 'Nota especial', accent: '#5f6d87', image: '' },
-    { id: 'charm-eye', code: 'eye', label: 'Ojo', description: 'Proteccion simbolica', accent: '#597792', image: '' }
-  ];
+  
 
   const PERSONALIZATION_RULES = {
     'Personalizacion_1': {
@@ -1170,7 +1159,7 @@
       return [
         '<div class="pp-token-field" data-token-field data-field-key="' + options.fieldKey + '" data-min="' + options.min + '" data-max="' + options.max + '"' + (options.fontFieldKey ? ' data-font-field-key="' + options.fontFieldKey + '"' : '') + '>',
         '<div class="pp-token-field__head">',
-        '<label class="pp-token-field__label">' + escapeHtml(options.label) + '</label>',
+        '<!--label class="pp-token-field__label">' + escapeHtml(options.label) + '</label-->',
         '<span class="pp-token-field__count">Caracteres:</span><span class="pp-token-field__count" data-token-count="' + options.fieldKey + '"> 0 / ' + options.max + '</span>',
         '</div>',
         '<div class="pp-token-field__editor-shell">',
