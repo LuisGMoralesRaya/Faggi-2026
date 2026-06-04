@@ -40,8 +40,6 @@
 
   ];
 
-    if (icon.svg) {  token.innerHTML = icon.svg;
-     } else if (icon.className) {
       
   const FALLBACK_FONTS = [
     {
