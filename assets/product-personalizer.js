@@ -7,9 +7,6 @@
     { name: 'motorcycle', svg: '<svg viewBox="0 0 24 24" aria-hidden="true">...</svg>' } 
   ]; 
   
-  if (icon.svg) {  
-    token.innerHTML = icon.svg; 
-  } else if (icon.className) {
 
   const ICON_LIBRARY = [
     { name: 'heart-o', className: 'zmdi-favorite-outline' },
