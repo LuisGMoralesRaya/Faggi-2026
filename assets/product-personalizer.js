@@ -3,7 +3,7 @@
 
   const ICON_LIBRARY = [
     { name: 'Corazón', className: 'zmdi-favorite-outline' },
-    { name: 'Corazon bold', className: 'zmdi-favorite' },
+    { name: 'Corazón bold', className: 'zmdi-favorite' },
     { name: 'Estrella', className: 'zmdi-star' },
     { name: 'Flor', className: 'zmdi-flower-alt' },
         { name: 'Ojo', className: 'zmdi-eye' },
@@ -20,7 +20,7 @@
     { name: 'Pincel', className: 'zmdi-brush' },
     { name: 'Comillas', className: 'zmdi-quote' },
     { name: 'Registrado', fallback: 'R' },
-    { name: 'Copo de nieve', fallback: '*' },
+    { name: 'Nieve', fallback: '*' },
     { name: 'Sol', className: 'zmdi-sun' },
     { name: 'Switch', fallback: 'ON' },
     { name: 'Camión', className: 'zmdi-truck' },
