@@ -1157,7 +1157,7 @@
           return [
             '<button type="button" class="pp-font-card" data-action="font-select" data-font-field="' + fieldKey + '" data-font-id="' + escapeHtml(font.id) + '" style="' + escapeHtml(style) + '">',
             '<span class="pp-font-card__name">' + escapeHtml(font.label) + '</span>',
-            '<span class="pp-font-card__preview">' + escapeHtml(font.previewText || 'Texto') + '</span>',
+            '<!--span class="pp-font-card__preview">' + escapeHtml(font.previewText || 'Texto') + '</span-->',
             '</button>'
           ].join('');
         }).join(''),
@@ -1170,7 +1170,7 @@
       return [
         '<div class="pp-token-field" data-token-field data-field-key="' + options.fieldKey + '" data-min="' + options.min + '" data-max="' + options.max + '"' + (options.fontFieldKey ? ' data-font-field-key="' + options.fontFieldKey + '"' : '') + '>',
         '<div class="pp-token-field__head">',
-        '<!--label class="pp-token-field__label">' + escapeHtml(options.label) + '</label-->',
+        '<label class="pp-token-field__label">' + escapeHtml(options.label) + '</label>',
         '<span class="pp-token-field__count">Caracteres:</span><span class="pp-token-field__count" data-token-count="' + options.fieldKey + '"> 0 / ' + options.max + '</span>',
         '</div>',
         '<div class="pp-token-field__editor-shell">',
