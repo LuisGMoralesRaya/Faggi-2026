@@ -2,7 +2,7 @@
   const TOKEN_PATTERN = /\[:([^\]:]+):\]/g;
 
   const ICON_LIBRARY = [
-    { name: 'heart-o', className: 'zmdi-favorite-outline' },
+    { name: 'corazón', className: 'zmdi-favorite-outline' },
     { name: 'star', className: 'zmdi-star' },
     { name: 'flower', className: 'zmdi-flower-alt' },
         { name: 'eye', className: 'zmdi-eye' },
