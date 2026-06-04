@@ -2,11 +2,14 @@
   const TOKEN_PATTERN = /\[:([^\]:]+):\]/g;
 
   const ICON_LIBRARY = [  
-    { name: 'paw', svg: <svg version="1.1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve"> <rect x="10.5" y="10.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -12.4264 30)" width="20" height="20"/> </svg>' },  
+    { name: 'paw', svg: '<svg viewBox="0 0 60 60"> <rect x="10.5" y="10.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -12.4264 30)" width="20" height="20"/> </svg>' },  
     { name: 'moon', svg: '<svg viewBox="0 0 24 24" aria-hidden="true">...</svg>' },  
     { name: 'motorcycle', svg: '<svg viewBox="0 0 24 24" aria-hidden="true">...</svg>' } 
   ]; 
   
+  if (icon.svg) {  
+    token.innerHTML = icon.svg; 
+  } else if (icon.className) {
 
   const ICON_LIBRARY = [
     { name: 'heart-o', className: 'zmdi-favorite-outline' },
