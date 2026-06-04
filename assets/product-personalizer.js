@@ -32,15 +32,14 @@
     { name: 'female', className: 'zmdi-female' },
     { name: 'male', className: 'zmdi-male' },
     { name: 'car', className: 'zmdi-car' },
+    { name: 'paw', fallback: 'zmdi-paw' },
     { name: 'music', className: 'zmdi-collection-music' },
     { name: 'moon', fallback: 'MO' },
     { name: 'leaf', className: 'zmdi-nature' },
-    { name: 'home', className: 'zmdi-home' },
-    { name: 'paw', svg: '<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve"> <rect x="10.5" y="10.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -12.4264 30)" width="39" height="39"/> </svg>' },
+    { name: 'home', className: 'zmdi-home' }
 
   ];
 
-      
   const FALLBACK_FONTS = [
     {
       id: 'signpainter-medium',
@@ -84,6 +83,7 @@
     { id: 'charm-sun', code: 'sun', label: 'Sol', description: 'Acento luminoso', accent: '#d8aa5d', image: '' },
     { id: 'charm-leaf', code: 'leaf', label: 'Hoja', description: 'Textura organica', accent: '#7a9470', image: '' },
     { id: 'charm-home', code: 'home', label: 'Hogar', description: 'Recuerdo cercano', accent: '#8f7b67', image: '' },
+    { id: 'charm-paw', code: 'paw', label: 'Huella', description: 'Compania fiel', accent: '#6f6258', image: '' },
     { id: 'charm-music', code: 'music', label: 'Musica', description: 'Nota especial', accent: '#5f6d87', image: '' },
     { id: 'charm-eye', code: 'eye', label: 'Ojo', description: 'Proteccion simbolica', accent: '#597792', image: '' }
   ];
