@@ -62,7 +62,7 @@
                     <div class="col-md-2 cart__update-wrapper mb-sm-20">
                       <div class="cart__qty">
                         <input type="button" class="js-qty__adjust minus js-qty__adjust--minus" value="-" />
-                        <input class="cart__qty-input" data-price="{{ item.price }}" data-line="{{ forloop.index }}" type="number" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" step="1" min="1" max="{% if item.variant.inventory_management == blank or item.variant.inventory_policy == 'continue' %}99999999{% else %}{{ item.variant.inventory_quantity }}{% endif %}" pattern="[0-9]*">
+                        <input style="color:#333;" class="cart__qty-input" data-price="{{ item.price }}" data-line="{{ forloop.index }}" type="number" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" step="1" min="1" max="{% if item.variant.inventory_management == blank or item.variant.inventory_policy == 'continue' %}99999999{% else %}{{ item.variant.inventory_quantity }}{% endif %}" pattern="[0-9]*">
                         <input type="button" class="js-qty__adjust plus js-qty__adjust--plus" value="+" /> 
                       </div>
                     </div>
