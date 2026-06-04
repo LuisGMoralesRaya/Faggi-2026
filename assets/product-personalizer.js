@@ -7,7 +7,7 @@
     { name: 'Estrella', className: 'zmdi-star' },
     { name: 'Flor', className: 'zmdi-flower-alt' },
         { name: 'Ojo', className: 'zmdi-eye' },
-            { name: 'smile-o', className: 'zmdi-mood' },
+            { name: 'Carita feliz', className: 'zmdi-mood' },
     { name: 'Bicicleta', className: 'zmdi-bike' },
     { name: 'Maletín', className: 'zmdi-case' },
     { name: 'Cámara', className: 'zmdi-camera' },
