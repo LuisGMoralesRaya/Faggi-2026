@@ -1021,7 +1021,7 @@
       return [
         '<section class="pp-section" data-section-role="single-text">',
         '<div class="pp-section__head">',
-        '<div><p class="pp-section__eyebrow">Mensaje</p><h4 class="pp-section__title">' + escapeHtml(this.rule.singleText.label) + '</h4></div>',
+        '<div><!--p class="pp-section__eyebrow">Mensaje</p--><h4 class="pp-section__title">' + escapeHtml(this.rule.singleText.label) + '</h4></div>',
         '<p class="pp-section__description">Puedes mezclar texto con íconos dentro del mensaje.</p>',
         '</div>',
         this.renderTokenField({
@@ -1157,7 +1157,7 @@
           return [
             '<button type="button" class="pp-font-card" data-action="font-select" data-font-field="' + fieldKey + '" data-font-id="' + escapeHtml(font.id) + '" style="' + escapeHtml(style) + '">',
             '<span class="pp-font-card__name">' + escapeHtml(font.label) + '</span>',
-            '<!--span class="pp-font-card__preview">' + escapeHtml(font.previewText || 'Texto') + '</span-->',
+            '<span class="pp-font-card__preview">' + escapeHtml(font.previewText || 'Texto') + '</span>',
             '</button>'
           ].join('');
         }).join(''),
