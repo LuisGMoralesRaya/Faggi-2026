@@ -34,7 +34,7 @@
                             <a href="{{ item.url }}">
                               {{ item.product.title }}
                               {% if item.quantity > 1 %}
-                                <span class="d-md-none"><span class="hidden" style="color:#333;">{{ 'cart.label.quantity' | t }}</span>(x{{ item.quantity }})</span>
+                                <span class="d-md-none"><span class="hidden">{{ 'cart.label.quantity' | t }}</span>(x{{ item.quantity }})</span>
                               {% endif %}
                             </a>
                           </div>
