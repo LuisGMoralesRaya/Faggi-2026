@@ -1364,7 +1364,7 @@
             },
             "col_m4hDGy": {
               "type": "_col",
-              "name": "Column",
+              "name": "Familia y amistad",
               "settings": {
                 "width_unit": "column",
                 "w_xxl": 50,
@@ -1431,7 +1431,7 @@
                   "name": "Image",
                   "settings": {
                     "image": "shopify://shop_images/ChatGPT_Image_21_may_2026_10_57_38_a.m..png",
-                    "link": "#",
+                    "link": "https://www.faggi.shop/collections/collares-personalizados",
                     "width_custom": false,
                     "image_width_unit": "%",
                     "image_width": 100,
