@@ -61,7 +61,7 @@
         "#NovBreadcrumbs.breadcrumb_collection {padding-top: 50px; padding-bottom: 50px;}",
         "#NovBreadcrumbs {background: #ffe9f2;}",
         "#NovBreadcrumbs.breadcrumb_collection .headingBreacrumb {color: #f669a0;}",
-        ".breadcrumb{display:none;}"
+        ".breadcrumb {display: none;}"
       ],
       "settings": {
         "show_list_collection": false,
@@ -97,9 +97,9 @@
             "mw": 285,
             "link_label": "",
             "link": "",
-            "bg_icon": "#e3e8f1",
-            "item_border_top_color": "",
-            "border_icon": "",
+            "bg_icon": "#F669A0",
+            "item_border_top_color": "#F669A0",
+            "border_icon": "#F669A0",
             "class": "mb-md-30"
           }
         },
@@ -139,6 +139,7 @@
         "item_policy_KnKipc",
         "item_policy_daW7aM"
       ],
+      "disabled": true,
       "name": "Vinova Policy",
       "settings": {
         "heading": "",
