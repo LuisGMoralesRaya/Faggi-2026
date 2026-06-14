@@ -200,6 +200,7 @@
     "terms_conditions_enable": true,
     "terms_conditions": "<p>I agree with the <a href=\"#\" title=\"#\">Terms & conditions</a></p>",
     "cart_status_addtocart": "show_popup",
+    "discount_code": false,
     "shipping_calculator_default_country": "México",
     "cart_empty_btn_type": "btn-secondary",
     "cart_empty_btn_size": "btn-large",
