@@ -441,7 +441,7 @@
               "name": "Image",
               "settings": {
                 "image": "shopify://shop_images/llavero_plateado.png",
-                "link": "shopify://collections/llaveros",
+                "link": "shopify://collections/llaveros-1",
                 "width_custom": false,
                 "image_width_unit": "%",
                 "image_width": 100,
