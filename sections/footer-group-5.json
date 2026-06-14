@@ -137,7 +137,7 @@
         },
         "group_XkgXzr": {
           "type": "group",
-          "name": "Group",
+          "name": "Datos de contacto",
           "settings": {
             "row_spacing": 30,
             "row_spacing_md": 30,
@@ -164,6 +164,7 @@
             "col_Ea6mQ7": {
               "type": "_col",
               "name": "Column",
+              "disabled": true,
               "settings": {
                 "width_unit": "%",
                 "w_xxl": 25,
@@ -367,6 +368,7 @@
                 "icon_with_text_LnVXCg": {
                   "type": "icon-with-text",
                   "name": "Icon With Text",
+                  "disabled": true,
                   "settings": {
                     "display_flex": true,
                     "align": "center",
@@ -463,6 +465,7 @@
                 "icon_with_text_NVx4yH": {
                   "type": "icon-with-text",
                   "name": "Icon With Text",
+                  "disabled": true,
                   "settings": {
                     "display_flex": true,
                     "align": "center",
@@ -664,6 +667,7 @@
             "col_K3pDC7": {
               "type": "_col",
               "name": "Column",
+              "disabled": true,
               "settings": {
                 "width_unit": "%",
                 "w_xxl": 25,
@@ -759,6 +763,7 @@
             "col_6N3X8B": {
               "type": "_col",
               "name": "Column",
+              "disabled": true,
               "settings": {
                 "width_unit": "%",
                 "w_xxl": 25,
@@ -854,6 +859,7 @@
             "col_DEUi6j": {
               "type": "_col",
               "name": "Column",
+              "disabled": true,
               "settings": {
                 "width_unit": "%",
                 "w_xxl": 25,
@@ -1164,7 +1170,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Copyright © 2025 Vinovathemes. All rights reserved.</p>",
+                    "text": "<p>Copyright © 2026. All rights reserved.</p>",
                     "color": "#1f2937",
                     "color_link": "#000000",
                     "color_link_hover": "#000000",
