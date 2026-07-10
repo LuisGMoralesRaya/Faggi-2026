@@ -1719,7 +1719,7 @@
 .pp-modal .pp-side-panels {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 14px;
+  gap: 5px;
   margin-top: 14px;
 }
 
