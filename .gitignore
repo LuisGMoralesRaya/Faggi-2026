@@ -1,0 +1,13 @@
+# Herramientas locales (Claude Code, Serena)
+.claude/
+.serena/
+
+# Shopify CLI / Node
+.shopify/
+node_modules/
+.env
+.env.*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db

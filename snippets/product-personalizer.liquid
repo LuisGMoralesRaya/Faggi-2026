@@ -19,6 +19,9 @@
   assign personalizer_font_blocks = section.blocks | where: 'type', 'personalizer_font'
   assign shape_option_names = section.settings.personalizer_shape_option_names | split: ','
   assign charm_collection_handle = section.settings.personalizer_charm_collection | default: 'charms-bar'
+  if active_personalization_tag == 'Personalizacion_10'
+    assign charm_collection_handle = section.settings.personalizer_placas_charm_collection | default: 'charms-mascotas'
+  endif
   assign charm_collection = collections[charm_collection_handle]
   assign trigger_heading = 'Personaliza tu ' | append: product.title
 -%}

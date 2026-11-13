@@ -281,6 +281,31 @@
       },
       charms: { enabled: true, max: 3, optional: true, minWhenSelected: 1, allowedTotalCounts: [1, 3] },
       photos: { enabled: false }
+    },
+    // Igual que Personalizacion_7; los charms salen de otra coleccion (ver product-personalizer.liquid).
+    'Personalizacion_10': {
+      displayName: 'Placas',
+      label: 'Personalizado 10',
+      previewStyle: 'plate',
+      shapeSelector: {
+        enabled: false,
+        required: false,
+        syncVariant: false,
+        shapes: ['Corazon', 'Circulo', 'Rombo', 'Rectangulo Vertical']
+      },
+      sideText: {
+        enabled: true,
+        minChars: 3,
+        maxChars: 40,
+        minRequiredSides: 0,
+        fontSelectable: true,
+        sides: {
+          front: { label: 'Grabado frente', defaultActive: true },
+          back: { label: 'Grabado atrás', defaultActive: false }
+        }
+      },
+      charms: { enabled: true, max: 3, optional: true, minWhenSelected: 1 },
+      photos: { enabled: true, min: 0, max: 1 }
     }
   };
 

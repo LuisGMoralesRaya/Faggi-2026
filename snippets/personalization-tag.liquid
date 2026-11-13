@@ -1,7 +1,10 @@
 {%- liquid
   assign detected_tag = blank
 
-  if product.tags contains 'Personalizacion_1' or product.tags contains 'Personalización_1' or product.tags contains 'Personalizacion 1' or product.tags contains 'Personalización 1' or product.tags contains 'Personalizacion-1' or product.tags contains 'Personalización-1'
+  # Personalizacion_10 (placas) va primero: si un producto conserva tambien la etiqueta 7, gana la de placas.
+  if product.tags contains 'Personalizacion_10' or product.tags contains 'Personalización_10' or product.tags contains 'Personalizacion 10' or product.tags contains 'Personalización 10' or product.tags contains 'Personalizacion-10' or product.tags contains 'Personalización-10'
+    assign detected_tag = 'Personalizacion_10'
+  elsif product.tags contains 'Personalizacion_1' or product.tags contains 'Personalización_1' or product.tags contains 'Personalizacion 1' or product.tags contains 'Personalización 1' or product.tags contains 'Personalizacion-1' or product.tags contains 'Personalización-1'
     assign detected_tag = 'Personalizacion_1'
   elsif product.tags contains 'Personalizacion_2' or product.tags contains 'Personalización_2' or product.tags contains 'Personalizacion 2' or product.tags contains 'Personalización 2' or product.tags contains 'Personalizacion-2' or product.tags contains 'Personalización-2'
     assign detected_tag = 'Personalizacion_2'
